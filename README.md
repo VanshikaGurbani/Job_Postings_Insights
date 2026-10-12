@@ -73,7 +73,7 @@ job_postings_insights/
 ## 📊 Insights and Results
 
 - 🔹 **Top Skills:** Python, SQL, Machine Learning, AWS among most demanded
-- 🔹 **Remote Jobs:** ~X% of postings allow remote work (pie chart)
+- 🔹 **Remote Jobs:** remote vs. on-site split shown in `outputs/plots/remote_vs_onsite.png` (computed on the 200-row prototype sample)
 - 🔹 **Top Locations:** New York, Remote, San Francisco most popular
 - 🔹 **Clusters:** Jobs grouped into skill-based clusters (tech-heavy, business, healthcare)
 - 🔹 **Salary Trends:** Higher salaries linked with cloud/AI skills clusters

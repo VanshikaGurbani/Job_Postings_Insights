@@ -1,0 +1,107 @@
+{
+ "n_modelled": 14480,
+ "n_postings": 33211,
+ "salary_sources": {
+  "structured": 13299,
+  "text": 1181
+ },
+ "cv": "5-fold GroupKFold grouped by normalised title, out-of-fold predictions",
+ "target": "log annual mid-point (USD); hourly x2080, weekly x52, monthly x12",
+ "models": {
+  "median": {
+   "mae_usd": 43480.0,
+   "median_ae_usd": 35000.0,
+   "mape": 0.523,
+   "r2_log": -0.002
+  },
+  "role_exp_median": {
+   "mae_usd": 36065.0,
+   "median_ae_usd": 25000.0,
+   "mape": 0.416,
+   "r2_log": 0.234
+  },
+  "ridge": {
+   "mae_usd": 26720.0,
+   "median_ae_usd": 16728.0,
+   "mape": 0.288,
+   "r2_log": 0.581
+  },
+  "gbm": {
+   "mae_usd": 26885.0,
+   "median_ae_usd": 16669.0,
+   "mape": 0.288,
+   "r2_log": 0.569
+  }
+ },
+ "ridge_by_role": {
+  "Other": {
+   "mae_usd": 26131.0,
+   "median_ae_usd": 16259.0,
+   "mape": 0.29,
+   "r2_log": 0.569,
+   "n": 13509
+  },
+  "Data Analyst": {
+   "mae_usd": 25126.0,
+   "median_ae_usd": 18066.0,
+   "mape": 0.23,
+   "r2_log": 0.397,
+   "n": 225
+  },
+  "Software Engineer": {
+   "mae_usd": 34170.0,
+   "median_ae_usd": 26535.0,
+   "mape": 0.254,
+   "r2_log": 0.213,
+   "n": 553
+  },
+  "AI/ML Engineer": {
+   "mae_usd": 59671.0,
+   "median_ae_usd": 45001.0,
+   "mape": 0.395,
+   "r2_log": 0.245,
+   "n": 78
+  },
+  "Data Scientist": {
+   "mae_usd": 45009.0,
+   "median_ae_usd": 37156.0,
+   "mape": 0.264,
+   "r2_log": 0.067,
+   "n": 55
+  },
+  "Data Engineer": {
+   "mae_usd": 37103.0,
+   "median_ae_usd": 26339.0,
+   "mape": 0.24,
+   "r2_log": -0.341,
+   "n": 60
+  }
+ },
+ "coverage": {
+  "overall": 0.438,
+  "n_postings": 33211,
+  "by_role": {
+   "AI/ML Engineer": 0.614,
+   "Data Analyst": 0.448,
+   "Data Engineer": 0.345,
+   "Data Scientist": 0.573,
+   "Other": 0.439,
+   "Software Engineer": 0.397
+  },
+  "by_experience": {
+   "Associate": 0.502,
+   "Director": 0.445,
+   "Entry level": 0.41,
+   "Executive": 0.484,
+   "Internship": 0.336,
+   "Mid-Senior level": 0.459,
+   "Unknown": 0.419
+  },
+  "by_remote": {
+   "hybrid": 0.547,
+   "onsite": 0.451,
+   "remote": 0.519,
+   "unknown": 0.403
+  }
+ }
+}

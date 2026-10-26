@@ -27,12 +27,15 @@ def build_parser() -> argparse.ArgumentParser:
     sub.add_parser("make-eval-set", help="draw the stratified 150-posting evaluation sample")
     sub.add_parser("label", help="open the hand-labelling app (needs the dashboard extra)")
 
-    m = sub.add_parser("llm-extract", help="Claude structured extraction on the eval set")
-    m.add_argument("--model", default="claude-haiku-5-5")
-    m.add_argument("--max-usd", type=float, required=True, help="hard spend cap for this run")
+    m = sub.add_parser("llm-extract", help="local open-weights LLM extraction (free, CPU)")
+    m.add_argument("--model", default="Qwen/Qwen2.5-1.5B-Instruct")
+    m.add_argument(
+        "--limit", type=int, default=None, help="first N eval postings (for a speed test)"
+    )
     m.add_argument("--all-rows", action="store_true", help="every clean posting, not just eval set")
-    m.add_argument("--yes", action="store_true", help="confirm that real API credits are spent")
 
+    sub.add_parser("cluster", help="cluster postings by skills; k sweep, stability, names")
+    sub.add_parser("salary-model", help="salary regression with grouped cross-validation")
     sub.add_parser("evaluate", help="precision/recall/F1 of each extractor vs gold labels")
     return p
 
@@ -68,14 +71,17 @@ def main(argv: list[str] | None = None) -> None:
         df = data.load_clean()
         if not args.all_rows:
             df = df[df["job_id"].isin(evalset.load_ids())]
-        est = llm.estimate_cost(df, args.model)
-        print(
-            f"{len(df)} postings, model {args.model}, "
-            f"estimated cost ${est:.2f}, cap ${args.max_usd}"
-        )
-        if not args.yes:
-            raise SystemExit("Dry run only. Re-run with --yes to spend credits.")
-        llm.run(df, args.model, args.max_usd)
+        if args.limit:
+            df = df.head(args.limit)
+        llm.run(df, args.model)
+    elif args.command == "cluster":
+        from . import cluster
+
+        cluster.run()
+    elif args.command == "salary-model":
+        from . import salary_model
+
+        salary_model.run()
     elif args.command == "evaluate":
         from . import evaluate
 

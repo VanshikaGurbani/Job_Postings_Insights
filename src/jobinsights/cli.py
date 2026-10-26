@@ -5,7 +5,7 @@ from __future__ import annotations
 import argparse
 from pathlib import Path
 
-from . import config, data
+from . import config, data, extract
 
 
 def build_parser() -> argparse.ArgumentParser:
@@ -20,6 +20,9 @@ def build_parser() -> argparse.ArgumentParser:
     c = sub.add_parser("clean", help="clean the raw CSV into a parquet file")
     c.add_argument("--src", type=Path, default=config.RAW_POSTINGS)
     c.add_argument("--dest", type=Path, default=config.CLEAN_POSTINGS)
+
+    e = sub.add_parser("extract-rules", help="run the regex baseline (skills, remote, salary)")
+    e.add_argument("--workers", type=int, default=None)
     return p
 
 
@@ -30,6 +33,8 @@ def main(argv: list[str] | None = None) -> None:
         print(f"raw postings at {path}")
     elif args.command == "clean":
         data.clean(args.src, args.dest)
+    elif args.command == "extract-rules":
+        extract.extract(workers=args.workers)
 
 
 if __name__ == "__main__":

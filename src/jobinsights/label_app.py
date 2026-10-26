@@ -58,9 +58,8 @@ def main() -> None:
     st.caption(f"job_id {job_id}")
     body = html.escape(row["description"])
     # st.html, not st.markdown: markdown would treat "$...$" as math and garble pay amounts.
-    st.html(
-        f"<div style='line-height:1.6'>{HIGHLIGHT.sub(lambda m: f'<mark>{m.group(0)}</mark>', body)}</div>"
-    )
+    marked = HIGHLIGHT.sub(lambda m: f"<mark>{m.group(0)}</mark>", body)
+    st.html(f"<div style='line-height:1.6'>{marked}</div>")
 
     st.divider()
     with st.form(f"label_{job_id}", clear_on_submit=True):

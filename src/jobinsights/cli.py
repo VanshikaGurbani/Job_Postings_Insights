@@ -27,13 +27,14 @@ def build_parser() -> argparse.ArgumentParser:
     e.add_argument("--workers", type=int, default=None)
 
     sub.add_parser("make-eval-set", help="draw the stratified 150-posting evaluation sample")
-    sub.add_parser("label", help="open the hand-labelling app (needs the dashboard extra)")
+    sub.add_parser("label", help="open the labelling app (needs the dashboard extra)")
 
     m = sub.add_parser("llm-extract", help="local open-weights LLM extraction (free, CPU)")
     m.add_argument("--model", default="Qwen/Qwen2.5-1.5B-Instruct")
     m.add_argument(
         "--limit", type=int, default=None, help="first N eval postings (for a speed test)"
     )
+    m.add_argument("--labelled", action="store_true", help="only postings that have gold labels")
     m.add_argument("--all-rows", action="store_true", help="every clean posting, not just eval set")
 
     sub.add_parser("cluster", help="cluster postings by skills; k sweep, stability, names")
@@ -99,6 +100,10 @@ def main(argv: list[str] | None = None) -> None:
             ids = evalset.load_ids()
             order = [j for j in evalset.labeling_order(ids) if ids[j] != evalset.FLAGGED]
             df = df.set_index("job_id").loc[order].reset_index()
+        if args.labelled:
+            gold = evalset.load_gold()
+            keep = [j for j, g in gold.items() if g.get("stratum") != evalset.FLAGGED]
+            df = df[df["job_id"].isin(keep)]
         if args.limit:
             df = df.head(args.limit)
         llm.run(df, args.model)

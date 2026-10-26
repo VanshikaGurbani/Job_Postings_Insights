@@ -141,3 +141,29 @@ class TestVisa:
         assert mentions_opt("F-1 students on OPT") and not mentions_opt("you may opt in")
         assert is_contract_like("W2 or C2C, 6 month contract, our client is a bank")
         assert not is_contract_like("Full-time permanent role at our company")
+
+
+@pytest.mark.parametrize(
+    ("text", "label"),
+    [
+        ("Location: Indianapolis, INHybrid: (3-4 days per week in office)", "hybrid"),
+        ("Competitive PTOEmployee health benefitsRemote work in Atlanta", "remote"),
+        ("Opportunity for hybrid schedule: No", "onsite"),
+        ("QA Analyst- Philadelphia, PA- 3-4 days onsite", "hybrid"),
+        ("Virtually and in person, directs donor meetings", "unknown"),
+        ("This is a temporary, in-person role and starts immediately.", "onsite"),
+    ],
+)
+def test_remote_handles_run_together_text(text, label):
+    assert detect_remote(text) == label
+
+
+def test_visa_run_together_and_refusals():
+    from jobinsights.visa import detect_visa
+
+    assert detect_visa("Visa: GC, L2, H4 EAD, USC onlyExperience: 8+ years") == "mixed"
+    assert detect_visa("We are not able to offer sponsorship at this time.") == "restricted"
+    assert detect_visa("Benefits: 401(k), Sponsorship for employment visa status") == "friendly"
+    assert detect_visa("RSM does not intend to hire candidates who will require sponsorship") == (
+        "restricted"
+    )

@@ -8,16 +8,41 @@
 | Taxonomy size | 104 skills |
 | Postings with a usable annual salary | 43.8% |
 | ...from the structured columns / only from the text | 13,332 / 1,211 |
-| Work arrangement (remote / hybrid / onsite / unknown) | 11.7% / 9.3% / 13.7% / 65.3% |
-| Work authorisation (friendly / restricted / mixed / not stated) | 0.6% / 4.1% / 0.5% / 94.8% |
+| Work arrangement (remote / hybrid / onsite / unknown) | 12.4% / 10.3% / 12.0% / 65.4% |
+| Work authorisation (friendly / restricted / mixed / not stated) | 0.5% / 4.3% / 0.4% / 94.7% |
 | Postings mentioning OPT / STEM OPT / F-1 | 0.4% |
 | Contract / staffing-style postings | 24.6% |
 | Postings the original substring rule tags with skill "R" vs the regex rule | 100.0% vs 0.5% |
-| "Remote" share: original rule (any mention, incl. hybrid) vs regex remote+hybrid | 22.9% vs 21.0% |
+| "Remote" share: original rule (any mention, incl. hybrid) vs regex remote+hybrid | 22.9% vs 22.6% |
 
-### Extraction accuracy vs hand labels
+### Extraction accuracy vs reference labels
 
-_Not available: the hand-labelled set has not been scored yet._
+30 postings with reference labels (stratified, not population-proportional; 95% bootstrap CI on F1 in brackets). The rules were corrected after a first scoring pass on these same postings, so their scores are optimistic; the local LLM was not tuned.
+
+| System | Task | Precision | Recall | F1 |
+|---|---|---|---|---|
+| legacy | skills_18_legacy_vocab | 0.41 | 0.89 | 0.56 (0.46-0.64) |
+| legacy | offers_remote_or_hybrid | 0.90 | 0.82 | 0.86 (0.67-1.00) |
+| rules | skills_full_taxonomy | 0.74 | 0.75 | 0.75 (0.66-0.81) |
+| rules | skills_18_legacy_vocab | 0.81 | 0.67 | 0.73 (0.62-0.82) |
+| rules | salary_presence | 1.00 | 0.88 | 0.93 (0.75-1.00) |
+| rules | salary_strict | 0.71 | 0.62 | 0.67 (0.29-1.00) |
+| rules | offers_remote_or_hybrid | 0.92 | 1.00 | 0.96 (0.84-1.00) |
+| llm:Qwen2.5-1.5B-Instruct | skills_full_taxonomy | 0.74 | 0.23 | 0.35 (0.23-0.46) |
+| llm:Qwen2.5-1.5B-Instruct | skills_18_legacy_vocab | 0.73 | 0.18 | 0.29 (0.12-0.44) |
+| llm:Qwen2.5-1.5B-Instruct | salary_presence | 0.30 | 0.88 | 0.45 (0.21-0.67) |
+| llm:Qwen2.5-1.5B-Instruct | salary_strict | 0.30 | 0.88 | 0.45 (0.21-0.67) |
+| llm:Qwen2.5-1.5B-Instruct | offers_remote_or_hybrid | 1.00 | 0.64 | 0.78 (0.50-0.95) |
+
+### Work-authorisation and contract signals (rules vs reference labels)
+
+45 labelled postings, including ones the rule flagged (friendly / restricted) and random ones. Flagged postings are over-represented, so **only precision is meaningful here; recall cannot be estimated** because only about 5% of postings say anything about work authorisation.
+
+| Signal | Precision | n labelled |
+|---|---|---|
+| Rule says "friendly" (sponsorship / OPT welcomed) | 1.00 | 45 |
+| Rule says "restricted" or "mixed" | 0.93 | 45 |
+| Rule says contract / staffing-style | 0.39 | 45 |
 
 ### Skill clusters
 
@@ -51,5 +76,5 @@ _Not available: the hand-labelled set has not been scored yet._
 |---|---|---|---|---|
 | Global median (baseline) | 43,480 | 35,000 | 52.3% | -0.00 |
 | Median by role family x experience (baseline) | 36,065 | 25,000 | 41.6% | 0.23 |
-| Ridge (title TF-IDF + skills + categories) | 26,725 | 16,712 | 28.8% | 0.58 |
-| Gradient boosting (same features) | 26,944 | 16,850 | 28.8% | 0.57 |
+| Ridge (title TF-IDF + skills + categories) | 26,720 | 16,728 | 28.8% | 0.58 |
+| Gradient boosting (same features) | 26,885 | 16,669 | 28.8% | 0.57 |

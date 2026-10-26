@@ -21,59 +21,59 @@
    "r2_log": 0.234
   },
   "ridge": {
-   "mae_usd": 26725.0,
-   "median_ae_usd": 16712.0,
+   "mae_usd": 26720.0,
+   "median_ae_usd": 16728.0,
    "mape": 0.288,
    "r2_log": 0.581
   },
   "gbm": {
-   "mae_usd": 26944.0,
-   "median_ae_usd": 16850.0,
+   "mae_usd": 26885.0,
+   "median_ae_usd": 16669.0,
    "mape": 0.288,
-   "r2_log": 0.566
+   "r2_log": 0.569
   }
  },
  "ridge_by_role": {
   "Other": {
-   "mae_usd": 26134.0,
-   "median_ae_usd": 16229.0,
+   "mae_usd": 26131.0,
+   "median_ae_usd": 16259.0,
    "mape": 0.29,
-   "r2_log": 0.568,
+   "r2_log": 0.569,
    "n": 13509
   },
   "Data Analyst": {
-   "mae_usd": 25176.0,
-   "median_ae_usd": 18241.0,
-   "mape": 0.231,
-   "r2_log": 0.394,
+   "mae_usd": 25126.0,
+   "median_ae_usd": 18066.0,
+   "mape": 0.23,
+   "r2_log": 0.397,
    "n": 225
   },
   "Software Engineer": {
-   "mae_usd": 34208.0,
-   "median_ae_usd": 26766.0,
+   "mae_usd": 34170.0,
+   "median_ae_usd": 26535.0,
    "mape": 0.254,
-   "r2_log": 0.209,
+   "r2_log": 0.213,
    "n": 553
   },
   "AI/ML Engineer": {
-   "mae_usd": 59628.0,
-   "median_ae_usd": 45812.0,
+   "mae_usd": 59671.0,
+   "median_ae_usd": 45001.0,
    "mape": 0.395,
-   "r2_log": 0.246,
+   "r2_log": 0.245,
    "n": 78
   },
   "Data Scientist": {
-   "mae_usd": 44805.0,
-   "median_ae_usd": 37087.0,
-   "mape": 0.263,
-   "r2_log": 0.069,
+   "mae_usd": 45009.0,
+   "median_ae_usd": 37156.0,
+   "mape": 0.264,
+   "r2_log": 0.067,
    "n": 55
   },
   "Data Engineer": {
-   "mae_usd": 37252.0,
-   "median_ae_usd": 27378.0,
-   "mape": 0.242,
-   "r2_log": -0.343,
+   "mae_usd": 37103.0,
+   "median_ae_usd": 26339.0,
+   "mape": 0.24,
+   "r2_log": -0.341,
    "n": 60
   }
  },
@@ -98,10 +98,10 @@
    "Unknown": 0.419
   },
   "by_remote": {
-   "hybrid": 0.546,
-   "onsite": 0.463,
-   "remote": 0.52,
-   "unknown": 0.402
+   "hybrid": 0.547,
+   "onsite": 0.451,
+   "remote": 0.519,
+   "unknown": 0.403
   }
  }
 }

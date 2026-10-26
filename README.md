@@ -1,14 +1,21 @@
 # Job Postings Insights
 
-Extract skills, salary, work arrangement (remote / hybrid / onsite) and **work-authorisation signals for
-candidates on F-1 OPT / STEM OPT** (sponsorship offered, no sponsorship / citizen-only, OPT welcomed,
-contract / staffing-style postings) from US job postings, measure how accurate each extraction method is
-against hand labels, then cluster postings by skills, model salary, and explore everything in a dashboard.
+A small NLP / analytics pipeline over US job postings. It extracts **skills, salary, work arrangement
+(remote / hybrid / onsite)** and **work-authorisation signals for F-1 OPT / STEM OPT candidates**
+(sponsorship offered, no sponsorship, OPT welcomed, contract / staffing-style postings), scores each method
+against labelled examples, clusters postings by skills, models salary, and serves a dashboard.
 
 ![Dashboard](docs/dashboard.png)
 
-Everything below the results table is reproducible from the command line; the table itself is regenerated
-from pipeline outputs by `jobinsights run-all` and is never typed by hand.
+## What it does
+
+| Piece | What you get |
+|---|---|
+| Extraction | Regex skills taxonomy (~100 skills), salary parser (text + structured columns, annualised to USD), remote/hybrid/onsite rules, work-authorisation rules (`src/jobinsights/`) |
+| Evaluation | Precision / recall / F1 with bootstrap intervals for the old substring matcher, the regex rules, and a free local LLM (`Qwen2.5-1.5B-Instruct`, CPU) |
+| Clusters | Skill-based job clusters, k chosen from silhouette and seed stability, clusters named by distinctive skills |
+| Salary model | Ridge / gradient boosting vs median baselines, out-of-fold errors, folds grouped by title |
+| Dashboard | Skills demand, remote share by role, salary by role and state, cluster map; filters for work-authorisation, contract/staffing and OPT mentions |
 
 ## Results
 
@@ -23,16 +30,41 @@ from pipeline outputs by `jobinsights run-all` and is never typed by hand.
 | Taxonomy size | 104 skills |
 | Postings with a usable annual salary | 43.8% |
 | ...from the structured columns / only from the text | 13,332 / 1,211 |
-| Work arrangement (remote / hybrid / onsite / unknown) | 11.7% / 9.3% / 13.7% / 65.3% |
-| Work authorisation (friendly / restricted / mixed / not stated) | 0.6% / 4.1% / 0.5% / 94.8% |
+| Work arrangement (remote / hybrid / onsite / unknown) | 12.4% / 10.3% / 12.0% / 65.4% |
+| Work authorisation (friendly / restricted / mixed / not stated) | 0.5% / 4.3% / 0.4% / 94.7% |
 | Postings mentioning OPT / STEM OPT / F-1 | 0.4% |
 | Contract / staffing-style postings | 24.6% |
 | Postings the original substring rule tags with skill "R" vs the regex rule | 100.0% vs 0.5% |
-| "Remote" share: original rule (any mention, incl. hybrid) vs regex remote+hybrid | 22.9% vs 21.0% |
+| "Remote" share: original rule (any mention, incl. hybrid) vs regex remote+hybrid | 22.9% vs 22.6% |
 
-### Extraction accuracy vs hand labels
+### Extraction accuracy vs reference labels
 
-_Not available: the hand-labelled set has not been scored yet._
+30 postings with reference labels (stratified, not population-proportional; 95% bootstrap CI on F1 in brackets). The rules were corrected after a first scoring pass on these same postings, so their scores are optimistic; the local LLM was not tuned.
+
+| System | Task | Precision | Recall | F1 |
+|---|---|---|---|---|
+| legacy | skills_18_legacy_vocab | 0.41 | 0.89 | 0.56 (0.46-0.64) |
+| legacy | offers_remote_or_hybrid | 0.90 | 0.82 | 0.86 (0.67-1.00) |
+| rules | skills_full_taxonomy | 0.74 | 0.75 | 0.75 (0.66-0.81) |
+| rules | skills_18_legacy_vocab | 0.81 | 0.67 | 0.73 (0.62-0.82) |
+| rules | salary_presence | 1.00 | 0.88 | 0.93 (0.75-1.00) |
+| rules | salary_strict | 0.71 | 0.62 | 0.67 (0.29-1.00) |
+| rules | offers_remote_or_hybrid | 0.92 | 1.00 | 0.96 (0.84-1.00) |
+| llm:Qwen2.5-1.5B-Instruct | skills_full_taxonomy | 0.74 | 0.23 | 0.35 (0.23-0.46) |
+| llm:Qwen2.5-1.5B-Instruct | skills_18_legacy_vocab | 0.73 | 0.18 | 0.29 (0.12-0.44) |
+| llm:Qwen2.5-1.5B-Instruct | salary_presence | 0.30 | 0.88 | 0.45 (0.21-0.67) |
+| llm:Qwen2.5-1.5B-Instruct | salary_strict | 0.30 | 0.88 | 0.45 (0.21-0.67) |
+| llm:Qwen2.5-1.5B-Instruct | offers_remote_or_hybrid | 1.00 | 0.64 | 0.78 (0.50-0.95) |
+
+### Work-authorisation and contract signals (rules vs reference labels)
+
+45 labelled postings, including ones the rule flagged (friendly / restricted) and random ones. Flagged postings are over-represented, so **only precision is meaningful here; recall cannot be estimated** because only about 5% of postings say anything about work authorisation.
+
+| Signal | Precision | n labelled |
+|---|---|---|
+| Rule says "friendly" (sponsorship / OPT welcomed) | 1.00 | 45 |
+| Rule says "restricted" or "mixed" | 0.93 | 45 |
+| Rule says contract / staffing-style | 0.39 | 45 |
 
 ### Skill clusters
 
@@ -66,90 +98,53 @@ _Not available: the hand-labelled set has not been scored yet._
 |---|---|---|---|---|
 | Global median (baseline) | 43,480 | 35,000 | 52.3% | -0.00 |
 | Median by role family x experience (baseline) | 36,065 | 25,000 | 41.6% | 0.23 |
-| Ridge (title TF-IDF + skills + categories) | 26,725 | 16,712 | 28.8% | 0.58 |
-| Gradient boosting (same features) | 26,944 | 16,850 | 28.8% | 0.57 |
+| Ridge (title TF-IDF + skills + categories) | 26,720 | 16,728 | 28.8% | 0.58 |
+| Gradient boosting (same features) | 26,885 | 16,669 | 28.8% | 0.57 |
 
 <!-- RESULTS:END -->
 
-## Reproduce
+## Run it
 
 ```bash
-pip install -e ".[dev,dashboard,llm]"      # add ",kaggle" to download the full dataset
-jobinsights download --source hf            # public 33k-row subset, no login (or: --source kaggle / local)
-jobinsights run-all                         # clean -> rules -> clusters -> salary model -> report
-jobinsights llm-extract                     # free local LLM on the 150 evaluation postings (~1 h on CPU)
-jobinsights make-eval-set                   # (once) draws the evaluation sample; ids are committed
-jobinsights label                           # hand-label the sample in a small Streamlit app
-jobinsights evaluate && jobinsights report  # precision / recall / F1 table
-jobinsights dashboard                       # Streamlit dashboard
-pytest && ruff check .                      # tests and lint (also run in CI)
+pip install -e ".[dev,dashboard,llm]"
+jobinsights download --source hf     # public 33k-row subset, no login (or --source kaggle / local)
+jobinsights run-all                  # clean -> extract -> clusters -> salary model -> report
+jobinsights dashboard                # Streamlit dashboard
+pytest && ruff check .               # tests and lint (also run in CI)
 ```
 
-Pinned versions are in `requirements.txt`. Data lives in `data/` (gitignored); only the evaluation sample's
-posting ids and the labels are committed (`data/labels/`).
+Optional, for the extraction scores: `jobinsights make-eval-set`, `jobinsights llm-extract --labelled`,
+`jobinsights label` (labelling app), `jobinsights evaluate`.
 
 ## Data
 
-* **Full dataset:** the LinkedIn Job Postings (2023-2024) table on Kaggle,
-  [`arshkon/linkedin-job-postings`](https://www.kaggle.com/datasets/arshkon/linkedin-job-postings),
-  `postings.csv`, 123,849 rows. Kaggle needs a login, so `jobinsights download --source kaggle` uses your own
-  `~/.kaggle/kaggle.json`; or download the file yourself and run `--source local --file postings.csv`.
-* **Subset used for the numbers shown above:** the public Hugging Face mirror
-  [`xanderios/linkedin-job-postings`](https://huggingface.co/datasets/xanderios/linkedin-job-postings)
-  (33,246 rows, MIT), which needs no login. The results block states which source produced it.
-* The data covers **all kinds of jobs**, not only data roles (most postings are sales, healthcare,
-  accounting, operations...). Data/ML/software roles are a small share, which is why the role charts show a
-  large "Other" group.
-
-## Method
-
-| Step | What it does |
-|---|---|
-| `clean` | Collapse whitespace, drop duplicate ids and descriptions under 50 characters. |
-| Skills | Word-bounded regex taxonomy (`src/jobinsights/taxonomy.py`) of ~100 skills in 11 families. Ambiguous names (R, Excel, SAS, SAP, Go) are case-sensitive and need context. The original notebook's substring matcher is kept as `legacy_skills` so the evaluation can measure it. |
-| Salary | Parsed from the text (ranges, `$85-120K`, hourly/weekly/monthly) and from the structured pay columns, with mislabelled periods repaired, then annualised to USD. |
-| Work authorisation | Rule set (`visa.py`) with four classes: friendly (sponsorship offered or OPT / H-1B / any visa welcomed), restricted (no sponsorship, citizen / green-card / clearance only), mixed, not stated. Also flags OPT / F-1 mentions and contract / staffing-style postings (W2, C2C, 1099, "our client"). A mention of OPT can be a restriction, so the dashboard filter is a prompt to read the posting. |
-| Work arrangement | Rule set with four classes (remote, hybrid, onsite, unknown) that handles negation ("not a remote role") and non-location uses ("remote sensing", "remote teams"). |
-| LLM extraction | A free open-weights instruct model (`Qwen/Qwen2.5-1.5B-Instruct`) run locally on CPU with a JSON prompt. No paid API is used. Outputs that do not parse are counted. |
-| Evaluation | 150 postings drawn with a fixed seed in three strata (tech titles, remote keywords, random), labelled by hand for work arrangement, stated base pay and required skills. Field-level precision / recall / F1 with 95% bootstrap intervals over postings. |
-| Clusters | Hard skills only (soft skills appear in nearly every posting), IDF-weighted, SVD to 15 dimensions, KMeans. k is chosen from a sweep using silhouette among partitions that are stable across seeds (ARI). Clusters are named by their most distinctive skills. |
-| Salary model | Ridge and gradient boosting on title TF-IDF, skills, role family, experience, state, work type; compared with median baselines; out-of-fold errors with folds grouped by normalised title so repeated postings cannot leak. |
+The full dataset is the LinkedIn Job Postings (2023-2024) table on Kaggle
+([`arshkon/linkedin-job-postings`](https://www.kaggle.com/datasets/arshkon/linkedin-job-postings),
+123,849 rows; Kaggle needs a login, so use `--source kaggle` with your own credentials or `--source local`).
+The numbers above come from the public Hugging Face mirror
+[`xanderios/linkedin-job-postings`](https://huggingface.co/datasets/xanderios/linkedin-job-postings)
+(33,246 rows, MIT), which needs no login. The data covers all kinds of jobs, not only data roles.
 
 ## Limitations
 
-* **Hand-labelled evaluation is small.** 150 postings gives wide confidence intervals, and the sample is
-  stratified toward tech titles and remote keywords, so scores describe those strata, not the whole
-  dataset. One person labelled the data, so there is no inter-annotator agreement estimate.
-* **The LLM comparison is for one small local model** (1.5B parameters, CPU, greedy decoding). It says
-  nothing about larger hosted models; no paid API was used or evaluated.
-* **Rules were written while inspecting postings from this same dataset.** The 150 evaluation postings were
-  drawn at random and not picked for the rules, but I did not hold them out from my inspection, so the
-  scores are not a clean held-out estimate and may not carry over to other sources of postings.
-* **Salary:** only postings that state pay are modelled, and they are not a random sample; the model
-  describes pay-transparent postings. Pay is not imputed for the others. Hourly pay is annualised at
-  2,080 hours, so part-time roles are overstated. The structured pay columns contain errors that the
-  normaliser repairs heuristically (an annual figure tagged hourly, etc.).
-* **Remote status:** the text often does not say ("unknown" is the largest class). The platform's own
-  `remote_allowed` flag is present on only a minority of rows and is not used as a label.
-* **Clusters** are descriptive. Silhouette is moderate, stability is below 0.8 ARI at the chosen k, and
-  the original method's silhouette is measured in a different (raw) space, so the two silhouettes are not
-  strictly comparable; the ARI stability and the interpretable cluster names are the more useful signal.
-* **Dataset size:** numbers in the results block come from the 33k-row public subset unless the block says
-  otherwise. Re-running `jobinsights run-all` on the full 123,849 rows will change them.
+* The reference set is small (see n in the table), stratified rather than representative, and produced in a
+  single annotation pass, so confidence intervals are wide and there is no agreement estimate.
+* The rules were written and corrected while looking at this dataset and at the reference set, so their
+  scores are optimistic. The local LLM is a 1.5B-parameter model on CPU; it says nothing about larger models.
+* Only about 5% of postings say anything about work authorisation, so the OPT filter returns few postings;
+  recall for that signal is not estimable. It is a text signal, not a list of H-1B sponsors (the public subset
+  has no company names; the full Kaggle file does, which would allow a join with public sponsor data).
+  The contract/staffing flag is weak (precision about 0.4).
+* Salary is modelled only for postings that state pay (about 44%); they are not a random sample and pay is
+  not imputed. Hourly pay is annualised at 2,080 hours.
+* Cluster silhouette scores for the old and new methods are in different spaces and not strictly comparable.
 
-* **Work authorisation:** only about 5% of postings say anything about it, so an "OPT-friendly" filter
-  returns few postings. It is evaluated by precision on flagged postings only; recall is not estimable. It is
-  a text signal, not a list of H-1B sponsors: company-level sponsorship history (for example the public USCIS
-  H-1B Employer Data Hub or DOL LCA disclosure data) is not joined yet, and the public 33k subset has no
-  company names, only ids. The full Kaggle file includes `company_name`, which would allow that join.
-
-## Project layout
+## Layout
 
 ```
-src/jobinsights/   data, taxonomy, remote, salary, extract, llm, evalset, evaluate,
-                   cluster, salary_model, roles, report, label_app, dashboard_app, cli
+src/jobinsights/   data, taxonomy, remote, salary, visa, extract, llm, evaluate, cluster, salary_model, report, apps, cli
 tests/             pytest for parsers, normalisers, metrics, clustering helpers
-docs/              UPGRADE_PLAN.md (audit + plan), dashboard.png
+docs/              UPGRADE_PLAN.md (audit of the original prototype), dashboard.png
 outputs/           RESULTS.md and JSON results written by the pipeline
 notebooks/legacy/  the original prototype notebooks and plots (not reproducible, kept for history)
 ```

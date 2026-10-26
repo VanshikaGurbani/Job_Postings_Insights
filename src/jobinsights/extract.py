@@ -41,7 +41,7 @@ def extract_rules(df: pd.DataFrame) -> pd.DataFrame:
             {
                 "job_id": rec.job_id,
                 "skills_rules": skills,
-                "remote_rules": detect_remote(rec.description),
+                "remote_rules": detect_remote(text),
                 "visa_rules": detect_visa(rec.description),
                 "opt_mention_rules": mentions_opt(rec.description),
                 "contract_rules": is_contract_like(rec.description),

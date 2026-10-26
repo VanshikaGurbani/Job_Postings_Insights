@@ -1,4 +1,4 @@
-"""The hand-labelled evaluation set: which postings, and how gold labels are stored.
+"""The labelled evaluation set: which postings, and how gold labels are stored.
 
 Only job ids and labels are committed (data/labels/), never posting text.
 """

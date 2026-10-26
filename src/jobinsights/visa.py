@@ -22,7 +22,8 @@ _I = re.IGNORECASE
 
 _RESTRICTED = re.compile(
     r"sponsorship\s+(?:available|offered|provided)\s*[:\-]\s*no\b"
-    r"|\busc\s+only\b"
+    r"|\busc\s+only"
+    r"|(?:does|do)\s+not\s+(?:intend|plan)\s+to\s+(?:hire|consider)[^.]{0,100}sponsor"
     r"|(?:no|not|without|unable to|cannot|can't|won't|will not|does not|do not|doesn't|don't|"
     r"not able to|not eligible for|ineligible for)\s+(?:\w+\s+){0,3}?"
     r"(?:visa\s+)?sponsor\w*"
@@ -41,8 +42,9 @@ _FRIENDLY = re.compile(
     r"(?<!not )(?<!n't )\b(?:will|can|may|able to|happy to|open to|willing to)\s+"
     r"(?:(?!not\b|never\b|no\b|require\b|need\b)\w+\s+){0,2}?sponsor\w*"
     r"|sponsorship\s+(?:is\s+)?(?:available|offered|provided|possible)(?!\s*[:\-]\s*no\b)"
-    r"|(?<!not )(?<!n't )(?<!never )(?<!no )\b(?:offer|provide)s?\s+(?:\w+\s+){0,2}?"
+    r"|(?<!not )(?<!n't )(?<!never )(?<!no )(?<!able to )\b(?:offer|provide)s?\s+(?:\w+\s+){0,2}?"
     r"(?:visa\s+)?sponsorship"
+    r"|sponsorship\s+for\s+(?:employment\s+)?visa"
     r"|\bh-?1b\s+(?:transfers?|ok|okay|accepted|welcome|candidates?|visa|holders?)"
     r"|\bh-?4\b"
     r"|all\s+(?:visa|work\s+authori[sz]ation)\s+(?:types|holders|statuses)"

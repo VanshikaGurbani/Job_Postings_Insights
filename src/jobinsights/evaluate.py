@@ -1,4 +1,4 @@
-"""Field-level precision / recall / F1 of each extractor against the hand-labelled set."""
+"""Field-level precision / recall / F1 of each extractor against the labelled reference set."""
 
 from __future__ import annotations
 

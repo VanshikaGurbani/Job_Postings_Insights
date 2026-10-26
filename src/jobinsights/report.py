@@ -120,13 +120,15 @@ def build_results() -> str:
     lines.append("")
 
     ev = _load("eval_results.json")
-    lines += ["### Extraction accuracy vs hand labels", ""]
+    lines += ["### Extraction accuracy vs reference labels", ""]
     if ev is None:
-        lines.append("_Not available: the hand-labelled set has not been scored yet._")
+        lines.append("_Not available: the reference set has not been scored yet._")
     else:
         lines.append(
-            f"{ev['n_labelled']} hand-labelled postings (stratified, not population-"
-            "proportional; 95% bootstrap CI on F1 in brackets)."
+            f"{ev['n_labelled']} postings with reference labels (stratified, not population-"
+            "proportional; 95% bootstrap CI on F1 in brackets). The rules were corrected after a "
+            "first scoring pass on these same postings, so their scores are optimistic; the "
+            "local LLM was not tuned."
         )
         lines += ["", "| System | Task | Precision | Recall | F1 |", "|---|---|---|---|---|"]
         for system, res in ev["systems"].items():
@@ -141,7 +143,7 @@ def build_results() -> str:
     vc = (ev or {}).get("visa_and_contract_rules") or {}
     if vc.get("n"):
         lines += [
-            "### Work-authorisation and contract signals (rules vs hand labels)",
+            "### Work-authorisation and contract signals (rules vs reference labels)",
             "",
             f"{vc['n']} labelled postings, including ones the rule flagged (friendly / "
             "restricted) and random ones. Flagged postings are over-represented, so "

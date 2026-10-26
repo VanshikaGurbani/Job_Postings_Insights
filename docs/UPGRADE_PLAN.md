@@ -20,7 +20,7 @@ Goal: turn the notebook prototype into a reproducible pipeline where every READM
 ## Constraints I am holding myself to
 
 * No result goes in the README unless the command that produced it is in the repo and its output was seen.
-* No large data is committed. The raw download and caches live in `data/` and `cache/` (gitignored). Small hand-label files go in `data/labels/`.
+* No large data is committed. The raw download and caches live in `data/` and `cache/` (gitignored). Small label files go in `data/labels/`.
 * No paid API spend. The user chose free resources only, so the "LLM" is an open-weights model run locally on CPU
   (`Qwen/Qwen2.5-1.5B-Instruct`), cached per posting. A small local model is a weaker baseline than a hosted
   one; the README says so.

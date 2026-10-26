@@ -1,4 +1,4 @@
-"""Streamlit tool for hand-labelling the evaluation set: `jobinsights label`.
+"""Streamlit tool for labelling the evaluation set: `jobinsights label`.
 
 Candidates for the skills checklist are the pooled outputs of every extractor, shown in
 alphabetical order and unchecked, so the labeller is not told which system proposed what.

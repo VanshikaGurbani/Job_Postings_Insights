@@ -102,6 +102,9 @@ def evaluate() -> dict:
         for f in sorted(config.PROCESSED_DIR.glob("extracted_llm_*.parquet"))
     }
     ids = [j for j in sorted(gold) if j in clean.index]
+    flagged_ids = [j for j in ids if gold[j].get("stratum") == "visa_flagged"]
+    visa_ids = ids
+    ids = [j for j in ids if j not in set(flagged_ids)]
     for df in llm_frames.values():  # score only postings every system processed
         ids = [j for j in ids if j in df.index]
 
@@ -159,6 +162,7 @@ def evaluate() -> dict:
                 float(np.mean([p == g for p, g in zip(s["remote"], g_remote, strict=True)])), 3
             )
         results["systems"][name] = res
+    results["visa_and_contract_rules"] = _visa_eval(gold, visa_ids, rules)
     results["gold_remote_distribution"] = pd.Series(g_remote).value_counts().to_dict()
     results["gold_strata"] = (
         pd.Series([gold[j].get("stratum") for j in ids]).value_counts().to_dict()
@@ -185,3 +189,33 @@ def _text_salary(row: pd.Series) -> tuple[float, float] | None:
 def _llm_salary(row: pd.Series) -> tuple[float, float] | None:
     lo = row["salary_llm_low"]
     return None if pd.isna(lo) else (float(lo), float(row["salary_llm_high"]))
+
+
+def _visa_eval(gold: dict, ids: list[int], rules: pd.DataFrame) -> dict:
+    """Rules vs labels for work authorisation and contract style (only labelled postings)."""
+    have = [j for j in ids if gold[j].get("visa")]
+    if not have:
+        return {"n": 0}
+    g = [gold[j]["visa"] for j in have]
+    p = [rules.loc[j, "visa_rules"] for j in have]
+    out: dict = {"n": len(have)}
+    out["visa_4class_accuracy"] = round(
+        float(np.mean([a == b for a, b in zip(p, g, strict=True)])), 3
+    )
+    # The question that matters to an OPT candidate: is the posting explicitly friendly?
+    out["visa_friendly"] = fmt(
+        presence_counts([x == "friendly" for x in p], [x == "friendly" for x in g])
+    )
+    out["visa_restricted_or_mixed"] = fmt(
+        presence_counts(
+            [x in ("restricted", "mixed") for x in p], [x in ("restricted", "mixed") for x in g]
+        )
+    )
+    out["gold_visa_distribution"] = pd.Series(g).value_counts().to_dict()
+    out["contract"] = fmt(
+        presence_counts(
+            [bool(rules.loc[j, "contract_rules"]) for j in have],
+            [bool(gold[j].get("contract")) for j in have],
+        )
+    )
+    return out

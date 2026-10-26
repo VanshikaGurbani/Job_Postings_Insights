@@ -45,10 +45,25 @@ def main() -> None:
         role_sel = st.multiselect("Role family", roles, default=roles)
         exp_opts = sorted(df["formatted_experience_level"].dropna().unique())
         exp_sel = st.multiselect("Experience level", exp_opts, default=exp_opts)
+        visa_sel = st.multiselect(
+            "Work authorisation signal",
+            ["friendly", "restricted", "mixed", "not_stated"],
+            default=["friendly", "restricted", "mixed", "not_stated"],
+            help="friendly = offers sponsorship or welcomes OPT/H-1B/visas; restricted = no "
+            "sponsorship or citizen-only. Rule-based; check the posting.",
+        )
+        only_contract = st.checkbox("Contract / staffing-style postings only")
+        only_opt = st.checkbox("Mentions OPT / STEM OPT / F-1")
         top_n = st.slider("Top skills shown", 5, 30, 15)
         skill_family = st.selectbox("Skill family", ["All"] + sorted(set(FAMILY.values())), index=0)
     f = df[df["role"].isin(role_sel)]
     f = f[f["formatted_experience_level"].isin(exp_sel) | f["formatted_experience_level"].isna()]
+
+    f = f[f["visa_rules"].isin(visa_sel)]
+    if only_contract:
+        f = f[f["contract_rules"]]
+    if only_opt:
+        f = f[f["opt_mention_rules"]]
 
     k1, k2, k3, k4 = st.columns(4)
     k1.metric("Postings", f"{len(f):,}")

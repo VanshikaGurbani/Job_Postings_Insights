@@ -12,6 +12,7 @@ from . import config
 from .remote import detect_remote
 from .salary import normalize_structured, parse_salary_text
 from .taxonomy import extract_skills
+from .visa import detect_visa, is_contract_like, mentions_opt
 
 RULES_OUT = config.PROCESSED_DIR / "extracted_rules.parquet"
 
@@ -41,6 +42,9 @@ def extract_rules(df: pd.DataFrame) -> pd.DataFrame:
                 "job_id": rec.job_id,
                 "skills_rules": skills,
                 "remote_rules": detect_remote(rec.description),
+                "visa_rules": detect_visa(rec.description),
+                "opt_mention_rules": mentions_opt(rec.description),
+                "contract_rules": is_contract_like(rec.description),
                 "salary_text_low": text_pay.annual_low if text_pay else None,
                 "salary_text_high": text_pay.annual_high if text_pay else None,
                 "salary_struct_low": struct_pay.annual_low if struct_pay else None,

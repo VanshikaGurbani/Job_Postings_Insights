@@ -109,3 +109,35 @@ class TestSalaryStructured:
     def test_median_only(self):
         pay = normalize_structured(None, None, "YEARLY", med_salary=70000)
         assert pay.annual_mid == 70000
+
+
+class TestVisa:
+    @pytest.mark.parametrize(
+        ("text", "label"),
+        [
+            ("We offer visa sponsorship for qualified candidates.", "friendly"),
+            ("OPT, H-1B (H1B) & TN sponsorship or H1B visa transfer", "friendly"),
+            ("Candidates on STEM OPT are welcome to apply.", "friendly"),
+            ("Sponsorship available: Yes", "friendly"),
+            ("Sponsorship available: No", "restricted"),
+            ("We are not able to sponsor visas for this role.", "restricted"),
+            ("Netsmart does not provide work visa sponsorship for this position.", "restricted"),
+            ("Must be a U.S. citizen with an active Secret security clearance.", "restricted"),
+            ("Authorized to work in the US without sponsorship.", "restricted"),
+            ("We will not sponsor. Applicants on OPT may apply.", "mixed"),
+            ("Experience in CPT and ICD-10 coding is required.", "not_stated"),
+            ("You will opt for the best plan and we are glad to help.", "not_stated"),
+            ("Great team, great pay.", "not_stated"),
+        ],
+    )
+    def test_detect_visa(self, text, label):
+        from jobinsights.visa import detect_visa
+
+        assert detect_visa(text) == label
+
+    def test_mentions_opt_and_contract(self):
+        from jobinsights.visa import is_contract_like, mentions_opt
+
+        assert mentions_opt("F-1 students on OPT") and not mentions_opt("you may opt in")
+        assert is_contract_like("W2 or C2C, 6 month contract, our client is a bank")
+        assert not is_contract_like("Full-time permanent role at our company")

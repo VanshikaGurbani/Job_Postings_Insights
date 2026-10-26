@@ -9,6 +9,9 @@
 | Postings with a usable annual salary | 43.8% |
 | ...from the structured columns / only from the text | 13,332 / 1,211 |
 | Work arrangement (remote / hybrid / onsite / unknown) | 11.7% / 9.3% / 13.7% / 65.3% |
+| Work authorisation (friendly / restricted / mixed / not stated) | 0.6% / 4.1% / 0.5% / 94.8% |
+| Postings mentioning OPT / STEM OPT / F-1 | 0.4% |
+| Contract / staffing-style postings | 24.6% |
 | Postings the original substring rule tags with skill "R" vs the regex rule | 100.0% vs 0.5% |
 | "Remote" share: original rule (any mention, incl. hybrid) vs regex remote+hybrid | 22.9% vs 21.0% |
 

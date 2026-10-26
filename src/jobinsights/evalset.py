@@ -75,9 +75,43 @@ def save_gold(rec: dict, path: Path = GOLD_PATH) -> None:
         f.write(json.dumps(rec) + "\n")
 
 
+FLAGGED = "visa_flagged"
+
+
+def add_visa_flagged(rules: pd.DataFrame, n_each: int = 10, seed: int = 1, path: Path = IDS_PATH):
+    """Append postings the visa rule flags (friendly / restricted) to the sample.
+
+    Random postings almost never mention work authorisation (about 5%), so a random sample
+    cannot test the rule. These extras measure the precision of its flags; recall is not
+    estimable from them and the report says so.
+    """
+    data = json.loads(path.read_text(encoding="utf-8"))
+    if FLAGGED in data["strata"].values():
+        return
+    friendly = rules[rules["visa_rules"] == "friendly"].sample(n_each, random_state=seed)
+    restricted = rules[rules["visa_rules"].isin(["restricted", "mixed"])].sample(
+        n_each, random_state=seed
+    )
+    for j in list(friendly["job_id"]) + list(restricted["job_id"]):
+        data["strata"].setdefault(str(int(j)), FLAGGED)
+    data["visa_flagged_seed"] = seed
+    path.write_text(json.dumps(data, indent=1), encoding="utf-8")
+    print(f"added {2 * n_each} visa-flagged postings to {path}")
+
+
 def labeling_order(ids: dict[int, str], seed: int = 0) -> list[int]:
-    """Fixed shuffled order shared by the LLM run and the labelling app, so that labelling only
-    part of the set still gives a random (roughly stratified) subset."""
-    order = sorted(ids)
-    random.Random(seed).shuffle(order)
+    """Fixed order shared by the LLM run and the labelling app, so that labelling only part of
+    the set still gives a random subset. Every third posting is a visa-flagged one."""
+    main = sorted(j for j, s in ids.items() if s != FLAGGED)
+    flagged = sorted(j for j, s in ids.items() if s == FLAGGED)
+    rng = random.Random(seed)
+    rng.shuffle(main)
+    rng.shuffle(flagged)
+    order: list[int] = []
+    while main or flagged:
+        for _ in range(2):
+            if main:
+                order.append(main.pop())
+        if flagged:
+            order.append(flagged.pop())
     return order

@@ -42,7 +42,7 @@ def main() -> None:
     df = pd.read_parquet(config.CLEAN_POSTINGS).set_index("job_id")
     order = evalset.labeling_order(ids)
     ready = {int(f.stem) for f in config.CACHE_LLM.glob("*/*/*.json")}
-    todo = [j for j in order if j not in gold and j in ready]
+    todo = [j for j in order if j not in gold and (j in ready or ids[j] == evalset.FLAGGED)]
     st.sidebar.metric("Labelled", f"{len(gold)} / {len(order)}")
     st.sidebar.progress(len(gold) / len(order))
     if not todo:
@@ -70,6 +70,18 @@ def main() -> None:
             index=None,
             help="onsite = text says in-person/on-site. unknown = text does not say.",
         )
+        visa = st.radio(
+            "Work authorisation (for someone on F-1 OPT / STEM OPT)",
+            ["friendly", "restricted", "mixed", "not_stated"],
+            horizontal=True,
+            index=None,
+            help="friendly = offers sponsorship or welcomes OPT / H-1B / any visa. "
+            "restricted = no sponsorship, citizen or green-card only, clearance. "
+            "mixed = both appear. not_stated = says nothing.",
+        )
+        contract = st.checkbox(
+            "Contract / staffing-style posting (W2, C2C, 'our client', contract)"
+        )
         st.markdown("**Base pay stated in the text** (ignore bonus / commission / OTE)")
         c1, c2, c3, c4 = st.columns(4)
         present = c1.checkbox("Pay is stated")
@@ -85,8 +97,8 @@ def main() -> None:
         other_text = st.text_input("Skills missing from the taxonomy (comma separated)")
         submitted = st.form_submit_button("Save and next")
     if submitted:
-        if remote is None:
-            st.error("Pick a work arrangement.")
+        if remote is None or visa is None:
+            st.error("Pick a work arrangement and a work-authorisation option.")
             st.stop()
         if present and (not period or hi < lo or lo <= 0):
             st.error("Pay stated: give min <= max and a period.")
@@ -96,6 +108,8 @@ def main() -> None:
                 "job_id": job_id,
                 "stratum": ids[job_id],
                 "remote": remote,
+                "visa": visa,
+                "contract": bool(contract),
                 "salary": {
                     "present": bool(present),
                     "min": lo if present else None,

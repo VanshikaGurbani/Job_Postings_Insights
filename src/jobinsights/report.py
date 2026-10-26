@@ -35,7 +35,8 @@ def build_dashboard_table() -> pd.DataFrame:
     df["salary_mid"] = (df["salary_annual_low"] + df["salary_annual_high"]) / 2
     keep = [
         "job_id", "title", "role", "state", "location", "formatted_experience_level",
-        "remote_rules", "salary_mid", "salary_source", "skills_rules", "cluster", "x", "y",
+        "remote_rules", "visa_rules", "opt_mention_rules", "contract_rules", "salary_mid",
+        "salary_source", "skills_rules", "cluster", "x", "y",
     ]  # fmt: skip
     out = df[[c for c in keep if c in df.columns]]
     DASHBOARD_PARQUET.parent.mkdir(parents=True, exist_ok=True)
@@ -97,6 +98,16 @@ def build_results() -> str:
         + " / ".join(_pct(dist.get(k, 0)) for k in ("remote", "hybrid", "onsite", "unknown"))
         + " |"
     )
+    vd = rules["visa_rules"].value_counts(normalize=True)
+    lines.append(
+        "| Work authorisation (friendly / restricted / mixed / not stated) | "
+        + " / ".join(_pct(vd.get(k, 0)) for k in ("friendly", "restricted", "mixed", "not_stated"))
+        + " |"
+    )
+    lines.append(
+        f"| Postings mentioning OPT / STEM OPT / F-1 | {_pct(rules['opt_mention_rules'].mean())} |"
+    )
+    lines.append(f"| Contract / staffing-style postings | {_pct(rules['contract_rules'].mean())} |")
     cmp = _legacy_vs_rules(rules, clean)
     lines.append(
         f'| Postings the original substring rule tags with skill "R" vs the regex rule | '

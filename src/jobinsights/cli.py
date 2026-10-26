@@ -5,6 +5,8 @@ from __future__ import annotations
 import argparse
 from pathlib import Path
 
+import pandas as pd
+
 from . import config, data, evalset, extract
 
 
@@ -70,7 +72,11 @@ def main(argv: list[str] | None = None) -> None:
     elif args.command == "extract-rules":
         extract.extract(workers=args.workers)
     elif args.command == "make-eval-set":
-        evalset.make_eval_ids(data.load_clean())
+        if evalset.IDS_PATH.is_file():
+            rules = pd.read_parquet(config.PROCESSED_DIR / "extracted_rules.parquet")
+            evalset.add_visa_flagged(rules)
+        else:
+            evalset.make_eval_ids(data.load_clean())
     elif args.command == "label":
         import subprocess
         import sys
@@ -90,7 +96,8 @@ def main(argv: list[str] | None = None) -> None:
 
         df = data.load_clean()
         if not args.all_rows:
-            order = evalset.labeling_order(evalset.load_ids())
+            ids = evalset.load_ids()
+            order = [j for j in evalset.labeling_order(ids) if ids[j] != evalset.FLAGGED]
             df = df.set_index("job_id").loc[order].reset_index()
         if args.limit:
             df = df.head(args.limit)

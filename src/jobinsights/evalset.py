@@ -17,7 +17,7 @@ IDS_PATH = config.LABELS_DIR / "eval_ids.json"
 GOLD_PATH = config.LABELS_DIR / "gold.jsonl"
 
 TECH_TITLE = re.compile(
-    r"\bb(?:data|analyst|analytics|scientist|machine learning|ml|ai|software|developer|"
+    r"\b(?:data|analyst|analytics|scientist|machine learning|ml|ai|software|developer|"
     r"engineer|bi|statistician|quantitative)\b",
     re.IGNORECASE,
 )

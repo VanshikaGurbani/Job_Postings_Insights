@@ -144,8 +144,8 @@ def build_results() -> str:
             "### Work-authorisation and contract signals (rules vs hand labels)",
             "",
             f"{vc['n']} labelled postings, including ones the rule flagged (friendly / "
-            "restricted) and random ones. Flagged postings are over-represented, so **only precision is "
-            "meaningful here; recall cannot be estimated** because only about 5% of postings say "
+            "restricted) and random ones. Flagged postings are over-represented, so "
+            "**only precision is meaningful here; recall cannot be estimated** because only about 5% of postings say "
             "anything about work authorisation.",
             "",
             "| Signal | Precision | n labelled |",

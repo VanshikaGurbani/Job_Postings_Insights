@@ -15,7 +15,7 @@ def build_parser() -> argparse.ArgumentParser:
     sub = p.add_subparsers(dest="command", required=True)
 
     d = sub.add_parser("download", help="fetch the raw postings CSV into data/raw/")
-    d.add_argument("--source", choices=["kaggle", "hf", "local"], default="kaggle")
+    d.add_argument("--source", choices=["kaggle", "local"], default="kaggle")
     d.add_argument("--file", type=Path, help="existing CSV to copy (with --source local)")
     d.add_argument("--dest", type=Path, default=config.RAW_POSTINGS)
 
@@ -44,7 +44,7 @@ def build_parser() -> argparse.ArgumentParser:
     sub.add_parser("report", help="rebuild outputs/RESULTS.md, the README block and dashboard data")
     sub.add_parser("dashboard", help="launch the Streamlit dashboard")
     r = sub.add_parser("run-all", help="clean -> extract -> cluster -> salary model -> report")
-    r.add_argument("--source", choices=["kaggle", "hf", "local"], default=None)
+    r.add_argument("--source", choices=["kaggle", "local"], default=None)
     r.add_argument("--file", type=Path)
     sub.add_parser("evaluate", help="precision/recall/F1 of each extractor vs gold labels")
     return p
@@ -77,11 +77,11 @@ def main(argv: list[str] | None = None) -> None:
     elif args.command == "extract-rules":
         extract.extract(workers=args.workers)
     elif args.command == "make-eval-set":
-        if evalset.IDS_PATH.is_file():
-            rules = pd.read_parquet(config.PROCESSED_DIR / "extracted_rules.parquet")
-            evalset.add_visa_flagged(rules)
-        else:
-            evalset.make_eval_ids(data.load_clean())
+        clean = data.load_clean()
+        evalset.make_eval_ids(clean)
+        rules = pd.read_parquet(config.PROCESSED_DIR / "extracted_rules.parquet")
+        rules = rules.merge(clean[["job_id", "company_name", "title"]], on="job_id")
+        evalset.add_visa_flagged(rules.drop_duplicates(["company_name", "title"]))
     elif args.command == "label":
         import subprocess
         import sys

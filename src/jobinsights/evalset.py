@@ -25,13 +25,14 @@ TECH_TITLE = re.compile(
 REMOTE_KEYWORD = re.compile(r"remote|work from home|hybrid", re.IGNORECASE)
 
 # (stratum name, size). The strata are NOT population-proportional; see the README.
-STRATA = (("tech_title", 50), ("remote_keyword", 40), ("random_rest", 60))
+STRATA = (("tech_title", 12), ("remote_keyword", 12), ("random_rest", 16))
 
 
 def make_eval_ids(df: pd.DataFrame, seed: int = 42, path: Path = IDS_PATH) -> dict[int, str]:
     """Draw the stratified sample once and store it. Refuses to overwrite existing labels' ids."""
     if path.is_file():
         raise SystemExit(f"{path} exists; delete it deliberately if you want a new sample")
+    df = df.drop_duplicates(subset=["company_name", "title"])  # reposted ads would repeat
     is_tech = df["title"].str.contains(TECH_TITLE)
     has_kw = df["description"].str.contains(REMOTE_KEYWORD)
     pools = {

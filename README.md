@@ -64,32 +64,32 @@ A join on company names, not on individual postings: a company with past approva
 
 ### Extraction accuracy vs reference labels
 
-30 postings with reference labels, sampled from the public Hugging Face subset (stratified, not population-proportional; 95% bootstrap CI on F1 in brackets). The rules were corrected after a first scoring pass on these same postings, so their scores are optimistic; the local LLM was not tuned.
+40 postings with reference labels (stratified, not population-proportional; 95% bootstrap CI on F1 in brackets). The rules and prompts were frozen before this sample was drawn and labelled, so these are held-out scores.
 
 | System | Task | Precision | Recall | F1 |
 |---|---|---|---|---|
-| legacy | skills_18_legacy_vocab | 0.41 | 0.89 | 0.56 (0.46-0.64) |
-| legacy | offers_remote_or_hybrid | 0.90 | 0.82 | 0.86 (0.67-1.00) |
-| rules | skills_full_taxonomy | 0.74 | 0.75 | 0.75 (0.66-0.81) |
-| rules | skills_18_legacy_vocab | 0.81 | 0.67 | 0.73 (0.62-0.82) |
-| rules | salary_presence | 1.00 | 0.88 | 0.93 (0.75-1.00) |
-| rules | salary_strict | 0.71 | 0.62 | 0.67 (0.29-1.00) |
-| rules | offers_remote_or_hybrid | 0.92 | 1.00 | 0.96 (0.84-1.00) |
-| llm:Qwen2.5-1.5B-Instruct | skills_full_taxonomy | 0.74 | 0.23 | 0.35 (0.23-0.46) |
-| llm:Qwen2.5-1.5B-Instruct | skills_18_legacy_vocab | 0.73 | 0.18 | 0.29 (0.12-0.44) |
-| llm:Qwen2.5-1.5B-Instruct | salary_presence | 0.30 | 0.88 | 0.45 (0.21-0.67) |
-| llm:Qwen2.5-1.5B-Instruct | salary_strict | 0.30 | 0.88 | 0.45 (0.21-0.67) |
-| llm:Qwen2.5-1.5B-Instruct | offers_remote_or_hybrid | 1.00 | 0.64 | 0.78 (0.50-0.95) |
+| legacy | skills_18_legacy_vocab | 0.34 | 0.78 | 0.47 (0.35-0.57) |
+| legacy | offers_remote_or_hybrid | 0.88 | 1.00 | 0.94 (0.83-1.00) |
+| rules | skills_full_taxonomy | 0.74 | 0.71 | 0.73 (0.67-0.78) |
+| rules | skills_18_legacy_vocab | 0.76 | 0.56 | 0.64 (0.50-0.74) |
+| rules | salary_presence | 1.00 | 1.00 | 1.00 (1.00-1.00) |
+| rules | salary_strict | 0.90 | 0.90 | 0.90 (0.67-1.00) |
+| rules | offers_remote_or_hybrid | 0.93 | 0.87 | 0.90 (0.73-1.00) |
+| llm:Qwen2.5-1.5B-Instruct | skills_full_taxonomy | 0.85 | 0.28 | 0.42 (0.28-0.54) |
+| llm:Qwen2.5-1.5B-Instruct | skills_18_legacy_vocab | 0.93 | 0.29 | 0.44 (0.21-0.62) |
+| llm:Qwen2.5-1.5B-Instruct | salary_presence | 0.28 | 0.90 | 0.43 (0.23-0.60) |
+| llm:Qwen2.5-1.5B-Instruct | salary_strict | 0.19 | 0.60 | 0.29 (0.10-0.47) |
+| llm:Qwen2.5-1.5B-Instruct | offers_remote_or_hybrid | 1.00 | 0.60 | 0.75 (0.50-0.91) |
 
 ### Work-authorisation and contract signals (rules vs reference labels)
 
-45 labelled postings, including ones the rule flagged (friendly / restricted) and random ones. Flagged postings are over-represented, so **only precision is meaningful here; recall cannot be estimated** because only about 5% of postings say anything about work authorisation.
+60 labelled postings, including ones the rule flagged (friendly / restricted) and random ones. Flagged postings are over-represented, so **only precision is meaningful here; recall cannot be estimated** because only about 5% of postings say anything about work authorisation.
 
 | Signal | Precision | n labelled |
 |---|---|---|
-| Rule says "friendly" (sponsorship / OPT welcomed) | 1.00 | 45 |
-| Rule says "restricted" or "mixed" | 0.93 | 45 |
-| Rule says contract / staffing-style | 0.39 | 45 |
+| Rule says "friendly" (sponsorship / OPT welcomed) | 0.64 | 60 |
+| Rule says "restricted" or "mixed" | 1.00 | 60 |
+| Rule says contract / staffing-style | 0.46 | 60 |
 
 ### Skill clusters
 
@@ -142,7 +142,7 @@ A join on company names, not on individual postings: a company with past approva
 
 ```bash
 pip install -e ".[dev,dashboard,llm]"
-jobinsights download --source hf     # public 33k-row subset, no login (or --source kaggle / local)
+jobinsights download --source local --file postings.csv   # or --source kaggle with your own credentials
 jobinsights download-h1b             # public USCIS H-1B employer files (FY2021-23)
 jobinsights run-all                  # clean -> extract -> clusters -> salary model -> H-1B join -> report
 jobinsights dashboard                # Streamlit dashboard
@@ -154,27 +154,30 @@ Optional, for the extraction scores: `jobinsights make-eval-set`, `jobinsights l
 
 ## Data
 
-* **Main dataset:** the LinkedIn Job Postings (2023-2024) table on Kaggle
+* **Dataset:** the LinkedIn Job Postings (2023-2024) table on Kaggle
   ([`arshkon/linkedin-job-postings`](https://www.kaggle.com/datasets/arshkon/linkedin-job-postings),
   `postings.csv`, 123,849 rows). Kaggle needs a login, so download it yourself and run
   `jobinsights download --source local --file postings.csv` (or `--source kaggle` with your own credentials).
-  The results table above is computed on this file. It covers all kinds of jobs, not only data roles.
-* **No-login alternative:** `jobinsights download --source hf` fetches the public Hugging Face mirror
-  [`xanderios/linkedin-job-postings`](https://huggingface.co/datasets/xanderios/linkedin-job-postings)
-  (33,246 rows, MIT). Its job ids differ from the Kaggle file's, so it is a different sample.
+  It covers all kinds of jobs, not only data roles.
 * **H-1B history:** public USCIS H-1B Employer Data Hub files for FY2021-2023
   (`jobinsights download-h1b`, fetched from uscis.gov). Newer years are not included.
-* **Labelled sample:** the postings used to score extraction accuracy were drawn from that Hugging Face subset
-  and are always loaded from it, whichever dataset the pipeline runs on. Only their ids and labels are committed.
+* **Labelled sample:** `jobinsights make-eval-set` draws a seeded, stratified sample of this dataset; only the
+  posting ids and labels are committed (`data/labels/`).
 
 ## Limitations
 
 * The reference set is small (see n in the table), stratified rather than representative, and produced in a
   single annotation pass, so confidence intervals are wide and there is no agreement estimate.
-* The rules were written and corrected while looking at this dataset and at the reference set, so their
-  scores are optimistic. The local LLM is a 1.5B-parameter model on CPU; it says nothing about larger models.
+* The rules were developed while inspecting other postings from this dataset; the reference sample was drawn
+  and labelled after they were frozen. The local LLM is a 1.5B-parameter model on CPU; it says nothing about
+  larger models.
 * Only about 5% of postings say anything about work authorisation, so the OPT text filter returns few
-  postings; recall for that signal is not estimable. The contract/staffing flag is weak (precision about 0.4).
+  postings; recall for that signal is not estimable. The "friendly" rule over-fires (precision 0.64 on the
+  labelled flagged postings, for example licensing sponsorship or OPT named inside a restriction) and the
+  contract/staffing flag is weak (precision 0.46, recall 0.38).
+* On the yes/no question "does the posting offer remote or hybrid work", the original substring rule scores as
+  well as the regex rules at this sample size (F1 0.94 vs 0.90, intervals overlap); the regex rules add a
+  four-class label (accuracy 0.83) and a much lower share of false "R" skills, not a clear gain on that yes/no task.
 * The H-1B join is company-level and name-based: a company with past approvals has shown it files petitions,
   not that a given posting sponsors, and unmatched or renamed companies are missed (about 43% of postings
   matched). It uses FY2021-2023 only and is not legal or immigration advice.

@@ -11,7 +11,7 @@ import pandas as pd
 
 from . import config
 
-# Columns the pipeline uses. Missing ones are tolerated (the HF mirror lacks a few).
+# Columns the pipeline uses. Missing ones are tolerated.
 KEEP_COLS = [
     "job_id",
     "company_name",
@@ -39,7 +39,6 @@ def download(source: str, dest: Path = config.RAW_POSTINGS, from_file: Path | No
     source:
       kaggle - full dataset (123,849 rows). Uses the user's own Kaggle credentials
                (~/.kaggle/kaggle.json or KAGGLE_USERNAME/KAGGLE_KEY).
-      hf     - public Hugging Face subset (33,246 rows), no login.
       local  - copy a CSV you already downloaded (`from_file`).
     """
     dest.parent.mkdir(parents=True, exist_ok=True)
@@ -59,11 +58,6 @@ def download(source: str, dest: Path = config.RAW_POSTINGS, from_file: Path | No
         if zipped.exists():
             shutil.unpack_archive(zipped, dest.parent)
             zipped.unlink()
-    elif source == "hf":
-        from huggingface_hub import hf_hub_download
-
-        cached = hf_hub_download(config.HF_DATASET, config.HF_FILE, repo_type="dataset")
-        shutil.copyfile(cached, dest)
     else:
         raise ValueError(f"unknown source {source!r}")
     if not dest.is_file():
@@ -109,15 +103,7 @@ def load_clean(path: Path = config.CLEAN_POSTINGS) -> pd.DataFrame:
 
 
 def load_eval_postings(job_ids) -> pd.DataFrame:
-    """Cleaned postings for the labelled evaluation sample.
-
-    The sample was drawn from the public Hugging Face subset, whose job ids differ from the
-    Kaggle file's, so evaluation always loads its postings from that subset no matter which
-    dataset the rest of the pipeline runs on.
-    """
-    from huggingface_hub import hf_hub_download
-
-    path = hf_hub_download(config.HF_DATASET, config.HF_FILE, repo_type="dataset")
-    clean = clean_postings(pd.read_csv(path))
+    """Cleaned postings for the labelled evaluation sample."""
+    clean = load_clean()
     wanted = {int(j) for j in job_ids}
     return clean[clean["job_id"].isin(wanted)].reset_index(drop=True)

@@ -29,8 +29,8 @@ Goal: turn the notebook prototype into a reproducible pipeline where every READM
 ## Steps (one or more commits each, on branch `upgrade/reproducible-pipeline`)
 
 1. **Package + CLI.** `src/jobinsights`, `pyproject.toml`, pinned `requirements.txt`, `jobinsights download | clean | ...`.
-   Download supports the Kaggle dataset `arshkon/linkedin-job-postings` through the user's own Kaggle credentials and a
-   public Hugging Face subset (33,246 rows) as a no-login fallback.
+   Download supports the Kaggle dataset `arshkon/linkedin-job-postings` through the user's own Kaggle credentials or
+   a locally downloaded file.
 2. **Scale + rules baseline.** Clean all rows. Regex extractors for skills, salary (structured columns plus text, normalised
    to annual USD) and remote/hybrid/onsite. Report coverage on the full data.
 3. **LLM extraction + evaluation.** Local open-weights model with a JSON prompt, cached, on the labelled set only.

@@ -14,7 +14,6 @@ dependencies = [
     "scikit-learn>=1.4",
     "scipy>=1.11",
     "pyarrow>=15",
-    "huggingface_hub>=0.23",
 ]
 
 [project.optional-dependencies]

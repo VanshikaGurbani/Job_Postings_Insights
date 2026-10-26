@@ -28,6 +28,7 @@ KEEP_COLS = [
     "formatted_experience_level",
     "skills_desc",
     "listed_time",
+    "job_posting_url",
 ]
 MIN_DESCRIPTION_CHARS = 50
 

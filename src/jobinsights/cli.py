@@ -39,6 +39,8 @@ def build_parser() -> argparse.ArgumentParser:
 
     sub.add_parser("cluster", help="cluster postings by skills; k sweep, stability, names")
     sub.add_parser("salary-model", help="salary regression with grouped cross-validation")
+    sub.add_parser("download-h1b", help="fetch public USCIS H-1B employer files (FY2021-23)")
+    sub.add_parser("h1b", help="match posting companies to H-1B employer history")
     sub.add_parser("report", help="rebuild outputs/RESULTS.md, the README block and dashboard data")
     sub.add_parser("dashboard", help="launch the Streamlit dashboard")
     r = sub.add_parser("run-all", help="clean -> extract -> cluster -> salary model -> report")
@@ -50,7 +52,7 @@ def build_parser() -> argparse.ArgumentParser:
 
 def run_all(source: str | None, file: Path | None) -> None:
     """The one command behind the README results: every number is regenerated."""
-    from . import cluster, evaluate, report, salary_model
+    from . import cluster, evaluate, h1b, report, salary_model
 
     if source:
         data.download(source, from_file=file)
@@ -58,6 +60,8 @@ def run_all(source: str | None, file: Path | None) -> None:
     extract.extract()
     cluster.run()
     salary_model.run()
+    if list(h1b.H1B_DIR.glob("h1b_datahubexport-*.csv")):
+        h1b.run()
     if evalset.load_gold() and list(config.PROCESSED_DIR.glob("extracted_llm_*.parquet")):
         evaluate.evaluate()
     report.run()
@@ -116,6 +120,14 @@ def main(argv: list[str] | None = None) -> None:
         from . import salary_model
 
         salary_model.run()
+    elif args.command == "download-h1b":
+        from . import h1b
+
+        h1b.download()
+    elif args.command == "h1b":
+        from . import h1b
+
+        h1b.run()
     elif args.command == "report":
         from . import report
 

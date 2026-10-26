@@ -15,6 +15,7 @@ against labelled examples, clusters postings by skills, models salary, and serve
 | Evaluation | Precision / recall / F1 with bootstrap intervals for the old substring matcher, the regex rules, and a free local LLM (`Qwen2.5-1.5B-Instruct`, CPU) |
 | Clusters | Skill-based job clusters, k chosen from silhouette and seed stability, clusters named by distinctive skills |
 | Salary model | Ridge / gradient boosting vs median baselines, out-of-fold errors, folds grouped by title |
+| H-1B join | Companies matched to public USCIS H-1B employer data (FY2021-23) so postings from companies with approvals can be filtered; spot-checked matches |
 | Dashboard | Skills demand, remote share by role, salary by role and state, cluster map; filters for work-authorisation, contract/staffing and OPT mentions |
 
 ## Results
@@ -36,6 +37,30 @@ against labelled examples, clusters postings by skills, models salary, and serve
 | Contract / staffing-style postings | 24.2% |
 | Postings the original substring rule tags with skill "R" vs the regex rule | 100.0% vs 0.5% |
 | "Remote" share: original rule (any mention, incl. hybrid) vs regex remote+hybrid | 20.2% vs 20.5% |
+
+### Company H-1B history (public USCIS data, FY2021-2023)
+
+A join on company names, not on individual postings: a company with past approvals has shown it files H-1B petitions, which does not mean this posting sponsors.
+
+| Metric | Value |
+|---|---|
+| Postings with a company name matched to a USCIS employer | 42.6% |
+| Postings from companies with >= 5 H-1B approvals in FY2021-23 | 29.5% |
+| Postings that are not restricted and (friendly text or H-1B history) | 27.4% |
+| Match spot check (random sample, read by eye) | 40 of 40 same company |
+
+| Top companies with H-1B history by openings | Openings | Approvals FY21-23 |
+|---|---|---|
+| TEKsystems | 529 | 98 |
+| Capital One | 496 | 2,512 |
+| Insight Global | 418 | 21 |
+| Wells Fargo | 388 | 1,137 |
+| Circle K | 381 | 33 |
+| Amazon | 343 | 46,630 |
+| Macy's | 333 | 18 |
+| Apex Systems | 325 | 12 |
+| Verizon | 256 | 15 |
+| Robert Half | 250 | 84 |
 
 ### Extraction accuracy vs reference labels
 
@@ -118,7 +143,8 @@ against labelled examples, clusters postings by skills, models salary, and serve
 ```bash
 pip install -e ".[dev,dashboard,llm]"
 jobinsights download --source hf     # public 33k-row subset, no login (or --source kaggle / local)
-jobinsights run-all                  # clean -> extract -> clusters -> salary model -> report
+jobinsights download-h1b             # public USCIS H-1B employer files (FY2021-23)
+jobinsights run-all                  # clean -> extract -> clusters -> salary model -> H-1B join -> report
 jobinsights dashboard                # Streamlit dashboard
 pytest && ruff check .               # tests and lint (also run in CI)
 ```
@@ -136,6 +162,8 @@ Optional, for the extraction scores: `jobinsights make-eval-set`, `jobinsights l
 * **No-login alternative:** `jobinsights download --source hf` fetches the public Hugging Face mirror
   [`xanderios/linkedin-job-postings`](https://huggingface.co/datasets/xanderios/linkedin-job-postings)
   (33,246 rows, MIT). Its job ids differ from the Kaggle file's, so it is a different sample.
+* **H-1B history:** public USCIS H-1B Employer Data Hub files for FY2021-2023
+  (`jobinsights download-h1b`, fetched from uscis.gov). Newer years are not included.
 * **Labelled sample:** the postings used to score extraction accuracy were drawn from that Hugging Face subset
   and are always loaded from it, whichever dataset the pipeline runs on. Only their ids and labels are committed.
 
@@ -145,11 +173,12 @@ Optional, for the extraction scores: `jobinsights make-eval-set`, `jobinsights l
   single annotation pass, so confidence intervals are wide and there is no agreement estimate.
 * The rules were written and corrected while looking at this dataset and at the reference set, so their
   scores are optimistic. The local LLM is a 1.5B-parameter model on CPU; it says nothing about larger models.
-* Only about 5% of postings say anything about work authorisation, so the OPT filter returns few postings;
-  recall for that signal is not estimable. It is a text signal, not a list of H-1B sponsors (the public subset
-  has no company names; the full Kaggle file does, which would allow a join with public sponsor data).
-  The contract/staffing flag is weak (precision about 0.4).
-* Salary is modelled only for postings that state pay (about 44%); they are not a random sample and pay is
+* Only about 5% of postings say anything about work authorisation, so the OPT text filter returns few
+  postings; recall for that signal is not estimable. The contract/staffing flag is weak (precision about 0.4).
+* The H-1B join is company-level and name-based: a company with past approvals has shown it files petitions,
+  not that a given posting sponsors, and unmatched or renamed companies are missed (about 43% of postings
+  matched). It uses FY2021-2023 only and is not legal or immigration advice.
+* Salary is modelled only for postings that state pay (about 41%); they are not a random sample and pay is
   not imputed. Hourly pay is annualised at 2,080 hours.
 * Cluster silhouette scores for the old and new methods are in different spaces and not strictly comparable.
 

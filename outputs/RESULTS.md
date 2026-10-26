@@ -15,6 +15,30 @@
 | Postings the original substring rule tags with skill "R" vs the regex rule | 100.0% vs 0.5% |
 | "Remote" share: original rule (any mention, incl. hybrid) vs regex remote+hybrid | 20.2% vs 20.5% |
 
+### Company H-1B history (public USCIS data, FY2021-2023)
+
+A join on company names, not on individual postings: a company with past approvals has shown it files H-1B petitions, which does not mean this posting sponsors.
+
+| Metric | Value |
+|---|---|
+| Postings with a company name matched to a USCIS employer | 42.6% |
+| Postings from companies with >= 5 H-1B approvals in FY2021-23 | 29.5% |
+| Postings that are not restricted and (friendly text or H-1B history) | 27.4% |
+| Match spot check (random sample, read by eye) | 40 of 40 same company |
+
+| Top companies with H-1B history by openings | Openings | Approvals FY21-23 |
+|---|---|---|
+| TEKsystems | 529 | 98 |
+| Capital One | 496 | 2,512 |
+| Insight Global | 418 | 21 |
+| Wells Fargo | 388 | 1,137 |
+| Circle K | 381 | 33 |
+| Amazon | 343 | 46,630 |
+| Macy's | 333 | 18 |
+| Apex Systems | 325 | 12 |
+| Verizon | 256 | 15 |
+| Robert Half | 250 | 84 |
+
 ### Extraction accuracy vs reference labels
 
 30 postings with reference labels, sampled from the public Hugging Face subset (stratified, not population-proportional; 95% bootstrap CI on F1 in brackets). The rules were corrected after a first scoring pass on these same postings, so their scores are optimistic; the local LLM was not tuned.

@@ -148,7 +148,3 @@ docs/              UPGRADE_PLAN.md (audit of the original prototype), dashboard.
 outputs/           RESULTS.md and JSON results written by the pipeline
 notebooks/legacy/  the original prototype notebooks and plots (not reproducible, kept for history)
 ```
-
-## License
-
-MIT License

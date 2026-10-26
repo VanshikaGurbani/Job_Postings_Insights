@@ -1,8 +1,9 @@
 # Job Postings Insights
 
-Extract skills, salary and work arrangement (remote / hybrid / onsite) from US job postings, measure how
-accurate each extraction method is against hand labels, then cluster postings by skills, model salary, and
-explore everything in a dashboard.
+Extract skills, salary, work arrangement (remote / hybrid / onsite) and **work-authorisation signals for
+candidates on F-1 OPT / STEM OPT** (sponsorship offered, no sponsorship / citizen-only, OPT welcomed,
+contract / staffing-style postings) from US job postings, measure how accurate each extraction method is
+against hand labels, then cluster postings by skills, model salary, and explore everything in a dashboard.
 
 ![Dashboard](docs/dashboard.png)
 
@@ -107,6 +108,7 @@ posting ids and the labels are committed (`data/labels/`).
 | `clean` | Collapse whitespace, drop duplicate ids and descriptions under 50 characters. |
 | Skills | Word-bounded regex taxonomy (`src/jobinsights/taxonomy.py`) of ~100 skills in 11 families. Ambiguous names (R, Excel, SAS, SAP, Go) are case-sensitive and need context. The original notebook's substring matcher is kept as `legacy_skills` so the evaluation can measure it. |
 | Salary | Parsed from the text (ranges, `$85-120K`, hourly/weekly/monthly) and from the structured pay columns, with mislabelled periods repaired, then annualised to USD. |
+| Work authorisation | Rule set (`visa.py`) with four classes: friendly (sponsorship offered or OPT / H-1B / any visa welcomed), restricted (no sponsorship, citizen / green-card / clearance only), mixed, not stated. Also flags OPT / F-1 mentions and contract / staffing-style postings (W2, C2C, 1099, "our client"). A mention of OPT can be a restriction, so the dashboard filter is a prompt to read the posting. |
 | Work arrangement | Rule set with four classes (remote, hybrid, onsite, unknown) that handles negation ("not a remote role") and non-location uses ("remote sensing", "remote teams"). |
 | LLM extraction | A free open-weights instruct model (`Qwen/Qwen2.5-1.5B-Instruct`) run locally on CPU with a JSON prompt. No paid API is used. Outputs that do not parse are counted. |
 | Evaluation | 150 postings drawn with a fixed seed in three strata (tech titles, remote keywords, random), labelled by hand for work arrangement, stated base pay and required skills. Field-level precision / recall / F1 with 95% bootstrap intervals over postings. |
@@ -134,6 +136,12 @@ posting ids and the labels are committed (`data/labels/`).
   strictly comparable; the ARI stability and the interpretable cluster names are the more useful signal.
 * **Dataset size:** numbers in the results block come from the 33k-row public subset unless the block says
   otherwise. Re-running `jobinsights run-all` on the full 123,849 rows will change them.
+
+* **Work authorisation:** only about 5% of postings say anything about it, so an "OPT-friendly" filter
+  returns few postings. It is evaluated by precision on flagged postings only; recall is not estimable. It is
+  a text signal, not a list of H-1B sponsors: company-level sponsorship history (for example the public USCIS
+  H-1B Employer Data Hub or DOL LCA disclosure data) is not joined yet, and the public 33k subset has no
+  company names, only ids. The full Kaggle file includes `company_name`, which would allow that join.
 
 ## Project layout
 

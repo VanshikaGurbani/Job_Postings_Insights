@@ -138,6 +138,27 @@ def build_results() -> str:
                     )
     lines.append("")
 
+    vc = (ev or {}).get("visa_and_contract_rules") or {}
+    if vc.get("n"):
+        lines += [
+            "### Work-authorisation and contract signals (rules vs hand labels)",
+            "",
+            f"{vc['n']} labelled postings, including ones the rule flagged (friendly / "
+            "restricted) and random ones. Flagged postings are over-represented, so **only precision is "
+            "meaningful here; recall cannot be estimated** because only about 5% of postings say "
+            "anything about work authorisation.",
+            "",
+            "| Signal | Precision | n labelled |",
+            "|---|---|---|",
+            f'| Rule says "friendly" (sponsorship / OPT welcomed) | '
+            f"{vc['visa_friendly']['precision']:.2f} | {vc['n']} |",
+            f'| Rule says "restricted" or "mixed" | '
+            f"{vc['visa_restricted_or_mixed']['precision']:.2f} | {vc['n']} |",
+            f"| Rule says contract / staffing-style | {vc['contract']['precision']:.2f} | "
+            f"{vc['n']} |",
+            "",
+        ]
+
     cl = _load("clusters.json")
     if cl:
         best = next(r for r in cl["sweep"] if r["k"] == cl["chosen_k"])

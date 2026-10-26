@@ -125,10 +125,10 @@ def build_results() -> str:
         lines.append("_Not available: the reference set has not been scored yet._")
     else:
         lines.append(
-            f"{ev['n_labelled']} postings with reference labels (stratified, not population-"
-            "proportional; 95% bootstrap CI on F1 in brackets). The rules were corrected after a "
-            "first scoring pass on these same postings, so their scores are optimistic; the "
-            "local LLM was not tuned."
+            f"{ev['n_labelled']} postings with reference labels, sampled from the public "
+            "Hugging Face subset (stratified, not population-proportional; 95% bootstrap CI on "
+            "F1 in brackets). The rules were corrected after a first scoring pass on these same "
+            "postings, so their scores are optimistic; the local LLM was not tuned."
         )
         lines += ["", "| System | Task | Precision | Recall | F1 |", "|---|---|---|---|---|"]
         for system, res in ev["systems"].items():

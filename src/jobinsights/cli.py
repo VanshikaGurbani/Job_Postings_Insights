@@ -95,11 +95,12 @@ def main(argv: list[str] | None = None) -> None:
     elif args.command == "llm-extract":
         from . import llm
 
-        df = data.load_clean()
-        if not args.all_rows:
+        if args.all_rows:
+            df = data.load_clean()
+        else:
             ids = evalset.load_ids()
             order = [j for j in evalset.labeling_order(ids) if ids[j] != evalset.FLAGGED]
-            df = df.set_index("job_id").loc[order].reset_index()
+            df = data.load_eval_postings(ids).set_index("job_id").loc[order].reset_index()
         if args.labelled:
             gold = evalset.load_gold()
             keep = [j for j, g in gold.items() if g.get("stratum") != evalset.FLAGGED]

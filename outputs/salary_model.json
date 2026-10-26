@@ -1,107 +1,107 @@
 {
- "n_modelled": 14480,
- "n_postings": 33211,
+ "n_modelled": 50700,
+ "n_postings": 123782,
  "salary_sources": {
-  "structured": 13299,
-  "text": 1181
+  "structured": 35919,
+  "text": 14781
  },
  "cv": "5-fold GroupKFold grouped by normalised title, out-of-fold predictions",
  "target": "log annual mid-point (USD); hourly x2080, weekly x52, monthly x12",
  "models": {
   "median": {
-   "mae_usd": 43480.0,
-   "median_ae_usd": 35000.0,
-   "mape": 0.523,
-   "r2_log": -0.002
+   "mae_usd": 43075.0,
+   "median_ae_usd": 34240.0,
+   "mape": 0.518,
+   "r2_log": -0.0
   },
   "role_exp_median": {
-   "mae_usd": 36065.0,
-   "median_ae_usd": 25000.0,
-   "mape": 0.416,
-   "r2_log": 0.234
+   "mae_usd": 35198.0,
+   "median_ae_usd": 23822.0,
+   "mape": 0.412,
+   "r2_log": 0.249
   },
   "ridge": {
-   "mae_usd": 26720.0,
-   "median_ae_usd": 16728.0,
-   "mape": 0.288,
-   "r2_log": 0.581
+   "mae_usd": 24613.0,
+   "median_ae_usd": 14887.0,
+   "mape": 0.269,
+   "r2_log": 0.627
   },
   "gbm": {
-   "mae_usd": 26885.0,
-   "median_ae_usd": 16669.0,
-   "mape": 0.288,
-   "r2_log": 0.569
+   "mae_usd": 24473.0,
+   "median_ae_usd": 14941.0,
+   "mape": 0.269,
+   "r2_log": 0.623
   }
  },
  "ridge_by_role": {
   "Other": {
-   "mae_usd": 26131.0,
-   "median_ae_usd": 16259.0,
-   "mape": 0.29,
-   "r2_log": 0.569,
-   "n": 13509
-  },
-  "Data Analyst": {
-   "mae_usd": 25126.0,
-   "median_ae_usd": 18066.0,
-   "mape": 0.23,
-   "r2_log": 0.397,
-   "n": 225
+   "mae_usd": 24175.0,
+   "median_ae_usd": 14458.0,
+   "mape": 0.272,
+   "r2_log": 0.613,
+   "n": 47272
   },
   "Software Engineer": {
-   "mae_usd": 34170.0,
-   "median_ae_usd": 26535.0,
-   "mape": 0.254,
-   "r2_log": 0.213,
-   "n": 553
+   "mae_usd": 31229.0,
+   "median_ae_usd": 23921.0,
+   "mape": 0.241,
+   "r2_log": 0.419,
+   "n": 2093
   },
-  "AI/ML Engineer": {
-   "mae_usd": 59671.0,
-   "median_ae_usd": 45001.0,
-   "mape": 0.395,
-   "r2_log": 0.245,
-   "n": 78
-  },
-  "Data Scientist": {
-   "mae_usd": 45009.0,
-   "median_ae_usd": 37156.0,
-   "mape": 0.264,
-   "r2_log": 0.067,
-   "n": 55
+  "Data Analyst": {
+   "mae_usd": 24600.0,
+   "median_ae_usd": 18811.0,
+   "mape": 0.225,
+   "r2_log": 0.388,
+   "n": 634
   },
   "Data Engineer": {
-   "mae_usd": 37103.0,
-   "median_ae_usd": 26339.0,
-   "mape": 0.24,
-   "r2_log": -0.341,
-   "n": 60
+   "mae_usd": 29896.0,
+   "median_ae_usd": 19690.0,
+   "mape": 0.198,
+   "r2_log": 0.081,
+   "n": 245
+  },
+  "AI/ML Engineer": {
+   "mae_usd": 36564.0,
+   "median_ae_usd": 29215.0,
+   "mape": 0.269,
+   "r2_log": 0.613,
+   "n": 259
+  },
+  "Data Scientist": {
+   "mae_usd": 37175.0,
+   "median_ae_usd": 30674.0,
+   "mape": 0.253,
+   "r2_log": 0.319,
+   "n": 197
   }
  },
  "coverage": {
-  "overall": 0.438,
-  "n_postings": 33211,
+  "overall": 0.411,
+  "n_postings": 123782,
   "by_role": {
-   "AI/ML Engineer": 0.614,
-   "Data Analyst": 0.448,
-   "Data Engineer": 0.345,
-   "Data Scientist": 0.573,
-   "Other": 0.439,
-   "Software Engineer": 0.397
+   "AI/ML Engineer": 0.531,
+   "Data Analyst": 0.425,
+   "Data Engineer": 0.412,
+   "Data Scientist": 0.518,
+   "Other": 0.411,
+   "Software Engineer": 0.4
   },
   "by_experience": {
-   "Associate": 0.502,
-   "Director": 0.445,
-   "Entry level": 0.41,
-   "Executive": 0.484,
-   "Internship": 0.336,
-   "Mid-Senior level": 0.459,
-   "Unknown": 0.419
+   "Associate": 0.492,
+   "Director": 0.456,
+   "Entry level": 0.386,
+   "Executive": 0.395,
+   "Internship": 0.396,
+   "Mid-Senior level": 0.428,
+   "Unknown": 0.387
   },
   "by_remote": {
-   "hybrid": 0.547,
-   "onsite": 0.451,
-   "remote": 0.519,
-   "unknown": 0.403
+   "hybrid": 0.512,
+   "onsite": 0.42,
+   "remote": 0.453,
+   "unknown": 0.388
   }
  }
 }

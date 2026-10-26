@@ -1,23 +1,23 @@
-**Dataset:** 33,211 cleaned postings (source: `hf`).
+**Dataset:** 123,782 cleaned postings (source: `kaggle (arshkon/linkedin-job-postings, postings.csv)`).
 
 ### Rules baseline coverage (no labels needed)
 
 | Field | Value |
 |---|---|
-| Postings with at least one taxonomy skill | 91.6% |
+| Postings with at least one taxonomy skill | 91.4% |
 | Taxonomy size | 104 skills |
-| Postings with a usable annual salary | 43.8% |
-| ...from the structured columns / only from the text | 13,332 / 1,211 |
-| Work arrangement (remote / hybrid / onsite / unknown) | 12.4% / 10.3% / 12.0% / 65.4% |
-| Work authorisation (friendly / restricted / mixed / not stated) | 0.5% / 4.3% / 0.4% / 94.7% |
-| Postings mentioning OPT / STEM OPT / F-1 | 0.4% |
-| Contract / staffing-style postings | 24.6% |
+| Postings with a usable annual salary | 41.1% |
+| ...from the structured columns / only from the text | 35,983 / 14,899 |
+| Work arrangement (remote / hybrid / onsite / unknown) | 10.7% / 9.8% / 12.4% / 67.1% |
+| Work authorisation (friendly / restricted / mixed / not stated) | 0.6% / 4.9% / 0.3% / 94.2% |
+| Postings mentioning OPT / STEM OPT / F-1 | 0.3% |
+| Contract / staffing-style postings | 24.2% |
 | Postings the original substring rule tags with skill "R" vs the regex rule | 100.0% vs 0.5% |
-| "Remote" share: original rule (any mention, incl. hybrid) vs regex remote+hybrid | 22.9% vs 22.6% |
+| "Remote" share: original rule (any mention, incl. hybrid) vs regex remote+hybrid | 20.2% vs 20.5% |
 
 ### Extraction accuracy vs reference labels
 
-30 postings with reference labels (stratified, not population-proportional; 95% bootstrap CI on F1 in brackets). The rules were corrected after a first scoring pass on these same postings, so their scores are optimistic; the local LLM was not tuned.
+30 postings with reference labels, sampled from the public Hugging Face subset (stratified, not population-proportional; 95% bootstrap CI on F1 in brackets). The rules were corrected after a first scoring pass on these same postings, so their scores are optimistic; the local LLM was not tuned.
 
 | System | Task | Precision | Recall | F1 |
 |---|---|---|---|---|
@@ -46,35 +46,45 @@
 
 ### Skill clusters
 
-20,928 of 33,211 postings have at least 2 non-soft skills and are clustered (hard-skill binary x IDF -> SVD(15) -> L2).
+75,576 of 123,782 postings have at least 2 non-soft skills and are clustered (hard-skill binary x IDF -> SVD(15) -> L2).
 
 | Metric | Value |
 |---|---|
-| k chosen from sweep (silhouette among seed-stable k) | 10 |
-| Silhouette (cosine) at chosen k | 0.252 |
-| Seed stability, mean pairwise ARI over 5 seeds | 0.709 |
-| Original method (raw binary skills, k=15), silhouette | 0.088 |
+| k chosen from sweep (silhouette among seed-stable k) | 20 |
+| Silhouette (cosine) at chosen k | 0.269 |
+| Seed stability, mean pairwise ARI over 5 seeds | 0.803 |
+| Original method (raw binary skills, k=15), silhouette | 0.099 |
 
 | Cluster | Size | Top skills | Titles in data/software/AI role families |
 |---|---|---|---|
-| 0: Sales / CRM / Marketing | 1,833 | Sales, CRM, Marketing, Customer Service | 1.4% |
-| 1: Recruiting / Compliance / Customer Service | 1,595 | Recruiting, Compliance, Customer Service | 3.6% |
-| 2: Marketing / Customer Service | 1,833 | Marketing, Customer Service | 5.0% |
-| 3: Python / SQL / AWS | 2,864 | Python, SQL, AWS, Java | 52.9% |
-| 4: Accounting / Financial Analysis / Auditing | 2,342 | Accounting, Financial Analysis, Auditing, Compliance | 2.6% |
-| 5: Excel / Microsoft Office / Compliance | 2,574 | Excel, Microsoft Office, Compliance | 3.3% |
-| 6: Customer Service / Compliance | 2,051 | Customer Service, Compliance | 1.4% |
-| 7: Patient Care / CPR/BLS / Customer Service | 1,758 | Patient Care, CPR/BLS, Customer Service, Compliance | 0.1% |
-| 8: Project Management / Budgeting / Compliance | 2,100 | Project Management, Budgeting, Compliance | 4.4% |
-| 9: Supply Chain / Microsoft Office / Excel | 1,978 | Supply Chain, Microsoft Office, Excel, Compliance | 3.0% |
+| 0: Microsoft Office / Compliance | 1,463 | Microsoft Office, Compliance | 2.7% |
+| 1: Budgeting / Marketing / Compliance | 3,825 | Budgeting, Marketing, Compliance | 1.9% |
+| 2: Project Management / Microsoft Office / Marketing | 4,414 | Project Management, Microsoft Office, Marketing, Compliance | 6.6% |
+| 3: Python / SQL / Java | 9,102 | Python, SQL, Java, AWS | 58.9% |
+| 4: Microsoft Office / Customer Service | 1,492 | Microsoft Office, Customer Service | 0.5% |
+| 5: Accounting / Financial Analysis / Auditing | 6,025 | Accounting, Financial Analysis, Auditing, Excel | 2.3% |
+| 6: Supply Chain / Excel / Microsoft Office | 1,814 | Supply Chain, Excel, Microsoft Office, Compliance | 2.8% |
+| 7: Patient Care / CPR/BLS / Compliance | 6,659 | Patient Care, CPR/BLS, Compliance | 0.1% |
+| 8: Sales / Marketing / Customer Service | 3,233 | Sales, Marketing, Customer Service | 0.7% |
+| 9: Compliance / Auditing | 2,024 | Compliance, Auditing | 7.3% |
+| 10: Driver's License / Customer Service / Compliance | 3,860 | Driver's License, Customer Service, Compliance | 0.2% |
+| 11: Negotiation / Compliance / Marketing | 3,818 | Negotiation, Compliance, Marketing, Microsoft Office | 1.9% |
+| 12: Marketing / Customer Service | 4,018 | Marketing, Customer Service | 5.5% |
+| 13: Excel / Microsoft Office / Compliance | 5,574 | Excel, Microsoft Office, Compliance, Customer Service | 3.6% |
+| 14: Recruiting / Customer Service / Compliance | 1,910 | Recruiting, Customer Service, Compliance | 0.7% |
+| 15: Customer Service / Compliance | 2,983 | Customer Service, Compliance | 1.2% |
+| 16: Project Management / Budgeting / Compliance | 3,014 | Project Management, Budgeting, Compliance, Microsoft Office | 2.3% |
+| 17: Recruiting / Compliance | 3,070 | Recruiting, Compliance | 7.7% |
+| 18: Supply Chain / Customer Service / Compliance | 3,852 | Supply Chain, Customer Service, Compliance | 2.7% |
+| 19: Sales / CRM / Customer Service | 3,426 | Sales, CRM, Customer Service | 1.5% |
 
 ### Salary regression (postings that state pay)
 
-14,480 of 33,211 postings (43.6%) state a usable salary. 5-fold GroupKFold grouped by normalised title, out-of-fold predictions. Target: log annual mid-point (USD); hourly x2080, weekly x52, monthly x12.
+50,700 of 123,782 postings (41.0%) state a usable salary. 5-fold GroupKFold grouped by normalised title, out-of-fold predictions. Target: log annual mid-point (USD); hourly x2080, weekly x52, monthly x12.
 
 | Model | MAE (USD) | Median AE (USD) | MAPE | R^2 (log) |
 |---|---|---|---|---|
-| Global median (baseline) | 43,480 | 35,000 | 52.3% | -0.00 |
-| Median by role family x experience (baseline) | 36,065 | 25,000 | 41.6% | 0.23 |
-| Ridge (title TF-IDF + skills + categories) | 26,720 | 16,728 | 28.8% | 0.58 |
-| Gradient boosting (same features) | 26,885 | 16,669 | 28.8% | 0.57 |
+| Global median (baseline) | 43,075 | 34,240 | 51.8% | -0.00 |
+| Median by role family x experience (baseline) | 35,198 | 23,822 | 41.2% | 0.25 |
+| Ridge (title TF-IDF + skills + categories) | 24,613 | 14,887 | 26.9% | 0.63 |
+| Gradient boosting (same features) | 24,473 | 14,941 | 26.9% | 0.62 |

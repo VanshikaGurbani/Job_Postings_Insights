@@ -105,3 +105,18 @@ def load_clean(path: Path = config.CLEAN_POSTINGS) -> pd.DataFrame:
     if not path.is_file():
         raise SystemExit(f"{path} not found. Run `jobinsights download` then `jobinsights clean`.")
     return pd.read_parquet(path)
+
+
+def load_eval_postings(job_ids) -> pd.DataFrame:
+    """Cleaned postings for the labelled evaluation sample.
+
+    The sample was drawn from the public Hugging Face subset, whose job ids differ from the
+    Kaggle file's, so evaluation always loads its postings from that subset no matter which
+    dataset the rest of the pipeline runs on.
+    """
+    from huggingface_hub import hf_hub_download
+
+    path = hf_hub_download(config.HF_DATASET, config.HF_FILE, repo_type="dataset")
+    clean = clean_postings(pd.read_csv(path))
+    wanted = {int(j) for j in job_ids}
+    return clean[clean["job_id"].isin(wanted)].reset_index(drop=True)

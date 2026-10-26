@@ -90,7 +90,8 @@ def main(argv: list[str] | None = None) -> None:
 
         df = data.load_clean()
         if not args.all_rows:
-            df = df[df["job_id"].isin(evalset.load_ids())]
+            order = evalset.labeling_order(evalset.load_ids())
+            df = df.set_index("job_id").loc[order].reset_index()
         if args.limit:
             df = df.head(args.limit)
         llm.run(df, args.model)

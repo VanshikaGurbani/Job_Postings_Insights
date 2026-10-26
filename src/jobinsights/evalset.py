@@ -6,6 +6,7 @@ Only job ids and labels are committed (data/labels/), never posting text.
 from __future__ import annotations
 
 import json
+import random
 import re
 from pathlib import Path
 
@@ -72,3 +73,11 @@ def save_gold(rec: dict, path: Path = GOLD_PATH) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     with path.open("a", encoding="utf-8") as f:
         f.write(json.dumps(rec) + "\n")
+
+
+def labeling_order(ids: dict[int, str], seed: int = 0) -> list[int]:
+    """Fixed shuffled order shared by the LLM run and the labelling app, so that labelling only
+    part of the set still gives a random (roughly stratified) subset."""
+    order = sorted(ids)
+    random.Random(seed).shuffle(order)
+    return order

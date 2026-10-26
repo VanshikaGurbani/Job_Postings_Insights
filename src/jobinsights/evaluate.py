@@ -160,6 +160,9 @@ def evaluate() -> dict:
             )
         results["systems"][name] = res
     results["gold_remote_distribution"] = pd.Series(g_remote).value_counts().to_dict()
+    results["gold_strata"] = (
+        pd.Series([gold[j].get("stratum") for j in ids]).value_counts().to_dict()
+    )
     results["gold_salary_present"] = int(sum(g is not None for g in g_salary))
     out = config.DATA_DIR.parent / "outputs" / "eval_results.json"
     out.parent.mkdir(parents=True, exist_ok=True)

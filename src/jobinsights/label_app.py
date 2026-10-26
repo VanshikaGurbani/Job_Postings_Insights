@@ -40,12 +40,16 @@ def main() -> None:
     ids = evalset.load_ids()
     gold = evalset.load_gold()
     df = pd.read_parquet(config.CLEAN_POSTINGS).set_index("job_id")
-    order = sorted(ids)
-    todo = [j for j in order if j not in gold]
+    order = evalset.labeling_order(ids)
+    ready = {int(f.stem) for f in config.CACHE_LLM.glob("*/*/*.json")}
+    todo = [j for j in order if j not in gold and j in ready]
     st.sidebar.metric("Labelled", f"{len(gold)} / {len(order)}")
     st.sidebar.progress(len(gold) / len(order))
     if not todo:
-        st.success("All postings labelled.")
+        if len(gold) >= len(order):
+            st.success("All postings labelled.")
+        else:
+            st.info("Waiting for the local model to process the next postings; reload shortly.")
         return
     job_id = todo[0]
     row = df.loc[job_id]

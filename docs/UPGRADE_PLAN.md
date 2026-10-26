@@ -1,7 +1,7 @@
 # Upgrade plan
 
 Goal: turn the notebook prototype into a reproducible pipeline where every README number is measured by one command
-(`jobinsights report`) on the full dataset, with an honest evaluation of the extraction methods.
+(`jobinsights run-all`) on the full dataset, with an honest evaluation of the extraction methods.
 
 ## What the audit of the existing repo found
 
@@ -21,7 +21,9 @@ Goal: turn the notebook prototype into a reproducible pipeline where every READM
 
 * No result goes in the README unless the command that produced it is in the repo and its output was seen.
 * No large data is committed. The raw download and caches live in `data/` and `cache/` (gitignored). Small hand-label files go in `data/labels/`.
-* No LLM API spend without asking first, and the run is capped and cached so it is not paid for twice.
+* No paid API spend. The user chose free resources only, so the "LLM" is an open-weights model run locally on CPU
+  (`Qwen/Qwen2.5-1.5B-Instruct`), cached per posting. A small local model is a weaker baseline than a hosted
+  one; the README says so.
 * Where a label needs judgement, the user labels. I only pre-fill obvious cases and mark them as such.
 
 ## Steps (one or more commits each, on branch `upgrade/reproducible-pipeline`)
@@ -31,8 +33,8 @@ Goal: turn the notebook prototype into a reproducible pipeline where every READM
    public Hugging Face subset (33,246 rows) as a no-login fallback.
 2. **Scale + rules baseline.** Clean all rows. Regex extractors for skills, salary (structured columns plus text, normalised
    to annual USD) and remote/hybrid/onsite. Report coverage on the full data.
-3. **LLM extraction + evaluation.** Claude structured output (tool/JSON schema), cached, on the labelled set only unless the
-   user approves more. A ~150-posting evaluation set, stratified, labelled for skills / salary / remote. Report field-level
+3. **LLM extraction + evaluation.** Local open-weights model with a JSON prompt, cached, on the labelled set only.
+   A ~150-posting evaluation set, stratified, labelled for skills / salary / remote. Report field-level
    precision / recall / F1 of old substring method vs regex baseline vs LLM, with bootstrap confidence intervals.
 4. **Analysis.** Skill taxonomy (aliases to canonical skills, with families), clustering evaluation (silhouette, ARI across
    seeds, k sweep), automatic cluster names, salary regression with cross-validated MAE/R^2, a dummy baseline, and explicit
@@ -45,6 +47,6 @@ Goal: turn the notebook prototype into a reproducible pipeline where every READM
 
 * The Kaggle data needs a login. Preferred: user downloads `postings.csv` or runs `jobinsights download` after placing their own
   `~/.kaggle/kaggle.json`. Credentials are never typed into or through the assistant.
-* LLM spend: which provider and what cap?
+* (Resolved) LLM spend: none; free local model.
 * The original code and README came from a shared project (the `origin` remote is another GitHub user). The README should
   carry an accurate credit line once the owner confirms the wording. LICENSE: not added until confirmed.

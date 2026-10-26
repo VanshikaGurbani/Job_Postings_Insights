@@ -2,6 +2,7 @@
 
 from __future__ import annotations
 
+import json
 import re
 import shutil
 from pathlib import Path
@@ -66,6 +67,7 @@ def download(source: str, dest: Path = config.RAW_POSTINGS, from_file: Path | No
         raise ValueError(f"unknown source {source!r}")
     if not dest.is_file():
         raise FileNotFoundError(f"download finished but {dest} does not exist")
+    (dest.parent / "source.json").write_text(json.dumps({"source": source}), encoding="utf-8")
     return dest
 
 

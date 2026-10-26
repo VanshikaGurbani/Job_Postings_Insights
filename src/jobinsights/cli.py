@@ -36,8 +36,28 @@ def build_parser() -> argparse.ArgumentParser:
 
     sub.add_parser("cluster", help="cluster postings by skills; k sweep, stability, names")
     sub.add_parser("salary-model", help="salary regression with grouped cross-validation")
+    sub.add_parser("report", help="rebuild outputs/RESULTS.md, the README block and dashboard data")
+    sub.add_parser("dashboard", help="launch the Streamlit dashboard")
+    r = sub.add_parser("run-all", help="clean -> extract -> cluster -> salary model -> report")
+    r.add_argument("--source", choices=["kaggle", "hf", "local"], default=None)
+    r.add_argument("--file", type=Path)
     sub.add_parser("evaluate", help="precision/recall/F1 of each extractor vs gold labels")
     return p
+
+
+def run_all(source: str | None, file: Path | None) -> None:
+    """The one command behind the README results: every number is regenerated."""
+    from . import cluster, evaluate, report, salary_model
+
+    if source:
+        data.download(source, from_file=file)
+    data.clean()
+    extract.extract()
+    cluster.run()
+    salary_model.run()
+    if evalset.load_gold() and list(config.PROCESSED_DIR.glob("extracted_llm_*.parquet")):
+        evaluate.evaluate()
+    report.run()
 
 
 def main(argv: list[str] | None = None) -> None:
@@ -82,6 +102,18 @@ def main(argv: list[str] | None = None) -> None:
         from . import salary_model
 
         salary_model.run()
+    elif args.command == "report":
+        from . import report
+
+        report.run()
+    elif args.command == "dashboard":
+        import subprocess
+        import sys
+
+        app = Path(__file__).with_name("dashboard_app.py")
+        subprocess.run([sys.executable, "-m", "streamlit", "run", str(app)], check=True)
+    elif args.command == "run-all":
+        run_all(args.source, args.file)
     elif args.command == "evaluate":
         from . import evaluate
 

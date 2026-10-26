@@ -84,6 +84,7 @@ def name_clusters(
             "top_skills": top,
             "top_role_family": roles.index[0],
             "top_role_family_share": round(float(roles.iloc[0]), 3),
+            "tech_title_share": round(float(1 - roles.get("Other", 0.0)), 3),
         }
     return out
 

@@ -15,7 +15,7 @@ def build_parser() -> argparse.ArgumentParser:
     sub = p.add_subparsers(dest="command", required=True)
 
     d = sub.add_parser("download", help="fetch the raw postings CSV into data/raw/")
-    d.add_argument("--source", choices=["kaggle", "hf", "local"], default="kaggle")
+    d.add_argument("--source", choices=["kaggle", "local"], default="kaggle")
     d.add_argument("--file", type=Path, help="existing CSV to copy (with --source local)")
     d.add_argument("--dest", type=Path, default=config.RAW_POSTINGS)
 
@@ -39,10 +39,12 @@ def build_parser() -> argparse.ArgumentParser:
 
     sub.add_parser("cluster", help="cluster postings by skills; k sweep, stability, names")
     sub.add_parser("salary-model", help="salary regression with grouped cross-validation")
+    sub.add_parser("download-h1b", help="fetch public USCIS H-1B employer files (FY2021-23)")
+    sub.add_parser("h1b", help="match posting companies to H-1B employer history")
     sub.add_parser("report", help="rebuild outputs/RESULTS.md, the README block and dashboard data")
     sub.add_parser("dashboard", help="launch the Streamlit dashboard")
     r = sub.add_parser("run-all", help="clean -> extract -> cluster -> salary model -> report")
-    r.add_argument("--source", choices=["kaggle", "hf", "local"], default=None)
+    r.add_argument("--source", choices=["kaggle", "local"], default=None)
     r.add_argument("--file", type=Path)
     sub.add_parser("evaluate", help="precision/recall/F1 of each extractor vs gold labels")
     return p
@@ -50,7 +52,7 @@ def build_parser() -> argparse.ArgumentParser:
 
 def run_all(source: str | None, file: Path | None) -> None:
     """The one command behind the README results: every number is regenerated."""
-    from . import cluster, evaluate, report, salary_model
+    from . import cluster, evaluate, h1b, report, salary_model
 
     if source:
         data.download(source, from_file=file)
@@ -58,6 +60,8 @@ def run_all(source: str | None, file: Path | None) -> None:
     extract.extract()
     cluster.run()
     salary_model.run()
+    if list(h1b.H1B_DIR.glob("h1b_datahubexport-*.csv")):
+        h1b.run()
     if evalset.load_gold() and list(config.PROCESSED_DIR.glob("extracted_llm_*.parquet")):
         evaluate.evaluate()
     report.run()
@@ -73,11 +77,11 @@ def main(argv: list[str] | None = None) -> None:
     elif args.command == "extract-rules":
         extract.extract(workers=args.workers)
     elif args.command == "make-eval-set":
-        if evalset.IDS_PATH.is_file():
-            rules = pd.read_parquet(config.PROCESSED_DIR / "extracted_rules.parquet")
-            evalset.add_visa_flagged(rules)
-        else:
-            evalset.make_eval_ids(data.load_clean())
+        clean = data.load_clean()
+        evalset.make_eval_ids(clean)
+        rules = pd.read_parquet(config.PROCESSED_DIR / "extracted_rules.parquet")
+        rules = rules.merge(clean[["job_id", "company_name", "title"]], on="job_id")
+        evalset.add_visa_flagged(rules.drop_duplicates(["company_name", "title"]))
     elif args.command == "label":
         import subprocess
         import sys
@@ -95,11 +99,12 @@ def main(argv: list[str] | None = None) -> None:
     elif args.command == "llm-extract":
         from . import llm
 
-        df = data.load_clean()
-        if not args.all_rows:
+        if args.all_rows:
+            df = data.load_clean()
+        else:
             ids = evalset.load_ids()
             order = [j for j in evalset.labeling_order(ids) if ids[j] != evalset.FLAGGED]
-            df = df.set_index("job_id").loc[order].reset_index()
+            df = data.load_eval_postings(ids).set_index("job_id").loc[order].reset_index()
         if args.labelled:
             gold = evalset.load_gold()
             keep = [j for j, g in gold.items() if g.get("stratum") != evalset.FLAGGED]
@@ -115,6 +120,14 @@ def main(argv: list[str] | None = None) -> None:
         from . import salary_model
 
         salary_model.run()
+    elif args.command == "download-h1b":
+        from . import h1b
+
+        h1b.download()
+    elif args.command == "h1b":
+        from . import h1b
+
+        h1b.run()
     elif args.command == "report":
         from . import report
 

@@ -15,6 +15,4 @@ CLEAN_POSTINGS = PROCESSED_DIR / "postings_clean.parquet"
 
 KAGGLE_DATASET = "arshkon/linkedin-job-postings"
 KAGGLE_FILE = "postings.csv"
-HF_DATASET = "xanderios/linkedin-job-postings"
-HF_FILE = "job_postings.csv"
 CACHE_LLM = Path("cache") / "llm"

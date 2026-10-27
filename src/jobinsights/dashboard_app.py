@@ -54,6 +54,12 @@ def main() -> None:
         )
         only_contract = st.checkbox("Contract / staffing-style postings only")
         only_opt = st.checkbox("Mentions OPT / STEM OPT / F-1")
+        has_h1b = "h1b_history" in df.columns
+        only_h1b = st.checkbox(
+            "Company has H-1B approvals (USCIS FY2021-23)",
+            disabled=not has_h1b,
+            help="Company-level history, not a promise that this posting sponsors.",
+        )
         top_n = st.slider("Top skills shown", 5, 30, 15)
         skill_family = st.selectbox("Skill family", ["All"] + sorted(set(FAMILY.values())), index=0)
     f = df[df["role"].isin(role_sel)]
@@ -64,6 +70,8 @@ def main() -> None:
         f = f[f["contract_rules"]]
     if only_opt:
         f = f[f["opt_mention_rules"]]
+    if only_h1b:
+        f = f[f["h1b_history"]]
 
     k1, k2, k3, k4 = st.columns(4)
     k1.metric("Postings", f"{len(f):,}")
@@ -151,6 +159,38 @@ def main() -> None:
         "Pay is annualised (hourly x 2080). Postings that state pay are not a random sample, so "
         "these are medians for pay-transparent postings, not for all postings."
     )
+
+    if "h1b_history" in f.columns:
+        st.subheader("Shortlist: not restricted, and sponsorship text or company H-1B history")
+        short = f[
+            (f["visa_rules"] != "restricted") & ((f["visa_rules"] == "friendly") | f["h1b_history"])
+        ]
+        short = short.sort_values(["visa_rules", "h1b_total"], ascending=[True, False])
+        cols = {
+            "company_name": "Company",
+            "title": "Title",
+            "location": "Location",
+            "role": "Role family",
+            "visa_rules": "Visa text signal",
+            "h1b_total": "Company H-1B approvals FY21-23",
+            "contract_rules": "Contract / staffing-style",
+            "salary_mid": "Annual pay (USD)",
+            "job_posting_url": "Link",
+        }
+        view = short[list(cols)].rename(columns=cols)
+        st.caption(
+            f"{len(short):,} postings match the filters above. Company history is a hint, "
+            "not a guarantee; read each posting."
+        )
+        st.dataframe(
+            view.head(500),
+            hide_index=True,
+            use_container_width=True,
+            column_config={"Link": st.column_config.LinkColumn("Link", display_text="open")},
+        )
+        st.download_button(
+            "Download shortlist (CSV)", view.to_csv(index=False).encode("utf-8"), "shortlist.csv"
+        )
 
     if "cluster" in f.columns and f["cluster"].notna().any():
         st.subheader("Skill clusters")

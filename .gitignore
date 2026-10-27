@@ -10,3 +10,5 @@ data/*
 !data/labels/**
 cache/
 .env
+/postings.csv
+*.csv.zip

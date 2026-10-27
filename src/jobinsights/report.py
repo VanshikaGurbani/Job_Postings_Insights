@@ -30,13 +30,20 @@ def build_dashboard_table() -> pd.DataFrame:
     clusters_path = config.PROCESSED_DIR / "clusters.parquet"
     if clusters_path.is_file():
         df = df.merge(pd.read_parquet(clusters_path), on="job_id", how="left")
+    h1b_path = config.PROCESSED_DIR / "h1b_match.parquet"
+    if h1b_path.is_file() and "company_name" in df.columns:
+        m = pd.read_parquet(h1b_path)[["company_name", "h1b_total", "h1b_history"]]
+        df = df.merge(m, on="company_name", how="left")
+        df["h1b_total"] = df["h1b_total"].fillna(0).astype(int)
+        df["h1b_history"] = df["h1b_history"].fillna(False).astype(bool)
     df["role"] = df["title"].map(role_family)
     df["state"] = df["location"].map(state_of)
     df["salary_mid"] = (df["salary_annual_low"] + df["salary_annual_high"]) / 2
     keep = [
         "job_id", "title", "role", "state", "location", "formatted_experience_level",
         "remote_rules", "visa_rules", "opt_mention_rules", "contract_rules", "salary_mid",
-        "salary_source", "skills_rules", "cluster", "x", "y",
+        "salary_source", "skills_rules", "cluster", "x", "y", "company_name", "job_posting_url",
+        "h1b_total", "h1b_history",
     ]  # fmt: skip
     out = df[[c for c in keep if c in df.columns]]
     DASHBOARD_PARQUET.parent.mkdir(parents=True, exist_ok=True)
@@ -119,6 +126,58 @@ def build_results() -> str:
     )
     lines.append("")
 
+    h1b_path = config.PROCESSED_DIR / "h1b_match.parquet"
+    if h1b_path.is_file() and "company_name" in clean.columns:
+        m = pd.read_parquet(h1b_path)
+        named = clean["company_name"].fillna("") != ""
+        hist_names = set(m.loc[m["h1b_history"], "company_name"])
+        in_hist = clean["company_name"].isin(hist_names)
+        restricted = (
+            rules.set_index("job_id").loc[clean["job_id"], "visa_rules"].eq("restricted").to_numpy()
+        )
+        friendly = (
+            rules.set_index("job_id").loc[clean["job_id"], "visa_rules"].eq("friendly").to_numpy()
+        )
+        shortlist = ((friendly | in_hist.to_numpy()) & ~restricted).mean()
+        chk_path = config.LABELS_DIR / "h1b_match_check.json"
+        chk = json.loads(chk_path.read_text()) if chk_path.is_file() else None
+        top = (
+            clean[in_hist]["company_name"]
+            .value_counts()
+            .head(10)
+            .rename("openings")
+            .reset_index()
+            .merge(m[["company_name", "h1b_total"]], on="company_name")
+        )
+        lines += [
+            "### Company H-1B history (public USCIS data, FY2021-2023)",
+            "",
+            "A join on company names, not on individual postings: a company with past approvals "
+            "has shown it files H-1B petitions, which does not mean this posting sponsors.",
+            "",
+            "| Metric | Value |",
+            "|---|---|",
+            f"| Postings with a company name matched to a USCIS employer | "
+            f"{_pct(clean['company_name'].isin(m['company_name']).sum() / named.sum())} |",
+            f"| Postings from companies with >= 5 H-1B approvals in FY2021-23 | "
+            f"{_pct(in_hist.sum() / named.sum())} |",
+            "| Postings that are not restricted and (friendly text or H-1B history) | "
+            f"{_pct(shortlist)} |",
+        ]
+        if chk:
+            lines.append(
+                f"| Match spot check (random sample, read by eye) | "
+                f"{chk['judged_same_company']} of {chk['n']} same company |"
+            )
+        lines += [
+            "",
+            "| Top companies with H-1B history by openings | Openings | Approvals FY21-23 |",
+            "|---|---|---|",
+        ]
+        for r in top.itertuples():
+            lines.append(f"| {r.company_name} | {r.openings:,} | {r.h1b_total:,} |")
+        lines.append("")
+
     ev = _load("eval_results.json")
     lines += ["### Extraction accuracy vs reference labels", ""]
     if ev is None:
@@ -126,9 +185,8 @@ def build_results() -> str:
     else:
         lines.append(
             f"{ev['n_labelled']} postings with reference labels (stratified, not population-"
-            "proportional; 95% bootstrap CI on F1 in brackets). The rules were corrected after a "
-            "first scoring pass on these same postings, so their scores are optimistic; the "
-            "local LLM was not tuned."
+            "proportional; 95% bootstrap CI on F1 in brackets). The rules and prompts were "
+            "frozen before this sample was drawn and labelled, so these are held-out scores."
         )
         lines += ["", "| System | Task | Precision | Recall | F1 |", "|---|---|---|---|---|"]
         for system, res in ev["systems"].items():

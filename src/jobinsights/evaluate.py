@@ -95,8 +95,12 @@ def evaluate() -> dict:
     gold = load_gold()
     if not gold:
         raise SystemExit("No gold labels yet. Run `jobinsights label`.")
-    clean = pd.read_parquet(config.CLEAN_POSTINGS).set_index("job_id")
-    rules = pd.read_parquet(config.PROCESSED_DIR / "extracted_rules.parquet").set_index("job_id")
+    from .data import load_eval_postings
+    from .extract import extract_rules
+
+    eval_df = load_eval_postings(gold)
+    clean = eval_df.set_index("job_id")
+    rules = extract_rules(eval_df).set_index("job_id")
     llm_frames = {
         f.stem.removeprefix("extracted_llm_"): pd.read_parquet(f).set_index("job_id")
         for f in sorted(config.PROCESSED_DIR.glob("extracted_llm_*.parquet"))

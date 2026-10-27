@@ -2,6 +2,7 @@
 #   pip install -e ".[llm]"        # local open-weights LLM extraction (torch + transformers)
 #   pip install -e ".[kaggle]"     # download the full dataset from Kaggle
 #   pip install -e ".[dashboard]"  # Streamlit + Plotly
+#   pip install -e ".[plots]"      # matplotlib, for the README figures
 pandas==3.0.6
 numpy==2.5.4
 scikit-learn==1.9.1
@@ -10,3 +11,4 @@ pyarrow==26.0.0
 kaggle==2.2.4
 torch==2.14.1
 transformers==5.21.0
+matplotlib==3.11.2

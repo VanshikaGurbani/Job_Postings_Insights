@@ -1,0 +1,1223 @@
+{
+  "n_postings": 123782,
+  "premiums": {
+    "n_postings": 3428,
+    "n_companies": 1411,
+    "roles": [
+      "Data Analyst",
+      "Data Scientist",
+      "Data Engineer",
+      "AI/ML Engineer",
+      "Software Engineer"
+    ],
+    "r2_log": 0.33812059932647265,
+    "median_pay_usd": 133950.0,
+    "skills": [
+      {
+        "skill": "TypeScript",
+        "family": "Programming",
+        "n": 215,
+        "premium_pct": 16.02116806710313,
+        "ci95": [
+          8.162234464433935,
+          21.102157069331852
+        ]
+      },
+      {
+        "skill": "Generative AI/LLM",
+        "family": "Data & ML",
+        "n": 183,
+        "premium_pct": 15.486702286681437,
+        "ci95": [
+          2.399226624675974,
+          28.580394520346925
+        ]
+      },
+      {
+        "skill": "Machine Learning",
+        "family": "Data & ML",
+        "n": 609,
+        "premium_pct": 12.629766264841965,
+        "ci95": [
+          4.924193222758535,
+          20.090825695957914
+        ]
+      },
+      {
+        "skill": "Go",
+        "family": "Programming",
+        "n": 80,
+        "premium_pct": 12.242255401179513,
+        "ci95": [
+          2.708305263889973,
+          22.07838538359982
+        ]
+      },
+      {
+        "skill": "Deep Learning",
+        "family": "Data & ML",
+        "n": 157,
+        "premium_pct": 12.196823559466063,
+        "ci95": [
+          1.3809658161586564,
+          20.332099985828105
+        ]
+      },
+      {
+        "skill": "A/B Testing",
+        "family": "Data & ML",
+        "n": 89,
+        "premium_pct": 10.195386676489331,
+        "ci95": [
+          0.6547728173062933,
+          21.06227597865044
+        ]
+      },
+      {
+        "skill": "R",
+        "family": "Programming",
+        "n": 166,
+        "premium_pct": 8.853307688482525,
+        "ci95": [
+          0.457396305979814,
+          15.458728642915442
+        ]
+      },
+      {
+        "skill": "PyTorch",
+        "family": "Data & ML",
+        "n": 118,
+        "premium_pct": 8.635407012638112,
+        "ci95": [
+          -4.345740224634184,
+          26.05994736002526
+        ]
+      },
+      {
+        "skill": "Forecasting",
+        "family": "Data & ML",
+        "n": 67,
+        "premium_pct": 8.371001323815612,
+        "ci95": [
+          -0.3200664094830958,
+          17.604752427753805
+        ]
+      },
+      {
+        "skill": "Linux",
+        "family": "Cloud & DevOps",
+        "n": 300,
+        "premium_pct": 7.859970007639188,
+        "ci95": [
+          1.4622708635886352,
+          13.554002712163008
+        ]
+      },
+      {
+        "skill": "PostgreSQL",
+        "family": "Databases",
+        "n": 137,
+        "premium_pct": 7.191637911358752,
+        "ci95": [
+          1.937301481242706,
+          13.039589814405398
+        ]
+      },
+      {
+        "skill": "Kubernetes",
+        "family": "Cloud & DevOps",
+        "n": 343,
+        "premium_pct": 6.6172898927450445,
+        "ci95": [
+          0.02794883294392988,
+          11.690608578516644
+        ]
+      },
+      {
+        "skill": "Java",
+        "family": "Programming",
+        "n": 735,
+        "premium_pct": 6.277937865702805,
+        "ci95": [
+          0.2301883563675122,
+          9.567616176514623
+        ]
+      },
+      {
+        "skill": "NLP",
+        "family": "Data & ML",
+        "n": 150,
+        "premium_pct": 6.2744732470729145,
+        "ci95": [
+          -7.341643906060899,
+          20.436499573424662
+        ]
+      },
+      {
+        "skill": "C++",
+        "family": "Programming",
+        "n": 577,
+        "premium_pct": 5.823444699708743,
+        "ci95": [
+          1.617908999601994,
+          15.385844134078075
+        ]
+      },
+      {
+        "skill": "AWS",
+        "family": "Cloud & DevOps",
+        "n": 780,
+        "premium_pct": 4.439370483497009,
+        "ci95": [
+          1.0964266263391431,
+          8.222565048596845
+        ]
+      },
+      {
+        "skill": "Data Visualization",
+        "family": "Data & ML",
+        "n": 418,
+        "premium_pct": 4.439351228818396,
+        "ci95": [
+          -0.6638686131265411,
+          9.1238442276338
+        ]
+      },
+      {
+        "skill": "Spark",
+        "family": "Data & ML",
+        "n": 246,
+        "premium_pct": 4.28089399741324,
+        "ci95": [
+          -1.4821143847638776,
+          11.623888016637155
+        ]
+      },
+      {
+        "skill": "Kafka",
+        "family": "Data & ML",
+        "n": 157,
+        "premium_pct": 4.220744359017026,
+        "ci95": [
+          -1.7925164152641195,
+          11.873422702156926
+        ]
+      },
+      {
+        "skill": "Redis",
+        "family": "Databases",
+        "n": 46,
+        "premium_pct": 3.2227904210182623,
+        "ci95": [
+          -11.547022959937484,
+          13.376379370013014
+        ]
+      },
+      {
+        "skill": "Statistics",
+        "family": "Data & ML",
+        "n": 363,
+        "premium_pct": 3.189775644450679,
+        "ci95": [
+          -2.1662207940818674,
+          9.432521903244284
+        ]
+      },
+      {
+        "skill": "Ruby",
+        "family": "Programming",
+        "n": 66,
+        "premium_pct": 2.941548709224136,
+        "ci95": [
+          -4.815418322067105,
+          8.901460678862382
+        ]
+      },
+      {
+        "skill": "JavaScript",
+        "family": "Programming",
+        "n": 878,
+        "premium_pct": 2.8603106986108773,
+        "ci95": [
+          -0.6767385254845345,
+          7.540257643390634
+        ]
+      },
+      {
+        "skill": "Azure",
+        "family": "Cloud & DevOps",
+        "n": 536,
+        "premium_pct": 2.722475778003211,
+        "ci95": [
+          -2.358598123925755,
+          6.841826804211891
+        ]
+      },
+      {
+        "skill": "Scala",
+        "family": "Programming",
+        "n": 195,
+        "premium_pct": 2.395513444151941,
+        "ci95": [
+          -5.7798820132871205,
+          8.87583714380013
+        ]
+      },
+      {
+        "skill": "ETL",
+        "family": "Data & ML",
+        "n": 342,
+        "premium_pct": 1.9451840499257955,
+        "ci95": [
+          -2.92233394343678,
+          6.364994317868715
+        ]
+      },
+      {
+        "skill": "Snowflake",
+        "family": "Databases",
+        "n": 123,
+        "premium_pct": 1.7408463758161286,
+        "ci95": [
+          -4.338158149041507,
+          7.9532130613433765
+        ]
+      },
+      {
+        "skill": "GCP",
+        "family": "Cloud & DevOps",
+        "n": 309,
+        "premium_pct": 1.5802140470511312,
+        "ci95": [
+          -5.703028949865803,
+          7.3042646702746765
+        ]
+      },
+      {
+        "skill": "Databricks",
+        "family": "Databases",
+        "n": 94,
+        "premium_pct": 1.4974531876965813,
+        "ci95": [
+          -4.940950607272756,
+          8.438692298746716
+        ]
+      },
+      {
+        "skill": "Airflow",
+        "family": "Data & ML",
+        "n": 53,
+        "premium_pct": 1.1102782987743134,
+        "ci95": [
+          -7.953200701018309,
+          12.3161010526322
+        ]
+      },
+      {
+        "skill": "NoSQL",
+        "family": "Databases",
+        "n": 301,
+        "premium_pct": 0.8997197503544138,
+        "ci95": [
+          -5.3594444027358215,
+          5.594352916865293
+        ]
+      },
+      {
+        "skill": "Python",
+        "family": "Programming",
+        "n": 1323,
+        "premium_pct": 0.8239597784241609,
+        "ci95": [
+          -2.1194343016341435,
+          6.556750778628693
+        ]
+      },
+      {
+        "skill": "Data Modeling",
+        "family": "Data & ML",
+        "n": 208,
+        "premium_pct": 0.7838059926307771,
+        "ci95": [
+          -4.673879069699904,
+          6.078195665833941
+        ]
+      },
+      {
+        "skill": "CI/CD",
+        "family": "Cloud & DevOps",
+        "n": 416,
+        "premium_pct": 0.21892551324155696,
+        "ci95": [
+          -4.314679063778955,
+          5.062568021889356
+        ]
+      },
+      {
+        "skill": "Computer Vision",
+        "family": "Data & ML",
+        "n": 98,
+        "premium_pct": -0.45048027156928094,
+        "ci95": [
+          -11.064389816288015,
+          9.075996760446717
+        ]
+      },
+      {
+        "skill": "Docker",
+        "family": "Cloud & DevOps",
+        "n": 336,
+        "premium_pct": -0.527422318887605,
+        "ci95": [
+          -5.982860644575494,
+          5.5920367933381
+        ]
+      },
+      {
+        "skill": "pandas",
+        "family": "Data & ML",
+        "n": 42,
+        "premium_pct": -1.1770259323657886,
+        "ci95": [
+          -13.788804931911974,
+          13.613719439939063
+        ]
+      },
+      {
+        "skill": "MySQL",
+        "family": "Databases",
+        "n": 118,
+        "premium_pct": -1.3574598903736161,
+        "ci95": [
+          -7.995724888589708,
+          6.250826562224182
+        ]
+      },
+      {
+        "skill": "Terraform",
+        "family": "Cloud & DevOps",
+        "n": 149,
+        "premium_pct": -1.405263771677528,
+        "ci95": [
+          -6.622854636228828,
+          5.312667076246174
+        ]
+      },
+      {
+        "skill": "Tableau",
+        "family": "BI",
+        "n": 232,
+        "premium_pct": -1.4246050970802349,
+        "ci95": [
+          -7.49503439226664,
+          3.947573961893029
+        ]
+      },
+      {
+        "skill": "SAS",
+        "family": "Programming",
+        "n": 94,
+        "premium_pct": -1.6505494679619352,
+        "ci95": [
+          -9.242232406473741,
+          10.38517661533406
+        ]
+      },
+      {
+        "skill": "Data Analysis",
+        "family": "Data & ML",
+        "n": 560,
+        "premium_pct": -1.9630398704501741,
+        "ci95": [
+          -5.847825802988327,
+          1.3152243856077501
+        ]
+      },
+      {
+        "skill": "SQL Server",
+        "family": "Databases",
+        "n": 212,
+        "premium_pct": -2.613696069276771,
+        "ci95": [
+          -9.765978275322038,
+          2.4212516654740943
+        ]
+      },
+      {
+        "skill": "Hadoop",
+        "family": "Data & ML",
+        "n": 108,
+        "premium_pct": -2.764764917436503,
+        "ci95": [
+          -7.987260313394293,
+          5.126257186589814
+        ]
+      },
+      {
+        "skill": "REST APIs",
+        "family": "Cloud & DevOps",
+        "n": 182,
+        "premium_pct": -2.7919595416054617,
+        "ci95": [
+          -7.0052587785865095,
+          2.6677921430721234
+        ]
+      },
+      {
+        "skill": "BigQuery",
+        "family": "Databases",
+        "n": 53,
+        "premium_pct": -3.2807341945620268,
+        "ci95": [
+          -12.7491214599807,
+          8.583559856677724
+        ]
+      },
+      {
+        "skill": "Power BI",
+        "family": "BI",
+        "n": 231,
+        "premium_pct": -3.290499174838709,
+        "ci95": [
+          -7.397212794860668,
+          1.2730986492387915
+        ]
+      },
+      {
+        "skill": "Redshift",
+        "family": "Databases",
+        "n": 91,
+        "premium_pct": -3.8605352295176707,
+        "ci95": [
+          -10.304509148647371,
+          4.749054273143483
+        ]
+      },
+      {
+        "skill": "Shell/Bash",
+        "family": "Programming",
+        "n": 162,
+        "premium_pct": -3.9713268503013004,
+        "ci95": [
+          -9.3448669347534,
+          1.0906449024424516
+        ]
+      },
+      {
+        "skill": "Git",
+        "family": "Cloud & DevOps",
+        "n": 434,
+        "premium_pct": -4.569763334379264,
+        "ci95": [
+          -9.319549450565322,
+          -1.5370439340017643
+        ]
+      },
+      {
+        "skill": "SQL",
+        "family": "Programming",
+        "n": 1228,
+        "premium_pct": -5.122080326548875,
+        "ci95": [
+          -8.104204487911266,
+          0.09822111218503818
+        ]
+      },
+      {
+        "skill": "PHP",
+        "family": "Programming",
+        "n": 55,
+        "premium_pct": -6.901676229581345,
+        "ci95": [
+          -16.612509229381278,
+          1.5970349839515119
+        ]
+      },
+      {
+        "skill": "MongoDB",
+        "family": "Databases",
+        "n": 94,
+        "premium_pct": -7.815787784025244,
+        "ci95": [
+          -14.495166390963455,
+          -0.48087948924213114
+        ]
+      },
+      {
+        "skill": "Excel",
+        "family": "BI",
+        "n": 277,
+        "premium_pct": -9.089835645060512,
+        "ci95": [
+          -13.66006763278528,
+          -5.382347694494747
+        ]
+      },
+      {
+        "skill": "HTML/CSS",
+        "family": "Programming",
+        "n": 500,
+        "premium_pct": -10.055631960049336,
+        "ci95": [
+          -13.511221593490491,
+          0.33031591332627147
+        ]
+      },
+      {
+        "skill": "C#",
+        "family": "Programming",
+        "n": 543,
+        "premium_pct": -10.058054970366062,
+        "ci95": [
+          -13.662837590932927,
+          -2.6769294692953056
+        ]
+      },
+      {
+        "skill": "TensorFlow",
+        "family": "Data & ML",
+        "n": 98,
+        "premium_pct": -11.563980074366697,
+        "ci95": [
+          -22.501503603340854,
+          -1.2028045997159822
+        ]
+      }
+    ],
+    "remote_vs_onsite_pct": 6.277379265471604,
+    "remote_vs_onsite_ci95": [
+      -2.686424171161339,
+      21.18336805090513
+    ],
+    "n_boot": 300
+  },
+  "sponsors_by_role": [
+    {
+      "role": "Data Analyst",
+      "postings": 1495,
+      "restricted": 0.06354515050167224,
+      "friendly_text": 0.031438127090301006,
+      "company_h1b_history": 0.41471571906354515,
+      "shortlist": 0.4153846153846154,
+      "entry_or_associate": 0.22608695652173913
+    },
+    {
+      "role": "Data Scientist",
+      "postings": 380,
+      "restricted": 0.06578947368421052,
+      "friendly_text": 0.060526315789473685,
+      "company_h1b_history": 0.4763157894736842,
+      "shortlist": 0.4605263157894737,
+      "entry_or_associate": 0.2578947368421053
+    },
+    {
+      "role": "Data Engineer",
+      "postings": 595,
+      "restricted": 0.06050420168067227,
+      "friendly_text": 0.03865546218487395,
+      "company_h1b_history": 0.4403361344537815,
+      "shortlist": 0.4218487394957983,
+      "entry_or_associate": 0.1495798319327731
+    },
+    {
+      "role": "AI/ML Engineer",
+      "postings": 488,
+      "restricted": 0.07581967213114754,
+      "friendly_text": 0.06967213114754098,
+      "company_h1b_history": 0.4344262295081967,
+      "shortlist": 0.4180327868852459,
+      "entry_or_associate": 0.12090163934426229
+    },
+    {
+      "role": "Software Engineer",
+      "postings": 5247,
+      "restricted": 0.08252334667429007,
+      "friendly_text": 0.02267962645321136,
+      "company_h1b_history": 0.4360587002096436,
+      "shortlist": 0.4063274251953497,
+      "entry_or_associate": 0.1970649895178197
+    },
+    {
+      "role": "Other",
+      "postings": 115577,
+      "restricted": 0.04671344644695744,
+      "friendly_text": 0.004646253147252481,
+      "company_h1b_history": 0.2803412443652284,
+      "shortlist": 0.2645076442544797,
+      "entry_or_associate": 0.40113517395329523
+    }
+  ],
+  "top_employers": [
+    {
+      "company_name": "Capital One",
+      "openings": 51,
+      "h1b_approvals": 2512,
+      "median_pay_usd": 251300.0,
+      "friendly_text_openings": 51
+    },
+    {
+      "company_name": "Amazon",
+      "openings": 34,
+      "h1b_approvals": 46630,
+      "median_pay_usd": 157000.0,
+      "friendly_text_openings": 0
+    },
+    {
+      "company_name": "Fidelity Investments",
+      "openings": 30,
+      "h1b_approvals": 4618,
+      "median_pay_usd": null,
+      "friendly_text_openings": 0
+    },
+    {
+      "company_name": "TikTok",
+      "openings": 20,
+      "h1b_approvals": 570,
+      "median_pay_usd": 226082.0,
+      "friendly_text_openings": 0
+    },
+    {
+      "company_name": "Insight Global",
+      "openings": 16,
+      "h1b_approvals": 21,
+      "median_pay_usd": 109150.0,
+      "friendly_text_openings": 0
+    },
+    {
+      "company_name": "Verizon",
+      "openings": 13,
+      "h1b_approvals": 15,
+      "median_pay_usd": 167000.0,
+      "friendly_text_openings": 0
+    },
+    {
+      "company_name": "Apex Systems",
+      "openings": 12,
+      "h1b_approvals": 12,
+      "median_pay_usd": 140400.0,
+      "friendly_text_openings": 0
+    },
+    {
+      "company_name": "Experis",
+      "openings": 11,
+      "h1b_approvals": 150,
+      "median_pay_usd": 138450.0,
+      "friendly_text_openings": 0
+    },
+    {
+      "company_name": "TELUS International",
+      "openings": 11,
+      "h1b_approvals": 12,
+      "median_pay_usd": null,
+      "friendly_text_openings": 0
+    },
+    {
+      "company_name": "Booz Allen Hamilton",
+      "openings": 11,
+      "h1b_approvals": 54,
+      "median_pay_usd": 123800.0,
+      "friendly_text_openings": 0
+    },
+    {
+      "company_name": "Compunnel Inc.",
+      "openings": 10,
+      "h1b_approvals": 4400,
+      "median_pay_usd": 130000.0,
+      "friendly_text_openings": 1
+    },
+    {
+      "company_name": "Plymouth Rock Assurance",
+      "openings": 10,
+      "h1b_approvals": 24,
+      "median_pay_usd": null,
+      "friendly_text_openings": 0
+    },
+    {
+      "company_name": "Open Systems Technologies",
+      "openings": 9,
+      "h1b_approvals": 50,
+      "median_pay_usd": 145600.0,
+      "friendly_text_openings": 0
+    },
+    {
+      "company_name": "TEKsystems",
+      "openings": 9,
+      "h1b_approvals": 98,
+      "median_pay_usd": 72800.0,
+      "friendly_text_openings": 0
+    },
+    {
+      "company_name": "Aditi Consulting",
+      "openings": 9,
+      "h1b_approvals": 47,
+      "median_pay_usd": 70720.0,
+      "friendly_text_openings": 0
+    }
+  ],
+  "demand": {
+    "Data Analyst": [
+      {
+        "skill": "SQL",
+        "all": 0.4321070234,
+        "entry": 0.375739645,
+        "senior": 0.4270696452,
+        "n_all": 1495,
+        "n_entry": 338,
+        "n_senior": 761
+      },
+      {
+        "skill": "Data Analysis",
+        "all": 0.383277592,
+        "entry": 0.399408284,
+        "senior": 0.3876478318,
+        "n_all": 1495,
+        "n_entry": 338,
+        "n_senior": 761
+      },
+      {
+        "skill": "Excel",
+        "all": 0.3090301003,
+        "entry": 0.3639053254,
+        "senior": 0.285151117,
+        "n_all": 1495,
+        "n_entry": 338,
+        "n_senior": 761
+      },
+      {
+        "skill": "Data Visualization",
+        "all": 0.3010033445,
+        "entry": 0.2781065089,
+        "senior": 0.3298291721,
+        "n_all": 1495,
+        "n_entry": 338,
+        "n_senior": 761
+      },
+      {
+        "skill": "Python",
+        "all": 0.2133779264,
+        "entry": 0.2159763314,
+        "senior": 0.1865965834,
+        "n_all": 1495,
+        "n_entry": 338,
+        "n_senior": 761
+      },
+      {
+        "skill": "Power BI",
+        "all": 0.2080267559,
+        "entry": 0.1834319527,
+        "senior": 0.2207621551,
+        "n_all": 1495,
+        "n_entry": 338,
+        "n_senior": 761
+      },
+      {
+        "skill": "Tableau",
+        "all": 0.1919732441,
+        "entry": 0.1627218935,
+        "senior": 0.2128777924,
+        "n_all": 1495,
+        "n_entry": 338,
+        "n_senior": 761
+      },
+      {
+        "skill": "Statistics",
+        "all": 0.1678929766,
+        "entry": 0.2041420118,
+        "senior": 0.1668856767,
+        "n_all": 1495,
+        "n_entry": 338,
+        "n_senior": 761
+      },
+      {
+        "skill": "ETL",
+        "all": 0.0929765886,
+        "entry": 0.0828402367,
+        "senior": 0.099868594,
+        "n_all": 1495,
+        "n_entry": 338,
+        "n_senior": 761
+      },
+      {
+        "skill": "R",
+        "all": 0.0882943144,
+        "entry": 0.0798816568,
+        "senior": 0.099868594,
+        "n_all": 1495,
+        "n_entry": 338,
+        "n_senior": 761
+      },
+      {
+        "skill": "Machine Learning",
+        "all": 0.0762541806,
+        "entry": 0.1449704142,
+        "senior": 0.0630749014,
+        "n_all": 1495,
+        "n_entry": 338,
+        "n_senior": 761
+      },
+      {
+        "skill": "Data Modeling",
+        "all": 0.0682274247,
+        "entry": 0.0414201183,
+        "senior": 0.0696452037,
+        "n_all": 1495,
+        "n_entry": 338,
+        "n_senior": 761
+      },
+      {
+        "skill": "Azure",
+        "all": 0.0655518395,
+        "entry": 0.0710059172,
+        "senior": 0.0630749014,
+        "n_all": 1495,
+        "n_entry": 338,
+        "n_senior": 761
+      },
+      {
+        "skill": "SAS",
+        "all": 0.0622073579,
+        "entry": 0.0443786982,
+        "senior": 0.0749014455,
+        "n_all": 1495,
+        "n_entry": 338,
+        "n_senior": 761
+      },
+      {
+        "skill": "Forecasting",
+        "all": 0.0555183946,
+        "entry": 0.0414201183,
+        "senior": 0.0722733246,
+        "n_all": 1495,
+        "n_entry": 338,
+        "n_senior": 761
+      }
+    ],
+    "Data Scientist": [
+      {
+        "skill": "Python",
+        "all": 0.7631578947,
+        "entry": 0.7959183673,
+        "senior": 0.7195121951,
+        "n_all": 380,
+        "n_entry": 98,
+        "n_senior": 164
+      },
+      {
+        "skill": "Machine Learning",
+        "all": 0.6631578947,
+        "entry": 0.6530612245,
+        "senior": 0.6890243902,
+        "n_all": 380,
+        "n_entry": 98,
+        "n_senior": 164
+      },
+      {
+        "skill": "Statistics",
+        "all": 0.65,
+        "entry": 0.6428571429,
+        "senior": 0.6768292683,
+        "n_all": 380,
+        "n_entry": 98,
+        "n_senior": 164
+      },
+      {
+        "skill": "SQL",
+        "all": 0.4947368421,
+        "entry": 0.5306122449,
+        "senior": 0.4756097561,
+        "n_all": 380,
+        "n_entry": 98,
+        "n_senior": 164
+      },
+      {
+        "skill": "Data Analysis",
+        "all": 0.4894736842,
+        "entry": 0.5714285714,
+        "senior": 0.4146341463,
+        "n_all": 380,
+        "n_entry": 98,
+        "n_senior": 164
+      },
+      {
+        "skill": "R",
+        "all": 0.3631578947,
+        "entry": 0.4081632653,
+        "senior": 0.3170731707,
+        "n_all": 380,
+        "n_entry": 98,
+        "n_senior": 164
+      },
+      {
+        "skill": "Data Visualization",
+        "all": 0.2684210526,
+        "entry": 0.2653061224,
+        "senior": 0.243902439,
+        "n_all": 380,
+        "n_entry": 98,
+        "n_senior": 164
+      },
+      {
+        "skill": "AWS",
+        "all": 0.2052631579,
+        "entry": 0.112244898,
+        "senior": 0.256097561,
+        "n_all": 380,
+        "n_entry": 98,
+        "n_senior": 164
+      },
+      {
+        "skill": "Spark",
+        "all": 0.2,
+        "entry": 0.1224489796,
+        "senior": 0.2743902439,
+        "n_all": 380,
+        "n_entry": 98,
+        "n_senior": 164
+      },
+      {
+        "skill": "NLP",
+        "all": 0.1973684211,
+        "entry": 0.2244897959,
+        "senior": 0.1829268293,
+        "n_all": 380,
+        "n_entry": 98,
+        "n_senior": 164
+      },
+      {
+        "skill": "Deep Learning",
+        "all": 0.1868421053,
+        "entry": 0.112244898,
+        "senior": 0.1829268293,
+        "n_all": 380,
+        "n_entry": 98,
+        "n_senior": 164
+      },
+      {
+        "skill": "Generative AI/LLM",
+        "all": 0.1526315789,
+        "entry": 0.0918367347,
+        "senior": 0.1707317073,
+        "n_all": 380,
+        "n_entry": 98,
+        "n_senior": 164
+      },
+      {
+        "skill": "Tableau",
+        "all": 0.15,
+        "entry": 0.1734693878,
+        "senior": 0.1646341463,
+        "n_all": 380,
+        "n_entry": 98,
+        "n_senior": 164
+      },
+      {
+        "skill": "SAS",
+        "all": 0.1473684211,
+        "entry": 0.2551020408,
+        "senior": 0.1097560976,
+        "n_all": 380,
+        "n_entry": 98,
+        "n_senior": 164
+      },
+      {
+        "skill": "PyTorch",
+        "all": 0.1263157895,
+        "entry": 0.0816326531,
+        "senior": 0.1097560976,
+        "n_all": 380,
+        "n_entry": 98,
+        "n_senior": 164
+      }
+    ]
+  },
+  "learning_path": {
+    "Data Analyst": {
+      "role": "Data Analyst",
+      "n_postings": 200,
+      "ready_before": 0.0,
+      "steps": [
+        {
+          "skill": "Data Analysis",
+          "share_of_postings": 0.63,
+          "ready_share": 0.105
+        },
+        {
+          "skill": "SQL",
+          "share_of_postings": 0.595,
+          "ready_share": 0.24
+        },
+        {
+          "skill": "Excel",
+          "share_of_postings": 0.495,
+          "ready_share": 0.38
+        },
+        {
+          "skill": "Data Visualization",
+          "share_of_postings": 0.47,
+          "ready_share": 0.54
+        },
+        {
+          "skill": "Python",
+          "share_of_postings": 0.355,
+          "ready_share": 0.65
+        },
+        {
+          "skill": "Tableau",
+          "share_of_postings": 0.275,
+          "ready_share": 0.725
+        },
+        {
+          "skill": "Statistics",
+          "share_of_postings": 0.33,
+          "ready_share": 0.79
+        },
+        {
+          "skill": "Power BI",
+          "share_of_postings": 0.305,
+          "ready_share": 0.84
+        }
+      ]
+    },
+    "Data Scientist": {
+      "role": "Data Scientist",
+      "n_postings": 90,
+      "ready_before": 0.0,
+      "steps": [
+        {
+          "skill": "Machine Learning",
+          "share_of_postings": 0.6888888888888889,
+          "ready_share": 0.011111111111111112
+        },
+        {
+          "skill": "Python",
+          "share_of_postings": 0.8555555555555555,
+          "ready_share": 0.06666666666666667
+        },
+        {
+          "skill": "Statistics",
+          "share_of_postings": 0.6888888888888889,
+          "ready_share": 0.16666666666666666
+        },
+        {
+          "skill": "SQL",
+          "share_of_postings": 0.5777777777777777,
+          "ready_share": 0.34444444444444444
+        },
+        {
+          "skill": "R",
+          "share_of_postings": 0.4444444444444444,
+          "ready_share": 0.5555555555555556
+        },
+        {
+          "skill": "Data Analysis",
+          "share_of_postings": 0.6222222222222222,
+          "ready_share": 0.6333333333333333
+        },
+        {
+          "skill": "Data Visualization",
+          "share_of_postings": 0.28888888888888886,
+          "ready_share": 0.7
+        },
+        {
+          "skill": "C++",
+          "share_of_postings": 0.12222222222222222,
+          "ready_share": 0.7333333333333333
+        }
+      ]
+    },
+    "Data Engineer": {
+      "role": "Data Engineer",
+      "n_postings": 81,
+      "ready_before": 0.0,
+      "steps": [
+        {
+          "skill": "ETL",
+          "share_of_postings": 0.7283950617283951,
+          "ready_share": 0.04938271604938271
+        },
+        {
+          "skill": "SQL",
+          "share_of_postings": 0.7160493827160493,
+          "ready_share": 0.12345679012345678
+        },
+        {
+          "skill": "Python",
+          "share_of_postings": 0.7283950617283951,
+          "ready_share": 0.18518518518518517
+        },
+        {
+          "skill": "Spark",
+          "share_of_postings": 0.35802469135802467,
+          "ready_share": 0.24691358024691357
+        },
+        {
+          "skill": "Azure",
+          "share_of_postings": 0.3950617283950617,
+          "ready_share": 0.32098765432098764
+        },
+        {
+          "skill": "AWS",
+          "share_of_postings": 0.49382716049382713,
+          "ready_share": 0.4567901234567901
+        },
+        {
+          "skill": "Redshift",
+          "share_of_postings": 0.2345679012345679,
+          "ready_share": 0.5555555555555556
+        },
+        {
+          "skill": "Data Visualization",
+          "share_of_postings": 0.2962962962962963,
+          "ready_share": 0.6296296296296297
+        }
+      ]
+    },
+    "AI/ML Engineer": {
+      "role": "AI/ML Engineer",
+      "n_postings": 49,
+      "ready_before": 0.0,
+      "steps": [
+        {
+          "skill": "Machine Learning",
+          "share_of_postings": 0.9387755102040817,
+          "ready_share": 0.04081632653061224
+        },
+        {
+          "skill": "Statistics",
+          "share_of_postings": 0.2653061224489796,
+          "ready_share": 0.12244897959183673
+        },
+        {
+          "skill": "Python",
+          "share_of_postings": 0.6938775510204082,
+          "ready_share": 0.1836734693877551
+        },
+        {
+          "skill": "Computer Vision",
+          "share_of_postings": 0.24489795918367346,
+          "ready_share": 0.32653061224489793
+        },
+        {
+          "skill": "Generative AI/LLM",
+          "share_of_postings": 0.4897959183673469,
+          "ready_share": 0.42857142857142855
+        },
+        {
+          "skill": "Deep Learning",
+          "share_of_postings": 0.3673469387755102,
+          "ready_share": 0.5510204081632653
+        },
+        {
+          "skill": "AWS",
+          "share_of_postings": 0.16326530612244897,
+          "ready_share": 0.6530612244897959
+        },
+        {
+          "skill": "PyTorch",
+          "share_of_postings": 0.30612244897959184,
+          "ready_share": 0.7346938775510204
+        }
+      ]
+    }
+  }
+}

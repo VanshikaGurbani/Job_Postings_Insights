@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import argparse
+import importlib.util
 from pathlib import Path
 
 import pandas as pd
@@ -26,7 +27,7 @@ def build_parser() -> argparse.ArgumentParser:
     e = sub.add_parser("extract-rules", help="run the regex baseline (skills, remote, salary)")
     e.add_argument("--workers", type=int, default=None)
 
-    sub.add_parser("make-eval-set", help="draw the stratified 150-posting evaluation sample")
+    sub.add_parser("make-eval-set", help="draw the stratified evaluation sample")
     sub.add_parser("label", help="open the labelling app (needs the dashboard extra)")
 
     m = sub.add_parser("llm-extract", help="local open-weights LLM extraction (free, CPU)")
@@ -42,6 +43,7 @@ def build_parser() -> argparse.ArgumentParser:
     sub.add_parser("download-h1b", help="fetch public USCIS H-1B employer files (FY2021-23)")
     sub.add_parser("h1b", help="match posting companies to H-1B employer history")
     sub.add_parser("report", help="rebuild outputs/RESULTS.md, the README block and dashboard data")
+    sub.add_parser("insights", help="pay-by-skill, sponsor landscape, learning path, figures")
     sub.add_parser("dashboard", help="launch the Streamlit dashboard")
     r = sub.add_parser("run-all", help="clean -> extract -> cluster -> salary model -> report")
     r.add_argument("--source", choices=["kaggle", "local"], default=None)
@@ -52,7 +54,7 @@ def build_parser() -> argparse.ArgumentParser:
 
 def run_all(source: str | None, file: Path | None) -> None:
     """The one command behind the README results: every number is regenerated."""
-    from . import cluster, evaluate, h1b, report, salary_model
+    from . import cluster, evaluate, h1b, insights, report, salary_model
 
     if source:
         data.download(source, from_file=file)
@@ -65,6 +67,7 @@ def run_all(source: str | None, file: Path | None) -> None:
     if evalset.load_gold() and list(config.PROCESSED_DIR.glob("extracted_llm_*.parquet")):
         evaluate.evaluate()
     report.run()
+    insights.run(figures=importlib.util.find_spec("matplotlib") is not None)
 
 
 def main(argv: list[str] | None = None) -> None:
@@ -132,6 +135,10 @@ def main(argv: list[str] | None = None) -> None:
         from . import report
 
         report.run()
+    elif args.command == "insights":
+        from . import insights
+
+        insights.run()
     elif args.command == "dashboard":
         import subprocess
         import sys

@@ -21,6 +21,7 @@ DASHBOARD_PARQUET = config.PROCESSED_DIR / "dashboard.parquet"
 RESULTS_MD = OUT_DIR / "RESULTS.md"
 README = Path("README.md")
 MARK_START, MARK_END = "<!-- RESULTS:START -->", "<!-- RESULTS:END -->"
+MARK_START_FINDINGS, MARK_END_FINDINGS = "<!-- FINDINGS:START -->", "<!-- FINDINGS:END -->"
 
 
 def build_dashboard_table() -> pd.DataFrame:

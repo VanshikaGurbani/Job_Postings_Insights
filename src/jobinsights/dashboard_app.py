@@ -8,7 +8,7 @@ import pandas as pd
 import plotly.express as px
 import streamlit as st
 
-from jobinsights import config
+from jobinsights import config, insights
 from jobinsights.report import DASHBOARD_PARQUET
 from jobinsights.taxonomy import FAMILY
 
@@ -30,6 +30,65 @@ def load() -> pd.DataFrame:
     return pd.read_parquet(DASHBOARD_PARQUET)
 
 
+@st.cache_data
+def _plan(role: str, entry_only: bool, have: tuple[str, ...], steps: int) -> dict:
+    levels = insights.ENTRY_LEVELS if entry_only else None
+    return insights.learning_path(load(), role, levels=levels, have=have, steps=steps)
+
+
+def planner(df: pd.DataFrame) -> None:
+    st.subheader("Skill planner: what to learn next")
+    st.caption(
+        "Pick a role and the technical skills you already have. A posting counts as covered when "
+        "you have at least half of the technical skills it lists. Skills are added greedily, "
+        "most newly covered postings first. This is overlap with postings, not hiring odds."
+    )
+    a, b, c = st.columns([1, 1, 2])
+    role = a.selectbox("Target role", list(insights.DATA_ROLES), key="plan_role")
+    entry_only = b.checkbox("Entry-level postings only", value=True, key="plan_entry")
+    names = sorted({s for skills in df["skills_rules"] for s in insights.hard_skills(skills)})
+    have = c.multiselect("Skills I already have", names, default=["Excel"], key="plan_have")
+    plan = _plan(role, entry_only, tuple(have), 8)
+    if not plan["steps"]:
+        st.info("No postings match.")
+        return
+    table = pd.DataFrame(plan["steps"])
+    table.insert(0, "order", range(1, len(table) + 1))
+    left, right = st.columns([1, 1])
+    with left:
+        st.metric(
+            f"Postings you already cover ({plan['n_postings']} considered)",
+            f"{plan['ready_before']:.0%}",
+        )
+        view = table.assign(
+            share_of_postings=(100 * table["share_of_postings"]).round(0).astype(int).astype(str)
+            + "%",
+            ready_share=(100 * table["ready_share"]).round(0).astype(int).astype(str) + "%",
+        ).rename(
+            columns={
+                "order": "Learn #",
+                "skill": "Skill",
+                "share_of_postings": "Listed in",
+                "ready_share": "Postings covered after learning it",
+            }
+        )
+        st.dataframe(view, hide_index=True, use_container_width=True)
+    with right:
+        curve = pd.DataFrame(
+            {
+                "skills added": [0, *table["order"]],
+                "% of postings covered": [
+                    100 * plan["ready_before"],
+                    *(100 * table["ready_share"]),
+                ],
+            }
+        )
+        fig = px.line(curve, x="skills added", y="% of postings covered", markers=True)
+        fig.update_traces(line_color="#2a9d8f")
+        fig.update_layout(height=320, margin=dict(l=0, r=0, t=10, b=0))
+        st.plotly_chart(fig, use_container_width=True)
+
+
 def main() -> None:
     st.set_page_config(page_title="Job postings insights", layout="wide")
     df = load()
@@ -42,7 +101,12 @@ def main() -> None:
     roles = sorted(df["role"].unique())
     with st.sidebar:
         st.header("Filters")
-        role_sel = st.multiselect("Role family", roles, default=roles)
+        role_sel = st.multiselect(
+            "Role family",
+            roles,
+            default=[r for r in roles if r in insights.TECH_ROLES],
+            help="Defaults to data, AI and software roles; add 'Other' for the whole market.",
+        )
         exp_opts = sorted(df["formatted_experience_level"].dropna().unique())
         exp_sel = st.multiselect("Experience level", exp_opts, default=exp_opts)
         visa_sel = st.multiselect(
@@ -61,7 +125,9 @@ def main() -> None:
             help="Company-level history, not a promise that this posting sponsors.",
         )
         top_n = st.slider("Top skills shown", 5, 30, 15)
-        skill_family = st.selectbox("Skill family", ["All"] + sorted(set(FAMILY.values())), index=0)
+        skill_family = st.selectbox(
+            "Skill family", ["Technical", "All"] + sorted(set(FAMILY.values())), index=0
+        )
     f = df[df["role"].isin(role_sel)]
     f = f[f["formatted_experience_level"].isin(exp_sel) | f["formatted_experience_level"].isna()]
 
@@ -86,7 +152,11 @@ def main() -> None:
     with left:
         st.subheader("Skills demand")
         exploded = f[["job_id", "skills_rules"]].explode("skills_rules").dropna()
-        if skill_family != "All":
+        if skill_family == "Technical":
+            exploded = exploded[
+                exploded["skills_rules"].map(FAMILY).isin(insights.TECHNICAL_FAMILIES)
+            ]
+        elif skill_family != "All":
             exploded = exploded[exploded["skills_rules"].map(FAMILY) == skill_family]
         counts = exploded["skills_rules"].value_counts().head(top_n) / max(len(f), 1) * 100
         fig = px.bar(
@@ -191,6 +261,8 @@ def main() -> None:
         st.download_button(
             "Download shortlist (CSV)", view.to_csv(index=False).encode("utf-8"), "shortlist.csv"
         )
+
+    planner(df)
 
     if "cluster" in f.columns and f["cluster"].notna().any():
         st.subheader("Skill clusters")

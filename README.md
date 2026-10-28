@@ -7,6 +7,34 @@ against labelled examples, clusters postings by skills, models salary, and serve
 
 ![Dashboard](docs/dashboard.png)
 
+## What the data says
+
+<!-- FINDINGS:START -->
+All figures come from 123,782 postings; pay figures use the 3,428 data, AI and software postings that state a salary (1,411 companies, median $133,950). Pay comparisons are adjusted for role, experience level and work arrangement and are associations, not causal effects.
+
+**1. Which skills go with higher pay.** After adjusting, the skills most associated with higher pay are TypeScript +16% (+8 to +21), Generative AI/LLM +15% (+2 to +29), Machine Learning +13% (+5 to +20), Go +12% (+3 to +22) (95% interval in brackets). Python itself shows +1% (-2 to +7) because it is listed so widely that it does not separate higher- from lower-paid postings. Excel is associated with -9% (-14 to -5). Lower for TensorFlow (-12%) and C# (-10%).
+
+![Skill pay association](docs/figures/skill_premium.png)
+
+**2. Remote pays no clearly different amount.** Remote postings are +6.3% vs onsite (-2.7 to +21.2) after the same adjustment; the interval includes zero, so the data cannot separate a remote premium from no difference.
+
+**3. More data postings pass a sponsorship screen than the average posting.** 42% of Data Analyst postings are not restricted and either say sponsorship is possible or come from a company with H-1B approvals in FY2021-23, against 26% of other postings. Only 6% of Data Analyst postings rule sponsorship out and only 3% say it is offered, so for most the signal is the company's history, not the posting. That history says a company files petitions, not that this role would.
+
+![Sponsor share by role](docs/figures/sponsor_share.png)
+
+![Employers](docs/figures/top_employers.png)
+
+_Approval counts cover only the legal-entity names the company matched to, so parent companies whose petitions are filed under other names are undercounted (see Limitations)._
+
+**4. Data roles skew senior.** 23% of Data Analyst postings are entry-level, associate or internship, against 40% of other postings, so entry-level data jobs are a smaller pool to search.
+
+![Data analyst skills](docs/figures/data_analyst_skills.png)
+
+**5. What to learn first.** Across 200 entry-level Data Analyst postings that list at least two technical skills, learning Data Analysis, SQL, Excel, Data Visualization, Python in that order gets you to at least half of the listed skills in 65% of them (from 0% with none). Order is chosen greedily and describes skill overlap with postings, not hiring odds. The dashboard has the same planner for your own skill set.
+
+![Learning path](docs/figures/learning_path.png)
+<!-- FINDINGS:END -->
+
 ## What it does
 
 | Piece | What you get |
@@ -16,6 +44,7 @@ against labelled examples, clusters postings by skills, models salary, and serve
 | Clusters | Skill-based job clusters, k chosen from silhouette and seed stability, clusters named by distinctive skills |
 | Salary model | Ridge / gradient boosting vs median baselines, out-of-fold errors, folds grouped by title |
 | H-1B join | Companies matched to public USCIS H-1B employer data (FY2021-23) so postings from companies with approvals can be filtered; spot-checked matches |
+| Insights | Adjusted pay association per skill with company-level bootstrap intervals, sponsor-friendliness by role, employers with H-1B history hiring data roles, and a greedy "what to learn first" planner (`jobinsights insights`) |
 | Dashboard | Skills demand, remote share by role, salary by role and state, cluster map; filters for work-authorisation, contract/staffing and OPT mentions |
 
 ## Results
@@ -141,10 +170,11 @@ A join on company names, not on individual postings: a company with past approva
 ## Run it
 
 ```bash
-pip install -e ".[dev,dashboard,llm]"
+pip install -e ".[dev,dashboard,llm,plots]"
 jobinsights download --source local --file postings.csv   # or --source kaggle with your own credentials
 jobinsights download-h1b             # public USCIS H-1B employer files (FY2021-23)
-jobinsights run-all                  # clean -> extract -> clusters -> salary model -> H-1B join -> report
+jobinsights run-all                  # clean -> extract -> clusters -> salary model -> H-1B join -> report -> insights
+jobinsights insights                 # only the findings and figures above (needs `report` to have run)
 jobinsights dashboard                # Streamlit dashboard
 pytest && ruff check .               # tests and lint (also run in CI)
 ```
@@ -183,14 +213,22 @@ Optional, for the extraction scores: `jobinsights make-eval-set`, `jobinsights l
   matched). It uses FY2021-2023 only and is not legal or immigration advice.
 * Salary is modelled only for postings that state pay (about 41%); they are not a random sample and pay is
   not imputed. Hourly pay is annualised at 2,080 hours.
+* The findings are associations from postings that state pay. The pay adjustment covers role, experience level
+  and work arrangement only, not company size, industry or location, so a skill can look well or badly paid
+  because of who lists it. Most pay intervals are wide; only the coloured ones in the chart exclude zero.
+* H-1B approval counts in the employer chart cover only the legal-entity names a company matched to, so
+  parents that file under other names are undercounted. The contract flag is not used in the findings because
+  its precision is low.
+* The skill planner measures overlap with listed skills (the taxonomy finds skills by keyword, so listed
+  skills are not the same as required skills); it says nothing about interview or hiring odds.
 * Cluster silhouette scores for the old and new methods are in different spaces and not strictly comparable.
 
 ## Layout
 
 ```
-src/jobinsights/   data, taxonomy, remote, salary, visa, extract, llm, evaluate, cluster, salary_model, report, apps, cli
-tests/             pytest for parsers, normalisers, metrics, clustering helpers
-docs/              UPGRADE_PLAN.md (audit of the original prototype), dashboard.png
+src/jobinsights/   data, taxonomy, remote, salary, visa, extract, llm, evaluate, cluster, salary_model, h1b, insights, plots, report, apps, cli
+tests/             pytest for parsers, normalisers, metrics, clustering helpers, insights
+docs/              UPGRADE_PLAN.md (audit of the original prototype), dashboard.png, figures/
 outputs/           RESULTS.md and JSON results written by the pipeline
 notebooks/legacy/  the original prototype notebooks and plots (not reproducible, kept for history)
 ```

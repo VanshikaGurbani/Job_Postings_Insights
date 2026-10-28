@@ -45,6 +45,7 @@ _Approval counts cover only the legal-entity names the company matched to, so pa
 | Salary model | Ridge / gradient boosting vs median baselines, out-of-fold errors, folds grouped by title |
 | H-1B join | Companies matched to public USCIS H-1B employer data (FY2021-23) so postings from companies with approvals can be filtered; spot-checked matches |
 | Insights | Adjusted pay association per skill with company-level bootstrap intervals, sponsor-friendliness by role, employers with H-1B history hiring data roles, and a greedy "what to learn first" planner (`jobinsights insights`) |
+| Hosted demo | Seven-tab explorer (`demo/`) that runs on aggregate data only: skills by seniority, skills that go together, pay by skill with a pay estimator, where the roles are, employers, the skill planner |
 | Dashboard | Skills demand, remote share by role, salary by role and state, cluster map; filters for work-authorisation, contract/staffing and OPT mentions |
 
 ## Results
@@ -175,7 +176,9 @@ jobinsights download --source local --file postings.csv   # or --source kaggle w
 jobinsights download-h1b             # public USCIS H-1B employer files (FY2021-23)
 jobinsights run-all                  # clean -> extract -> clusters -> salary model -> H-1B join -> report -> insights
 jobinsights insights                 # only the findings and figures above (needs `report` to have run)
-jobinsights dashboard                # Streamlit dashboard
+jobinsights dashboard                # Streamlit dashboard (posting-level, local only)
+jobinsights export-demo              # aggregate-only data for the hosted demo
+streamlit run demo/streamlit_app.py  # the demo; see demo/README.md to deploy it
 pytest && ruff check .               # tests and lint (also run in CI)
 ```
 
@@ -221,13 +224,24 @@ Optional, for the extraction scores: `jobinsights make-eval-set`, `jobinsights l
   its precision is low.
 * The skill planner measures overlap with listed skills (the taxonomy finds skills by keyword, so listed
   skills are not the same as required skills); it says nothing about interview or hiring odds.
+* The dataset covers about three weeks of postings in spring 2024 and its collection ramped up over that
+  window, so it says nothing about trends over time. The pay estimator explains about a fifth of the variation
+  in log pay on unseen companies (typical error about $37k) and ignores company, industry and location.
 * Cluster silhouette scores for the old and new methods are in different spaces and not strictly comparable.
+
+## Hosted demo
+
+`demo/streamlit_app.py` reads only the aggregates in `demo/data/` (no posting rows or text), so it can be
+published without redistributing the dataset. `demo/README.md` has the deploy steps.
+
+![Demo, pay tab](docs/demo_pay.png)
 
 ## Layout
 
 ```
 src/jobinsights/   data, taxonomy, remote, salary, visa, extract, llm, evaluate, cluster, salary_model, h1b, insights, plots, report, apps, cli
 tests/             pytest for parsers, normalisers, metrics, clustering helpers, insights
+demo/              hosted demo app and its aggregate data
 docs/              UPGRADE_PLAN.md (audit of the original prototype), dashboard.png, figures/
 outputs/           RESULTS.md and JSON results written by the pipeline
 notebooks/legacy/  the original prototype notebooks and plots (not reproducible, kept for history)

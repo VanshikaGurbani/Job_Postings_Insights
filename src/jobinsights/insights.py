@@ -62,6 +62,28 @@ def skill_demand(df: pd.DataFrame, role: str, top: int = 15) -> pd.DataFrame:
     return out.sort_values("all", ascending=False).head(top)
 
 
+ARRANGEMENTS = ("remote", "hybrid", "onsite")  # "unknown" is the baseline
+
+
+def _design(s: pd.DataFrame, names: list[str], sk: np.ndarray | None = None):
+    """Design matrix: intercept, role, experience level, work arrangement, skill indicators."""
+    if sk is None:
+        sk = skill_matrix(s["skills_rules"].map(hard_skills), names)
+    cols = [np.ones(len(s))]
+    labels = ["intercept"]
+    for prefix, series in (
+        ("role", s["role"]),
+        ("exp", s["formatted_experience_level"].fillna("Unknown")),
+    ):
+        dummies = pd.get_dummies(series, prefix=prefix, drop_first=True)
+        cols += [dummies[c].to_numpy(float) for c in dummies]
+        labels += list(dummies.columns)
+    for arrangement in ARRANGEMENTS:
+        cols.append((s["remote_rules"] == arrangement).to_numpy(float))
+        labels.append(f"arr_{arrangement}")
+    return np.column_stack([*cols, sk.astype(float)]), labels + list(names)
+
+
 def skill_premiums(
     df: pd.DataFrame,
     roles: tuple[str, ...] = TECH_ROLES,
@@ -83,21 +105,7 @@ def skill_premiums(
     names = sorted(counts[counts >= min_n].index)
     sk = skill_matrix(skills_all, names)
 
-    cols = [np.ones(len(s))]
-    labels = ["intercept"]
-    for prefix, series in (
-        ("role", s["role"]),
-        ("exp", s["formatted_experience_level"].fillna("Unknown")),
-    ):
-        dummies = pd.get_dummies(series, prefix=prefix, drop_first=True)
-        cols += [dummies[c].to_numpy(float) for c in dummies]
-        labels += list(dummies.columns)
-    for arrangement in ("remote", "hybrid", "onsite"):  # "unknown" is the baseline
-        cols.append((s["remote_rules"] == arrangement).to_numpy(float))
-        labels.append(f"arr_{arrangement}")
-    base = np.column_stack(cols)
-    X = np.column_stack([base, sk.astype(float)])
-    labels += names
+    X, labels = _design(s, names, sk)
     y = np.log(s["salary_mid"].to_numpy(float))
 
     def fit(rows: np.ndarray) -> np.ndarray:
@@ -148,6 +156,65 @@ def skill_premiums(
             float(pct(np.percentile(gap, 97.5))),
         ],
         "n_boot": n_boot,
+    }
+
+
+def fit_pay_model(
+    df: pd.DataFrame, roles: tuple[str, ...] = TECH_ROLES, min_n: int = 40, n_folds: int = 5
+) -> dict:
+    """Log-linear pay model for the estimator, with out-of-fold error bands.
+
+    Same design as `skill_premiums`. Folds are grouped by company so a company's repeated postings
+    never sit in both train and test; the 10th/90th percentile of the out-of-fold log errors give
+    the band shown around an estimate. Explains only a third of the variance (see `cv_r2_log`).
+    """
+    from sklearn.model_selection import GroupKFold
+
+    s = df[df["role"].isin(roles) & df["salary_mid"].between(MIN_SALARY, MAX_SALARY)].reset_index(
+        drop=True
+    )
+    skills_all = s["skills_rules"].map(hard_skills)
+    counts = skills_all.explode().value_counts()
+    names = sorted(counts[counts >= min_n].index)
+    X, labels = _design(s, names)
+    y = np.log(s["salary_mid"].to_numpy(float))
+    company = s["company_name"].fillna("").where(s["company_name"].fillna("") != "", s["job_id"])
+    oof = np.empty(len(y))
+    folds = GroupKFold(n_splits=n_folds).split(X, y, groups=company.astype(str))
+    for train, test in folds:
+        oof[test] = X[test] @ np.linalg.lstsq(X[train], y[train], rcond=None)[0]
+    resid = y - oof
+    coef = np.linalg.lstsq(X, y, rcond=None)[0]
+    return {
+        "n_postings": int(len(s)),
+        "labels": labels,
+        "coef": [float(c) for c in coef],
+        "roles": sorted(s["role"].unique()),
+        "experience": sorted(s["formatted_experience_level"].fillna("Unknown").unique()),
+        "arrangements": ["unknown", *ARRANGEMENTS],
+        "skills": names,
+        "log_error_q10": float(np.percentile(resid, 10)),
+        "log_error_q90": float(np.percentile(resid, 90)),
+        "cv_mae_usd": float(np.abs(np.exp(oof) - np.exp(y)).mean()),
+        "cv_r2_log": float(1 - (resid**2).sum() / ((y - y.mean()) ** 2).sum()),
+    }
+
+
+def predict_pay(
+    model: dict, role: str, experience: str, arrangement: str, skills: list[str]
+) -> dict[str, float]:
+    """Typical annual pay (USD) and an 80% out-of-fold band for one hypothetical posting."""
+    x = np.zeros(len(model["labels"]))
+    index = {name: i for i, name in enumerate(model["labels"])}
+    x[0] = 1.0
+    for key in (f"role_{role}", f"exp_{experience}", f"arr_{arrangement}", *skills):
+        if key in index:  # baselines (first role, first level, "unknown") have no column
+            x[index[key]] = 1.0
+    log_pred = float(x @ np.asarray(model["coef"]))
+    return {
+        "typical": float(np.exp(log_pred)),
+        "low": float(np.exp(log_pred + model["log_error_q10"])),
+        "high": float(np.exp(log_pred + model["log_error_q90"])),
     }
 
 
@@ -208,45 +275,60 @@ def learning_path(
     ready_at: float = 0.5,
     min_skills: int = 2,
 ) -> dict:
-    """Greedy order in which to learn skills to qualify for the most postings of a role.
+    """Greedy order in which to learn skills to qualify for the most postings of a role."""
+    sub = df[df["role"] == role]
+    if levels is not None:
+        sub = sub[sub["formatted_experience_level"].isin(levels)]
+    skills = [hard_skills(s) for s in sub["skills_rules"]]
+    return learning_path_from_sets(skills, None, role, have, steps, ready_at, min_skills)
+
+
+def learning_path_from_sets(
+    skill_lists: list[list[str]],
+    weights: list[float] | None = None,
+    role: str = "",
+    have: tuple[str, ...] = (),
+    steps: int = 8,
+    ready_at: float = 0.5,
+    min_skills: int = 2,
+) -> dict:
+    """Same planner on (skill set, count) pairs, so it also runs on the published aggregates.
 
     A posting counts as "ready" when the candidate has at least `ready_at` of the technical skills
     it lists. Each step adds the skill that makes the most additional postings ready (ties go to
     the more frequent skill). This describes coverage of listed skills, not hiring odds.
     """
-    sub = df[df["role"] == role]
-    if levels is not None:
-        sub = sub[sub["formatted_experience_level"].isin(levels)]
-    skills = sub["skills_rules"].map(hard_skills)
-    sub = sub[skills.map(len) >= min_skills]
-    skills = skills.loc[sub.index]
-    counts = skills.explode().value_counts()
-    names = list(counts.index)
-    if not names:
+    w = np.ones(len(skill_lists)) if weights is None else np.asarray(weights, dtype=float)
+    keep = np.array([len(s) >= min_skills for s in skill_lists], dtype=bool)
+    skill_lists = [s for s, k in zip(skill_lists, keep, strict=True) if k]
+    w = w[keep]
+    total = float(w.sum())
+    names = sorted({s for lst in skill_lists for s in lst})
+    if not names or total == 0:
         return {"role": role, "n_postings": 0, "steps": [], "ready_before": 0.0}
-    P = skill_matrix(skills, names)
+    P = skill_matrix(pd.Series(skill_lists), names)
     need = P.sum(axis=1).astype(float)
     mine = np.array([n in set(have) for n in names])
     covered = P[:, mine].sum(axis=1).astype(float) if mine.any() else np.zeros(len(P))
-    freq = P.mean(axis=0)
-    out = {
-        "role": role,
-        "n_postings": int(len(P)),
-        "ready_before": float((covered / need >= ready_at).mean()),
-    }
+    freq = (P * w[:, None]).sum(axis=0) / total
+
+    def ready_share(c: np.ndarray) -> float:
+        return float((w * (c / need >= ready_at)).sum() / total)
+
+    out = {"role": role, "n_postings": int(round(total)), "ready_before": ready_share(covered)}
     chosen: list[dict] = []
     for _ in range(steps):
-        gain = (((covered[:, None] + P) / need[:, None]) >= ready_at).mean(axis=0)
+        hit = ((covered[:, None] + P) / need[:, None]) >= ready_at
+        gain = (hit * w[:, None]).sum(axis=0) / total
         gain[mine] = -1.0
-        order = np.lexsort((-freq, -gain))
-        j = int(order[0])
+        j = int(np.lexsort((-freq, -gain))[0])
         mine[j] = True
         covered = covered + P[:, j]
         chosen.append(
             {
                 "skill": names[j],
                 "share_of_postings": float(freq[j]),
-                "ready_share": float((covered / need >= ready_at).mean()),
+                "ready_share": ready_share(covered),
             }
         )
     out["steps"] = chosen

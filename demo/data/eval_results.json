@@ -1,0 +1,184 @@
+{
+ "n_labelled": 40,
+ "systems": {
+  "legacy": {
+   "skills_18_legacy_vocab": {
+    "precision": 0.34,
+    "recall": 0.778,
+    "f1": 0.473,
+    "f1_ci95": [
+     0.352,
+     0.568
+    ],
+    "n_postings": 40
+   },
+   "offers_remote_or_hybrid": {
+    "precision": 0.882,
+    "recall": 1.0,
+    "f1": 0.938,
+    "f1_ci95": [
+     0.828,
+     1.0
+    ],
+    "n_postings": 40
+   }
+  },
+  "rules": {
+   "skills_full_taxonomy": {
+    "precision": 0.745,
+    "recall": 0.712,
+    "f1": 0.728,
+    "f1_ci95": [
+     0.667,
+     0.777
+    ],
+    "n_postings": 40
+   },
+   "skills_18_legacy_vocab": {
+    "precision": 0.758,
+    "recall": 0.556,
+    "f1": 0.641,
+    "f1_ci95": [
+     0.5,
+     0.744
+    ],
+    "n_postings": 40
+   },
+   "salary_presence": {
+    "precision": 1.0,
+    "recall": 1.0,
+    "f1": 1.0,
+    "f1_ci95": [
+     1.0,
+     1.0
+    ],
+    "n_postings": 40
+   },
+   "salary_strict": {
+    "precision": 0.9,
+    "recall": 0.9,
+    "f1": 0.9,
+    "f1_ci95": [
+     0.667,
+     1.0
+    ],
+    "n_postings": 40
+   },
+   "offers_remote_or_hybrid": {
+    "precision": 0.929,
+    "recall": 0.867,
+    "f1": 0.897,
+    "f1_ci95": [
+     0.733,
+     1.0
+    ],
+    "n_postings": 40
+   },
+   "remote_4class_accuracy": 0.825
+  },
+  "llm:Qwen2.5-1.5B-Instruct": {
+   "skills_full_taxonomy": {
+    "precision": 0.846,
+    "recall": 0.282,
+    "f1": 0.423,
+    "f1_ci95": [
+     0.277,
+     0.543
+    ],
+    "n_postings": 40
+   },
+   "skills_18_legacy_vocab": {
+    "precision": 0.929,
+    "recall": 0.289,
+    "f1": 0.441,
+    "f1_ci95": [
+     0.211,
+     0.625
+    ],
+    "n_postings": 40
+   },
+   "salary_presence": {
+    "precision": 0.281,
+    "recall": 0.9,
+    "f1": 0.429,
+    "f1_ci95": [
+     0.229,
+     0.596
+    ],
+    "n_postings": 40
+   },
+   "salary_strict": {
+    "precision": 0.188,
+    "recall": 0.6,
+    "f1": 0.286,
+    "f1_ci95": [
+     0.105,
+     0.465
+    ],
+    "n_postings": 40
+   },
+   "offers_remote_or_hybrid": {
+    "precision": 1.0,
+    "recall": 0.6,
+    "f1": 0.75,
+    "f1_ci95": [
+     0.5,
+     0.909
+    ],
+    "n_postings": 40
+   },
+   "remote_4class_accuracy": 0.725
+  }
+ },
+ "visa_and_contract_rules": {
+  "n": 60,
+  "visa_4class_accuracy": 0.9,
+  "visa_friendly": {
+   "precision": 0.636,
+   "recall": 1.0,
+   "f1": 0.778,
+   "f1_ci95": [
+    0.5,
+    0.953
+   ],
+   "n_postings": 60
+  },
+  "visa_restricted_or_mixed": {
+   "precision": 1.0,
+   "recall": 0.688,
+   "f1": 0.815,
+   "f1_ci95": [
+    0.621,
+    0.952
+   ],
+   "n_postings": 60
+  },
+  "gold_visa_distribution": {
+   "not_stated": 37,
+   "restricted": 16,
+   "friendly": 7
+  },
+  "contract": {
+   "precision": 0.462,
+   "recall": 0.375,
+   "f1": 0.414,
+   "f1_ci95": [
+    0.16,
+    0.616
+   ],
+   "n_postings": 60
+  }
+ },
+ "gold_remote_distribution": {
+  "unknown": 21,
+  "remote": 10,
+  "hybrid": 5,
+  "onsite": 4
+ },
+ "gold_strata": {
+  "random_rest": 16,
+  "remote_keyword": 12,
+  "tech_title": 12
+ },
+ "gold_salary_present": 10
+}

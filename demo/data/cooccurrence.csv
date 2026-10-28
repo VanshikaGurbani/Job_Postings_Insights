@@ -1,0 +1,2739 @@
+role,skill_a,skill_b,both,n_a,n_b,n_postings,lift
+Data Analyst,A/B Testing,Data Analysis,28,40,573,1495,1.82635
+Data Analyst,A/B Testing,Data Visualization,22,40,450,1495,1.82722
+Data Analyst,A/B Testing,Excel,15,40,462,1495,1.21347
+Data Analyst,A/B Testing,Python,24,40,319,1495,2.81191
+Data Analyst,A/B Testing,SQL,26,40,646,1495,1.50426
+Data Analyst,A/B Testing,Statistics,26,40,251,1495,3.87151
+Data Analyst,A/B Testing,Tableau,19,40,287,1495,2.4743
+Data Analyst,AWS,Azure,30,79,98,1495,5.79308
+Data Analyst,AWS,Data Analysis,43,79,573,1495,1.42013
+Data Analyst,AWS,Data Visualization,37,79,450,1495,1.55598
+Data Analyst,AWS,ETL,22,79,139,1495,2.99517
+Data Analyst,AWS,GCP,22,79,36,1495,11.5647
+Data Analyst,AWS,Machine Learning,21,79,114,1495,3.48601
+Data Analyst,AWS,Power BI,26,79,311,1495,1.58207
+Data Analyst,AWS,Python,50,79,319,1495,2.96615
+Data Analyst,AWS,Redshift,17,79,30,1495,10.7236
+Data Analyst,AWS,SQL,52,79,646,1495,1.5233
+Data Analyst,AWS,Spark,15,79,36,1495,7.88502
+Data Analyst,AWS,Statistics,25,79,251,1495,1.88487
+Data Analyst,AWS,Tableau,25,79,287,1495,1.64844
+Data Analyst,Azure,Data Analysis,53,98,573,1495,1.41103
+Data Analyst,Azure,Data Modeling,24,98,102,1495,3.58944
+Data Analyst,Azure,Data Visualization,47,98,450,1495,1.59331
+Data Analyst,Azure,Databricks,19,98,32,1495,9.05772
+Data Analyst,Azure,ETL,33,98,139,1495,3.62171
+Data Analyst,Azure,Excel,26,98,462,1495,0.858512
+Data Analyst,Azure,GCP,22,98,36,1495,9.32256
+Data Analyst,Azure,Machine Learning,17,98,114,1495,2.27488
+Data Analyst,Azure,Power BI,59,98,311,1495,2.89405
+Data Analyst,Azure,Python,36,98,319,1495,1.72158
+Data Analyst,Azure,SQL,67,98,646,1495,1.58219
+Data Analyst,Azure,SQL Server,18,98,71,1495,3.86749
+Data Analyst,Azure,Statistics,16,98,251,1495,0.972437
+Data Analyst,Azure,Tableau,26,98,287,1495,1.382
+Data Analyst,C#,C++,39,48,48,1495,25.306
+Data Analyst,C#,HTML/CSS,39,48,65,1495,18.6875
+Data Analyst,C#,JavaScript,38,48,65,1495,18.2083
+Data Analyst,C#,Python,42,48,319,1495,4.10071
+Data Analyst,C#,SQL,46,48,646,1495,2.21781
+Data Analyst,C++,HTML/CSS,40,48,65,1495,19.1667
+Data Analyst,C++,JavaScript,39,48,65,1495,18.6875
+Data Analyst,C++,Python,47,48,319,1495,4.58888
+Data Analyst,C++,SQL,46,48,646,1495,2.21781
+Data Analyst,Data Analysis,Data Modeling,63,573,102,1495,1.61149
+Data Analyst,Data Analysis,Data Visualization,276,573,450,1495,1.60023
+Data Analyst,Data Analysis,Databricks,17,573,32,1495,1.38607
+Data Analyst,Data Analysis,ETL,81,573,139,1495,1.5204
+Data Analyst,Data Analysis,Excel,237,573,462,1495,1.33842
+Data Analyst,Data Analysis,Forecasting,40,573,83,1495,1.25739
+Data Analyst,Data Analysis,GCP,20,573,36,1495,1.44949
+Data Analyst,Data Analysis,HTML/CSS,16,573,65,1495,0.642234
+Data Analyst,Data Analysis,JavaScript,15,573,65,1495,0.602094
+Data Analyst,Data Analysis,Looker,24,573,36,1495,1.73938
+Data Analyst,Data Analysis,Machine Learning,60,573,114,1495,1.3732
+Data Analyst,Data Analysis,Power BI,193,573,311,1495,1.61914
+Data Analyst,Data Analysis,Python,185,573,319,1495,1.5131
+Data Analyst,Data Analysis,Qlik,23,573,36,1495,1.66691
+Data Analyst,Data Analysis,R,85,573,132,1495,1.68009
+Data Analyst,Data Analysis,Redshift,16,573,30,1495,1.39151
+Data Analyst,Data Analysis,SAS,65,573,93,1495,1.82355
+Data Analyst,Data Analysis,SQL,337,573,646,1495,1.36108
+Data Analyst,Data Analysis,SQL Server,37,573,71,1495,1.35966
+Data Analyst,Data Analysis,Snowflake,39,573,61,1495,1.6681
+Data Analyst,Data Analysis,Spark,22,573,36,1495,1.59443
+Data Analyst,Data Analysis,Statistics,164,573,251,1495,1.70473
+Data Analyst,Data Analysis,Tableau,167,573,287,1495,1.51817
+Data Analyst,Data Analysis,VBA,31,573,56,1495,1.44431
+Data Analyst,Data Modeling,Data Visualization,71,102,450,1495,2.31253
+Data Analyst,Data Modeling,ETL,39,102,139,1495,4.11236
+Data Analyst,Data Modeling,Excel,28,102,462,1495,0.888295
+Data Analyst,Data Modeling,Machine Learning,16,102,114,1495,2.0571
+Data Analyst,Data Modeling,Power BI,59,102,311,1495,2.78056
+Data Analyst,Data Modeling,Python,36,102,319,1495,1.65407
+Data Analyst,Data Modeling,R,23,102,132,1495,2.55385
+Data Analyst,Data Modeling,Redshift,15,102,30,1495,7.32843
+Data Analyst,Data Modeling,SQL,77,102,646,1495,1.74703
+Data Analyst,Data Modeling,Statistics,30,102,251,1495,1.75182
+Data Analyst,Data Modeling,Tableau,38,102,287,1495,1.94063
+Data Analyst,Data Visualization,Databricks,20,450,32,1495,2.07639
+Data Analyst,Data Visualization,ETL,91,450,139,1495,2.17498
+Data Analyst,Data Visualization,Excel,176,450,462,1495,1.26561
+Data Analyst,Data Visualization,Forecasting,44,450,83,1495,1.76118
+Data Analyst,Data Visualization,Looker,29,450,36,1495,2.67623
+Data Analyst,Data Visualization,Machine Learning,49,450,114,1495,1.42797
+Data Analyst,Data Visualization,Power BI,209,450,311,1495,2.23262
+Data Analyst,Data Visualization,Python,159,450,319,1495,1.6559
+Data Analyst,Data Visualization,Qlik,25,450,36,1495,2.3071
+Data Analyst,Data Visualization,R,92,450,132,1495,2.31549
+Data Analyst,Data Visualization,Redshift,23,450,30,1495,2.54704
+Data Analyst,Data Visualization,SAS,42,450,93,1495,1.50036
+Data Analyst,Data Visualization,SQL,305,450,646,1495,1.56854
+Data Analyst,Data Visualization,SQL Server,30,450,71,1495,1.40376
+Data Analyst,Data Visualization,Snowflake,35,450,61,1495,1.90619
+Data Analyst,Data Visualization,Spark,20,450,36,1495,1.84568
+Data Analyst,Data Visualization,Statistics,144,450,251,1495,1.90598
+Data Analyst,Data Visualization,Tableau,200,450,287,1495,2.31514
+Data Analyst,Data Visualization,VBA,25,450,56,1495,1.48313
+Data Analyst,Databricks,Power BI,20,32,311,1495,3.00442
+Data Analyst,Databricks,Python,18,32,319,1495,2.63617
+Data Analyst,Databricks,SQL,25,32,646,1495,1.808
+Data Analyst,ETL,Excel,43,139,462,1495,1.00104
+Data Analyst,ETL,Machine Learning,21,139,114,1495,1.98126
+Data Analyst,ETL,Power BI,73,139,311,1495,2.52458
+Data Analyst,ETL,Python,57,139,319,1495,1.92181
+Data Analyst,ETL,R,26,139,132,1495,2.11849
+Data Analyst,ETL,SQL,111,139,646,1495,1.84806
+Data Analyst,ETL,Snowflake,15,139,61,1495,2.64477
+Data Analyst,ETL,Statistics,38,139,251,1495,1.62831
+Data Analyst,ETL,Tableau,59,139,287,1495,2.21104
+Data Analyst,ETL,VBA,15,139,56,1495,2.88091
+Data Analyst,Excel,Forecasting,36,462,83,1495,1.40354
+Data Analyst,Excel,Machine Learning,30,462,114,1495,0.851561
+Data Analyst,Excel,Power BI,136,462,311,1495,1.41507
+Data Analyst,Excel,Python,97,462,319,1495,0.983966
+Data Analyst,Excel,Qlik,16,462,36,1495,1.43819
+Data Analyst,Excel,R,52,462,132,1495,1.27476
+Data Analyst,Excel,SAS,51,462,93,1495,1.77454
+Data Analyst,Excel,SQL,243,462,646,1495,1.21723
+Data Analyst,Excel,SQL Server,33,462,71,1495,1.50402
+Data Analyst,Excel,Statistics,97,462,251,1495,1.25054
+Data Analyst,Excel,Tableau,122,462,287,1495,1.37555
+Data Analyst,Excel,VBA,43,462,56,1495,2.48473
+Data Analyst,Forecasting,Power BI,28,83,311,1495,1.62166
+Data Analyst,Forecasting,Python,32,83,319,1495,1.80685
+Data Analyst,Forecasting,R,17,83,132,1495,2.31973
+Data Analyst,Forecasting,SQL,47,83,646,1495,1.31047
+Data Analyst,Forecasting,Statistics,28,83,251,1495,2.00931
+Data Analyst,Forecasting,Tableau,33,83,287,1495,2.07107
+Data Analyst,GCP,Python,19,36,319,1495,2.47344
+Data Analyst,GCP,SQL,24,36,646,1495,1.54283
+Data Analyst,HTML/CSS,JavaScript,50,65,65,1495,17.6923
+Data Analyst,HTML/CSS,Python,48,65,319,1495,3.46082
+Data Analyst,HTML/CSS,SQL,51,65,646,1495,1.81579
+Data Analyst,JavaScript,Python,52,65,319,1495,3.74922
+Data Analyst,JavaScript,SQL,56,65,646,1495,1.99381
+Data Analyst,Looker,Python,19,36,319,1495,2.47344
+Data Analyst,Looker,SQL,28,36,646,1495,1.79997
+Data Analyst,Looker,Statistics,16,36,251,1495,2.64719
+Data Analyst,Looker,Tableau,26,36,287,1495,3.7621
+Data Analyst,Machine Learning,Power BI,33,114,311,1495,1.39152
+Data Analyst,Machine Learning,Python,63,114,319,1495,2.58992
+Data Analyst,Machine Learning,R,32,114,132,1495,3.17916
+Data Analyst,Machine Learning,SQL,61,114,646,1495,1.23832
+Data Analyst,Machine Learning,Statistics,43,114,251,1495,2.24663
+Data Analyst,Machine Learning,Tableau,40,114,287,1495,1.82774
+Data Analyst,Power BI,Python,104,311,319,1495,1.5672
+Data Analyst,Power BI,Qlik,25,311,36,1495,3.33825
+Data Analyst,Power BI,R,45,311,132,1495,1.63878
+Data Analyst,Power BI,SAS,21,311,93,1495,1.08547
+Data Analyst,Power BI,SQL,219,311,646,1495,1.62964
+Data Analyst,Power BI,SQL Server,37,311,71,1495,2.50509
+Data Analyst,Power BI,Snowflake,34,311,61,1495,2.67935
+Data Analyst,Power BI,Statistics,70,311,251,1495,1.34062
+Data Analyst,Power BI,Tableau,141,311,287,1495,2.36166
+Data Analyst,Python,R,117,319,132,1495,4.15396
+Data Analyst,Python,Redshift,25,319,30,1495,3.90543
+Data Analyst,Python,SAS,48,319,93,1495,2.41885
+Data Analyst,Python,SQL,267,319,646,1495,1.937
+Data Analyst,Python,SQL Server,15,319,71,1495,0.99011
+Data Analyst,Python,Snowflake,22,319,61,1495,1.69022
+Data Analyst,Python,Spark,23,319,36,1495,2.99417
+Data Analyst,Python,Statistics,133,319,251,1495,2.4833
+Data Analyst,Python,Tableau,128,319,287,1495,2.09016
+Data Analyst,Python,VBA,22,319,56,1495,1.84113
+Data Analyst,Qlik,SQL,27,36,646,1495,1.73568
+Data Analyst,Qlik,Tableau,28,36,287,1495,4.05149
+Data Analyst,R,SAS,48,132,93,1495,5.84555
+Data Analyst,R,SQL,113,132,646,1495,1.98113
+Data Analyst,R,Statistics,84,132,251,1495,3.79029
+Data Analyst,R,Tableau,76,132,287,1495,2.99916
+Data Analyst,Redshift,SQL,25,30,646,1495,1.92853
+Data Analyst,Redshift,Statistics,19,30,251,1495,3.77224
+Data Analyst,Redshift,Tableau,21,30,287,1495,3.64634
+Data Analyst,SAS,SQL,78,93,646,1495,1.94098
+Data Analyst,SAS,Statistics,53,93,251,1495,3.39438
+Data Analyst,SAS,Tableau,42,93,287,1495,2.35248
+Data Analyst,SQL,SQL Server,55,646,71,1495,1.79272
+Data Analyst,SQL,Snowflake,40,646,61,1495,1.51754
+Data Analyst,SQL,Spark,28,646,36,1495,1.79997
+Data Analyst,SQL,Statistics,175,646,251,1495,1.61351
+Data Analyst,SQL,Tableau,212,646,287,1495,1.70947
+Data Analyst,SQL,VBA,51,646,56,1495,2.10761
+Data Analyst,SQL Server,Tableau,22,71,287,1495,1.61407
+Data Analyst,Snowflake,Statistics,15,61,251,1495,1.46463
+Data Analyst,Snowflake,Tableau,26,61,287,1495,2.22025
+Data Analyst,Statistics,Tableau,103,251,287,1495,2.13758
+Data Analyst,Statistics,VBA,16,251,56,1495,1.70176
+Data Analyst,Tableau,VBA,16,287,56,1495,1.4883
+Data Scientist,A/B Testing,AWS,17,44,78,380,1.88228
+Data Scientist,A/B Testing,Data Analysis,23,44,186,380,1.06794
+Data Scientist,A/B Testing,Data Visualization,16,44,102,380,1.35472
+Data Scientist,A/B Testing,Machine Learning,34,44,252,380,1.16522
+Data Scientist,A/B Testing,Python,39,44,290,380,1.16144
+Data Scientist,A/B Testing,R,22,44,138,380,1.37681
+Data Scientist,A/B Testing,SQL,36,44,188,380,1.65377
+Data Scientist,A/B Testing,Statistics,38,44,247,380,1.32867
+Data Scientist,AWS,Azure,24,78,32,380,3.65385
+Data Scientist,AWS,Data Analysis,55,78,186,380,1.44058
+Data Scientist,AWS,Data Visualization,15,78,102,380,0.71644
+Data Scientist,AWS,Deep Learning,26,78,71,380,1.78404
+Data Scientist,AWS,GCP,29,78,44,380,3.21096
+Data Scientist,AWS,Machine Learning,67,78,252,380,1.29528
+Data Scientist,AWS,NLP,19,78,75,380,1.23419
+Data Scientist,AWS,PyTorch,17,78,48,380,1.72543
+Data Scientist,AWS,Python,70,78,290,380,1.17595
+Data Scientist,AWS,R,28,78,138,380,0.98848
+Data Scientist,AWS,SQL,52,78,188,380,1.34752
+Data Scientist,AWS,Scala,23,78,44,380,2.54662
+Data Scientist,AWS,Spark,31,78,76,380,1.98718
+Data Scientist,AWS,Statistics,58,78,247,380,1.14398
+Data Scientist,Azure,Data Analysis,20,32,186,380,1.27688
+Data Scientist,Azure,GCP,20,32,44,380,5.39773
+Data Scientist,Azure,Machine Learning,28,32,252,380,1.31944
+Data Scientist,Azure,Python,29,32,290,380,1.1875
+Data Scientist,Azure,SQL,21,32,188,380,1.32646
+Data Scientist,Azure,Statistics,22,32,247,380,1.05769
+Data Scientist,C++,Data Analysis,15,34,186,380,0.901328
+Data Scientist,C++,Java,28,34,36,380,8.69281
+Data Scientist,C++,Machine Learning,27,34,252,380,1.19748
+Data Scientist,C++,Python,32,34,290,380,1.23327
+Data Scientist,C++,Statistics,20,34,247,380,0.904977
+Data Scientist,Data Analysis,Data Visualization,71,186,102,380,1.4221
+Data Scientist,Data Analysis,Deep Learning,28,186,71,380,0.805694
+Data Scientist,Data Analysis,ETL,20,186,33,380,1.23819
+Data Scientist,Data Analysis,Excel,16,186,30,380,1.08961
+Data Scientist,Data Analysis,GCP,21,186,44,380,0.975073
+Data Scientist,Data Analysis,Hadoop,20,186,31,380,1.31807
+Data Scientist,Data Analysis,Java,16,186,36,380,0.908005
+Data Scientist,Data Analysis,Machine Learning,137,186,252,380,1.11068
+Data Scientist,Data Analysis,NLP,38,186,75,380,1.03513
+Data Scientist,Data Analysis,Power BI,26,186,37,380,1.43563
+Data Scientist,Data Analysis,Python,147,186,290,380,1.0356
+Data Scientist,Data Analysis,R,82,186,138,380,1.21396
+Data Scientist,Data Analysis,SAS,34,186,56,380,1.2404
+Data Scientist,Data Analysis,SQL,110,186,188,380,1.19538
+Data Scientist,Data Analysis,Scala,31,186,44,380,1.43939
+Data Scientist,Data Analysis,Spark,34,186,76,380,0.913978
+Data Scientist,Data Analysis,Statistics,153,186,247,380,1.26551
+Data Scientist,Data Analysis,Tableau,38,186,57,380,1.36201
+Data Scientist,Data Visualization,ETL,16,102,33,380,1.8063
+Data Scientist,Data Visualization,Excel,17,102,30,380,2.11111
+Data Scientist,Data Visualization,Machine Learning,69,102,252,380,1.02007
+Data Scientist,Data Visualization,NLP,20,102,75,380,0.993464
+Data Scientist,Data Visualization,Power BI,32,102,37,380,3.22205
+Data Scientist,Data Visualization,Python,88,102,290,380,1.13049
+Data Scientist,Data Visualization,R,52,102,138,380,1.40381
+Data Scientist,Data Visualization,SAS,21,102,56,380,1.39706
+Data Scientist,Data Visualization,SQL,65,102,188,380,1.28807
+Data Scientist,Data Visualization,Statistics,81,102,247,380,1.22172
+Data Scientist,Data Visualization,Tableau,45,102,57,380,2.94118
+Data Scientist,Deep Learning,Generative AI/LLM,27,71,58,380,2.4915
+Data Scientist,Deep Learning,Machine Learning,61,71,252,380,1.29555
+Data Scientist,Deep Learning,NLP,29,71,75,380,2.06948
+Data Scientist,Deep Learning,PyTorch,32,71,48,380,3.56808
+Data Scientist,Deep Learning,Python,65,71,290,380,1.19961
+Data Scientist,Deep Learning,R,16,71,138,380,0.620535
+Data Scientist,Deep Learning,SQL,34,71,188,380,0.967935
+Data Scientist,Deep Learning,Scala,15,71,44,380,1.82458
+Data Scientist,Deep Learning,Spark,32,71,76,380,2.25352
+Data Scientist,Deep Learning,Statistics,41,71,247,380,0.888407
+Data Scientist,Deep Learning,TensorFlow,18,71,35,380,2.75252
+Data Scientist,ETL,Machine Learning,26,33,252,380,1.18807
+Data Scientist,ETL,Python,31,33,290,380,1.23093
+Data Scientist,ETL,R,18,33,138,380,1.50198
+Data Scientist,ETL,SQL,24,33,188,380,1.47002
+Data Scientist,ETL,Statistics,23,33,247,380,1.07226
+Data Scientist,Excel,Python,21,30,290,380,0.917241
+Data Scientist,Excel,R,15,30,138,380,1.37681
+Data Scientist,Excel,SQL,20,30,188,380,1.34752
+Data Scientist,Excel,Statistics,21,30,247,380,1.07692
+Data Scientist,GCP,Machine Learning,37,44,252,380,1.26804
+Data Scientist,GCP,PyTorch,17,44,48,380,3.05871
+Data Scientist,GCP,Python,40,44,290,380,1.19122
+Data Scientist,GCP,R,18,44,138,380,1.12648
+Data Scientist,GCP,SQL,32,44,188,380,1.47002
+Data Scientist,GCP,Spark,15,44,76,380,1.70455
+Data Scientist,GCP,Statistics,26,44,247,380,0.909091
+Data Scientist,Generative AI/LLM,Machine Learning,45,58,252,380,1.16995
+Data Scientist,Generative AI/LLM,NLP,29,58,75,380,2.53333
+Data Scientist,Generative AI/LLM,PyTorch,27,58,48,380,3.68534
+Data Scientist,Generative AI/LLM,Python,52,58,290,380,1.17479
+Data Scientist,Generative AI/LLM,SQL,18,58,188,380,0.627293
+Data Scientist,Generative AI/LLM,Spark,21,58,76,380,1.81034
+Data Scientist,Generative AI/LLM,Statistics,27,58,247,380,0.71618
+Data Scientist,Hadoop,Machine Learning,28,31,252,380,1.36201
+Data Scientist,Hadoop,Python,30,31,290,380,1.26808
+Data Scientist,Hadoop,R,18,31,138,380,1.59888
+Data Scientist,Hadoop,SQL,25,31,188,380,1.63006
+Data Scientist,Hadoop,Spark,19,31,76,380,3.06452
+Data Scientist,Hadoop,Statistics,31,31,247,380,1.53846
+Data Scientist,Java,Machine Learning,32,36,252,380,1.34039
+Data Scientist,Java,NLP,15,36,75,380,2.11111
+Data Scientist,Java,Python,34,36,290,380,1.23755
+Data Scientist,Java,Statistics,24,36,247,380,1.02564
+Data Scientist,Machine Learning,NLP,64,252,75,380,1.28677
+Data Scientist,Machine Learning,Power BI,27,252,37,380,1.10039
+Data Scientist,Machine Learning,PyTorch,40,252,48,380,1.25661
+Data Scientist,Machine Learning,Python,221,252,290,380,1.14915
+Data Scientist,Machine Learning,R,104,252,138,380,1.13642
+Data Scientist,Machine Learning,SAS,37,252,56,380,0.996315
+Data Scientist,Machine Learning,SQL,140,252,188,380,1.12293
+Data Scientist,Machine Learning,Scala,41,252,44,380,1.40512
+Data Scientist,Machine Learning,Spark,65,252,76,380,1.28968
+Data Scientist,Machine Learning,Statistics,195,252,247,380,1.19048
+Data Scientist,Machine Learning,Tableau,39,252,57,380,1.03175
+Data Scientist,Machine Learning,TensorFlow,34,252,35,380,1.46485
+Data Scientist,NLP,PyTorch,24,75,48,380,2.53333
+Data Scientist,NLP,Python,68,75,290,380,1.18805
+Data Scientist,NLP,R,17,75,138,380,0.624155
+Data Scientist,NLP,SQL,29,75,188,380,0.78156
+Data Scientist,NLP,Spark,23,75,76,380,1.53333
+Data Scientist,NLP,Statistics,50,75,247,380,1.02564
+Data Scientist,NLP,TensorFlow,15,75,35,380,2.17143
+Data Scientist,Power BI,Python,33,37,290,380,1.16869
+Data Scientist,Power BI,R,16,37,138,380,1.19076
+Data Scientist,Power BI,SQL,26,37,188,380,1.42036
+Data Scientist,Power BI,Statistics,30,37,247,380,1.2474
+Data Scientist,Power BI,Tableau,30,37,57,380,5.40541
+Data Scientist,PyTorch,Python,48,48,290,380,1.31034
+Data Scientist,PyTorch,SQL,19,48,188,380,0.800089
+Data Scientist,PyTorch,Spark,25,48,76,380,2.60417
+Data Scientist,PyTorch,Statistics,20,48,247,380,0.641026
+Data Scientist,PyTorch,TensorFlow,25,48,35,380,5.65476
+Data Scientist,Python,R,131,290,138,380,1.24388
+Data Scientist,Python,SAS,47,290,56,380,1.09975
+Data Scientist,Python,SQL,171,290,188,380,1.19186
+Data Scientist,Python,Scala,44,290,44,380,1.31034
+Data Scientist,Python,Spark,75,290,76,380,1.2931
+Data Scientist,Python,Statistics,207,290,247,380,1.09814
+Data Scientist,Python,Tableau,51,290,57,380,1.17241
+Data Scientist,Python,TensorFlow,34,290,35,380,1.27291
+Data Scientist,R,SAS,43,138,56,380,2.11439
+Data Scientist,R,SQL,103,138,188,380,1.50863
+Data Scientist,R,Scala,18,138,44,380,1.12648
+Data Scientist,R,Spark,20,138,76,380,0.724638
+Data Scientist,R,Statistics,120,138,247,380,1.33779
+Data Scientist,R,Tableau,23,138,57,380,1.11111
+Data Scientist,R,TensorFlow,15,138,35,380,1.18012
+Data Scientist,SAS,SQL,37,56,188,380,1.33549
+Data Scientist,SAS,Statistics,50,56,247,380,1.37363
+Data Scientist,SAS,Tableau,18,56,57,380,2.14286
+Data Scientist,SQL,Scala,32,188,44,380,1.47002
+Data Scientist,SQL,Spark,45,188,76,380,1.19681
+Data Scientist,SQL,Statistics,157,188,247,380,1.28478
+Data Scientist,SQL,Tableau,44,188,57,380,1.56028
+Data Scientist,SQL,TensorFlow,19,188,35,380,1.09726
+Data Scientist,Scala,Spark,33,44,76,380,3.75
+Data Scientist,Scala,Statistics,41,44,247,380,1.43357
+Data Scientist,Spark,Statistics,56,76,247,380,1.1336
+Data Scientist,Spark,TensorFlow,15,76,35,380,2.14286
+Data Scientist,Statistics,Tableau,52,247,57,380,1.40351
+Data Scientist,Statistics,TensorFlow,20,247,35,380,0.879121
+Data Engineer,AWS,Airflow,45,277,77,595,1.25533
+Data Engineer,AWS,Azure,134,277,243,595,1.1845
+Data Engineer,AWS,BigQuery,32,277,56,595,1.22744
+Data Engineer,AWS,CI/CD,48,277,76,595,1.35664
+Data Engineer,AWS,Data Analysis,55,277,125,595,0.945126
+Data Engineer,AWS,Data Modeling,99,277,193,595,1.10183
+Data Engineer,AWS,Data Visualization,37,277,91,595,0.873369
+Data Engineer,AWS,Databricks,40,277,106,595,0.810571
+Data Engineer,AWS,Docker,21,277,32,595,1.40963
+Data Engineer,AWS,ETL,183,277,388,595,1.01311
+Data Engineer,AWS,GCP,94,277,124,595,1.62833
+Data Engineer,AWS,Git,49,277,73,595,1.44182
+Data Engineer,AWS,Hadoop,59,277,97,595,1.30652
+Data Engineer,AWS,Java,87,277,136,595,1.3741
+Data Engineer,AWS,Kafka,58,277,89,595,1.39983
+Data Engineer,AWS,Kubernetes,25,277,40,595,1.34251
+Data Engineer,AWS,Linux,35,277,58,595,1.29622
+Data Engineer,AWS,Machine Learning,71,277,123,595,1.23991
+Data Engineer,AWS,MongoDB,28,277,38,595,1.58275
+Data Engineer,AWS,MySQL,41,277,49,595,1.79732
+Data Engineer,AWS,NoSQL,82,277,103,595,1.71007
+Data Engineer,AWS,PostgreSQL,30,277,52,595,1.23924
+Data Engineer,AWS,Power BI,24,277,82,595,0.628687
+Data Engineer,AWS,Python,197,277,364,595,1.16252
+Data Engineer,AWS,Redshift,84,277,97,595,1.86014
+Data Engineer,AWS,SQL,182,277,392,595,0.997292
+Data Engineer,AWS,SQL Server,38,277,88,595,0.927552
+Data Engineer,AWS,Scala,69,277,115,595,1.28881
+Data Engineer,AWS,Shell/Bash,32,277,54,595,1.2729
+Data Engineer,AWS,Snowflake,104,277,154,595,1.45061
+Data Engineer,AWS,Spark,134,277,220,595,1.30834
+Data Engineer,AWS,Tableau,31,277,69,595,0.96505
+Data Engineer,AWS,Terraform,30,277,38,595,1.6958
+Data Engineer,AWS,dbt,36,277,55,595,1.40597
+Data Engineer,Airflow,Azure,32,77,243,595,1.01758
+Data Engineer,Airflow,BigQuery,18,77,56,595,2.48377
+Data Engineer,Airflow,CI/CD,21,77,76,595,2.13517
+Data Engineer,Airflow,Data Analysis,16,77,125,595,0.989091
+Data Engineer,Airflow,Data Modeling,31,77,193,595,1.24117
+Data Engineer,Airflow,Data Visualization,19,77,91,595,1.61339
+Data Engineer,Airflow,Databricks,25,77,106,595,1.82247
+Data Engineer,Airflow,ETL,62,77,388,595,1.23477
+Data Engineer,Airflow,GCP,20,77,124,595,1.24633
+Data Engineer,Airflow,Git,25,77,73,595,2.64633
+Data Engineer,Airflow,Java,17,77,136,595,0.965909
+Data Engineer,Airflow,Kafka,22,77,89,595,1.91011
+Data Engineer,Airflow,Kubernetes,15,77,40,595,2.89773
+Data Engineer,Airflow,Machine Learning,18,77,123,595,1.13082
+Data Engineer,Airflow,Python,68,77,364,595,1.44356
+Data Engineer,Airflow,Redshift,17,77,97,595,1.35426
+Data Engineer,Airflow,SQL,68,77,392,595,1.34045
+Data Engineer,Airflow,Scala,19,77,115,595,1.27668
+Data Engineer,Airflow,Snowflake,32,77,154,595,1.60567
+Data Engineer,Airflow,Spark,46,77,220,595,1.6157
+Data Engineer,Airflow,dbt,17,77,55,595,2.38843
+Data Engineer,Azure,BigQuery,30,243,56,595,1.31173
+Data Engineer,Azure,CI/CD,45,243,76,595,1.44981
+Data Engineer,Azure,Data Analysis,49,243,125,595,0.959835
+Data Engineer,Azure,Data Modeling,109,243,193,595,1.38287
+Data Engineer,Azure,Data Visualization,38,243,91,595,1.02248
+Data Engineer,Azure,Databricks,69,243,106,595,1.59387
+Data Engineer,Azure,Docker,15,243,32,595,1.14776
+Data Engineer,Azure,ETL,181,243,388,595,1.14224
+Data Engineer,Azure,GCP,90,243,124,595,1.77718
+Data Engineer,Azure,Git,48,243,73,595,1.61001
+Data Engineer,Azure,Hadoop,44,243,97,595,1.11069
+Data Engineer,Azure,Java,67,243,136,595,1.20628
+Data Engineer,Azure,Kafka,47,243,89,595,1.29306
+Data Engineer,Azure,Kubernetes,22,243,40,595,1.34671
+Data Engineer,Azure,Linux,33,243,58,595,1.39315
+Data Engineer,Azure,Machine Learning,61,243,123,595,1.21433
+Data Engineer,Azure,MongoDB,24,243,38,595,1.54646
+Data Engineer,Azure,MySQL,35,243,49,595,1.74897
+Data Engineer,Azure,NoSQL,65,243,103,595,1.54521
+Data Engineer,Azure,PostgreSQL,17,243,52,595,0.800491
+Data Engineer,Azure,Power BI,58,243,82,595,1.73191
+Data Engineer,Azure,Python,154,243,364,595,1.03593
+Data Engineer,Azure,Redshift,46,243,97,595,1.16117
+Data Engineer,Azure,SQL,176,243,392,595,1.09935
+Data Engineer,Azure,SQL Server,56,243,88,595,1.55817
+Data Engineer,Azure,Scala,64,243,115,595,1.36268
+Data Engineer,Azure,Shell/Bash,29,243,54,595,1.31497
+Data Engineer,Azure,Snowflake,78,243,154,595,1.24018
+Data Engineer,Azure,Spark,117,243,220,595,1.30219
+Data Engineer,Azure,Tableau,27,243,69,595,0.958132
+Data Engineer,Azure,Terraform,19,243,38,595,1.22428
+Data Engineer,Azure,dbt,26,243,55,595,1.1575
+Data Engineer,BigQuery,Data Modeling,28,56,193,595,1.54145
+Data Engineer,BigQuery,ETL,40,56,388,595,1.09536
+Data Engineer,BigQuery,GCP,41,56,124,595,3.5131
+Data Engineer,BigQuery,Java,15,56,136,595,1.17188
+Data Engineer,BigQuery,MySQL,19,56,49,595,4.1199
+Data Engineer,BigQuery,NoSQL,22,56,103,595,2.26942
+Data Engineer,BigQuery,Python,33,56,364,595,0.963255
+Data Engineer,BigQuery,Redshift,30,56,97,595,3.28608
+Data Engineer,BigQuery,SQL,35,56,392,595,0.948661
+Data Engineer,BigQuery,SQL Server,21,56,88,595,2.53551
+Data Engineer,BigQuery,Scala,15,56,115,595,1.38587
+Data Engineer,BigQuery,Snowflake,15,56,154,595,1.0349
+Data Engineer,BigQuery,Spark,38,56,220,595,1.83523
+Data Engineer,C#,ETL,18,32,388,595,0.862597
+Data Engineer,C#,Python,24,32,364,595,1.22596
+Data Engineer,C#,SQL,25,32,392,595,1.18583
+Data Engineer,CI/CD,Data Modeling,20,76,193,595,0.81129
+Data Engineer,CI/CD,Databricks,26,76,106,595,1.92031
+Data Engineer,CI/CD,ETL,50,76,388,595,1.00888
+Data Engineer,CI/CD,GCP,24,76,124,595,1.51528
+Data Engineer,CI/CD,Git,28,76,73,595,3.00288
+Data Engineer,CI/CD,Java,25,76,136,595,1.43914
+Data Engineer,CI/CD,Kafka,18,76,89,595,1.58338
+Data Engineer,CI/CD,Machine Learning,15,76,123,595,0.95475
+Data Engineer,CI/CD,NoSQL,22,76,103,595,1.6722
+Data Engineer,CI/CD,Python,58,76,364,595,1.24747
+Data Engineer,CI/CD,SQL,50,76,392,595,0.99859
+Data Engineer,CI/CD,Scala,19,76,115,595,1.29348
+Data Engineer,CI/CD,Snowflake,21,76,154,595,1.06758
+Data Engineer,CI/CD,Spark,40,76,220,595,1.42344
+Data Engineer,CI/CD,Terraform,15,76,38,595,3.09037
+Data Engineer,Data Analysis,Data Modeling,61,125,193,595,1.50446
+Data Engineer,Data Analysis,Data Visualization,43,125,91,595,2.24923
+Data Engineer,Data Analysis,Databricks,17,125,106,595,0.763396
+Data Engineer,Data Analysis,ETL,88,125,388,595,1.07959
+Data Engineer,Data Analysis,GCP,19,125,124,595,0.729355
+Data Engineer,Data Analysis,Git,16,125,73,595,1.04329
+Data Engineer,Data Analysis,Hadoop,22,125,97,595,1.07959
+Data Engineer,Data Analysis,Java,29,125,136,595,1.015
+Data Engineer,Data Analysis,Kafka,20,125,89,595,1.06966
+Data Engineer,Data Analysis,Machine Learning,31,125,123,595,1.19967
+Data Engineer,Data Analysis,NoSQL,17,125,103,595,0.785631
+Data Engineer,Data Analysis,Power BI,32,125,82,595,1.85756
+Data Engineer,Data Analysis,Python,70,125,364,595,0.915385
+Data Engineer,Data Analysis,SQL,99,125,392,595,1.20214
+Data Engineer,Data Analysis,SQL Server,21,125,88,595,1.13591
+Data Engineer,Data Analysis,Scala,20,125,115,595,0.827826
+Data Engineer,Data Analysis,Snowflake,34,125,154,595,1.05091
+Data Engineer,Data Analysis,Spark,39,125,220,595,0.843818
+Data Engineer,Data Analysis,Statistics,15,125,40,595,1.785
+Data Engineer,Data Analysis,Tableau,36,125,69,595,2.48348
+Data Engineer,Data Modeling,Data Visualization,31,193,91,595,1.05022
+Data Engineer,Data Modeling,Databricks,42,193,106,595,1.22153
+Data Engineer,Data Modeling,ETL,146,193,388,595,1.16006
+Data Engineer,Data Modeling,GCP,45,193,124,595,1.11879
+Data Engineer,Data Modeling,Git,23,193,73,595,0.971325
+Data Engineer,Data Modeling,Hadoop,32,193,97,595,1.01704
+Data Engineer,Data Modeling,Java,37,193,136,595,0.838731
+Data Engineer,Data Modeling,Kafka,21,193,89,595,0.727426
+Data Engineer,Data Modeling,Machine Learning,43,193,123,595,1.07776
+Data Engineer,Data Modeling,MySQL,23,193,49,595,1.44708
+Data Engineer,Data Modeling,NoSQL,42,193,103,595,1.25711
+Data Engineer,Data Modeling,PostgreSQL,15,193,52,595,0.889299
+Data Engineer,Data Modeling,Power BI,28,193,82,595,1.0527
+Data Engineer,Data Modeling,Python,118,193,364,595,0.999402
+Data Engineer,Data Modeling,Redshift,39,193,97,595,1.23952
+Data Engineer,Data Modeling,SQL,137,193,392,595,1.07744
+Data Engineer,Data Modeling,SQL Server,44,193,88,595,1.54145
+Data Engineer,Data Modeling,Scala,37,193,115,595,0.99189
+Data Engineer,Data Modeling,Snowflake,56,193,154,595,1.12106
+Data Engineer,Data Modeling,Spark,72,193,220,595,1.00895
+Data Engineer,Data Modeling,Tableau,25,193,69,595,1.11699
+Data Engineer,Data Modeling,dbt,30,193,55,595,1.68158
+Data Engineer,Data Visualization,Databricks,21,91,106,595,1.29536
+Data Engineer,Data Visualization,ETL,67,91,388,595,1.12906
+Data Engineer,Data Visualization,GCP,19,91,124,595,1.00186
+Data Engineer,Data Visualization,Machine Learning,19,91,123,595,1.01001
+Data Engineer,Data Visualization,Power BI,33,91,82,595,2.63133
+Data Engineer,Data Visualization,Python,60,91,364,595,1.07777
+Data Engineer,Data Visualization,SQL,69,91,392,595,1.1509
+Data Engineer,Data Visualization,Snowflake,25,91,154,595,1.06144
+Data Engineer,Data Visualization,Spark,19,91,220,595,0.564685
+Data Engineer,Data Visualization,Tableau,27,91,69,595,2.55853
+Data Engineer,Databricks,ETL,77,106,388,595,1.11396
+Data Engineer,Databricks,GCP,18,106,124,595,0.81482
+Data Engineer,Databricks,Git,21,106,73,595,1.61476
+Data Engineer,Databricks,Hadoop,18,106,97,595,1.04163
+Data Engineer,Databricks,Java,23,106,136,595,0.949292
+Data Engineer,Databricks,Kafka,16,106,89,595,1.00912
+Data Engineer,Databricks,Machine Learning,28,106,123,595,1.2778
+Data Engineer,Databricks,Power BI,25,106,82,595,1.71134
+Data Engineer,Databricks,Python,74,106,364,595,1.14115
+Data Engineer,Databricks,Redshift,25,106,97,595,1.4467
+Data Engineer,Databricks,SQL,71,106,392,595,1.01668
+Data Engineer,Databricks,SQL Server,17,106,88,595,1.08437
+Data Engineer,Databricks,Scala,29,106,115,595,1.4155
+Data Engineer,Databricks,Snowflake,40,106,154,595,1.45798
+Data Engineer,Databricks,Spark,60,106,220,595,1.53087
+Data Engineer,Docker,ETL,18,32,388,595,0.862597
+Data Engineer,Docker,GCP,16,32,124,595,2.39919
+Data Engineer,Docker,Java,16,32,136,595,2.1875
+Data Engineer,Docker,Kafka,15,32,89,595,3.13378
+Data Engineer,Docker,Kubernetes,23,32,40,595,10.6914
+Data Engineer,Docker,Python,26,32,364,595,1.32812
+Data Engineer,Docker,SQL,21,32,392,595,0.996094
+Data Engineer,Docker,Spark,19,32,220,595,1.60582
+Data Engineer,ETL,GCP,81,388,124,595,1.00173
+Data Engineer,ETL,Git,50,388,73,595,1.05035
+Data Engineer,ETL,Hadoop,59,388,97,595,0.932751
+Data Engineer,ETL,Java,91,388,136,595,1.0261
+Data Engineer,ETL,Kafka,61,388,89,595,1.05105
+Data Engineer,ETL,Kubernetes,23,388,40,595,0.881765
+Data Engineer,ETL,Linux,36,388,58,595,0.951831
+Data Engineer,ETL,Machine Learning,78,388,123,595,0.972467
+Data Engineer,ETL,MongoDB,17,388,38,595,0.686042
+Data Engineer,ETL,MySQL,31,388,49,595,0.970177
+Data Engineer,ETL,NoSQL,74,388,103,595,1.10174
+Data Engineer,ETL,PostgreSQL,35,388,52,595,1.03217
+Data Engineer,ETL,Power BI,56,388,82,595,1.04727
+Data Engineer,ETL,Python,247,388,364,595,1.04059
+Data Engineer,ETL,Redshift,66,388,97,595,1.04342
+Data Engineer,ETL,SQL,280,388,392,595,1.09536
+Data Engineer,ETL,SQL Server,78,388,88,595,1.35924
+Data Engineer,ETL,Scala,75,388,115,595,1.00011
+Data Engineer,ETL,Shell/Bash,35,388,54,595,0.993939
+Data Engineer,ETL,Snowflake,103,388,154,595,1.02566
+Data Engineer,ETL,Spark,157,388,220,595,1.09437
+Data Engineer,ETL,Statistics,28,388,40,595,1.07345
+Data Engineer,ETL,Tableau,48,388,69,595,1.06679
+Data Engineer,ETL,Terraform,20,388,38,595,0.807108
+Data Engineer,ETL,dbt,37,388,55,595,1.03163
+Data Engineer,GCP,Git,19,124,73,595,1.2489
+Data Engineer,GCP,Hadoop,39,124,97,595,1.92925
+Data Engineer,GCP,Java,57,124,136,595,2.01109
+Data Engineer,GCP,Kafka,43,124,89,595,2.31832
+Data Engineer,GCP,Kubernetes,23,124,40,595,2.75907
+Data Engineer,GCP,Linux,24,124,58,595,1.98554
+Data Engineer,GCP,Machine Learning,42,124,123,595,1.63847
+Data Engineer,GCP,MongoDB,20,124,38,595,2.52547
+Data Engineer,GCP,MySQL,33,124,49,595,3.23157
+Data Engineer,GCP,NoSQL,54,124,103,595,2.51566
+Data Engineer,GCP,Python,83,124,364,595,1.09414
+Data Engineer,GCP,Redshift,38,124,97,595,1.87978
+Data Engineer,GCP,SQL,89,124,392,595,1.08943
+Data Engineer,GCP,SQL Server,23,124,88,595,1.25412
+Data Engineer,GCP,Scala,43,124,115,595,1.79418
+Data Engineer,GCP,Shell/Bash,24,124,54,595,2.13262
+Data Engineer,GCP,Snowflake,39,124,154,595,1.21518
+Data Engineer,GCP,Spark,75,124,220,595,1.63581
+Data Engineer,GCP,Tableau,15,124,69,595,1.04313
+Data Engineer,Git,Kafka,18,73,89,595,1.64845
+Data Engineer,Git,Kubernetes,16,73,40,595,3.26027
+Data Engineer,Git,Machine Learning,19,73,123,595,1.25905
+Data Engineer,Git,Power BI,21,73,82,595,2.08737
+Data Engineer,Git,Python,58,73,364,595,1.29874
+Data Engineer,Git,SQL,61,73,392,595,1.26835
+Data Engineer,Git,Scala,20,73,115,595,1.41751
+Data Engineer,Git,Snowflake,18,73,154,595,0.952677
+Data Engineer,Git,Spark,35,73,220,595,1.2967
+Data Engineer,Git,Terraform,19,73,38,595,4.07534
+Data Engineer,Git,dbt,15,73,55,595,2.22291
+Data Engineer,Hadoop,Java,54,97,136,595,2.43557
+Data Engineer,Hadoop,Kafka,43,97,89,595,2.96363
+Data Engineer,Hadoop,Linux,24,97,58,595,2.53822
+Data Engineer,Hadoop,Machine Learning,34,97,123,595,1.69558
+Data Engineer,Hadoop,MongoDB,23,97,38,595,3.7127
+Data Engineer,Hadoop,MySQL,17,97,49,595,2.12813
+Data Engineer,Hadoop,NoSQL,38,97,103,595,2.26304
+Data Engineer,Hadoop,Python,73,97,364,595,1.23017
+Data Engineer,Hadoop,Redshift,21,97,97,595,1.32798
+Data Engineer,Hadoop,SQL,74,97,392,595,1.15795
+Data Engineer,Hadoop,Scala,56,97,115,595,2.987
+Data Engineer,Hadoop,Shell/Bash,19,97,54,595,2.15827
+Data Engineer,Hadoop,Snowflake,27,97,154,595,1.07545
+Data Engineer,Hadoop,Spark,83,97,220,595,2.3142
+Data Engineer,Hadoop,Tableau,16,97,69,595,1.42238
+Data Engineer,Java,Kafka,51,136,89,595,2.50702
+Data Engineer,Java,Kubernetes,22,136,40,595,2.40625
+Data Engineer,Java,Linux,30,136,58,595,2.26293
+Data Engineer,Java,Machine Learning,55,136,123,595,1.9563
+Data Engineer,Java,MongoDB,20,136,38,595,2.30263
+Data Engineer,Java,MySQL,20,136,49,595,1.78571
+Data Engineer,Java,NoSQL,49,136,103,595,2.08131
+Data Engineer,Java,Python,118,136,364,595,1.41827
+Data Engineer,Java,Redshift,30,136,97,595,1.35309
+Data Engineer,Java,SQL,102,136,392,595,1.13839
+Data Engineer,Java,Scala,71,136,115,595,2.70109
+Data Engineer,Java,Shell/Bash,25,136,54,595,2.02546
+Data Engineer,Java,Snowflake,41,136,154,595,1.16477
+Data Engineer,Java,Spark,90,136,220,595,1.78977
+Data Engineer,Java,Tableau,18,136,69,595,1.1413
+Data Engineer,Java,Terraform,15,136,38,595,1.72697
+Data Engineer,Kafka,Kubernetes,23,89,40,595,3.8441
+Data Engineer,Kafka,Linux,27,89,58,595,3.11217
+Data Engineer,Kafka,Machine Learning,43,89,123,595,2.33717
+Data Engineer,Kafka,MongoDB,21,89,38,595,3.69456
+Data Engineer,Kafka,MySQL,19,89,49,595,2.5923
+Data Engineer,Kafka,NoSQL,31,89,103,595,2.01211
+Data Engineer,Kafka,Python,64,89,364,595,1.17545
+Data Engineer,Kafka,Redshift,22,89,97,595,1.51627
+Data Engineer,Kafka,SQL,67,89,392,595,1.14266
+Data Engineer,Kafka,Scala,47,89,115,595,2.73229
+Data Engineer,Kafka,Shell/Bash,24,89,54,595,2.97129
+Data Engineer,Kafka,Snowflake,40,89,154,595,1.73647
+Data Engineer,Kafka,Spark,70,89,220,595,2.12717
+Data Engineer,Kubernetes,NoSQL,15,40,103,595,2.16626
+Data Engineer,Kubernetes,Python,29,40,364,595,1.1851
+Data Engineer,Kubernetes,SQL,30,40,392,595,1.13839
+Data Engineer,Kubernetes,Scala,20,40,115,595,2.58696
+Data Engineer,Kubernetes,Spark,27,40,220,595,1.82557
+Data Engineer,Linux,Machine Learning,21,58,123,595,1.75147
+Data Engineer,Linux,MongoDB,17,58,38,595,4.58938
+Data Engineer,Linux,MySQL,17,58,49,595,3.55911
+Data Engineer,Linux,NoSQL,20,58,103,595,1.99197
+Data Engineer,Linux,Python,41,58,364,595,1.1555
+Data Engineer,Linux,Redshift,22,58,97,595,2.3267
+Data Engineer,Linux,SQL,49,58,392,595,1.28233
+Data Engineer,Linux,Scala,20,58,115,595,1.78411
+Data Engineer,Linux,Shell/Bash,28,58,54,595,5.31928
+Data Engineer,Linux,Snowflake,26,58,154,595,1.73197
+Data Engineer,Linux,Spark,30,58,220,595,1.3989
+Data Engineer,Machine Learning,MongoDB,20,123,38,595,2.546
+Data Engineer,Machine Learning,MySQL,19,123,49,595,1.87573
+Data Engineer,Machine Learning,NoSQL,31,123,103,595,1.45592
+Data Engineer,Machine Learning,Power BI,20,123,82,595,1.17985
+Data Engineer,Machine Learning,Python,94,123,364,595,1.24922
+Data Engineer,Machine Learning,Redshift,32,123,97,595,1.59584
+Data Engineer,Machine Learning,SQL,92,123,392,595,1.13531
+Data Engineer,Machine Learning,Scala,54,123,115,595,2.27147
+Data Engineer,Machine Learning,Shell/Bash,21,123,54,595,1.88121
+Data Engineer,Machine Learning,Snowflake,39,123,154,595,1.22506
+Data Engineer,Machine Learning,Spark,63,123,220,595,1.38525
+Data Engineer,Machine Learning,Tableau,18,123,69,595,1.26193
+Data Engineer,MongoDB,MySQL,22,38,49,595,7.03008
+Data Engineer,MongoDB,NoSQL,27,38,103,595,4.1045
+Data Engineer,MongoDB,Python,31,38,364,595,1.3335
+Data Engineer,MongoDB,Redshift,15,38,97,595,2.42132
+Data Engineer,MongoDB,SQL,26,38,392,595,1.03853
+Data Engineer,MongoDB,Scala,18,38,115,595,2.4508
+Data Engineer,MongoDB,Snowflake,18,38,154,595,1.83014
+Data Engineer,MongoDB,Spark,26,38,220,595,1.85048
+Data Engineer,MySQL,NoSQL,31,49,103,595,3.65465
+Data Engineer,MySQL,Python,32,49,364,595,1.0675
+Data Engineer,MySQL,Redshift,33,49,97,595,4.13108
+Data Engineer,MySQL,SQL,32,49,392,595,0.991254
+Data Engineer,MySQL,SQL Server,20,49,88,595,2.75974
+Data Engineer,MySQL,Scala,17,49,115,595,1.79503
+Data Engineer,MySQL,Shell/Bash,15,49,54,595,3.37302
+Data Engineer,MySQL,Snowflake,18,49,154,595,1.41929
+Data Engineer,MySQL,Spark,39,49,220,595,2.1526
+Data Engineer,NoSQL,PostgreSQL,17,103,52,595,1.88854
+Data Engineer,NoSQL,Python,77,103,364,595,1.22199
+Data Engineer,NoSQL,Redshift,39,103,97,595,2.32259
+Data Engineer,NoSQL,SQL,68,103,392,595,1.00208
+Data Engineer,NoSQL,SQL Server,26,103,88,595,1.70675
+Data Engineer,NoSQL,Scala,39,103,115,595,1.95905
+Data Engineer,NoSQL,Shell/Bash,18,103,54,595,1.92557
+Data Engineer,NoSQL,Snowflake,31,103,154,595,1.16284
+Data Engineer,NoSQL,Spark,65,103,220,595,1.70675
+Data Engineer,PostgreSQL,Python,31,52,364,595,0.974482
+Data Engineer,PostgreSQL,SQL,40,52,392,595,1.16758
+Data Engineer,Power BI,Python,54,82,364,595,1.07645
+Data Engineer,Power BI,SQL,59,82,392,595,1.09212
+Data Engineer,Power BI,SQL Server,21,82,88,595,1.73157
+Data Engineer,Power BI,Scala,16,82,115,595,1.00954
+Data Engineer,Power BI,Snowflake,23,82,154,595,1.0837
+Data Engineer,Power BI,Spark,24,82,220,595,0.791574
+Data Engineer,Power BI,Tableau,28,82,69,595,2.9445
+Data Engineer,Python,Redshift,68,364,97,595,1.14592
+Data Engineer,Python,SQL,269,364,392,595,1.12171
+Data Engineer,Python,SQL Server,42,364,88,595,0.780157
+Data Engineer,Python,Scala,94,364,115,595,1.33612
+Data Engineer,Python,Shell/Bash,47,364,54,595,1.42272
+Data Engineer,Python,Snowflake,104,364,154,595,1.1039
+Data Engineer,Python,Spark,168,364,220,595,1.24825
+Data Engineer,Python,Statistics,30,364,40,595,1.22596
+Data Engineer,Python,Tableau,43,364,69,595,1.01867
+Data Engineer,Python,Terraform,32,364,38,595,1.37652
+Data Engineer,Python,dbt,37,364,55,595,1.09965
+Data Engineer,Redshift,SQL,59,97,392,595,0.923233
+Data Engineer,Redshift,SQL Server,22,97,88,595,1.53351
+Data Engineer,Redshift,Scala,29,97,115,595,1.54684
+Data Engineer,Redshift,Shell/Bash,18,97,54,595,2.04467
+Data Engineer,Redshift,Snowflake,45,97,154,595,1.79241
+Data Engineer,Redshift,Spark,64,97,220,595,1.78444
+Data Engineer,SQL,SQL Server,59,392,88,595,1.01765
+Data Engineer,SQL,Scala,91,392,115,595,1.20109
+Data Engineer,SQL,Shell/Bash,48,392,54,595,1.34921
+Data Engineer,SQL,Snowflake,109,392,154,595,1.07433
+Data Engineer,SQL,Spark,152,392,220,595,1.0487
+Data Engineer,SQL,Statistics,32,392,40,595,1.21429
+Data Engineer,SQL,Tableau,49,392,69,595,1.0779
+Data Engineer,SQL,Terraform,24,392,38,595,0.958647
+Data Engineer,SQL,dbt,41,392,55,595,1.13149
+Data Engineer,SQL Server,Snowflake,26,88,154,595,1.14153
+Data Engineer,SQL Server,Spark,36,88,220,595,1.1064
+Data Engineer,SQL Server,Tableau,15,88,69,595,1.46986
+Data Engineer,Scala,Shell/Bash,20,115,54,595,1.91626
+Data Engineer,Scala,Snowflake,41,115,154,595,1.37747
+Data Engineer,Scala,Spark,92,115,220,595,2.16364
+Data Engineer,Shell/Bash,Snowflake,19,54,154,595,1.35943
+Data Engineer,Shell/Bash,Spark,29,54,220,595,1.45244
+Data Engineer,Snowflake,Spark,62,154,220,595,1.08884
+Data Engineer,Snowflake,Tableau,22,154,69,595,1.23188
+Data Engineer,Snowflake,Terraform,16,154,38,595,1.62679
+Data Engineer,Snowflake,dbt,37,154,55,595,2.59917
+Data Engineer,Spark,Tableau,19,220,69,595,0.74473
+Data Engineer,Spark,Terraform,19,220,38,595,1.35227
+Data Engineer,Spark,dbt,15,220,55,595,0.737603
+AI/ML Engineer,AWS,Azure,54,99,90,488,2.95758
+AI/ML Engineer,AWS,CI/CD,20,99,52,488,1.89588
+AI/ML Engineer,AWS,Data Analysis,19,99,79,488,1.18553
+AI/ML Engineer,AWS,Deep Learning,40,99,170,488,1.15983
+AI/ML Engineer,AWS,Docker,18,99,38,488,2.33493
+AI/ML Engineer,AWS,ETL,18,99,56,488,1.58442
+AI/ML Engineer,AWS,GCP,42,99,68,488,3.04456
+AI/ML Engineer,AWS,Generative AI/LLM,47,99,214,488,1.0826
+AI/ML Engineer,AWS,Java,19,99,81,488,1.15625
+AI/ML Engineer,AWS,Kubernetes,18,99,42,488,2.11255
+AI/ML Engineer,AWS,Machine Learning,88,99,381,488,1.13852
+AI/ML Engineer,AWS,NLP,37,99,152,488,1.19989
+AI/ML Engineer,AWS,PyTorch,45,99,142,488,1.5621
+AI/ML Engineer,AWS,Python,84,99,287,488,1.44272
+AI/ML Engineer,AWS,SQL,23,99,70,488,1.61962
+AI/ML Engineer,AWS,Scala,17,99,57,488,1.47014
+AI/ML Engineer,AWS,Spark,25,99,56,488,2.20058
+AI/ML Engineer,AWS,Statistics,18,99,81,488,1.0954
+AI/ML Engineer,AWS,TensorFlow,47,99,136,488,1.70351
+AI/ML Engineer,AWS,scikit-learn,23,99,57,488,1.98901
+AI/ML Engineer,Azure,CI/CD,25,90,52,488,2.60684
+AI/ML Engineer,Azure,Deep Learning,29,90,170,488,0.924967
+AI/ML Engineer,Azure,ETL,23,90,56,488,2.22698
+AI/ML Engineer,Azure,GCP,43,90,68,488,3.42876
+AI/ML Engineer,Azure,Generative AI/LLM,53,90,214,488,1.34289
+AI/ML Engineer,Azure,Git,18,90,37,488,2.63784
+AI/ML Engineer,Azure,Java,17,90,81,488,1.138
+AI/ML Engineer,Azure,Kubernetes,16,90,42,488,2.06561
+AI/ML Engineer,Azure,Machine Learning,78,90,381,488,1.11006
+AI/ML Engineer,Azure,NLP,39,90,152,488,1.39123
+AI/ML Engineer,Azure,PyTorch,38,90,142,488,1.45102
+AI/ML Engineer,Azure,Python,74,90,287,488,1.39806
+AI/ML Engineer,Azure,SQL,22,90,70,488,1.70413
+AI/ML Engineer,Azure,Spark,20,90,56,488,1.93651
+AI/ML Engineer,Azure,TensorFlow,37,90,136,488,1.47516
+AI/ML Engineer,Azure,scikit-learn,23,90,57,488,2.18791
+AI/ML Engineer,C++,Computer Vision,29,72,77,488,2.55267
+AI/ML Engineer,C++,Deep Learning,39,72,170,488,1.5549
+AI/ML Engineer,C++,Generative AI/LLM,31,72,214,488,0.981828
+AI/ML Engineer,C++,Java,29,72,81,488,2.42661
+AI/ML Engineer,C++,Machine Learning,66,72,381,488,1.1741
+AI/ML Engineer,C++,NLP,30,72,152,488,1.33772
+AI/ML Engineer,C++,PyTorch,25,72,142,488,1.19327
+AI/ML Engineer,C++,Python,66,72,287,488,1.55865
+AI/ML Engineer,C++,TensorFlow,25,72,136,488,1.24592
+AI/ML Engineer,CI/CD,Deep Learning,15,52,170,488,0.828054
+AI/ML Engineer,CI/CD,Docker,23,52,38,488,5.68016
+AI/ML Engineer,CI/CD,GCP,16,52,68,488,2.20814
+AI/ML Engineer,CI/CD,Generative AI/LLM,35,52,214,488,1.53487
+AI/ML Engineer,CI/CD,Git,20,52,37,488,5.07277
+AI/ML Engineer,CI/CD,Kubernetes,18,52,42,488,4.02198
+AI/ML Engineer,CI/CD,Machine Learning,50,52,381,488,1.23158
+AI/ML Engineer,CI/CD,NLP,24,52,152,488,1.48178
+AI/ML Engineer,CI/CD,PyTorch,22,52,142,488,1.45395
+AI/ML Engineer,CI/CD,Python,41,52,287,488,1.34066
+AI/ML Engineer,CI/CD,TensorFlow,21,52,136,488,1.4491
+AI/ML Engineer,Computer Vision,Deep Learning,47,77,170,488,1.75218
+AI/ML Engineer,Computer Vision,Generative AI/LLM,40,77,214,488,1.18461
+AI/ML Engineer,Computer Vision,Java,21,77,81,488,1.6431
+AI/ML Engineer,Computer Vision,Machine Learning,73,77,381,488,1.2143
+AI/ML Engineer,Computer Vision,NLP,44,77,152,488,1.83459
+AI/ML Engineer,Computer Vision,PyTorch,32,77,142,488,1.42821
+AI/ML Engineer,Computer Vision,Python,67,77,287,488,1.47952
+AI/ML Engineer,Computer Vision,Scala,26,77,57,488,2.89086
+AI/ML Engineer,Computer Vision,TensorFlow,29,77,136,488,1.35141
+AI/ML Engineer,Data Analysis,Deep Learning,28,79,170,488,1.01742
+AI/ML Engineer,Data Analysis,Generative AI/LLM,27,79,214,488,0.779368
+AI/ML Engineer,Data Analysis,Machine Learning,61,79,381,488,0.989003
+AI/ML Engineer,Data Analysis,NLP,35,79,152,488,1.42239
+AI/ML Engineer,Data Analysis,PyTorch,19,79,142,488,0.826529
+AI/ML Engineer,Data Analysis,Python,49,79,287,488,1.05465
+AI/ML Engineer,Data Analysis,SQL,32,79,70,488,2.82387
+AI/ML Engineer,Data Analysis,Statistics,39,79,81,488,2.97421
+AI/ML Engineer,Data Analysis,TensorFlow,21,79,136,488,0.953835
+AI/ML Engineer,Deep Learning,ETL,20,170,56,488,1.02521
+AI/ML Engineer,Deep Learning,GCP,30,170,68,488,1.26644
+AI/ML Engineer,Deep Learning,Generative AI/LLM,94,170,214,488,1.26091
+AI/ML Engineer,Deep Learning,Java,33,170,81,488,1.1695
+AI/ML Engineer,Deep Learning,Kubernetes,16,170,42,488,1.09356
+AI/ML Engineer,Deep Learning,Machine Learning,165,170,381,488,1.24317
+AI/ML Engineer,Deep Learning,NLP,92,170,152,488,1.73746
+AI/ML Engineer,Deep Learning,PyTorch,89,170,142,488,1.79917
+AI/ML Engineer,Deep Learning,Python,137,170,287,488,1.37028
+AI/ML Engineer,Deep Learning,SQL,17,170,70,488,0.697143
+AI/ML Engineer,Deep Learning,Scala,37,170,57,488,1.86336
+AI/ML Engineer,Deep Learning,Spark,29,170,56,488,1.48655
+AI/ML Engineer,Deep Learning,Statistics,33,170,81,488,1.1695
+AI/ML Engineer,Deep Learning,TensorFlow,86,170,136,488,1.81522
+AI/ML Engineer,Deep Learning,scikit-learn,31,170,57,488,1.5612
+AI/ML Engineer,Docker,GCP,17,38,68,488,3.21053
+AI/ML Engineer,Docker,Generative AI/LLM,16,38,214,488,0.960157
+AI/ML Engineer,Docker,Kubernetes,30,38,42,488,9.17293
+AI/ML Engineer,Docker,Machine Learning,35,38,381,488,1.17972
+AI/ML Engineer,Docker,Python,30,38,287,488,1.34238
+AI/ML Engineer,ETL,Generative AI/LLM,28,56,214,488,1.14019
+AI/ML Engineer,ETL,Java,20,56,81,488,2.15168
+AI/ML Engineer,ETL,Machine Learning,52,56,381,488,1.18935
+AI/ML Engineer,ETL,NLP,21,56,152,488,1.20395
+AI/ML Engineer,ETL,PyTorch,23,56,142,488,1.41147
+AI/ML Engineer,ETL,Python,48,56,287,488,1.45744
+AI/ML Engineer,ETL,SQL,19,56,70,488,2.36531
+AI/ML Engineer,ETL,Scala,18,56,57,488,2.75188
+AI/ML Engineer,ETL,TensorFlow,23,56,136,488,1.47374
+AI/ML Engineer,GCP,Generative AI/LLM,37,68,214,488,1.24079
+AI/ML Engineer,GCP,Kubernetes,19,68,42,488,3.2465
+AI/ML Engineer,GCP,Machine Learning,57,68,381,488,1.07365
+AI/ML Engineer,GCP,NLP,25,68,152,488,1.18034
+AI/ML Engineer,GCP,PyTorch,29,68,142,488,1.46562
+AI/ML Engineer,GCP,Python,53,68,287,488,1.32527
+AI/ML Engineer,GCP,Spark,17,68,56,488,2.17857
+AI/ML Engineer,GCP,TensorFlow,31,68,136,488,1.63581
+AI/ML Engineer,Generative AI/LLM,Git,17,214,37,488,1.04774
+AI/ML Engineer,Generative AI/LLM,Java,37,214,81,488,1.04165
+AI/ML Engineer,Generative AI/LLM,Machine Learning,170,214,381,488,1.01749
+AI/ML Engineer,Generative AI/LLM,NLP,85,214,152,488,1.27521
+AI/ML Engineer,Generative AI/LLM,PyTorch,66,214,142,488,1.05989
+AI/ML Engineer,Generative AI/LLM,Python,133,214,287,488,1.05676
+AI/ML Engineer,Generative AI/LLM,SQL,24,214,70,488,0.781842
+AI/ML Engineer,Generative AI/LLM,Scala,34,214,57,488,1.36022
+AI/ML Engineer,Generative AI/LLM,Spark,16,214,56,488,0.651535
+AI/ML Engineer,Generative AI/LLM,Statistics,25,214,81,488,0.703819
+AI/ML Engineer,Generative AI/LLM,TensorFlow,61,214,136,488,1.02281
+AI/ML Engineer,Generative AI/LLM,scikit-learn,20,214,57,488,0.800131
+AI/ML Engineer,Git,Machine Learning,32,37,381,488,1.10775
+AI/ML Engineer,Git,NLP,16,37,152,488,1.38834
+AI/ML Engineer,Git,PyTorch,18,37,142,488,1.67187
+AI/ML Engineer,Git,Python,31,37,287,488,1.42462
+AI/ML Engineer,Git,TensorFlow,18,37,136,488,1.74563
+AI/ML Engineer,Java,Machine Learning,75,81,381,488,1.18596
+AI/ML Engineer,Java,NLP,33,81,152,488,1.30799
+AI/ML Engineer,Java,PyTorch,32,81,142,488,1.35768
+AI/ML Engineer,Java,Python,78,81,287,488,1.63737
+AI/ML Engineer,Java,SQL,15,81,70,488,1.29101
+AI/ML Engineer,Java,Scala,28,81,57,488,2.9595
+AI/ML Engineer,Java,Spark,22,81,56,488,2.36684
+AI/ML Engineer,Java,Statistics,17,81,81,488,1.26444
+AI/ML Engineer,Java,TensorFlow,36,81,136,488,1.59477
+AI/ML Engineer,Kubernetes,Machine Learning,40,42,381,488,1.21985
+AI/ML Engineer,Kubernetes,PyTorch,19,42,142,488,1.55466
+AI/ML Engineer,Kubernetes,Python,32,42,287,488,1.2955
+AI/ML Engineer,Kubernetes,TensorFlow,19,42,136,488,1.62325
+AI/ML Engineer,Machine Learning,NLP,135,381,152,488,1.13759
+AI/ML Engineer,Machine Learning,PyTorch,137,381,142,488,1.23574
+AI/ML Engineer,Machine Learning,Python,263,381,287,488,1.17373
+AI/ML Engineer,Machine Learning,R,28,381,32,488,1.12073
+AI/ML Engineer,Machine Learning,SQL,55,381,70,488,1.00637
+AI/ML Engineer,Machine Learning,Scala,55,381,57,488,1.2359
+AI/ML Engineer,Machine Learning,Spark,52,381,56,488,1.18935
+AI/ML Engineer,Machine Learning,Statistics,69,381,81,488,1.09109
+AI/ML Engineer,Machine Learning,TensorFlow,132,381,136,488,1.24317
+AI/ML Engineer,Machine Learning,scikit-learn,57,381,57,488,1.28084
+AI/ML Engineer,NLP,PyTorch,60,152,142,488,1.35656
+AI/ML Engineer,NLP,Python,113,152,287,488,1.26407
+AI/ML Engineer,NLP,R,20,152,32,488,2.00658
+AI/ML Engineer,NLP,SQL,34,152,70,488,1.5594
+AI/ML Engineer,NLP,Scala,31,152,57,488,1.74608
+AI/ML Engineer,NLP,Spark,23,152,56,488,1.31861
+AI/ML Engineer,NLP,Statistics,40,152,81,488,1.58545
+AI/ML Engineer,NLP,TensorFlow,59,152,136,488,1.3928
+AI/ML Engineer,NLP,scikit-learn,27,152,57,488,1.52078
+AI/ML Engineer,PyTorch,Python,118,142,287,488,1.41297
+AI/ML Engineer,PyTorch,R,16,142,32,488,1.71831
+AI/ML Engineer,PyTorch,SQL,26,142,70,488,1.27646
+AI/ML Engineer,PyTorch,Scala,26,142,57,488,1.56758
+AI/ML Engineer,PyTorch,Spark,31,142,56,488,1.90241
+AI/ML Engineer,PyTorch,Statistics,30,142,81,488,1.27282
+AI/ML Engineer,PyTorch,TensorFlow,116,142,136,488,2.93123
+AI/ML Engineer,PyTorch,scikit-learn,48,142,57,488,2.894
+AI/ML Engineer,Python,R,32,287,32,488,1.70035
+AI/ML Engineer,Python,SQL,61,287,70,488,1.48173
+AI/ML Engineer,Python,Scala,56,287,57,488,1.67052
+AI/ML Engineer,Python,Spark,51,287,56,488,1.54853
+AI/ML Engineer,Python,Statistics,55,287,81,488,1.15456
+AI/ML Engineer,Python,TensorFlow,116,287,136,488,1.4503
+AI/ML Engineer,Python,scikit-learn,49,287,57,488,1.4617
+AI/ML Engineer,R,SQL,17,32,70,488,3.70357
+AI/ML Engineer,R,TensorFlow,16,32,136,488,1.79412
+AI/ML Engineer,SQL,Scala,21,70,57,488,2.56842
+AI/ML Engineer,SQL,Spark,21,70,56,488,2.61429
+AI/ML Engineer,SQL,Statistics,33,70,81,488,2.84021
+AI/ML Engineer,SQL,TensorFlow,27,70,136,488,1.38403
+AI/ML Engineer,SQL,scikit-learn,20,70,57,488,2.44612
+AI/ML Engineer,Scala,Spark,18,57,56,488,2.75188
+AI/ML Engineer,Scala,TensorFlow,28,57,136,488,1.76264
+AI/ML Engineer,Scala,scikit-learn,16,57,57,488,2.4032
+AI/ML Engineer,Spark,Statistics,21,56,81,488,2.25926
+AI/ML Engineer,Spark,TensorFlow,31,56,136,488,1.98634
+AI/ML Engineer,Statistics,TensorFlow,29,81,136,488,1.28468
+AI/ML Engineer,Statistics,scikit-learn,15,81,57,488,1.58545
+AI/ML Engineer,TensorFlow,scikit-learn,46,136,57,488,2.89577
+Software Engineer,A/B Testing,Java,15,54,1519,5247,0.959513
+Software Engineer,A/B Testing,JavaScript,23,54,1795,5247,1.24503
+Software Engineer,A/B Testing,Python,15,54,1415,5247,1.03004
+Software Engineer,AWS,Airflow,18,1237,38,5247,2.00923
+Software Engineer,AWS,Azure,493,1237,945,5247,2.21287
+Software Engineer,AWS,C#,163,1237,1002,5247,0.690019
+Software Engineer,AWS,C++,66,1237,695,5247,0.40281
+Software Engineer,AWS,CI/CD,490,1237,1035,5247,2.00815
+Software Engineer,AWS,Data Analysis,48,1237,207,5247,0.983586
+Software Engineer,AWS,Data Modeling,38,1237,130,5247,1.23989
+Software Engineer,AWS,Data Visualization,50,1237,215,5247,0.986445
+Software Engineer,AWS,Docker,422,1237,664,5247,2.69579
+Software Engineer,AWS,ETL,85,1237,241,5247,1.49604
+Software Engineer,AWS,GCP,343,1237,440,5247,3.30661
+Software Engineer,AWS,Git,371,1237,1057,5247,1.48881
+Software Engineer,AWS,Go,77,1237,130,5247,2.5124
+Software Engineer,AWS,HTML/CSS,223,1237,961,5247,0.984289
+Software Engineer,AWS,Hadoop,19,1237,59,5247,1.36598
+Software Engineer,AWS,Java,568,1237,1519,5247,1.5861
+Software Engineer,AWS,JavaScript,570,1237,1795,5247,1.34695
+Software Engineer,AWS,Kafka,139,1237,284,5247,2.07605
+Software Engineer,AWS,Kubernetes,442,1237,686,5247,2.733
+Software Engineer,AWS,Linux,177,1237,626,5247,1.19933
+Software Engineer,AWS,Machine Learning,102,1237,304,5247,1.42321
+Software Engineer,AWS,MongoDB,85,1237,200,5247,1.80273
+Software Engineer,AWS,MySQL,100,1237,219,5247,1.93686
+Software Engineer,AWS,NoSQL,299,1237,451,5247,2.81213
+Software Engineer,AWS,PHP,43,1237,144,5247,1.26662
+Software Engineer,AWS,PostgreSQL,156,1237,267,5247,2.4783
+Software Engineer,AWS,Power BI,17,1237,115,5247,0.627036
+Software Engineer,AWS,Python,548,1237,1415,5247,1.64273
+Software Engineer,AWS,REST APIs,201,1237,504,5247,1.69164
+Software Engineer,AWS,Redis,44,1237,100,5247,1.86635
+Software Engineer,AWS,Redshift,23,1237,34,5247,2.86939
+Software Engineer,AWS,Ruby,61,1237,123,5247,2.10361
+Software Engineer,AWS,SQL,378,1237,1409,5247,1.13795
+Software Engineer,AWS,SQL Server,98,1237,407,5247,1.02135
+Software Engineer,AWS,Scala,80,1237,122,5247,2.78145
+Software Engineer,AWS,Shell/Bash,135,1237,341,5247,1.67927
+Software Engineer,AWS,Snowflake,50,1237,83,5247,2.55525
+Software Engineer,AWS,Spark,76,1237,143,5247,2.25434
+Software Engineer,AWS,Terraform,219,1237,314,5247,2.95839
+Software Engineer,AWS,TypeScript,203,1237,434,5247,1.98403
+Software Engineer,Airflow,ETL,20,38,241,5247,11.4588
+Software Engineer,Airflow,Java,18,38,1519,5247,1.63622
+Software Engineer,Airflow,Machine Learning,15,38,304,5247,6.81311
+Software Engineer,Airflow,Python,34,38,1415,5247,3.3178
+Software Engineer,Airflow,SQL,23,38,1409,5247,2.25395
+Software Engineer,Airflow,Spark,23,38,143,5247,22.2085
+Software Engineer,Azure,C#,312,945,1002,5247,1.72889
+Software Engineer,Azure,C++,63,945,695,5247,0.503309
+Software Engineer,Azure,CI/CD,335,945,1035,5247,1.79715
+Software Engineer,Azure,Data Analysis,50,945,207,5247,1.34115
+Software Engineer,Azure,Data Modeling,38,945,130,5247,1.623
+Software Engineer,Azure,Data Visualization,37,945,215,5247,0.955526
+Software Engineer,Azure,Docker,320,945,664,5247,2.67585
+Software Engineer,Azure,ETL,55,945,241,5247,1.26714
+Software Engineer,Azure,Excel,15,945,146,5247,0.57045
+Software Engineer,Azure,GCP,317,945,440,5247,4.00024
+Software Engineer,Azure,Generative AI/LLM,20,945,50,5247,2.22095
+Software Engineer,Azure,Git,307,945,1057,5247,1.61266
+Software Engineer,Azure,Go,30,945,130,5247,1.28132
+Software Engineer,Azure,HTML/CSS,195,945,961,5247,1.12665
+Software Engineer,Azure,Java,359,945,1519,5247,1.31225
+Software Engineer,Azure,JavaScript,431,945,1795,5247,1.33319
+Software Engineer,Azure,Kafka,79,945,284,5247,1.5445
+Software Engineer,Azure,Kubernetes,328,945,686,5247,2.65478
+Software Engineer,Azure,Linux,118,945,626,5247,1.04661
+Software Engineer,Azure,Machine Learning,72,945,304,5247,1.31504
+Software Engineer,Azure,MongoDB,67,945,200,5247,1.86005
+Software Engineer,Azure,MySQL,47,945,219,5247,1.19161
+Software Engineer,Azure,NoSQL,211,945,451,5247,2.59768
+Software Engineer,Azure,PHP,20,945,144,5247,0.771164
+Software Engineer,Azure,PostgreSQL,70,945,267,5247,1.45568
+Software Engineer,Azure,Power BI,45,945,115,5247,2.17267
+Software Engineer,Azure,Python,357,945,1415,5247,1.40085
+Software Engineer,Azure,REST APIs,130,945,504,5247,1.43216
+Software Engineer,Azure,Redis,37,945,100,5247,2.05438
+Software Engineer,Azure,Ruby,21,945,123,5247,0.947967
+Software Engineer,Azure,SQL,369,945,1409,5247,1.4541
+Software Engineer,Azure,SQL Server,147,945,407,5247,2.00541
+Software Engineer,Azure,Scala,54,945,122,5247,2.45761
+Software Engineer,Azure,Shell/Bash,146,945,341,5247,2.37727
+Software Engineer,Azure,Snowflake,32,945,83,5247,2.14068
+Software Engineer,Azure,Spark,29,945,143,5247,1.12601
+Software Engineer,Azure,Terraform,142,945,314,5247,2.51095
+Software Engineer,Azure,TypeScript,121,945,434,5247,1.54801
+Software Engineer,C#,C++,306,1002,695,5247,2.30558
+Software Engineer,C#,CI/CD,202,1002,1035,5247,1.02201
+Software Engineer,C#,Data Analysis,37,1002,207,5247,0.935998
+Software Engineer,C#,Data Modeling,26,1002,130,5247,1.04731
+Software Engineer,C#,Data Visualization,23,1002,215,5247,0.560187
+Software Engineer,C#,Docker,113,1002,664,5247,0.891156
+Software Engineer,C#,ETL,28,1002,241,5247,0.608393
+Software Engineer,C#,Excel,22,1002,146,5247,0.789066
+Software Engineer,C#,GCP,47,1002,440,5247,0.559356
+Software Engineer,C#,Git,217,1002,1057,5247,1.07505
+Software Engineer,C#,Go,18,1002,130,5247,0.725058
+Software Engineer,C#,HTML/CSS,374,1002,961,5247,2.03794
+Software Engineer,C#,Java,237,1002,1519,5247,0.817022
+Software Engineer,C#,JavaScript,556,1002,1795,5247,1.62201
+Software Engineer,C#,Kafka,30,1002,284,5247,0.553154
+Software Engineer,C#,Kubernetes,92,1002,686,5247,0.702275
+Software Engineer,C#,Linux,73,1002,626,5247,0.610649
+Software Engineer,C#,Machine Learning,38,1002,304,5247,0.654566
+Software Engineer,C#,MongoDB,36,1002,200,5247,0.942575
+Software Engineer,C#,MySQL,25,1002,219,5247,0.597777
+Software Engineer,C#,NoSQL,57,1002,451,5247,0.661823
+Software Engineer,C#,PHP,25,1002,144,5247,0.909119
+Software Engineer,C#,PostgreSQL,41,1002,267,5247,0.804111
+Software Engineer,C#,Power BI,40,1002,115,5247,1.8214
+Software Engineer,C#,Python,342,1002,1415,5247,1.26565
+Software Engineer,C#,REST APIs,102,1002,504,5247,1.05977
+Software Engineer,C#,Redis,19,1002,100,5247,0.99494
+Software Engineer,C#,SQL,512,1002,1409,5247,1.90284
+Software Engineer,C#,SQL Server,252,1002,407,5247,3.24227
+Software Engineer,C#,Shell/Bash,74,1002,341,5247,1.13637
+Software Engineer,C#,Terraform,53,1002,314,5247,0.883872
+Software Engineer,C#,TypeScript,75,1002,434,5247,0.90493
+Software Engineer,C++,CI/CD,67,695,1035,5247,0.488721
+Software Engineer,C++,Computer Vision,17,695,34,5247,3.77482
+Software Engineer,C++,Data Analysis,18,695,207,5247,0.65649
+Software Engineer,C++,Docker,49,695,664,5247,0.557127
+Software Engineer,C++,GCP,28,695,440,5247,0.480432
+Software Engineer,C++,Git,101,695,1057,5247,0.721394
+Software Engineer,C++,Go,23,695,130,5247,1.33571
+Software Engineer,C++,HTML/CSS,211,695,961,5247,1.65762
+Software Engineer,C++,Java,234,695,1519,5247,1.16301
+Software Engineer,C++,JavaScript,288,695,1795,5247,1.21131
+Software Engineer,C++,Kafka,23,695,284,5247,0.611415
+Software Engineer,C++,Kubernetes,53,695,686,5247,0.583281
+Software Engineer,C++,Linux,177,695,626,5247,2.13464
+Software Engineer,C++,MATLAB,20,695,36,5247,4.19424
+Software Engineer,C++,Machine Learning,58,695,304,5247,1.44039
+Software Engineer,C++,MySQL,15,695,219,5247,0.517099
+Software Engineer,C++,NoSQL,26,695,451,5247,0.435234
+Software Engineer,C++,PostgreSQL,17,695,267,5247,0.480689
+Software Engineer,C++,Python,410,695,1415,5247,2.18753
+Software Engineer,C++,REST APIs,16,695,504,5247,0.239671
+Software Engineer,C++,SQL,248,695,1409,5247,1.32882
+Software Engineer,C++,SQL Server,31,695,407,5247,0.575034
+Software Engineer,C++,Shell/Bash,43,695,341,5247,0.952007
+Software Engineer,C++,TypeScript,19,695,434,5247,0.330514
+Software Engineer,CI/CD,Data Analysis,42,1035,207,5247,1.02861
+Software Engineer,CI/CD,Data Modeling,22,1035,130,5247,0.857926
+Software Engineer,CI/CD,Data Visualization,35,1035,215,5247,0.825278
+Software Engineer,CI/CD,Docker,316,1035,664,5247,2.41262
+Software Engineer,CI/CD,ETL,42,1035,241,5247,0.883493
+Software Engineer,CI/CD,GCP,155,1035,440,5247,1.78587
+Software Engineer,CI/CD,Git,543,1035,1057,5247,2.60433
+Software Engineer,CI/CD,Go,35,1035,130,5247,1.36488
+Software Engineer,CI/CD,HTML/CSS,202,1035,961,5247,1.06561
+Software Engineer,CI/CD,Java,452,1035,1519,5247,1.50852
+Software Engineer,CI/CD,JavaScript,441,1035,1795,5247,1.2455
+Software Engineer,CI/CD,Kafka,105,1035,284,5247,1.87431
+Software Engineer,CI/CD,Kubernetes,319,1035,686,5247,2.35742
+Software Engineer,CI/CD,Linux,227,1035,626,5247,1.83832
+Software Engineer,CI/CD,Machine Learning,75,1035,304,5247,1.25072
+Software Engineer,CI/CD,MongoDB,73,1035,200,5247,1.85039
+Software Engineer,CI/CD,MySQL,66,1035,219,5247,1.52781
+Software Engineer,CI/CD,NoSQL,139,1035,451,5247,1.56246
+Software Engineer,CI/CD,PHP,34,1035,144,5247,1.19698
+Software Engineer,CI/CD,PostgreSQL,100,1035,267,5247,1.89871
+Software Engineer,CI/CD,Power BI,17,1035,115,5247,0.749414
+Software Engineer,CI/CD,Python,361,1035,1415,5247,1.29337
+Software Engineer,CI/CD,REST APIs,179,1035,504,5247,1.8005
+Software Engineer,CI/CD,Redis,44,1035,100,5247,2.23061
+Software Engineer,CI/CD,Ruby,46,1035,123,5247,1.89593
+Software Engineer,CI/CD,SQL,279,1035,1409,5247,1.00384
+Software Engineer,CI/CD,SQL Server,100,1035,407,5247,1.24559
+Software Engineer,CI/CD,Scala,18,1035,122,5247,0.747969
+Software Engineer,CI/CD,Shell/Bash,163,1035,341,5247,2.42328
+Software Engineer,CI/CD,Snowflake,24,1035,83,5247,1.4659
+Software Engineer,CI/CD,Spark,29,1035,143,5247,1.02809
+Software Engineer,CI/CD,Terraform,181,1035,314,5247,2.92227
+Software Engineer,CI/CD,TypeScript,128,1035,434,5247,1.49517
+Software Engineer,Computer Vision,Machine Learning,21,34,304,5247,10.6605
+Software Engineer,Computer Vision,Python,18,34,1415,5247,1.96313
+Software Engineer,Data Analysis,Data Modeling,22,207,130,5247,4.28963
+Software Engineer,Data Analysis,Data Visualization,30,207,215,5247,3.53691
+Software Engineer,Data Analysis,Docker,31,207,664,5247,1.18341
+Software Engineer,Data Analysis,ETL,37,207,241,5247,3.89157
+Software Engineer,Data Analysis,Excel,19,207,146,5247,3.29869
+Software Engineer,Data Analysis,GCP,25,207,440,5247,1.44022
+Software Engineer,Data Analysis,Git,39,207,1057,5247,0.935256
+Software Engineer,Data Analysis,HTML/CSS,31,207,961,5247,0.817672
+Software Engineer,Data Analysis,Hadoop,15,207,59,5247,6.44436
+Software Engineer,Data Analysis,Java,51,207,1519,5247,0.851046
+Software Engineer,Data Analysis,JavaScript,50,207,1795,5247,0.706068
+Software Engineer,Data Analysis,Kafka,19,207,284,5247,1.69581
+Software Engineer,Data Analysis,Kubernetes,19,207,686,5247,0.702053
+Software Engineer,Data Analysis,Linux,18,207,626,5247,0.728851
+Software Engineer,Data Analysis,Machine Learning,30,207,304,5247,2.50143
+Software Engineer,Data Analysis,PostgreSQL,19,207,267,5247,1.80378
+Software Engineer,Data Analysis,Power BI,20,207,115,5247,4.40832
+Software Engineer,Data Analysis,Python,87,207,1415,5247,1.55849
+Software Engineer,Data Analysis,R,16,207,38,5247,10.6728
+Software Engineer,Data Analysis,REST APIs,23,207,504,5247,1.15675
+Software Engineer,Data Analysis,SQL,93,207,1409,5247,1.67306
+Software Engineer,Data Analysis,SQL Server,30,207,407,5247,1.86839
+Software Engineer,Data Analysis,Shell/Bash,19,207,341,5247,1.41234
+Software Engineer,Data Analysis,Spark,24,207,143,5247,4.25418
+Software Engineer,Data Analysis,Tableau,24,207,67,5247,9.07982
+Software Engineer,Data Analysis,TypeScript,15,207,434,5247,0.876077
+Software Engineer,Data Modeling,Data Visualization,18,130,215,5247,3.37911
+Software Engineer,Data Modeling,Docker,17,130,664,5247,1.03335
+Software Engineer,Data Modeling,ETL,52,130,241,5247,8.70871
+Software Engineer,Data Modeling,GCP,18,130,440,5247,1.65115
+Software Engineer,Data Modeling,Git,35,130,1057,5247,1.33647
+Software Engineer,Data Modeling,Java,37,130,1519,5247,0.983132
+Software Engineer,Data Modeling,JavaScript,37,130,1795,5247,0.831965
+Software Engineer,Data Modeling,Kafka,18,130,284,5247,2.55813
+Software Engineer,Data Modeling,Kubernetes,15,130,686,5247,0.882541
+Software Engineer,Data Modeling,Linux,22,130,626,5247,1.41846
+Software Engineer,Data Modeling,Machine Learning,20,130,304,5247,2.65536
+Software Engineer,Data Modeling,NoSQL,21,130,451,5247,1.87936
+Software Engineer,Data Modeling,Power BI,15,130,115,5247,5.26455
+Software Engineer,Data Modeling,Python,43,130,1415,5247,1.22653
+Software Engineer,Data Modeling,SQL,79,130,1409,5247,2.263
+Software Engineer,Data Modeling,SQL Server,27,130,407,5247,2.67755
+Software Engineer,Data Modeling,Snowflake,19,130,83,5247,9.23939
+Software Engineer,Data Visualization,ETL,30,215,241,5247,3.03792
+Software Engineer,Data Visualization,Excel,21,215,146,5247,3.51026
+Software Engineer,Data Visualization,GCP,17,215,440,5247,0.942907
+Software Engineer,Data Visualization,Git,38,215,1057,5247,0.877367
+Software Engineer,Data Visualization,HTML/CSS,34,215,961,5247,0.863432
+Software Engineer,Data Visualization,Java,56,215,1519,5247,0.899711
+Software Engineer,Data Visualization,JavaScript,61,215,1795,5247,0.82935
+Software Engineer,Data Visualization,Kubernetes,27,215,686,5247,0.960533
+Software Engineer,Data Visualization,Linux,16,215,626,5247,0.623761
+Software Engineer,Data Visualization,Machine Learning,18,215,304,5247,1.44501
+Software Engineer,Data Visualization,Power BI,40,215,115,5247,8.48857
+Software Engineer,Data Visualization,Python,79,215,1415,5247,1.36252
+Software Engineer,Data Visualization,SQL,89,215,1409,5247,1.54153
+Software Engineer,Data Visualization,SQL Server,30,215,407,5247,1.79887
+Software Engineer,Data Visualization,Shell/Bash,30,215,341,5247,2.14704
+Software Engineer,Data Visualization,Tableau,34,215,67,5247,12.3844
+Software Engineer,Data Visualization,TypeScript,15,215,434,5247,0.843479
+Software Engineer,Databricks,Python,23,30,1415,5247,2.8429
+Software Engineer,Databricks,SQL,22,30,1409,5247,2.73087
+Software Engineer,Docker,ETL,33,664,241,5247,1.08203
+Software Engineer,Docker,GCP,216,664,440,5247,3.87922
+Software Engineer,Docker,Git,285,664,1057,5247,2.13065
+Software Engineer,Docker,Go,41,664,130,5247,2.4922
+Software Engineer,Docker,HTML/CSS,146,664,961,5247,1.20053
+Software Engineer,Docker,Hadoop,15,664,59,5247,2.00901
+Software Engineer,Docker,Java,337,664,1519,5247,1.75313
+Software Engineer,Docker,JavaScript,337,664,1795,5247,1.48357
+Software Engineer,Docker,Kafka,108,664,284,5247,3.00503
+Software Engineer,Docker,Kubernetes,476,664,686,5247,5.4831
+Software Engineer,Docker,Linux,156,664,626,5247,1.96922
+Software Engineer,Docker,Machine Learning,54,664,304,5247,1.40366
+Software Engineer,Docker,MongoDB,49,664,200,5247,1.93602
+Software Engineer,Docker,MySQL,60,664,219,5247,2.16496
+Software Engineer,Docker,NoSQL,204,664,451,5247,3.57435
+Software Engineer,Docker,PHP,22,664,144,5247,1.20727
+Software Engineer,Docker,PostgreSQL,88,664,267,5247,2.60444
+Software Engineer,Docker,Python,337,664,1415,5247,1.88199
+Software Engineer,Docker,REST APIs,100,664,504,5247,1.56788
+Software Engineer,Docker,Redis,34,664,100,5247,2.68672
+Software Engineer,Docker,Ruby,24,664,123,5247,1.54187
+Software Engineer,Docker,SQL,255,664,1409,5247,1.43012
+Software Engineer,Docker,SQL Server,45,664,407,5247,0.873697
+Software Engineer,Docker,Scala,62,664,122,5247,4.01583
+Software Engineer,Docker,Shell/Bash,105,664,341,5247,2.4332
+Software Engineer,Docker,Snowflake,15,664,83,5247,1.42809
+Software Engineer,Docker,Spark,33,664,143,5247,1.82356
+Software Engineer,Docker,Terraform,125,664,314,5247,3.14574
+Software Engineer,Docker,TypeScript,119,664,434,5247,2.16671
+Software Engineer,ETL,GCP,27,241,440,5247,1.336
+Software Engineer,ETL,Git,48,241,1057,5247,0.98869
+Software Engineer,ETL,HTML/CSS,24,241,961,5247,0.543728
+Software Engineer,ETL,Java,54,241,1519,5247,0.77398
+Software Engineer,ETL,JavaScript,54,241,1795,5247,0.654973
+Software Engineer,ETL,Kafka,27,241,284,5247,2.06985
+Software Engineer,ETL,Kubernetes,26,241,686,5247,0.82517
+Software Engineer,ETL,Linux,30,241,626,5247,1.04338
+Software Engineer,ETL,Machine Learning,42,241,304,5247,3.00794
+Software Engineer,ETL,NoSQL,39,241,451,5247,1.8827
+Software Engineer,ETL,PostgreSQL,26,241,267,5247,2.1201
+Software Engineer,ETL,Power BI,26,241,115,5247,4.92232
+Software Engineer,ETL,Python,104,241,1415,5247,1.60019
+Software Engineer,ETL,REST APIs,29,241,504,5247,1.25274
+Software Engineer,ETL,Redshift,15,241,34,5247,9.6052
+Software Engineer,ETL,SQL,152,241,1409,5247,2.34869
+Software Engineer,ETL,SQL Server,59,241,407,5247,3.15611
+Software Engineer,ETL,Shell/Bash,29,241,341,5247,1.85156
+Software Engineer,ETL,Snowflake,35,241,83,5247,9.18087
+Software Engineer,ETL,Spark,38,241,143,5247,5.78551
+Software Engineer,ETL,Tableau,22,241,67,5247,7.14894
+Software Engineer,ETL,Terraform,16,241,314,5247,1.10939
+Software Engineer,ETL,TypeScript,17,241,434,5247,0.852812
+Software Engineer,Excel,HTML/CSS,19,146,961,5247,0.71054
+Software Engineer,Excel,JavaScript,24,146,1795,5247,0.480513
+Software Engineer,Excel,Power BI,22,146,115,5247,6.87516
+Software Engineer,Excel,Python,29,146,1415,5247,0.736546
+Software Engineer,Excel,SQL,42,146,1409,5247,1.07126
+Software Engineer,Excel,SQL Server,18,146,407,5247,1.58941
+Software Engineer,Forecasting,SQL,18,35,1409,5247,1.91516
+Software Engineer,GCP,Generative AI/LLM,15,440,50,5247,3.5775
+Software Engineer,GCP,Git,126,440,1057,5247,1.42152
+Software Engineer,GCP,Go,27,440,130,5247,2.47673
+Software Engineer,GCP,HTML/CSS,90,440,961,5247,1.11681
+Software Engineer,GCP,Java,219,440,1519,5247,1.71927
+Software Engineer,GCP,JavaScript,210,440,1795,5247,1.39513
+Software Engineer,GCP,Kafka,47,440,284,5247,1.9735
+Software Engineer,GCP,Kubernetes,235,440,686,5247,4.08509
+Software Engineer,GCP,Linux,54,440,626,5247,1.02867
+Software Engineer,GCP,Machine Learning,52,440,304,5247,2.0398
+Software Engineer,GCP,MongoDB,33,440,200,5247,1.96762
+Software Engineer,GCP,MySQL,34,440,219,5247,1.85137
+Software Engineer,GCP,NoSQL,154,440,451,5247,4.07195
+Software Engineer,GCP,PostgreSQL,45,440,267,5247,2.00983
+Software Engineer,GCP,Python,226,440,1415,5247,1.90463
+Software Engineer,GCP,REST APIs,51,440,504,5247,1.2067
+Software Engineer,GCP,Redis,24,440,100,5247,2.862
+Software Engineer,GCP,SQL,166,440,1409,5247,1.40493
+Software Engineer,GCP,SQL Server,26,440,407,5247,0.761794
+Software Engineer,GCP,Scala,54,440,122,5247,5.27828
+Software Engineer,GCP,Shell/Bash,44,440,341,5247,1.53871
+Software Engineer,GCP,Spark,24,440,143,5247,2.0014
+Software Engineer,GCP,Terraform,98,440,314,5247,3.72182
+Software Engineer,GCP,TypeScript,90,440,434,5247,2.47293
+Software Engineer,Generative AI/LLM,JavaScript,17,50,1795,5247,0.993861
+Software Engineer,Generative AI/LLM,Machine Learning,32,50,304,5247,11.0463
+Software Engineer,Generative AI/LLM,Python,23,50,1415,5247,1.70574
+Software Engineer,Git,Go,38,1057,130,5247,1.45103
+Software Engineer,Git,HTML/CSS,271,1057,961,5247,1.39985
+Software Engineer,Git,Java,410,1057,1519,5247,1.33987
+Software Engineer,Git,JavaScript,504,1057,1795,5247,1.39381
+Software Engineer,Git,Kafka,92,1057,284,5247,1.60807
+Software Engineer,Git,Kubernetes,243,1057,686,5247,1.7584
+Software Engineer,Git,Linux,240,1057,626,5247,1.90315
+Software Engineer,Git,Machine Learning,66,1057,304,5247,1.07772
+Software Engineer,Git,MongoDB,97,1057,200,5247,2.40756
+Software Engineer,Git,MySQL,94,1057,219,5247,2.13069
+Software Engineer,Git,NoSQL,152,1057,451,5247,1.67303
+Software Engineer,Git,Oracle DB,21,1057,55,5247,1.89536
+Software Engineer,Git,PHP,61,1057,144,5247,2.10283
+Software Engineer,Git,PostgreSQL,108,1057,267,5247,2.00793
+Software Engineer,Git,Power BI,18,1057,115,5247,0.776982
+Software Engineer,Git,Python,351,1057,1415,5247,1.23136
+Software Engineer,Git,REST APIs,185,1057,504,5247,1.82212
+Software Engineer,Git,Redis,45,1057,100,5247,2.23382
+Software Engineer,Git,Ruby,45,1057,123,5247,1.81612
+Software Engineer,Git,SQL,342,1057,1409,5247,1.2049
+Software Engineer,Git,SQL Server,124,1057,407,5247,1.51239
+Software Engineer,Git,Shell/Bash,157,1057,341,5247,2.2855
+Software Engineer,Git,Snowflake,24,1057,83,5247,1.43539
+Software Engineer,Git,Spark,26,1057,143,5247,0.902554
+Software Engineer,Git,Terraform,140,1057,314,5247,2.21327
+Software Engineer,Git,TypeScript,106,1057,434,5247,1.21242
+Software Engineer,Go,Java,65,130,1519,5247,1.72712
+Software Engineer,Go,JavaScript,40,130,1795,5247,0.899421
+Software Engineer,Go,Kafka,33,130,284,5247,4.6899
+Software Engineer,Go,Kubernetes,51,130,686,5247,3.00064
+Software Engineer,Go,Linux,18,130,626,5247,1.16056
+Software Engineer,Go,Machine Learning,18,130,304,5247,2.38983
+Software Engineer,Go,NoSQL,25,130,451,5247,2.23734
+Software Engineer,Go,Python,71,130,1415,5247,2.02521
+Software Engineer,Go,REST APIs,19,130,504,5247,1.52157
+Software Engineer,Go,SQL,17,130,1409,5247,0.486974
+Software Engineer,Go,Terraform,18,130,314,5247,2.31372
+Software Engineer,HTML/CSS,Java,315,961,1519,5247,1.13225
+Software Engineer,HTML/CSS,JavaScript,834,961,1795,5247,2.53682
+Software Engineer,HTML/CSS,Kafka,33,961,284,5247,0.634429
+Software Engineer,HTML/CSS,Kubernetes,132,961,686,5247,1.0506
+Software Engineer,HTML/CSS,Linux,67,961,626,5247,0.58437
+Software Engineer,HTML/CSS,Machine Learning,30,961,304,5247,0.53881
+Software Engineer,HTML/CSS,MongoDB,61,961,200,5247,1.66528
+Software Engineer,HTML/CSS,MySQL,88,961,219,5247,2.19395
+Software Engineer,HTML/CSS,NoSQL,127,961,451,5247,1.5375
+Software Engineer,HTML/CSS,PHP,84,961,144,5247,3.18496
+Software Engineer,HTML/CSS,PostgreSQL,79,961,267,5247,1.61549
+Software Engineer,HTML/CSS,Power BI,25,961,115,5247,1.18694
+Software Engineer,HTML/CSS,Python,345,961,1415,5247,1.33122
+Software Engineer,HTML/CSS,REST APIs,143,961,504,5247,1.54915
+Software Engineer,HTML/CSS,Redis,24,961,100,5247,1.31039
+Software Engineer,HTML/CSS,Ruby,30,961,123,5247,1.33169
+Software Engineer,HTML/CSS,SQL,459,961,1409,5247,1.77865
+Software Engineer,HTML/CSS,SQL Server,116,961,407,5247,1.55615
+Software Engineer,HTML/CSS,Shell/Bash,31,961,341,5247,0.496358
+Software Engineer,HTML/CSS,Terraform,22,961,314,5247,0.382543
+Software Engineer,HTML/CSS,TypeScript,193,961,434,5247,2.42804
+Software Engineer,Hadoop,Java,36,59,1519,5247,2.10768
+Software Engineer,Hadoop,JavaScript,15,59,1795,5247,0.743166
+Software Engineer,Hadoop,Kafka,19,59,284,5247,5.94969
+Software Engineer,Hadoop,Linux,15,59,626,5247,2.13096
+Software Engineer,Hadoop,Machine Learning,16,59,304,5247,4.68064
+Software Engineer,Hadoop,NoSQL,18,59,451,5247,3.5494
+Software Engineer,Hadoop,Python,34,59,1415,5247,2.13689
+Software Engineer,Hadoop,SQL,29,59,1409,5247,1.8304
+Software Engineer,Hadoop,Scala,22,59,122,5247,16.037
+Software Engineer,Hadoop,Spark,41,59,143,5247,25.498
+Software Engineer,Java,JavaScript,705,1519,1795,5247,1.35668
+Software Engineer,Java,Kafka,204,1519,284,5247,2.48122
+Software Engineer,Java,Kubernetes,354,1519,686,5247,1.78251
+Software Engineer,Java,Linux,203,1519,626,5247,1.12015
+Software Engineer,Java,Machine Learning,102,1519,304,5247,1.15899
+Software Engineer,Java,MongoDB,98,1519,200,5247,1.69258
+Software Engineer,Java,MySQL,108,1519,219,5247,1.70346
+Software Engineer,Java,NoSQL,288,1519,451,5247,2.20582
+Software Engineer,Java,Oracle DB,19,1519,55,5247,1.19329
+Software Engineer,Java,PHP,57,1519,144,5247,1.36731
+Software Engineer,Java,PostgreSQL,114,1519,267,5247,1.47485
+Software Engineer,Java,Power BI,15,1519,115,5247,0.450554
+Software Engineer,Java,Python,571,1519,1415,5247,1.3939
+Software Engineer,Java,REST APIs,220,1519,504,5247,1.50781
+Software Engineer,Java,Redis,61,1519,100,5247,2.10709
+Software Engineer,Java,Ruby,41,1519,123,5247,1.15142
+Software Engineer,Java,SQL,503,1519,1409,5247,1.23313
+Software Engineer,Java,SQL Server,113,1519,407,5247,0.959041
+Software Engineer,Java,Scala,102,1519,122,5247,2.88798
+Software Engineer,Java,Shell/Bash,109,1519,341,5247,1.10414
+Software Engineer,Java,Snowflake,29,1519,83,5247,1.20691
+Software Engineer,Java,Spark,79,1519,143,5247,1.90829
+Software Engineer,Java,Statistics,15,1519,72,5247,0.719635
+Software Engineer,Java,Terraform,92,1519,314,5247,1.01207
+Software Engineer,Java,TypeScript,163,1519,434,5247,1.29733
+Software Engineer,JavaScript,Kafka,93,1795,284,5247,0.957219
+Software Engineer,JavaScript,Kubernetes,317,1795,686,5247,1.35077
+Software Engineer,JavaScript,Linux,159,1795,626,5247,0.742454
+Software Engineer,JavaScript,Machine Learning,90,1795,304,5247,0.865397
+Software Engineer,JavaScript,MongoDB,117,1795,200,5247,1.71003
+Software Engineer,JavaScript,MySQL,138,1795,219,5247,1.84197
+Software Engineer,JavaScript,NoSQL,269,1795,451,5247,1.7435
+Software Engineer,JavaScript,Oracle DB,15,1795,55,5247,0.797214
+Software Engineer,JavaScript,PHP,110,1795,144,5247,2.23294
+Software Engineer,JavaScript,PostgreSQL,159,1795,267,5247,1.74073
+Software Engineer,JavaScript,Power BI,38,1795,115,5247,0.9659
+Software Engineer,JavaScript,Python,649,1795,1415,5247,1.34071
+Software Engineer,JavaScript,REST APIs,272,1795,504,5247,1.57756
+Software Engineer,JavaScript,Redis,50,1795,100,5247,1.46156
+Software Engineer,JavaScript,Ruby,72,1795,123,5247,1.71109
+Software Engineer,JavaScript,SQL,682,1795,1409,5247,1.41488
+Software Engineer,JavaScript,SQL Server,192,1795,407,5247,1.37897
+Software Engineer,JavaScript,Scala,60,1795,122,5247,1.4376
+Software Engineer,JavaScript,Shell/Bash,90,1795,341,5247,0.771498
+Software Engineer,JavaScript,Snowflake,18,1795,83,5247,0.63393
+Software Engineer,JavaScript,Spark,30,1795,143,5247,0.613242
+Software Engineer,JavaScript,Tableau,15,1795,67,5247,0.65443
+Software Engineer,JavaScript,Terraform,70,1795,314,5247,0.651651
+Software Engineer,JavaScript,TypeScript,371,1795,434,5247,2.4988
+Software Engineer,Kafka,Kubernetes,122,284,686,5247,3.2857
+Software Engineer,Kafka,Linux,38,284,626,5247,1.12151
+Software Engineer,Kafka,Machine Learning,28,284,304,5247,1.70168
+Software Engineer,Kafka,MongoDB,40,284,200,5247,3.69507
+Software Engineer,Kafka,MySQL,25,284,219,5247,2.10906
+Software Engineer,Kafka,NoSQL,89,284,451,5247,3.64591
+Software Engineer,Kafka,PostgreSQL,35,284,267,5247,2.42186
+Software Engineer,Kafka,Python,112,284,1415,5247,1.46236
+Software Engineer,Kafka,REST APIs,47,284,504,5247,1.7229
+Software Engineer,Kafka,Redis,49,284,100,5247,9.05292
+Software Engineer,Kafka,SQL,99,284,1409,5247,1.29813
+Software Engineer,Kafka,SQL Server,26,284,407,5247,1.18024
+Software Engineer,Kafka,Scala,32,284,122,5247,4.84599
+Software Engineer,Kafka,Shell/Bash,30,284,341,5247,1.6254
+Software Engineer,Kafka,Spark,40,284,143,5247,5.16793
+Software Engineer,Kafka,Terraform,36,284,314,5247,2.11819
+Software Engineer,Kafka,TypeScript,19,284,434,5247,0.808829
+Software Engineer,Kubernetes,Linux,153,686,626,5247,1.86941
+Software Engineer,Kubernetes,Machine Learning,55,686,304,5247,1.38381
+Software Engineer,Kubernetes,MongoDB,64,686,200,5247,2.44758
+Software Engineer,Kubernetes,MySQL,56,686,219,5247,1.95583
+Software Engineer,Kubernetes,NoSQL,187,686,451,5247,3.17141
+Software Engineer,Kubernetes,PHP,18,686,144,5247,0.956086
+Software Engineer,Kubernetes,PostgreSQL,81,686,267,5247,2.32039
+Software Engineer,Kubernetes,Python,347,686,1415,5247,1.87569
+Software Engineer,Kubernetes,REST APIs,92,686,504,5247,1.39619
+Software Engineer,Kubernetes,Redis,49,686,100,5247,3.74786
+Software Engineer,Kubernetes,Ruby,40,686,123,5247,2.48738
+Software Engineer,Kubernetes,SQL,246,686,1409,5247,1.3354
+Software Engineer,Kubernetes,SQL Server,30,686,407,5247,0.563785
+Software Engineer,Kubernetes,Scala,65,686,122,5247,4.07512
+Software Engineer,Kubernetes,Shell/Bash,115,686,341,5247,2.57947
+Software Engineer,Kubernetes,Spark,42,686,143,5247,2.24647
+Software Engineer,Kubernetes,Terraform,150,686,314,5247,3.65383
+Software Engineer,Kubernetes,TypeScript,118,686,434,5247,2.0796
+Software Engineer,Linux,Machine Learning,42,626,304,5247,1.15801
+Software Engineer,Linux,MongoDB,25,626,200,5247,1.04772
+Software Engineer,Linux,MySQL,43,626,219,5247,1.64574
+Software Engineer,Linux,NoSQL,51,626,451,5247,0.94783
+Software Engineer,Linux,Oracle DB,21,626,55,5247,3.20032
+Software Engineer,Linux,PHP,21,626,144,5247,1.22234
+Software Engineer,Linux,PostgreSQL,37,626,267,5247,1.16152
+Software Engineer,Linux,Python,264,626,1415,5247,1.56381
+Software Engineer,Linux,REST APIs,35,626,504,5247,0.582069
+Software Engineer,Linux,Redis,24,626,100,5247,2.01163
+Software Engineer,Linux,Ruby,29,626,123,5247,1.97619
+Software Engineer,Linux,SQL,167,626,1409,5247,0.993441
+Software Engineer,Linux,SQL Server,35,626,407,5247,0.720793
+Software Engineer,Linux,Shell/Bash,157,626,341,5247,3.85906
+Software Engineer,Linux,Spark,15,626,143,5247,0.879209
+Software Engineer,Linux,Terraform,86,626,314,5247,2.29565
+Software Engineer,Linux,TypeScript,19,626,434,5247,0.366945
+Software Engineer,MATLAB,Python,24,36,1415,5247,2.47208
+Software Engineer,Machine Learning,MongoDB,17,304,200,5247,1.46709
+Software Engineer,Machine Learning,MySQL,15,304,219,5247,1.18218
+Software Engineer,Machine Learning,NLP,18,304,36,5247,8.62993
+Software Engineer,Machine Learning,NoSQL,42,304,451,5247,1.60735
+Software Engineer,Machine Learning,PostgreSQL,19,304,267,5247,1.22823
+Software Engineer,Machine Learning,Python,157,304,1415,5247,1.91505
+Software Engineer,Machine Learning,REST APIs,35,304,504,5247,1.1986
+Software Engineer,Machine Learning,SQL,62,304,1409,5247,0.759483
+Software Engineer,Machine Learning,Scala,16,304,122,5247,2.26359
+Software Engineer,Machine Learning,Shell/Bash,15,304,341,5247,0.759232
+Software Engineer,Machine Learning,Spark,34,304,143,5247,4.10374
+Software Engineer,Machine Learning,Terraform,19,304,314,5247,1.04439
+Software Engineer,Machine Learning,TypeScript,31,304,434,5247,1.23285
+Software Engineer,MongoDB,MySQL,55,200,219,5247,6.5887
+Software Engineer,MongoDB,NoSQL,87,200,451,5247,5.06085
+Software Engineer,MongoDB,PostgreSQL,57,200,267,5247,5.60073
+Software Engineer,MongoDB,Python,76,200,1415,5247,1.40909
+Software Engineer,MongoDB,REST APIs,37,200,504,5247,1.92598
+Software Engineer,MongoDB,Redis,33,200,100,5247,8.65755
+Software Engineer,MongoDB,SQL,83,200,1409,5247,1.54543
+Software Engineer,MongoDB,SQL Server,31,200,407,5247,1.99824
+Software Engineer,MongoDB,Shell/Bash,21,200,341,5247,1.61565
+Software Engineer,MongoDB,Terraform,18,200,314,5247,1.50392
+Software Engineer,MongoDB,TypeScript,32,200,434,5247,1.93438
+Software Engineer,MySQL,NoSQL,53,219,451,5247,2.81557
+Software Engineer,MySQL,PHP,59,219,144,5247,9.8165
+Software Engineer,MySQL,PostgreSQL,81,219,267,5247,7.26843
+Software Engineer,MySQL,Python,77,219,1415,5247,1.30377
+Software Engineer,MySQL,REST APIs,40,219,504,5247,1.9015
+Software Engineer,MySQL,Redis,19,219,100,5247,4.55219
+Software Engineer,MySQL,SQL,82,219,1409,5247,1.39434
+Software Engineer,MySQL,SQL Server,37,219,407,5247,2.17808
+Software Engineer,MySQL,Terraform,20,219,314,5247,1.52604
+Software Engineer,MySQL,TypeScript,23,219,434,5247,1.26971
+Software Engineer,NLP,Python,17,36,1415,5247,1.75106
+Software Engineer,NoSQL,PostgreSQL,66,451,267,5247,2.87586
+Software Engineer,NoSQL,Python,227,451,1415,5247,1.8664
+Software Engineer,NoSQL,REST APIs,89,451,504,5247,2.05444
+Software Engineer,NoSQL,Redis,37,451,100,5247,4.30463
+Software Engineer,NoSQL,SQL,253,451,1409,5247,2.08903
+Software Engineer,NoSQL,SQL Server,41,451,407,5247,1.17199
+Software Engineer,NoSQL,Scala,60,451,122,5247,5.72171
+Software Engineer,NoSQL,Shell/Bash,28,451,341,5247,0.955296
+Software Engineer,NoSQL,Snowflake,16,451,83,5247,2.24273
+Software Engineer,NoSQL,Spark,33,451,143,5247,2.6848
+Software Engineer,NoSQL,Terraform,44,451,314,5247,1.63026
+Software Engineer,NoSQL,TypeScript,102,451,434,5247,2.73429
+Software Engineer,Oracle DB,SQL,49,55,1409,5247,3.31767
+Software Engineer,PHP,PostgreSQL,21,144,267,5247,2.86587
+Software Engineer,PHP,Python,41,144,1415,5247,1.05579
+Software Engineer,PHP,REST APIs,17,144,504,5247,1.22904
+Software Engineer,PHP,SQL,48,144,1409,5247,1.24131
+Software Engineer,PHP,SQL Server,15,144,407,5247,1.34291
+Software Engineer,PostgreSQL,Python,120,267,1415,5247,1.66657
+Software Engineer,PostgreSQL,REST APIs,61,267,504,5247,2.37848
+Software Engineer,PostgreSQL,Redis,29,267,100,5247,5.69899
+Software Engineer,PostgreSQL,Ruby,25,267,123,5247,3.99424
+Software Engineer,PostgreSQL,SQL,107,267,1409,5247,1.49236
+Software Engineer,PostgreSQL,SQL Server,41,267,407,5247,1.97965
+Software Engineer,PostgreSQL,Shell/Bash,26,267,341,5247,1.49837
+Software Engineer,PostgreSQL,Terraform,30,267,314,5247,1.87755
+Software Engineer,PostgreSQL,TypeScript,66,267,434,5247,2.98851
+Software Engineer,Power BI,Python,28,115,1415,5247,0.902848
+Software Engineer,Power BI,REST APIs,23,115,504,5247,2.08214
+Software Engineer,Power BI,SQL,60,115,1409,5247,1.94291
+Software Engineer,Power BI,SQL Server,36,115,407,5247,4.03572
+Software Engineer,Power BI,Tableau,31,115,67,5247,21.1106
+Software Engineer,Python,R,29,1415,38,5247,2.82989
+Software Engineer,Python,REST APIs,123,1415,504,5247,0.90496
+Software Engineer,Python,Redis,41,1415,100,5247,1.52033
+Software Engineer,Python,Redshift,24,1415,34,5247,2.6175
+Software Engineer,Python,Ruby,56,1415,123,5247,1.68825
+Software Engineer,Python,SQL,589,1415,1409,5247,1.5501
+Software Engineer,Python,SQL Server,84,1415,407,5247,0.765314
+Software Engineer,Python,Scala,94,1415,122,5247,2.85708
+Software Engineer,Python,Shell/Bash,203,1415,341,5247,2.20748
+Software Engineer,Python,Snowflake,39,1415,83,5247,1.74237
+Software Engineer,Python,Spark,97,1415,143,5247,2.5153
+Software Engineer,Python,Statistics,31,1415,72,5247,1.59655
+Software Engineer,Python,Tableau,34,1415,67,5247,1.88174
+Software Engineer,Python,Terraform,160,1415,314,5247,1.88949
+Software Engineer,Python,TypeScript,148,1415,434,5247,1.26452
+Software Engineer,R,SQL,19,38,1409,5247,1.86196
+Software Engineer,REST APIs,Redis,17,504,100,5247,1.76982
+Software Engineer,REST APIs,Ruby,25,504,123,5247,2.116
+Software Engineer,REST APIs,SQL,153,504,1409,5247,1.13048
+Software Engineer,REST APIs,SQL Server,56,504,407,5247,1.43243
+Software Engineer,REST APIs,Shell/Bash,23,504,341,5247,0.702189
+Software Engineer,REST APIs,Terraform,15,504,314,5247,0.497327
+Software Engineer,REST APIs,TypeScript,70,504,434,5247,1.67915
+Software Engineer,Redis,SQL,41,100,1409,5247,1.52681
+Software Engineer,Redis,SQL Server,16,100,407,5247,2.0627
+Software Engineer,Redis,Terraform,18,100,314,5247,3.00783
+Software Engineer,Redis,TypeScript,16,100,434,5247,1.93438
+Software Engineer,Redshift,SQL,25,34,1409,5247,2.73817
+Software Engineer,Ruby,SQL,22,123,1409,5247,0.666067
+Software Engineer,Ruby,Shell/Bash,16,123,341,5247,2.00157
+Software Engineer,Ruby,TypeScript,18,123,434,5247,1.76925
+Software Engineer,SAS,SQL,17,37,1409,5247,1.71099
+Software Engineer,SQL,SQL Server,234,1409,407,5247,2.14102
+Software Engineer,SQL,Scala,75,1409,122,5247,2.28929
+Software Engineer,SQL,Shell/Bash,112,1409,341,5247,1.2231
+Software Engineer,SQL,Snowflake,47,1409,83,5247,2.10872
+Software Engineer,SQL,Spark,70,1409,143,5247,1.8229
+Software Engineer,SQL,Statistics,26,1409,72,5247,1.34475
+Software Engineer,SQL,Tableau,47,1409,67,5247,2.6123
+Software Engineer,SQL,Terraform,58,1409,314,5247,0.687857
+Software Engineer,SQL,TypeScript,141,1409,434,5247,1.20984
+Software Engineer,SQL Server,Shell/Bash,40,407,341,5247,1.51225
+Software Engineer,SQL Server,Snowflake,18,407,83,5247,2.79583
+Software Engineer,SQL Server,Tableau,23,407,67,5247,4.42557
+Software Engineer,SQL Server,Terraform,21,407,314,5247,0.862197
+Software Engineer,SQL Server,TypeScript,37,407,434,5247,1.09908
+Software Engineer,Scala,Spark,48,122,143,5247,14.4363
+Software Engineer,Shell/Bash,Terraform,84,341,314,5247,4.11629
+Software Engineer,Shell/Bash,TypeScript,18,341,434,5247,0.638175
+Software Engineer,Spark,Terraform,15,143,314,5247,1.75282
+Software Engineer,Terraform,TypeScript,33,314,434,5247,1.27059
+All tech roles,A/B Testing,AWS,39,160,1770,8205,1.12993
+All tech roles,A/B Testing,CI/CD,19,160,1197,8205,0.813988
+All tech roles,A/B Testing,Data Analysis,62,160,1170,8205,2.71747
+All tech roles,A/B Testing,Data Visualization,40,160,882,8205,2.32568
+All tech roles,A/B Testing,Deep Learning,25,160,279,8205,4.59509
+All tech roles,A/B Testing,ETL,24,160,857,8205,1.43611
+All tech roles,A/B Testing,Excel,19,160,655,8205,1.48755
+All tech roles,A/B Testing,Git,17,160,1217,8205,0.716336
+All tech roles,A/B Testing,Java,23,160,1798,8205,0.655989
+All tech roles,A/B Testing,JavaScript,32,160,1928,8205,0.851141
+All tech roles,A/B Testing,Machine Learning,63,160,1174,8205,2.75189
+All tech roles,A/B Testing,NLP,18,160,275,8205,3.35659
+All tech roles,A/B Testing,Power BI,17,160,553,8205,1.57646
+All tech roles,A/B Testing,PyTorch,18,160,220,8205,4.19574
+All tech roles,A/B Testing,Python,97,160,2675,8205,1.85954
+All tech roles,A/B Testing,R,38,160,359,8205,5.4281
+All tech roles,A/B Testing,SQL,76,160,2705,8205,1.4408
+All tech roles,A/B Testing,Scala,16,160,342,8205,2.39912
+All tech roles,A/B Testing,Spark,20,160,531,8205,1.9315
+All tech roles,A/B Testing,Statistics,69,160,691,8205,5.1207
+All tech roles,A/B Testing,Tableau,26,160,486,8205,2.74344
+All tech roles,AWS,Airflow,70,1770,135,8205,2.40364
+All tech roles,AWS,Azure,735,1770,1408,8205,2.41986
+All tech roles,AWS,BigQuery,44,1770,124,8205,1.64489
+All tech roles,AWS,C#,177,1770,1100,8205,0.745909
+All tech roles,AWS,C++,88,1770,859,8205,0.474892
+All tech roles,AWS,CI/CD,571,1770,1197,8205,2.2113
+All tech roles,AWS,Computer Vision,18,1770,144,8205,0.579449
+All tech roles,AWS,Data Analysis,220,1770,1170,8205,0.87165
+All tech roles,AWS,Data Modeling,154,1770,469,8205,1.52214
+All tech roles,AWS,Data Visualization,144,1770,882,8205,0.756832
+All tech roles,AWS,Databricks,75,1770,206,8205,1.68772
+All tech roles,AWS,Deep Learning,72,1770,279,8205,1.19628
+All tech roles,AWS,Docker,472,1770,769,8205,2.84525
+All tech roles,AWS,ETL,318,1770,857,8205,1.72009
+All tech roles,AWS,Excel,23,1770,655,8205,0.162777
+All tech roles,AWS,Forecasting,17,1770,154,8205,0.511721
+All tech roles,AWS,GCP,530,1770,712,8205,3.45065
+All tech roles,AWS,Generative AI/LLM,87,1770,347,8205,1.16224
+All tech roles,AWS,Git,449,1770,1217,8205,1.71026
+All tech roles,AWS,Go,81,1770,143,8205,2.62576
+All tech roles,AWS,HTML/CSS,235,1770,1056,8205,1.0316
+All tech roles,AWS,Hadoop,102,1770,235,8205,2.01204
+All tech roles,AWS,Java,685,1770,1798,8205,1.76606
+All tech roles,AWS,JavaScript,601,1770,1928,8205,1.44502
+All tech roles,AWS,Kafka,204,1770,387,8205,2.44357
+All tech roles,AWS,Kubernetes,495,1770,792,8205,2.89725
+All tech roles,AWS,Linux,227,1770,739,8205,1.42392
+All tech roles,AWS,Machine Learning,349,1770,1174,8205,1.37804
+All tech roles,AWS,MongoDB,124,1770,261,8205,2.20235
+All tech roles,AWS,MySQL,148,1770,292,8205,2.34955
+All tech roles,AWS,NLP,66,1770,275,8205,1.11254
+All tech roles,AWS,NoSQL,416,1770,621,8205,3.10532
+All tech roles,AWS,PHP,46,1770,149,8205,1.43112
+All tech roles,AWS,PostgreSQL,199,1770,348,8205,2.65081
+All tech roles,AWS,Power BI,75,1770,553,8205,0.628697
+All tech roles,AWS,PyTorch,71,1770,220,8205,1.49603
+All tech roles,AWS,Python,949,1770,2675,8205,1.64455
+All tech roles,AWS,Qlik,17,1770,78,8205,1.01032
+All tech roles,AWS,R,54,1770,359,8205,0.697276
+All tech roles,AWS,REST APIs,213,1770,540,8205,1.82848
+All tech roles,AWS,Redis,54,1770,115,8205,2.17671
+All tech roles,AWS,Redshift,130,1770,167,8205,3.60855
+All tech roles,AWS,Ruby,67,1770,131,8205,2.37088
+All tech roles,AWS,SQL,687,1770,2705,8205,1.17732
+All tech roles,AWS,SQL Server,146,1770,580,8205,1.16689
+All tech roles,AWS,Scala,192,1770,342,8205,2.60244
+All tech roles,AWS,Shell/Bash,183,1770,432,8205,1.96369
+All tech roles,AWS,Snowflake,181,1770,319,8205,2.63023
+All tech roles,AWS,Spark,281,1770,531,8205,2.45311
+All tech roles,AWS,Statistics,119,1770,691,8205,0.798315
+All tech roles,AWS,Tableau,76,1770,486,8205,0.724908
+All tech roles,AWS,TensorFlow,69,1770,196,8205,1.63192
+All tech roles,AWS,Terraform,257,1770,365,8205,3.26397
+All tech roles,AWS,TypeScript,210,1770,448,8205,2.17293
+All tech roles,AWS,dbt,41,1770,73,8205,2.60355
+All tech roles,AWS,pandas,28,1770,75,8205,1.73062
+All tech roles,AWS,scikit-learn,33,1770,91,8205,1.68104
+All tech roles,Airflow,Azure,42,135,1408,8205,1.81297
+All tech roles,Airflow,BigQuery,30,135,124,8205,14.7043
+All tech roles,Airflow,CI/CD,40,135,1197,8205,2.031
+All tech roles,Airflow,Data Analysis,25,135,1170,8205,1.29867
+All tech roles,Airflow,Data Modeling,38,135,469,8205,4.92443
+All tech roles,Airflow,Data Visualization,24,135,882,8205,1.65382
+All tech roles,Airflow,Databricks,31,135,206,8205,9.14617
+All tech roles,Airflow,Docker,31,135,769,8205,2.45008
+All tech roles,Airflow,ETL,88,135,857,8205,6.24089
+All tech roles,Airflow,GCP,42,135,712,8205,3.58521
+All tech roles,Airflow,Git,43,135,1217,8205,2.14745
+All tech roles,Airflow,Hadoop,24,135,235,8205,6.20709
+All tech roles,Airflow,Java,38,135,1798,8205,1.28451
+All tech roles,Airflow,Kafka,29,135,387,8205,4.55441
+All tech roles,Airflow,Kubernetes,35,135,792,8205,2.68589
+All tech roles,Airflow,Linux,15,135,739,8205,1.23365
+All tech roles,Airflow,Machine Learning,49,135,1174,8205,2.53672
+All tech roles,Airflow,NoSQL,18,135,621,8205,1.76167
+All tech roles,Airflow,PostgreSQL,15,135,348,8205,2.61973
+All tech roles,Airflow,Python,120,135,2675,8205,2.72648
+All tech roles,Airflow,Redshift,23,135,167,8205,8.37059
+All tech roles,Airflow,SQL,105,135,2705,8205,2.35921
+All tech roles,Airflow,Scala,34,135,342,8205,6.04224
+All tech roles,Airflow,Snowflake,42,135,319,8205,8.00209
+All tech roles,Airflow,Spark,78,135,531,8205,8.92781
+All tech roles,Airflow,Tableau,21,135,486,8205,2.6262
+All tech roles,Airflow,Terraform,26,135,365,8205,4.32938
+All tech roles,Airflow,dbt,23,135,73,8205,19.1492
+All tech roles,Alteryx,Data Analysis,24,42,1170,8205,4.00733
+All tech roles,Alteryx,Data Visualization,20,42,882,8205,4.42987
+All tech roles,Alteryx,Excel,22,42,655,8205,6.56161
+All tech roles,Alteryx,Power BI,16,42,553,8205,5.65229
+All tech roles,Alteryx,Python,23,42,2675,8205,1.67971
+All tech roles,Alteryx,SQL,34,42,2705,8205,2.45551
+All tech roles,Alteryx,Statistics,16,42,691,8205,4.52346
+All tech roles,Alteryx,Tableau,34,42,486,8205,13.667
+All tech roles,Azure,BigQuery,42,1408,124,8205,1.9738
+All tech roles,Azure,C#,338,1408,1100,8205,1.79061
+All tech roles,Azure,C++,80,1408,859,8205,0.542716
+All tech roles,Azure,CI/CD,417,1408,1197,8205,2.0301
+All tech roles,Azure,Computer Vision,21,1408,144,8205,0.849831
+All tech roles,Azure,Data Analysis,184,1408,1170,8205,0.916448
+All tech roles,Azure,Data Modeling,177,1408,469,8205,2.19926
+All tech roles,Azure,Data Visualization,138,1408,882,8205,0.911772
+All tech roles,Azure,Databricks,122,1408,206,8205,3.45119
+All tech roles,Azure,Deep Learning,44,1408,279,8205,0.919019
+All tech roles,Azure,Docker,358,1408,769,8205,2.71289
+All tech roles,Azure,ETL,297,1408,857,8205,2.01954
+All tech roles,Azure,Excel,49,1408,655,8205,0.435944
+All tech roles,Azure,GCP,492,1408,712,8205,4.02681
+All tech roles,Azure,Generative AI/LLM,89,1408,347,8205,1.49464
+All tech roles,Azure,Git,389,1408,1217,8205,1.86267
+All tech roles,Azure,Go,32,1408,143,8205,1.30404
+All tech roles,Azure,HTML/CSS,209,1408,1056,8205,1.15334
+All tech roles,Azure,Hadoop,71,1408,235,8205,1.76062
+All tech roles,Azure,Java,448,1408,1798,8205,1.45199
+All tech roles,Azure,JavaScript,454,1408,1928,8205,1.37222
+All tech roles,Azure,Kafka,136,1408,387,8205,2.04788
+All tech roles,Azure,Kubernetes,375,1408,792,8205,2.75919
+All tech roles,Azure,Linux,157,1408,739,8205,1.23803
+All tech roles,Azure,Machine Learning,256,1408,1174,8205,1.27071
+All tech roles,Azure,MongoDB,99,1408,261,8205,2.2104
+All tech roles,Azure,MySQL,90,1408,292,8205,1.79612
+All tech roles,Azure,NLP,52,1408,275,8205,1.10191
+All tech roles,Azure,NoSQL,299,1408,621,8205,2.80579
+All tech roles,Azure,PHP,23,1408,149,8205,0.899534
+All tech roles,Azure,PostgreSQL,99,1408,348,8205,1.6578
+All tech roles,Azure,Power BI,174,1408,553,8205,1.83358
+All tech roles,Azure,PyTorch,58,1408,220,8205,1.53632
+All tech roles,Azure,Python,650,1408,2675,8205,1.41601
+All tech roles,Azure,Qlik,24,1408,78,8205,1.79305
+All tech roles,Azure,R,45,1408,359,8205,0.730456
+All tech roles,Azure,REST APIs,144,1408,540,8205,1.55398
+All tech roles,Azure,Redis,49,1408,115,8205,2.48299
+All tech roles,Azure,Redshift,53,1408,167,8205,1.84942
+All tech roles,Azure,Ruby,25,1408,131,8205,1.1121
+All tech roles,Azure,SQL,655,1408,2705,8205,1.41107
+All tech roles,Azure,SQL Server,226,1408,580,8205,2.27068
+All tech roles,Azure,Scala,135,1408,342,8205,2.3003
+All tech roles,Azure,Shell/Bash,190,1408,432,8205,2.56298
+All tech roles,Azure,Snowflake,134,1408,319,8205,2.44788
+All tech roles,Azure,Spark,191,1408,531,8205,2.09611
+All tech roles,Azure,Statistics,68,1408,691,8205,0.573465
+All tech roles,Azure,Tableau,75,1408,486,8205,0.899292
+All tech roles,Azure,TensorFlow,57,1408,196,8205,1.69471
+All tech roles,Azure,Terraform,165,1408,365,8205,2.63431
+All tech roles,Azure,TypeScript,128,1408,448,8205,1.66498
+All tech roles,Azure,dbt,27,1408,73,8205,2.15535
+All tech roles,Azure,pandas,22,1408,75,8205,1.70938
+All tech roles,Azure,scikit-learn,33,1408,91,8205,2.11324
+All tech roles,BigQuery,CI/CD,24,124,1197,8205,1.3267
+All tech roles,BigQuery,Data Analysis,27,124,1170,8205,1.52699
+All tech roles,BigQuery,Data Modeling,38,124,469,8205,5.36127
+All tech roles,BigQuery,Data Visualization,27,124,882,8205,2.02559
+All tech roles,BigQuery,Docker,19,124,769,8205,1.63487
+All tech roles,BigQuery,ETL,52,124,857,8205,4.01494
+All tech roles,BigQuery,GCP,90,124,712,8205,8.3641
+All tech roles,BigQuery,Git,24,124,1217,8205,1.3049
+All tech roles,BigQuery,Hadoop,17,124,235,8205,4.78672
+All tech roles,BigQuery,Java,29,124,1798,8205,1.06725
+All tech roles,BigQuery,JavaScript,16,124,1928,8205,0.549123
+All tech roles,BigQuery,Kafka,16,124,387,8205,2.73568
+All tech roles,BigQuery,Kubernetes,26,124,792,8205,2.17223
+All tech roles,BigQuery,Looker,23,124,60,8205,25.3649
+All tech roles,BigQuery,Machine Learning,32,124,1174,8205,1.80359
+All tech roles,BigQuery,MySQL,25,124,292,8205,5.66518
+All tech roles,BigQuery,NoSQL,25,124,621,8205,2.66382
+All tech roles,BigQuery,Power BI,16,124,553,8205,1.91448
+All tech roles,BigQuery,Python,68,124,2675,8205,1.68206
+All tech roles,BigQuery,Redshift,36,124,167,8205,14.2641
+All tech roles,BigQuery,SQL,70,124,2705,8205,1.71233
+All tech roles,BigQuery,SQL Server,28,124,580,8205,3.19438
+All tech roles,BigQuery,Scala,19,124,342,8205,3.67608
+All tech roles,BigQuery,Snowflake,26,124,319,8205,5.39311
+All tech roles,BigQuery,Spark,52,124,531,8205,6.47986
+All tech roles,BigQuery,Statistics,16,124,691,8205,1.53214
+All tech roles,BigQuery,Tableau,21,124,486,8205,2.85917
+All tech roles,BigQuery,Terraform,15,124,365,8205,2.71929
+All tech roles,BigQuery,dbt,15,124,73,8205,13.5964
+All tech roles,C#,C++,360,1100,859,8205,3.12605
+All tech roles,C#,CI/CD,209,1100,1197,8205,1.30238
+All tech roles,C#,Data Analysis,53,1100,1170,8205,0.33789
+All tech roles,C#,Data Modeling,38,1100,469,8205,0.604361
+All tech roles,C#,Data Visualization,35,1100,882,8205,0.295996
+All tech roles,C#,Docker,118,1100,769,8205,1.14457
+All tech roles,C#,ETL,53,1100,857,8205,0.461297
+All tech roles,C#,Excel,23,1100,655,8205,0.261922
+All tech roles,C#,GCP,55,1100,712,8205,0.576194
+All tech roles,C#,Git,222,1100,1217,8205,1.36066
+All tech roles,C#,Go,21,1100,143,8205,1.09539
+All tech roles,C#,HTML/CSS,418,1100,1056,8205,2.95256
+All tech roles,C#,Java,261,1100,1798,8205,1.08277
+All tech roles,C#,JavaScript,601,1100,1928,8205,2.32516
+All tech roles,C#,Kafka,37,1100,387,8205,0.713143
+All tech roles,C#,Kubernetes,98,1100,792,8205,0.922968
+All tech roles,C#,Linux,83,1100,739,8205,0.83776
+All tech roles,C#,Machine Learning,58,1100,1174,8205,0.368507
+All tech roles,C#,MongoDB,41,1100,261,8205,1.17173
+All tech roles,C#,MySQL,28,1100,292,8205,0.715255
+All tech roles,C#,NoSQL,67,1100,621,8205,0.804765
+All tech roles,C#,PHP,27,1100,149,8205,1.35165
+All tech roles,C#,PostgreSQL,47,1100,348,8205,1.00741
+All tech roles,C#,Power BI,52,1100,553,8205,0.701397
+All tech roles,C#,Python,425,1100,2675,8205,1.18509
+All tech roles,C#,REST APIs,107,1100,540,8205,1.47801
+All tech roles,C#,Redis,19,1100,115,8205,1.23237
+All tech roles,C#,Ruby,16,1100,131,8205,0.911034
+All tech roles,C#,SQL,591,1100,2705,8205,1.62969
+All tech roles,C#,SQL Server,267,1100,580,8205,3.43375
+All tech roles,C#,Scala,15,1100,342,8205,0.327153
+All tech roles,C#,Shell/Bash,83,1100,432,8205,1.43311
+All tech roles,C#,Spark,23,1100,531,8205,0.323087
+All tech roles,C#,Statistics,22,1100,691,8205,0.237482
+All tech roles,C#,Terraform,54,1100,365,8205,1.10354
+All tech roles,C#,TypeScript,81,1100,448,8205,1.34863
+All tech roles,C#,VBA,15,1100,90,8205,1.24318
+All tech roles,C++,CI/CD,83,859,1197,8205,0.662322
+All tech roles,C++,Computer Vision,60,859,144,8205,3.97992
+All tech roles,C++,Data Analysis,49,859,1170,8205,0.400033
+All tech roles,C++,Data Visualization,28,859,882,8205,0.303232
+All tech roles,C++,Deep Learning,53,859,279,8205,1.8145
+All tech roles,C++,Docker,62,859,769,8205,0.770106
+All tech roles,C++,ETL,24,859,857,8205,0.267495
+All tech roles,C++,GCP,40,859,712,8205,0.536618
+All tech roles,C++,Generative AI/LLM,43,859,347,8205,1.18365
+All tech roles,C++,Git,109,859,1217,8205,0.855503
+All tech roles,C++,Go,27,859,143,8205,1.80349
+All tech roles,C++,HTML/CSS,255,859,1056,8205,2.30654
+All tech roles,C++,Hadoop,18,859,235,8205,0.731628
+All tech roles,C++,Java,309,859,1798,8205,1.64155
+All tech roles,C++,JavaScript,340,859,1928,8205,1.68445
+All tech roles,C++,Kafka,30,859,387,8205,0.74045
+All tech roles,C++,Kubernetes,60,859,792,8205,0.723622
+All tech roles,C++,Linux,190,859,739,8205,2.45581
+All tech roles,C++,MATLAB,32,859,70,8205,4.36654
+All tech roles,C++,Machine Learning,158,859,1174,8205,1.28551
+All tech roles,C++,MySQL,15,859,292,8205,0.490675
+All tech roles,C++,NLP,48,859,275,8205,1.66722
+All tech roles,C++,NoSQL,36,859,621,8205,0.553728
+All tech roles,C++,PHP,15,859,149,8205,0.961591
+All tech roles,C++,PostgreSQL,19,859,348,8205,0.521507
+All tech roles,C++,Power BI,18,859,553,8205,0.310909
+All tech roles,C++,PyTorch,34,859,220,8205,1.47619
+All tech roles,C++,Python,565,859,2675,8205,2.01748
+All tech roles,C++,R,19,859,359,8205,0.505527
+All tech roles,C++,REST APIs,23,859,540,8205,0.406836
+All tech roles,C++,SAS,18,859,194,8205,0.88625
+All tech roles,C++,SQL,314,859,2705,8205,1.10879
+All tech roles,C++,SQL Server,35,859,580,8205,0.576402
+All tech roles,C++,Scala,27,859,342,8205,0.75409
+All tech roles,C++,Shell/Bash,52,859,432,8205,1.14975
+All tech roles,C++,Spark,23,859,531,8205,0.413732
+All tech roles,C++,Statistics,41,859,691,8205,0.56675
+All tech roles,C++,Tableau,15,859,486,8205,0.294809
+All tech roles,C++,TensorFlow,31,859,196,8205,1.51074
+All tech roles,C++,TypeScript,21,859,448,8205,0.447741
+All tech roles,CI/CD,Computer Vision,24,1197,144,8205,1.14244
+All tech roles,CI/CD,Data Analysis,83,1197,1170,8205,0.486269
+All tech roles,CI/CD,Data Modeling,51,1197,469,8205,0.745387
+All tech roles,CI/CD,Data Visualization,56,1197,882,8205,0.435215
+All tech roles,CI/CD,Databricks,45,1197,206,8205,1.49737
+All tech roles,CI/CD,Deep Learning,24,1197,279,8205,0.589646
+All tech roles,CI/CD,Docker,365,1197,769,8205,3.2535
+All tech roles,CI/CD,ETL,108,1197,857,8205,0.863828
+All tech roles,CI/CD,GCP,205,1197,712,8205,1.9736
+All tech roles,CI/CD,Generative AI/LLM,55,1197,347,8205,1.08647
+All tech roles,CI/CD,Git,607,1197,1217,8205,3.41887
+All tech roles,CI/CD,Go,36,1197,143,8205,1.72564
+All tech roles,CI/CD,HTML/CSS,215,1197,1056,8205,1.39559
+All tech roles,CI/CD,Hadoop,27,1197,235,8205,0.787554
+All tech roles,CI/CD,Java,497,1197,1798,8205,1.89475
+All tech roles,CI/CD,JavaScript,466,1197,1928,8205,1.65677
+All tech roles,CI/CD,Kafka,125,1197,387,8205,2.21403
+All tech roles,CI/CD,Kubernetes,359,1197,792,8205,3.10709
+All tech roles,CI/CD,Linux,244,1197,739,8205,2.26324
+All tech roles,CI/CD,Machine Learning,162,1197,1174,8205,0.94587
+All tech roles,CI/CD,MongoDB,89,1197,261,8205,2.3374
+All tech roles,CI/CD,MySQL,72,1197,292,8205,1.69018
+All tech roles,CI/CD,NLP,38,1197,275,8205,0.947186
+All tech roles,CI/CD,NoSQL,177,1197,621,8205,1.95374
+All tech roles,CI/CD,PHP,34,1197,149,8205,1.56415
+All tech roles,CI/CD,PostgreSQL,124,1197,348,8205,2.44246
+All tech roles,CI/CD,Power BI,45,1197,553,8205,0.557791
+All tech roles,CI/CD,PyTorch,32,1197,220,8205,0.997038
+All tech roles,CI/CD,Python,489,1197,2675,8205,1.25305
+All tech roles,CI/CD,R,15,1197,359,8205,0.286405
+All tech roles,CI/CD,REST APIs,194,1197,540,8205,2.46259
+All tech roles,CI/CD,Redis,53,1197,115,8205,3.15909
+All tech roles,CI/CD,Redshift,22,1197,167,8205,0.903006
+All tech roles,CI/CD,Ruby,47,1197,131,8205,2.4593
+All tech roles,CI/CD,SQL,356,1197,2705,8205,0.902126
+All tech roles,CI/CD,SQL Server,116,1197,580,8205,1.37093
+All tech roles,CI/CD,Scala,46,1197,342,8205,0.921969
+All tech roles,CI/CD,Shell/Bash,185,1197,432,8205,2.93543
+All tech roles,CI/CD,Snowflake,55,1197,319,8205,1.18183
+All tech roles,CI/CD,Spark,83,1197,531,8205,1.07144
+All tech roles,CI/CD,Statistics,32,1197,691,8205,0.317436
+All tech roles,CI/CD,Tableau,23,1197,486,8205,0.324396
+All tech roles,CI/CD,TensorFlow,32,1197,196,8205,1.11912
+All tech roles,CI/CD,Terraform,204,1197,365,8205,3.83108
+All tech roles,CI/CD,TypeScript,130,1197,448,8205,1.98907
+All tech roles,CI/CD,scikit-learn,21,1197,91,8205,1.58184
+All tech roles,Computer Vision,Data Analysis,24,144,1170,8205,1.1688
+All tech roles,Computer Vision,Data Visualization,16,144,882,8205,1.03364
+All tech roles,Computer Vision,Deep Learning,64,144,279,8205,13.0705
+All tech roles,Computer Vision,Docker,21,144,769,8205,1.556
+All tech roles,Computer Vision,ETL,17,144,857,8205,1.13028
+All tech roles,Computer Vision,GCP,18,144,712,8205,1.44048
+All tech roles,Computer Vision,Generative AI/LLM,55,144,347,8205,9.03128
+All tech roles,Computer Vision,Git,16,144,1217,8205,0.74911
+All tech roles,Computer Vision,Java,43,144,1798,8205,1.36268
+All tech roles,Computer Vision,JavaScript,19,144,1928,8205,0.561517
+All tech roles,Computer Vision,Machine Learning,123,144,1174,8205,5.96971
+All tech roles,Computer Vision,NLP,68,144,275,8205,14.0894
+All tech roles,Computer Vision,PyTorch,46,144,220,8205,11.9138
+All tech roles,Computer Vision,Python,115,144,2675,8205,2.44957
+All tech roles,Computer Vision,SQL,26,144,2705,8205,0.547674
+All tech roles,Computer Vision,Scala,30,144,342,8205,4.99817
+All tech roles,Computer Vision,Statistics,29,144,691,8205,2.39131
+All tech roles,Computer Vision,TensorFlow,40,144,196,8205,11.6284
+All tech roles,Data Analysis,Data Modeling,163,1170,469,8205,2.43729
+All tech roles,Data Analysis,Data Visualization,435,1170,882,8205,3.4587
+All tech roles,Data Analysis,Databricks,53,1170,206,8205,1.80427
+All tech roles,Data Analysis,Deep Learning,66,1170,279,8205,1.65895
+All tech roles,Data Analysis,Docker,53,1170,769,8205,0.483328
+All tech roles,Data Analysis,ETL,235,1170,857,8205,1.923
+All tech roles,Data Analysis,Excel,276,1170,655,8205,2.95502
+All tech roles,Data Analysis,Forecasting,61,1170,154,8205,2.77781
+All tech roles,Data Analysis,GCP,96,1170,712,8205,0.945549
+All tech roles,Data Analysis,Generative AI/LLM,49,1170,347,8205,0.990283
+All tech roles,Data Analysis,Git,90,1170,1217,8205,0.518614
+All tech roles,Data Analysis,Google Analytics,25,1170,45,8205,3.89601
+All tech roles,Data Analysis,HTML/CSS,59,1170,1056,8205,0.391815
+All tech roles,Data Analysis,Hadoop,81,1170,235,8205,2.41718
+All tech roles,Data Analysis,Java,117,1170,1798,8205,0.45634
+All tech roles,Data Analysis,JavaScript,82,1170,1928,8205,0.298263
+All tech roles,Data Analysis,Kafka,45,1170,387,8205,0.815444
+All tech roles,Data Analysis,Kubernetes,37,1170,792,8205,0.327619
+All tech roles,Data Analysis,Linux,43,1170,739,8205,0.408053
+All tech roles,Data Analysis,Looker,33,1170,60,8205,3.85705
+All tech roles,Data Analysis,MATLAB,21,1170,70,8205,2.10385
+All tech roles,Data Analysis,Machine Learning,319,1170,1174,8205,1.90553
+All tech roles,Data Analysis,MongoDB,22,1170,261,8205,0.591119
+All tech roles,Data Analysis,MySQL,30,1170,292,8205,0.720495
+All tech roles,Data Analysis,NLP,84,1170,275,8205,2.1421
+All tech roles,Data Analysis,NoSQL,64,1170,621,8205,0.722738
+All tech roles,Data Analysis,PostgreSQL,45,1170,348,8205,0.90683
+All tech roles,Data Analysis,Power BI,275,1170,553,8205,3.48739
+All tech roles,Data Analysis,PyTorch,35,1170,220,8205,1.11568
+All tech roles,Data Analysis,Python,538,1170,2675,8205,1.41043
+All tech roles,Data Analysis,Qlik,43,1170,78,8205,3.86604
+All tech roles,Data Analysis,R,204,1170,359,8205,3.985
+All tech roles,Data Analysis,REST APIs,33,1170,540,8205,0.428561
+All tech roles,Data Analysis,Redshift,33,1170,167,8205,1.38577
+All tech roles,Data Analysis,SAS,113,1170,194,8205,4.08479
+All tech roles,Data Analysis,SQL,671,1170,2705,8205,1.73959
+All tech roles,Data Analysis,SQL Server,95,1170,580,8205,1.14865
+All tech roles,Data Analysis,Scala,75,1170,342,8205,1.5379
+All tech roles,Data Analysis,Shell/Bash,38,1170,432,8205,0.616868
+All tech roles,Data Analysis,Snowflake,91,1170,319,8205,2.00052
+All tech roles,Data Analysis,Spark,133,1170,531,8205,1.75651
+All tech roles,Data Analysis,Statistics,384,1170,691,8205,3.89714
+All tech roles,Data Analysis,Tableau,269,1170,486,8205,3.88158
+All tech roles,Data Analysis,TensorFlow,36,1170,196,8205,1.28807
+All tech roles,Data Analysis,TypeScript,18,1170,448,8205,0.281765
+All tech roles,Data Analysis,VBA,37,1170,90,8205,2.88305
+All tech roles,Data Analysis,dbt,18,1170,73,8205,1.72919
+All tech roles,Data Analysis,pandas,27,1170,75,8205,2.52462
+All tech roles,Data Analysis,scikit-learn,25,1170,91,8205,1.9266
+All tech roles,Data Modeling,Data Visualization,126,469,882,8205,2.49924
+All tech roles,Data Modeling,Databricks,62,469,206,8205,5.26539
+All tech roles,Data Modeling,Docker,27,469,769,8205,0.614247
+All tech roles,Data Modeling,ETL,247,469,857,8205,5.04222
+All tech roles,Data Modeling,Excel,42,469,655,8205,1.1218
+All tech roles,Data Modeling,GCP,70,469,712,8205,1.71998
+All tech roles,Data Modeling,Generative AI/LLM,17,469,347,8205,0.857088
+All tech roles,Data Modeling,Git,66,469,1217,8205,0.948766
+All tech roles,Data Modeling,HTML/CSS,17,469,1056,8205,0.281638
+All tech roles,Data Modeling,Hadoop,57,469,235,8205,4.24339
+All tech roles,Data Modeling,Java,83,469,1798,8205,0.807596
+All tech roles,Data Modeling,JavaScript,53,469,1928,8205,0.480922
+All tech roles,Data Modeling,Kafka,40,469,387,8205,1.80823
+All tech roles,Data Modeling,Kubernetes,30,469,792,8205,0.662677
+All tech roles,Data Modeling,Linux,35,469,739,8205,0.82857
+All tech roles,Data Modeling,Machine Learning,114,469,1174,8205,1.6988
+All tech roles,Data Modeling,MongoDB,21,469,261,8205,1.40762
+All tech roles,Data Modeling,MySQL,35,469,292,8205,2.09696
+All tech roles,Data Modeling,NoSQL,82,469,621,8205,2.31009
+All tech roles,Data Modeling,PostgreSQL,28,469,348,8205,1.40762
+All tech roles,Data Modeling,Power BI,107,469,553,8205,3.38504
+All tech roles,Data Modeling,PyTorch,15,469,220,8205,1.19282
+All tech roles,Data Modeling,Python,232,469,2675,8205,1.51729
+All tech roles,Data Modeling,Qlik,25,469,78,8205,5.60727
+All tech roles,Data Modeling,R,52,469,359,8205,2.53405
+All tech roles,Data Modeling,Redshift,61,469,167,8205,6.39027
+All tech roles,Data Modeling,SAS,31,469,194,8205,2.79554
+All tech roles,Data Modeling,SQL,319,469,2705,8205,2.06314
+All tech roles,Data Modeling,SQL Server,85,469,580,8205,2.56387
+All tech roles,Data Modeling,Scala,62,469,342,8205,3.17155
+All tech roles,Data Modeling,Shell/Bash,21,469,432,8205,0.850435
+All tech roles,Data Modeling,Snowflake,89,469,319,8205,4.88096
+All tech roles,Data Modeling,Spark,101,469,531,8205,3.32761
+All tech roles,Data Modeling,Statistics,69,469,691,8205,1.74694
+All tech roles,Data Modeling,Tableau,82,469,486,8205,2.95178
+All tech roles,Data Modeling,TensorFlow,17,469,196,8205,1.51739
+All tech roles,Data Modeling,dbt,31,469,73,8205,7.42924
+All tech roles,Data Visualization,Databricks,55,882,206,8205,2.48374
+All tech roles,Data Visualization,Deep Learning,18,882,279,8205,0.600176
+All tech roles,Data Visualization,Docker,30,882,769,8205,0.362915
+All tech roles,Data Visualization,ETL,208,882,857,8205,2.25784
+All tech roles,Data Visualization,Excel,218,882,655,8205,3.09617
+All tech roles,Data Visualization,Forecasting,53,882,154,8205,3.20159
+All tech roles,Data Visualization,GCP,65,882,712,8205,0.849265
+All tech roles,Data Visualization,Generative AI/LLM,19,882,347,8205,0.509371
+All tech roles,Data Visualization,Git,64,882,1217,8205,0.489215
+All tech roles,Data Visualization,Google Analytics,22,882,45,8205,4.548
+All tech roles,Data Visualization,HTML/CSS,55,882,1056,8205,0.484517
+All tech roles,Data Visualization,Hadoop,33,882,235,8205,1.30634
+All tech roles,Data Visualization,Java,93,882,1798,8205,0.481175
+All tech roles,Data Visualization,JavaScript,90,882,1928,8205,0.434256
+All tech roles,Data Visualization,Kafka,21,882,387,8205,0.504799
+All tech roles,Data Visualization,Kubernetes,34,882,792,8205,0.399359
+All tech roles,Data Visualization,Linux,30,882,739,8205,0.377648
+All tech roles,Data Visualization,Looker,41,882,60,8205,6.35686
+All tech roles,Data Visualization,Machine Learning,173,882,1174,8205,1.37084
+All tech roles,Data Visualization,MongoDB,16,882,261,8205,0.570282
+All tech roles,Data Visualization,MySQL,15,882,292,8205,0.47788
+All tech roles,Data Visualization,NLP,35,882,275,8205,1.18398
+All tech roles,Data Visualization,NoSQL,39,882,621,8205,0.584229
+All tech roles,Data Visualization,PostgreSQL,27,882,348,8205,0.721763
+All tech roles,Data Visualization,Power BI,317,882,553,8205,5.33266
+All tech roles,Data Visualization,Python,403,882,2675,8205,1.40149
+All tech roles,Data Visualization,Qlik,41,882,78,8205,4.88989
+All tech roles,Data Visualization,R,169,882,359,8205,4.37928
+All tech roles,Data Visualization,REST APIs,20,882,540,8205,0.344545
+All tech roles,Data Visualization,Redshift,47,882,167,8205,2.61813
+All tech roles,Data Visualization,SAS,70,882,194,8205,3.35665
+All tech roles,Data Visualization,SQL,539,882,2705,8205,1.85367
+All tech roles,Data Visualization,SQL Server,78,882,580,8205,1.25106
+All tech roles,Data Visualization,Scala,30,882,342,8205,0.816028
+All tech roles,Data Visualization,Shell/Bash,42,882,432,8205,0.904431
+All tech roles,Data Visualization,Snowflake,69,882,319,8205,2.01219
+All tech roles,Data Visualization,Spark,63,882,531,8205,1.10371
+All tech roles,Data Visualization,Statistics,260,882,691,8205,3.5003
+All tech roles,Data Visualization,Tableau,311,882,486,8205,5.95298
+All tech roles,Data Visualization,Terraform,19,882,365,8205,0.484251
+All tech roles,Data Visualization,TypeScript,18,882,448,8205,0.37377
+All tech roles,Data Visualization,VBA,37,882,90,8205,3.82445
+All tech roles,Data Visualization,pandas,19,882,75,8205,2.35669
+All tech roles,Databricks,Docker,19,206,769,8205,0.984099
+All tech roles,Databricks,ETL,113,206,857,8205,5.25181
+All tech roles,Databricks,GCP,32,206,712,8205,1.79012
+All tech roles,Databricks,Generative AI/LLM,22,206,347,8205,2.52525
+All tech roles,Databricks,Git,39,206,1217,8205,1.2764
+All tech roles,Databricks,Hadoop,27,206,235,8205,4.57622
+All tech roles,Databricks,Java,40,206,1798,8205,0.886098
+All tech roles,Databricks,Kafka,28,206,387,8205,2.88176
+All tech roles,Databricks,Kubernetes,18,206,792,8205,0.905229
+All tech roles,Databricks,Machine Learning,78,206,1174,8205,2.64629
+All tech roles,Databricks,NoSQL,23,206,621,8205,1.47519
+All tech roles,Databricks,Power BI,58,206,553,8205,4.17748
+All tech roles,Databricks,Python,148,206,2675,8205,2.20368
+All tech roles,Databricks,R,23,206,359,8205,2.55179
+All tech roles,Databricks,Redshift,34,206,167,8205,8.10912
+All tech roles,Databricks,SQL,143,206,2705,8205,2.10562
+All tech roles,Databricks,SQL Server,29,206,580,8205,1.9915
+All tech roles,Databricks,Scala,41,206,342,8205,4.77495
+All tech roles,Databricks,Snowflake,62,206,319,8205,7.74127
+All tech roles,Databricks,Spark,101,206,531,8205,7.57597
+All tech roles,Databricks,Statistics,31,206,691,8205,1.78688
+All tech roles,Databricks,Tableau,29,206,486,8205,2.37669
+All tech roles,Databricks,Terraform,21,206,365,8205,2.29159
+All tech roles,Deep Learning,Docker,29,279,769,8205,1.10904
+All tech roles,Deep Learning,ETL,32,279,857,8205,1.0981
+All tech roles,Deep Learning,Forecasting,18,279,154,8205,3.43737
+All tech roles,Deep Learning,GCP,48,279,712,8205,1.9826
+All tech roles,Deep Learning,Generative AI/LLM,130,279,347,8205,11.0176
+All tech roles,Deep Learning,Git,25,279,1217,8205,0.604121
+All tech roles,Deep Learning,Hadoop,18,279,235,8205,2.25257
+All tech roles,Deep Learning,Java,46,279,1798,8205,0.752389
+All tech roles,Deep Learning,JavaScript,18,279,1928,8205,0.274562
+All tech roles,Deep Learning,Kubernetes,29,279,792,8205,1.07683
+All tech roles,Deep Learning,Linux,25,279,739,8205,0.994878
+All tech roles,Deep Learning,Machine Learning,256,279,1174,8205,6.41278
+All tech roles,Deep Learning,NLP,124,279,275,8205,13.2606
+All tech roles,Deep Learning,NoSQL,15,279,621,8205,0.710353
+All tech roles,Deep Learning,PyTorch,136,279,220,8205,18.1799
+All tech roles,Deep Learning,Python,226,279,2675,8205,2.48461
+All tech roles,Deep Learning,R,27,279,359,8205,2.21179
+All tech roles,Deep Learning,SQL,60,279,2705,8205,0.652316
+All tech roles,Deep Learning,Scala,59,279,342,8205,5.07341
+All tech roles,Deep Learning,Spark,68,279,531,8205,3.76607
+All tech roles,Deep Learning,Statistics,79,279,691,8205,3.3622
+All tech roles,Deep Learning,TensorFlow,116,279,196,8205,17.4051
+All tech roles,Deep Learning,pandas,15,279,75,8205,5.88172
+All tech roles,Deep Learning,scikit-learn,38,279,91,8205,12.2805
+All tech roles,Docker,ETL,60,769,857,8205,0.747004
+All tech roles,Docker,GCP,260,769,712,8205,3.89624
+All tech roles,Docker,Generative AI/LLM,40,769,347,8205,1.22994
+All tech roles,Docker,Git,319,769,1217,8205,2.79674
+All tech roles,Docker,Go,44,769,143,8205,3.28298
+All tech roles,Docker,HTML/CSS,152,769,1056,8205,1.53579
+All tech roles,Docker,Hadoop,27,769,235,8205,1.22588
+All tech roles,Docker,Java,369,769,1798,8205,2.18972
+All tech roles,Docker,JavaScript,355,769,1928,8205,1.9646
+All tech roles,Docker,Kafka,125,769,387,8205,3.44629
+All tech roles,Docker,Kubernetes,550,769,792,8205,7.40951
+All tech roles,Docker,Linux,176,769,739,8205,2.54109
+All tech roles,Docker,Machine Learning,116,769,1174,8205,1.05425
+All tech roles,Docker,MongoDB,62,769,261,8205,2.53456
+All tech roles,Docker,MySQL,67,769,292,8205,2.44818
+All tech roles,Docker,NLP,33,769,275,8205,1.28036
+All tech roles,Docker,NoSQL,223,769,621,8205,3.83147
+All tech roles,Docker,PHP,25,769,149,8205,1.79022
+All tech roles,Docker,PostgreSQL,106,769,348,8205,3.24997
+All tech roles,Docker,Power BI,18,769,553,8205,0.347296
+All tech roles,Docker,PyTorch,41,769,220,8205,1.98844
+All tech roles,Docker,Python,423,769,2675,8205,1.68721
+All tech roles,Docker,REST APIs,110,769,540,8205,2.17346
+All tech roles,Docker,Redis,38,769,115,8205,3.52564
+All tech roles,Docker,Ruby,26,769,131,8205,2.11765
+All tech roles,Docker,SQL,292,769,2705,8205,1.15178
+All tech roles,Docker,SQL Server,47,769,580,8205,0.864614
+All tech roles,Docker,Scala,82,769,342,8205,2.55823
+All tech roles,Docker,Shell/Bash,119,769,432,8205,2.93911
+All tech roles,Docker,Snowflake,33,769,319,8205,1.10376
+All tech roles,Docker,Spark,69,769,531,8205,1.38646
+All tech roles,Docker,Statistics,23,769,691,8205,0.355142
+All tech roles,Docker,Tableau,15,769,486,8205,0.329312
+All tech roles,Docker,TensorFlow,27,769,196,8205,1.46981
+All tech roles,Docker,Terraform,141,769,365,8205,4.12172
+All tech roles,Docker,TypeScript,121,769,448,8205,2.88177
+All tech roles,Docker,pandas,19,769,75,8205,2.70299
+All tech roles,ETL,Excel,60,857,655,8205,0.877016
+All tech roles,ETL,Forecasting,21,857,154,8205,1.30556
+All tech roles,ETL,GCP,137,857,712,8205,1.84221
+All tech roles,ETL,Generative AI/LLM,40,857,347,8205,1.10364
+All tech roles,ETL,Git,108,857,1217,8205,0.849632
+All tech roles,ETL,HTML/CSS,33,857,1056,8205,0.29919
+All tech roles,ETL,Hadoop,83,857,235,8205,3.38149
+All tech roles,ETL,Java,168,857,1798,8205,0.894576
+All tech roles,ETL,JavaScript,86,857,1928,8205,0.42706
+All tech roles,ETL,Kafka,95,857,387,8205,2.35023
+All tech roles,ETL,Kubernetes,60,857,792,8205,0.72531
+All tech roles,ETL,Linux,72,857,739,8205,0.932794
+All tech roles,ETL,Looker,19,857,60,8205,3.0318
+All tech roles,ETL,Machine Learning,219,857,1174,8205,1.78597
+All tech roles,ETL,MongoDB,29,857,261,8205,1.06379
+All tech roles,ETL,MySQL,47,857,292,8205,1.54104
+All tech roles,ETL,NLP,30,857,275,8205,1.04445
+All tech roles,ETL,NoSQL,133,857,621,8205,2.05049
+All tech roles,ETL,PostgreSQL,68,857,348,8205,1.8708
+All tech roles,ETL,Power BI,162,857,553,8205,2.80471
+All tech roles,ETL,PyTorch,31,857,220,8205,1.34908
+All tech roles,ETL,Python,487,857,2675,8205,1.74302
+All tech roles,ETL,Qlik,36,857,78,8205,4.41881
+All tech roles,ETL,R,69,857,359,8205,1.84015
+All tech roles,ETL,REST APIs,42,857,540,8205,0.744652
+All tech roles,ETL,Redshift,95,857,167,8205,5.44634
+All tech roles,ETL,SAS,18,857,194,8205,0.888318
+All tech roles,ETL,SQL,586,857,2705,8205,2.07409
+All tech roles,ETL,SQL Server,151,857,580,8205,2.49257
+All tech roles,ETL,Scala,109,857,342,8205,3.05139
+All tech roles,ETL,Shell/Bash,68,857,432,8205,1.50703
+All tech roles,ETL,Snowflake,155,857,319,8205,4.65199
+All tech roles,ETL,Spark,226,857,531,8205,4.07485
+All tech roles,ETL,Statistics,104,857,691,8205,1.44096
+All tech roles,ETL,Tableau,138,857,486,8205,2.71857
+All tech roles,ETL,TensorFlow,33,857,196,8205,1.61197
+All tech roles,ETL,Terraform,37,857,365,8205,0.970525
+All tech roles,ETL,TypeScript,21,857,448,8205,0.448786
+All tech roles,ETL,VBA,21,857,90,8205,2.23396
+All tech roles,ETL,dbt,39,857,73,8205,5.11493
+All tech roles,ETL,pandas,21,857,75,8205,2.68075
+All tech roles,ETL,scikit-learn,20,857,91,8205,2.1042
+All tech roles,Excel,Forecasting,39,655,154,8205,3.17235
+All tech roles,Excel,Git,22,655,1217,8205,0.226448
+All tech roles,Excel,HTML/CSS,30,655,1056,8205,0.355873
+All tech roles,Excel,Java,25,655,1798,8205,0.174176
+All tech roles,Excel,JavaScript,42,655,1928,8205,0.272885
+All tech roles,Excel,Linux,16,655,739,8205,0.271214
+All tech roles,Excel,Machine Learning,49,655,1174,8205,0.522836
+All tech roles,Excel,Power BI,172,655,553,8205,3.89619
+All tech roles,Excel,Python,156,655,2675,8205,0.73053
+All tech roles,Excel,Qlik,23,655,78,8205,3.69378
+All tech roles,Excel,R,80,655,359,8205,2.79147
+All tech roles,Excel,SAS,74,655,194,8205,4.77823
+All tech roles,Excel,SQL,317,655,2705,8205,1.46801
+All tech roles,Excel,SQL Server,55,655,580,8205,1.18788
+All tech roles,Excel,Snowflake,19,655,319,8205,0.746105
+All tech roles,Excel,Statistics,126,655,691,8205,2.28418
+All tech roles,Excel,Tableau,153,655,486,8205,3.9436
+All tech roles,Excel,VBA,57,655,90,8205,7.93359
+All tech roles,Forecasting,Machine Learning,43,154,1174,8205,1.95145
+All tech roles,Forecasting,Power BI,31,154,553,8205,2.98672
+All tech roles,Forecasting,Python,76,154,2675,8205,1.51373
+All tech roles,Forecasting,R,32,154,359,8205,4.74912
+All tech roles,Forecasting,SAS,20,154,194,8205,5.4927
+All tech roles,Forecasting,SQL,86,154,2705,8205,1.6939
+All tech roles,Forecasting,Snowflake,19,154,319,8205,3.17337
+All tech roles,Forecasting,Spark,22,154,531,8205,2.20743
+All tech roles,Forecasting,Statistics,51,154,691,8205,3.93233
+All tech roles,Forecasting,Tableau,41,154,486,8205,4.49475
+All tech roles,GCP,Generative AI/LLM,64,712,347,8205,2.12544
+All tech roles,GCP,Git,171,712,1217,8205,1.61921
+All tech roles,GCP,Go,30,712,143,8205,2.4176
+All tech roles,GCP,HTML/CSS,95,712,1056,8205,1.03671
+All tech roles,GCP,Hadoop,58,712,235,8205,2.84419
+All tech roles,GCP,Java,289,712,1798,8205,1.85228
+All tech roles,GCP,JavaScript,226,712,1928,8205,1.35083
+All tech roles,GCP,Kafka,95,712,387,8205,2.82886
+All tech roles,GCP,Kubernetes,286,712,792,8205,4.1614
+All tech roles,GCP,Linux,82,712,739,8205,1.2787
+All tech roles,GCP,Looker,18,712,60,8205,3.45716
+All tech roles,GCP,Machine Learning,199,712,1174,8205,1.95337
+All tech roles,GCP,MongoDB,55,712,261,8205,2.4284
+All tech roles,GCP,MySQL,68,712,292,8205,2.68364
+All tech roles,GCP,NLP,47,712,275,8205,1.96954
+All tech roles,GCP,NoSQL,218,712,621,8205,4.04542
+All tech roles,GCP,PostgreSQL,59,712,348,8205,1.95376
+All tech roles,GCP,Power BI,30,712,553,8205,0.625165
+All tech roles,GCP,PyTorch,55,712,220,8205,2.88097
+All tech roles,GCP,Python,421,712,2675,8205,1.81366
+All tech roles,GCP,R,30,712,359,8205,0.962998
+All tech roles,GCP,REST APIs,58,712,540,8205,1.23775
+All tech roles,GCP,Redis,29,712,115,8205,2.90602
+All tech roles,GCP,Redshift,41,712,167,8205,2.82922
+All tech roles,GCP,SQL,323,712,2705,8205,1.37605
+All tech roles,GCP,SQL Server,54,712,580,8205,1.07291
+All tech roles,GCP,Scala,106,712,342,8205,3.57173
+All tech roles,GCP,Shell/Bash,77,712,432,8205,2.05402
+All tech roles,GCP,Snowflake,61,712,319,8205,2.20363
+All tech roles,GCP,Spark,138,712,531,8205,2.99491
+All tech roles,GCP,Statistics,52,712,691,8205,0.867209
+All tech roles,GCP,Tableau,39,712,486,8205,0.924756
+All tech roles,GCP,TensorFlow,54,712,196,8205,3.17495
+All tech roles,GCP,Terraform,115,712,365,8205,3.63081
+All tech roles,GCP,TypeScript,92,712,448,8205,2.36651
+All tech roles,GCP,pandas,15,712,75,8205,2.30478
+All tech roles,GCP,scikit-learn,24,712,91,8205,3.03926
+All tech roles,Generative AI/LLM,Git,36,347,1217,8205,0.699457
+All tech roles,Generative AI/LLM,Java,58,347,1798,8205,0.762759
+All tech roles,Generative AI/LLM,JavaScript,35,347,1928,8205,0.42925
+All tech roles,Generative AI/LLM,Kubernetes,34,347,792,8205,1.01509
+All tech roles,Generative AI/LLM,Linux,16,347,739,8205,0.511947
+All tech roles,Generative AI/LLM,Machine Learning,255,347,1174,8205,5.13595
+All tech roles,Generative AI/LLM,NLP,119,347,275,8205,10.2321
+All tech roles,Generative AI/LLM,NoSQL,26,347,621,8205,0.98999
+All tech roles,Generative AI/LLM,PostgreSQL,16,347,348,8205,1.08715
+All tech roles,Generative AI/LLM,PyTorch,102,347,220,8205,10.9629
+All tech roles,Generative AI/LLM,Python,223,347,2675,8205,1.9712
+All tech roles,Generative AI/LLM,R,23,347,359,8205,1.51489
+All tech roles,Generative AI/LLM,SQL,67,347,2705,8205,0.585675
+All tech roles,Generative AI/LLM,Scala,44,347,342,8205,3.04212
+All tech roles,Generative AI/LLM,Spark,46,347,531,8205,2.04839
+All tech roles,Generative AI/LLM,Statistics,56,347,691,8205,1.91628
+All tech roles,Generative AI/LLM,TensorFlow,78,347,196,8205,9.40996
+All tech roles,Generative AI/LLM,scikit-learn,28,347,91,8205,7.27555
+All tech roles,Git,Go,38,1217,143,8205,1.79158
+All tech roles,Git,HTML/CSS,286,1217,1056,8205,1.82596
+All tech roles,Git,Hadoop,28,1217,235,8205,0.803301
+All tech roles,Git,Java,435,1217,1798,8205,1.63113
+All tech roles,Git,JavaScript,524,1217,1928,8205,1.83237
+All tech roles,Git,Kafka,111,1217,387,8205,1.93375
+All tech roles,Git,Kubernetes,278,1217,792,8205,2.36651
+All tech roles,Git,Linux,257,1217,739,8205,2.34464
+All tech roles,Git,Machine Learning,140,1217,1174,8205,0.803985
+All tech roles,Git,MongoDB,108,1217,261,8205,2.78979
+All tech roles,Git,MySQL,103,1217,292,8205,2.37817
+All tech roles,Git,NLP,27,1217,275,8205,0.661941
+All tech roles,Git,NoSQL,174,1217,621,8205,1.88906
+All tech roles,Git,Oracle DB,21,1217,61,8205,2.32101
+All tech roles,Git,PHP,64,1217,149,8205,2.89589
+All tech roles,Git,PostgreSQL,128,1217,348,8205,2.47981
+All tech roles,Git,Power BI,49,1217,553,8205,0.597391
+All tech roles,Git,PyTorch,34,1217,220,8205,1.04194
+All tech roles,Git,Python,474,1217,2675,8205,1.19466
+All tech roles,Git,R,30,1217,359,8205,0.563397
+All tech roles,Git,REST APIs,191,1217,540,8205,2.38467
+All tech roles,Git,Redis,50,1217,115,8205,2.9313
+All tech roles,Git,Redshift,23,1217,167,8205,0.928537
+All tech roles,Git,Ruby,47,1217,131,8205,2.41888
+All tech roles,Git,SQL,446,1217,2705,8205,1.11162
+All tech roles,Git,SQL Server,145,1217,580,8205,1.6855
+All tech roles,Git,Scala,41,1217,342,8205,0.80825
+All tech roles,Git,Shell/Bash,183,1217,432,8205,2.85598
+All tech roles,Git,Snowflake,52,1217,319,8205,1.09901
+All tech roles,Git,Spark,73,1217,531,8205,0.926865
+All tech roles,Git,Statistics,45,1217,691,8205,0.439059
+All tech roles,Git,Tableau,25,1217,486,8205,0.34681
+All tech roles,Git,TensorFlow,32,1217,196,8205,1.10073
+All tech roles,Git,Terraform,164,1217,365,8205,3.02928
+All tech roles,Git,TypeScript,111,1217,448,8205,1.67045
+All tech roles,Git,dbt,18,1217,73,8205,1.66241
+All tech roles,Git,pandas,16,1217,75,8205,1.43829
+All tech roles,Git,scikit-learn,19,1217,91,8205,1.40767
+All tech roles,Go,Java,71,143,1798,8205,2.26575
+All tech roles,Go,JavaScript,41,143,1928,8205,1.22017
+All tech roles,Go,Kafka,34,143,387,8205,5.04093
+All tech roles,Go,Kubernetes,54,143,792,8205,3.91211
+All tech roles,Go,Linux,21,143,739,8205,1.63049
+All tech roles,Go,Machine Learning,25,143,1174,8205,1.22184
+All tech roles,Go,NoSQL,26,143,621,8205,2.40228
+All tech roles,Go,Python,82,143,2675,8205,1.75887
+All tech roles,Go,REST APIs,20,143,540,8205,2.1251
+All tech roles,Go,SQL,20,143,2705,8205,0.424234
+All tech roles,Go,Terraform,18,143,365,8205,2.82958
+All tech roles,Google Analytics,SQL,19,45,2705,8205,1.28071
+All tech roles,Google Analytics,Statistics,15,45,691,8205,3.95803
+All tech roles,Google Analytics,Tableau,15,45,486,8205,5.62757
+All tech roles,HTML/CSS,Java,324,1056,1798,8205,1.40014
+All tech roles,HTML/CSS,JavaScript,898,1056,1928,8205,3.61896
+All tech roles,HTML/CSS,Kafka,34,1056,387,8205,0.682626
+All tech roles,HTML/CSS,Kubernetes,137,1056,792,8205,1.34403
+All tech roles,HTML/CSS,Linux,73,1056,739,8205,0.767526
+All tech roles,HTML/CSS,Machine Learning,50,1056,1174,8205,0.330915
+All tech roles,HTML/CSS,MongoDB,64,1056,261,8205,1.90526
+All tech roles,HTML/CSS,MySQL,92,1056,292,8205,2.44805
+All tech roles,HTML/CSS,NoSQL,134,1056,621,8205,1.67659
+All tech roles,HTML/CSS,PHP,86,1056,149,8205,4.48463
+All tech roles,HTML/CSS,PostgreSQL,83,1056,348,8205,1.85316
+All tech roles,HTML/CSS,Power BI,35,1056,553,8205,0.491765
+All tech roles,HTML/CSS,Python,414,1056,2675,8205,1.20252
+All tech roles,HTML/CSS,R,23,1056,359,8205,0.497792
+All tech roles,HTML/CSS,REST APIs,149,1056,540,8205,2.14391
+All tech roles,HTML/CSS,Redis,27,1056,115,8205,1.82423
+All tech roles,HTML/CSS,Ruby,31,1056,131,8205,1.83868
+All tech roles,HTML/CSS,SQL,520,1056,2705,8205,1.49366
+All tech roles,HTML/CSS,SQL Server,125,1056,580,8205,1.67454
+All tech roles,HTML/CSS,Shell/Bash,37,1056,432,8205,0.665476
+All tech roles,HTML/CSS,Statistics,19,1056,691,8205,0.213644
+All tech roles,HTML/CSS,Tableau,18,1056,486,8205,0.287774
+All tech roles,HTML/CSS,Terraform,25,1056,365,8205,0.532184
+All tech roles,HTML/CSS,TypeScript,197,1056,448,8205,3.41667
+All tech roles,Hadoop,Java,107,235,1798,8205,2.07781
+All tech roles,Hadoop,JavaScript,25,235,1928,8205,0.452735
+All tech roles,Hadoop,Kafka,69,235,387,8205,6.22514
+All tech roles,Hadoop,Kubernetes,28,235,792,8205,1.23436
+All tech roles,Hadoop,Linux,49,235,739,8205,2.31506
+All tech roles,Hadoop,Machine Learning,104,235,1174,8205,3.09297
+All tech roles,Hadoop,MongoDB,31,235,261,8205,4.14698
+All tech roles,Hadoop,MySQL,29,235,292,8205,3.46758
+All tech roles,Hadoop,NoSQL,68,235,621,8205,3.82321
+All tech roles,Hadoop,Power BI,25,235,553,8205,1.57843
+All tech roles,Hadoop,PyTorch,18,235,220,8205,2.85667
+All tech roles,Hadoop,Python,167,235,2675,8205,2.17973
+All tech roles,Hadoop,R,35,235,359,8205,3.40396
+All tech roles,Hadoop,Redshift,26,235,167,8205,5.43585
+All tech roles,Hadoop,SAS,21,235,194,8205,3.77945
+All tech roles,Hadoop,SQL,154,235,2705,8205,1.98776
+All tech roles,Hadoop,SQL Server,20,235,580,8205,1.20396
+All tech roles,Hadoop,Scala,96,235,342,8205,9.80067
+All tech roles,Hadoop,Shell/Bash,34,235,432,8205,2.74793
+All tech roles,Hadoop,Snowflake,40,235,319,8205,4.37804
+All tech roles,Hadoop,Spark,173,235,531,8205,11.3753
+All tech roles,Hadoop,Statistics,54,235,691,8205,2.72852
+All tech roles,Hadoop,Tableau,48,235,486,8205,3.44838
+All tech roles,Hadoop,TensorFlow,21,235,196,8205,3.74088
+All tech roles,Java,JavaScript,741,1798,1928,8205,1.75388
+All tech roles,Java,Kafka,261,1798,387,8205,3.07764
+All tech roles,Java,Kubernetes,386,1798,792,8205,2.22408
+All tech roles,Java,Linux,241,1798,739,8205,1.4882
+All tech roles,Java,MATLAB,16,1798,70,8205,1.04306
+All tech roles,Java,Machine Learning,270,1798,1174,8205,1.04951
+All tech roles,Java,MongoDB,121,1798,261,8205,2.1156
+All tech roles,Java,MySQL,130,1798,292,8205,2.03165
+All tech roles,Java,NLP,56,1798,275,8205,0.929275
+All tech roles,Java,NoSQL,351,1798,621,8205,2.57932
+All tech roles,Java,Oracle DB,23,1798,61,8205,1.72063
+All tech roles,Java,PHP,58,1798,149,8205,1.77636
+All tech roles,Java,PostgreSQL,127,1798,348,8205,1.66538
+All tech roles,Java,Power BI,45,1798,553,8205,0.371344
+All tech roles,Java,PyTorch,41,1798,220,8205,0.850453
+All tech roles,Java,Python,816,1798,2675,8205,1.39205
+All tech roles,Java,R,39,1798,359,8205,0.495746
+All tech roles,Java,REST APIs,233,1798,540,8205,1.96902
+All tech roles,Java,Redis,66,1798,115,8205,2.619
+All tech roles,Java,Redshift,47,1798,167,8205,1.28431
+All tech roles,Java,Ruby,46,1798,131,8205,1.60242
+All tech roles,Java,SAS,22,1798,194,8205,0.517499
+All tech roles,Java,SQL,649,1798,2705,8205,1.09488
+All tech roles,Java,SQL Server,130,1798,580,8205,1.02283
+All tech roles,Java,Scala,211,1798,342,8205,2.81543
+All tech roles,Java,Shell/Bash,138,1798,432,8205,1.45775
+All tech roles,Java,Snowflake,74,1798,319,8205,1.0586
+All tech roles,Java,Spark,201,1798,531,8205,1.72739
+All tech roles,Java,Statistics,69,1798,691,8205,0.45568
+All tech roles,Java,Tableau,50,1798,486,8205,0.469486
+All tech roles,Java,TensorFlow,43,1798,196,8205,1.00115
+All tech roles,Java,Terraform,109,1798,365,8205,1.36277
+All tech roles,Java,TypeScript,165,1798,448,8205,1.68072
+All tech roles,Java,scikit-learn,18,1798,91,8205,0.902651
+All tech roles,JavaScript,Kafka,99,1928,387,8205,1.08867
+All tech roles,JavaScript,Kubernetes,328,1928,792,8205,1.76246
+All tech roles,JavaScript,Linux,165,1928,739,8205,0.950191
+All tech roles,JavaScript,Machine Learning,132,1928,1174,8205,0.478495
+All tech roles,JavaScript,MongoDB,128,1928,261,8205,2.08709
+All tech roles,JavaScript,MySQL,150,1928,292,8205,2.18615
+All tech roles,JavaScript,NLP,25,1928,275,8205,0.386882
+All tech roles,JavaScript,NoSQL,284,1928,621,8205,1.94625
+All tech roles,JavaScript,Oracle DB,16,1928,61,8205,1.11625
+All tech roles,JavaScript,PHP,114,1928,149,8205,3.25604
+All tech roles,JavaScript,PostgreSQL,172,1928,348,8205,2.10339
+All tech roles,JavaScript,Power BI,55,1928,553,8205,0.423262
+All tech roles,JavaScript,PyTorch,18,1928,220,8205,0.348194
+All tech roles,JavaScript,Python,756,1928,2675,8205,1.20273
+All tech roles,JavaScript,R,17,1928,359,8205,0.201524
+All tech roles,JavaScript,REST APIs,285,1928,540,8205,2.24607
+All tech roles,JavaScript,Redis,53,1928,115,8205,1.96133
+All tech roles,JavaScript,Redshift,18,1928,167,8205,0.458699
+All tech roles,JavaScript,Ruby,74,1928,131,8205,2.40399
+All tech roles,JavaScript,SAS,17,1928,194,8205,0.372923
+All tech roles,JavaScript,SQL,772,1928,2705,8205,1.21457
+All tech roles,JavaScript,SQL Server,204,1928,580,8205,1.49683
+All tech roles,JavaScript,Scala,70,1928,342,8205,0.871051
+All tech roles,JavaScript,Shell/Bash,98,1928,432,8205,0.965415
+All tech roles,JavaScript,Snowflake,25,1928,319,8205,0.333519
+All tech roles,JavaScript,Spark,49,1928,531,8205,0.392711
+All tech roles,JavaScript,Statistics,36,1928,691,8205,0.221715
+All tech roles,JavaScript,Tableau,31,1928,486,8205,0.271454
+All tech roles,JavaScript,Terraform,75,1928,365,8205,0.87446
+All tech roles,JavaScript,TypeScript,379,1928,448,8205,3.60025
+All tech roles,Kafka,Kubernetes,148,387,792,8205,3.96191
+All tech roles,Kafka,Linux,66,387,739,8205,1.89351
+All tech roles,Kafka,Machine Learning,84,387,1174,8205,1.51698
+All tech roles,Kafka,MongoDB,63,387,261,8205,5.11762
+All tech roles,Kafka,MySQL,45,387,292,8205,3.26736
+All tech roles,Kafka,NoSQL,126,387,621,8205,4.30176
+All tech roles,Kafka,PostgreSQL,45,387,348,8205,2.74158
+All tech roles,Kafka,Python,189,387,2675,8205,1.49798
+All tech roles,Kafka,REST APIs,49,387,540,8205,1.92384
+All tech roles,Kafka,Redis,52,387,115,8205,9.58679
+All tech roles,Kafka,Redshift,26,387,167,8205,3.30084
+All tech roles,Kafka,SQL,174,387,2705,8205,1.3638
+All tech roles,Kafka,SQL Server,33,387,580,8205,1.2063
+All tech roles,Kafka,Scala,83,387,342,8205,5.14541
+All tech roles,Kafka,Shell/Bash,56,387,432,8205,2.74835
+All tech roles,Kafka,Snowflake,54,387,319,8205,3.58898
+All tech roles,Kafka,Spark,121,387,531,8205,4.83124
+All tech roles,Kafka,Statistics,15,387,691,8205,0.460236
+All tech roles,Kafka,Tableau,18,387,486,8205,0.785243
+All tech roles,Kafka,Terraform,47,387,365,8205,2.73006
+All tech roles,Kafka,TypeScript,20,387,448,8205,0.946498
+All tech roles,Kubernetes,Linux,176,792,739,8205,2.4673
+All tech roles,Kubernetes,Machine Learning,118,792,1174,8205,1.04128
+All tech roles,Kubernetes,MongoDB,77,792,261,8205,3.05635
+All tech roles,Kubernetes,MySQL,64,792,292,8205,2.27065
+All tech roles,Kubernetes,NLP,27,792,275,8205,1.01715
+All tech roles,Kubernetes,NoSQL,210,792,621,8205,3.50333
+All tech roles,Kubernetes,PHP,20,792,149,8205,1.39058
+All tech roles,Kubernetes,PostgreSQL,96,792,348,8205,2.85789
+All tech roles,Kubernetes,PyTorch,37,792,220,8205,1.74234
+All tech roles,Kubernetes,Python,430,792,2675,8205,1.66532
+All tech roles,Kubernetes,REST APIs,97,792,540,8205,1.86094
+All tech roles,Kubernetes,Redis,53,792,115,8205,4.77454
+All tech roles,Kubernetes,Ruby,43,792,131,8205,3.40056
+All tech roles,Kubernetes,SQL,295,792,2705,8205,1.12982
+All tech roles,Kubernetes,SQL Server,36,792,580,8205,0.643025
+All tech roles,Kubernetes,Scala,93,792,342,8205,2.81715
+All tech roles,Kubernetes,Shell/Bash,130,792,432,8205,3.11755
+All tech roles,Kubernetes,Snowflake,26,792,319,8205,0.844376
+All tech roles,Kubernetes,Spark,92,792,531,8205,1.79493
+All tech roles,Kubernetes,Statistics,17,792,691,8205,0.254873
+All tech roles,Kubernetes,TensorFlow,30,792,196,8205,1.58569
+All tech roles,Kubernetes,Terraform,168,792,365,8205,4.76837
+All tech roles,Kubernetes,TypeScript,119,792,448,8205,2.75183
+All tech roles,Linux,Machine Learning,97,739,1174,8205,0.917356
+All tech roles,Linux,MongoDB,46,739,261,8205,1.95682
+All tech roles,Linux,MySQL,65,739,292,8205,2.47152
+All tech roles,Linux,NLP,16,739,275,8205,0.645984
+All tech roles,Linux,NoSQL,75,739,621,8205,1.34092
+All tech roles,Linux,Oracle DB,22,739,61,8205,4.0043
+All tech roles,Linux,PHP,23,739,149,8205,1.71386
+All tech roles,Linux,PostgreSQL,48,739,348,8205,1.53143
+All tech roles,Linux,PyTorch,18,739,220,8205,0.908414
+All tech roles,Linux,Python,351,739,2675,8205,1.45686
+All tech roles,Linux,R,17,739,359,8205,0.525761
+All tech roles,Linux,REST APIs,38,739,540,8205,0.781311
+All tech roles,Linux,Redis,25,739,115,8205,2.41366
+All tech roles,Linux,Redshift,28,739,167,8205,1.86155
+All tech roles,Linux,Ruby,34,739,131,8205,2.88165
+All tech roles,Linux,SAS,17,739,194,8205,0.972929
+All tech roles,Linux,SQL,234,739,2705,8205,0.960468
+All tech roles,Linux,SQL Server,47,739,580,8205,0.899713
+All tech roles,Linux,Scala,31,739,342,8205,1.0064
+All tech roles,Linux,Shell/Bash,199,739,432,8205,5.1145
+All tech roles,Linux,Snowflake,37,739,319,8205,1.28779
+All tech roles,Linux,Spark,58,739,531,8205,1.21274
+All tech roles,Linux,Statistics,25,739,691,8205,0.401695
+All tech roles,Linux,Terraform,95,739,365,8205,2.88978
+All tech roles,Linux,TypeScript,20,739,448,8205,0.495663
+All tech roles,Looker,Machine Learning,15,60,1174,8205,1.74723
+All tech roles,Looker,Power BI,18,60,553,8205,4.45118
+All tech roles,Looker,Python,34,60,2675,8205,1.73813
+All tech roles,Looker,SQL,44,60,2705,8205,2.2244
+All tech roles,Looker,Statistics,21,60,691,8205,4.15593
+All tech roles,Looker,Tableau,41,60,486,8205,11.5365
+All tech roles,MATLAB,Machine Learning,23,70,1174,8205,2.29636
+All tech roles,MATLAB,Python,57,70,2675,8205,2.49765
+All tech roles,MATLAB,R,26,70,359,8205,8.48906
+All tech roles,MATLAB,SAS,17,70,194,8205,10.2714
+All tech roles,MATLAB,SQL,23,70,2705,8205,0.996646
+All tech roles,MATLAB,Statistics,27,70,691,8205,4.58001
+All tech roles,Machine Learning,MongoDB,54,1174,261,8205,1.44598
+All tech roles,Machine Learning,MySQL,43,1174,292,8205,1.02919
+All tech roles,Machine Learning,NLP,228,1174,275,8205,5.79446
+All tech roles,Machine Learning,NoSQL,123,1174,621,8205,1.38428
+All tech roles,Machine Learning,PostgreSQL,44,1174,348,8205,0.883657
+All tech roles,Machine Learning,Power BI,93,1174,553,8205,1.17535
+All tech roles,Machine Learning,PyTorch,203,1174,220,8205,6.44887
+All tech roles,Machine Learning,Python,798,1174,2675,8205,2.08492
+All tech roles,Machine Learning,Qlik,22,1174,78,8205,1.97124
+All tech roles,Machine Learning,R,181,1174,359,8205,3.52367
+All tech roles,Machine Learning,REST APIs,52,1174,540,8205,0.673008
+All tech roles,Machine Learning,Redis,17,1174,115,8205,1.03315
+All tech roles,Machine Learning,Redshift,55,1174,167,8205,2.30174
+All tech roles,Machine Learning,Ruby,15,1174,131,8205,0.800259
+All tech roles,Machine Learning,SAS,54,1174,194,8205,1.94537
+All tech roles,Machine Learning,SQL,410,1174,2705,8205,1.05932
+All tech roles,Machine Learning,SQL Server,38,1174,580,8205,0.457895
+All tech roles,Machine Learning,Scala,168,1174,342,8205,3.43316
+All tech roles,Machine Learning,Shell/Bash,57,1174,432,8205,0.92215
+All tech roles,Machine Learning,Snowflake,82,1174,319,8205,1.79653
+All tech roles,Machine Learning,Spark,227,1174,531,8205,2.98773
+All tech roles,Machine Learning,Statistics,335,1174,691,8205,3.38826
+All tech roles,Machine Learning,Tableau,109,1174,486,8205,1.56748
+All tech roles,Machine Learning,TensorFlow,187,1174,196,8205,6.66801
+All tech roles,Machine Learning,Terraform,40,1174,365,8205,0.76591
+All tech roles,Machine Learning,TypeScript,36,1174,448,8205,0.56161
+All tech roles,Machine Learning,dbt,15,1174,73,8205,1.43608
+All tech roles,Machine Learning,pandas,55,1174,75,8205,5.12521
+All tech roles,Machine Learning,scikit-learn,88,1174,91,8205,6.75852
+All tech roles,MongoDB,MySQL,82,261,292,8205,8.82814
+All tech roles,MongoDB,NoSQL,126,261,621,8205,6.37848
+All tech roles,MongoDB,PHP,15,261,149,8205,3.16478
+All tech roles,MongoDB,PostgreSQL,81,261,348,8205,7.31718
+All tech roles,MongoDB,Python,126,261,2675,8205,1.48076
+All tech roles,MongoDB,REST APIs,40,261,540,8205,2.32865
+All tech roles,MongoDB,Redis,37,261,115,8205,10.1144
+All tech roles,MongoDB,Redshift,19,261,167,8205,3.57664
+All tech roles,MongoDB,SQL,118,261,2705,8205,1.37136
+All tech roles,MongoDB,SQL Server,44,261,580,8205,2.38486
+All tech roles,MongoDB,Scala,23,261,342,8205,2.11417
+All tech roles,MongoDB,Shell/Bash,36,261,432,8205,2.61973
+All tech roles,MongoDB,Snowflake,32,261,319,8205,3.15353
+All tech roles,MongoDB,Spark,36,261,531,8205,2.13131
+All tech roles,MongoDB,Terraform,26,261,365,8205,2.23933
+All tech roles,MongoDB,TypeScript,34,261,448,8205,2.38583
+All tech roles,MySQL,NoSQL,92,292,621,8205,4.16286
+All tech roles,MySQL,PHP,62,292,149,8205,11.6923
+All tech roles,MySQL,PostgreSQL,99,292,348,8205,7.99377
+All tech roles,MySQL,Power BI,16,292,553,8205,0.813
+All tech roles,MySQL,Python,126,292,2675,8205,1.32356
+All tech roles,MySQL,REST APIs,43,292,540,8205,2.23754
+All tech roles,MySQL,Redis,20,292,115,8205,4.88684
+All tech roles,MySQL,Redshift,40,292,167,8205,6.73037
+All tech roles,MySQL,SQL,133,292,2705,8205,1.38159
+All tech roles,MySQL,SQL Server,69,292,580,8205,3.34285
+All tech roles,MySQL,Scala,26,292,342,8205,2.13621
+All tech roles,MySQL,Shell/Bash,32,292,432,8205,2.08143
+All tech roles,MySQL,Snowflake,24,292,319,8205,2.11406
+All tech roles,MySQL,Spark,54,292,531,8205,2.85756
+All tech roles,MySQL,Terraform,23,292,365,8205,1.77064
+All tech roles,MySQL,TypeScript,25,292,448,8205,1.56804
+All tech roles,NLP,NoSQL,25,275,621,8205,1.20114
+All tech roles,NLP,Power BI,20,275,553,8205,1.07907
+All tech roles,NLP,PyTorch,86,275,220,8205,11.6633
+All tech roles,NLP,Python,206,275,2675,8205,2.29768
+All tech roles,NLP,R,39,275,359,8205,3.24128
+All tech roles,NLP,SQL,71,275,2705,8205,0.783136
+All tech roles,NLP,Scala,43,275,342,8205,3.75136
+All tech roles,NLP,Spark,47,275,531,8205,2.64088
+All tech roles,NLP,Statistics,94,275,691,8205,4.05878
+All tech roles,NLP,Tableau,19,275,486,8205,1.16644
+All tech roles,NLP,TensorFlow,74,275,196,8205,11.2647
+All tech roles,NLP,scikit-learn,32,275,91,8205,10.4919
+All tech roles,NoSQL,PostgreSQL,94,621,348,8205,3.56891
+All tech roles,NoSQL,Power BI,21,621,553,8205,0.501743
+All tech roles,NoSQL,PyTorch,15,621,220,8205,0.900856
+All tech roles,NoSQL,Python,363,621,2675,8205,1.79296
+All tech roles,NoSQL,R,36,621,359,8205,1.32494
+All tech roles,NoSQL,REST APIs,94,621,540,8205,2.29996
+All tech roles,NoSQL,Redis,43,621,115,8205,4.94035
+All tech roles,NoSQL,Redshift,60,621,167,8205,4.74703
+All tech roles,NoSQL,SQL,376,621,2705,8205,1.83657
+All tech roles,NoSQL,SQL Server,75,621,580,8205,1.70852
+All tech roles,NoSQL,Scala,107,621,342,8205,4.13375
+All tech roles,NoSQL,Shell/Bash,51,621,432,8205,1.55982
+All tech roles,NoSQL,Snowflake,54,621,319,8205,2.23661
+All tech roles,NoSQL,Spark,112,621,531,8205,2.78683
+All tech roles,NoSQL,Statistics,47,621,691,8205,0.898684
+All tech roles,NoSQL,Tableau,31,621,486,8205,0.842776
+All tech roles,NoSQL,TensorFlow,17,621,196,8205,1.14599
+All tech roles,NoSQL,Terraform,60,621,365,8205,2.17193
+All tech roles,NoSQL,TypeScript,105,621,448,8205,3.09669
+All tech roles,Oracle DB,SQL,53,61,2705,8205,2.63547
+All tech roles,PHP,PostgreSQL,21,149,348,8205,3.32302
+All tech roles,PHP,Python,45,149,2675,8205,0.926363
+All tech roles,PHP,REST APIs,17,149,540,8205,1.73359
+All tech roles,PHP,SQL,51,149,2705,8205,1.03823
+All tech roles,PHP,SQL Server,15,149,580,8205,1.42415
+All tech roles,PHP,TypeScript,15,149,448,8205,1.84376
+All tech roles,PostgreSQL,Power BI,19,348,553,8205,0.81008
+All tech roles,PostgreSQL,Python,174,348,2675,8205,1.53364
+All tech roles,PostgreSQL,REST APIs,64,348,540,8205,2.79438
+All tech roles,PostgreSQL,Redis,35,348,115,8205,7.17579
+All tech roles,PostgreSQL,Redshift,15,348,167,8205,2.11775
+All tech roles,PostgreSQL,Ruby,25,348,131,8205,4.49954
+All tech roles,PostgreSQL,SQL,162,348,2705,8205,1.41204
+All tech roles,PostgreSQL,SQL Server,61,348,580,8205,2.47971
+All tech roles,PostgreSQL,Scala,19,348,342,8205,1.30987
+All tech roles,PostgreSQL,Shell/Bash,36,348,432,8205,1.9648
+All tech roles,PostgreSQL,Snowflake,30,348,319,8205,2.21733
+All tech roles,PostgreSQL,Spark,31,348,531,8205,1.37647
+All tech roles,PostgreSQL,Terraform,39,348,365,8205,2.51925
+All tech roles,PostgreSQL,TypeScript,68,348,448,8205,3.57874
+All tech roles,Power BI,Python,226,553,2675,8205,1.25354
+All tech roles,Power BI,Qlik,45,553,78,8205,8.55995
+All tech roles,Power BI,R,78,553,359,8205,3.22369
+All tech roles,Power BI,REST APIs,35,553,540,8205,0.961674
+All tech roles,Power BI,Redshift,18,553,167,8205,1.59922
+All tech roles,Power BI,SAS,41,553,194,8205,3.13571
+All tech roles,Power BI,SQL,371,553,2705,8205,2.03498
+All tech roles,Power BI,SQL Server,99,553,580,8205,2.53257
+All tech roles,Power BI,Scala,24,553,342,8205,1.04121
+All tech roles,Power BI,Shell/Bash,21,553,432,8205,0.721255
+All tech roles,Power BI,Snowflake,73,553,319,8205,3.39536
+All tech roles,Power BI,Spark,54,553,531,8205,1.50887
+All tech roles,Power BI,Statistics,118,553,691,8205,2.53371
+All tech roles,Power BI,Tableau,234,553,486,8205,7.14386
+All tech roles,Power BI,VBA,22,553,90,8205,3.62688
+All tech roles,Power BI,pandas,15,553,75,8205,2.96745
+All tech roles,PyTorch,Python,193,220,2675,8205,2.69085
+All tech roles,PyTorch,R,29,220,359,8205,3.01272
+All tech roles,PyTorch,SQL,53,220,2705,8205,0.730743
+All tech roles,PyTorch,Scala,38,220,342,8205,4.14394
+All tech roles,PyTorch,Spark,61,220,531,8205,4.28441
+All tech roles,PyTorch,Statistics,53,220,691,8205,2.86058
+All tech roles,PyTorch,TensorFlow,163,220,196,8205,31.0161
+All tech roles,PyTorch,pandas,27,220,75,8205,13.4264
+All tech roles,PyTorch,scikit-learn,66,220,91,8205,27.0495
+All tech roles,Python,Qlik,31,2675,78,8205,1.21905
+All tech roles,Python,R,327,2675,359,8205,2.79388
+All tech roles,Python,REST APIs,152,2675,540,8205,0.863385
+All tech roles,Python,Redis,53,2675,115,8205,1.41362
+All tech roles,Python,Redshift,121,2675,167,8205,2.22241
+All tech roles,Python,Ruby,64,2675,131,8205,1.49852
+All tech roles,Python,SAS,111,2675,194,8205,1.755
+All tech roles,Python,SQL,1357,2675,2705,8205,1.53875
+All tech roles,Python,SQL Server,154,2675,580,8205,0.814418
+All tech roles,Python,Scala,292,2675,342,8205,2.61886
+All tech roles,Python,Shell/Bash,282,2675,432,8205,2.00226
+All tech roles,Python,Snowflake,184,2675,319,8205,1.76922
+All tech roles,Python,Spark,414,2675,531,8205,2.39145
+All tech roles,Python,Statistics,456,2675,691,8205,2.02414
+All tech roles,Python,Tableau,261,2675,486,8205,1.64725
+All tech roles,Python,TensorFlow,172,2675,196,8205,2.6917
+All tech roles,Python,Terraform,205,2675,365,8205,1.72272
+All tech roles,Python,TypeScript,156,2675,448,8205,1.06807
+All tech roles,Python,VBA,40,2675,90,8205,1.36324
+All tech roles,Python,dbt,47,2675,73,8205,1.97483
+All tech roles,Python,pandas,72,2675,75,8205,2.9446
+All tech roles,Python,scikit-learn,83,2675,91,8205,2.79764
+All tech roles,Qlik,R,15,78,359,8205,4.39522
+All tech roles,Qlik,SQL,63,78,2705,8205,2.44995
+All tech roles,Qlik,SQL Server,19,78,580,8205,3.44595
+All tech roles,Qlik,Snowflake,19,78,319,8205,6.26537
+All tech roles,Qlik,Statistics,18,78,691,8205,2.74018
+All tech roles,Qlik,Tableau,53,78,486,8205,11.4716
+All tech roles,R,Redshift,16,359,167,8205,2.18972
+All tech roles,R,SAS,108,359,194,8205,12.7235
+All tech roles,R,SQL,267,359,2705,8205,2.25594
+All tech roles,R,SQL Server,23,359,580,8205,0.906325
+All tech roles,R,Scala,38,359,342,8205,2.53946
+All tech roles,R,Snowflake,26,359,319,8205,1.8628
+All tech roles,R,Spark,41,359,531,8205,1.76471
+All tech roles,R,Statistics,230,359,691,8205,7.60736
+All tech roles,R,Tableau,122,359,486,8205,5.7373
+All tech roles,R,TensorFlow,35,359,196,8205,4.08128
+All tech roles,R,scikit-learn,24,359,91,8205,6.02773
+All tech roles,REST APIs,Redis,17,540,115,8205,2.24614
+All tech roles,REST APIs,Ruby,25,540,131,8205,2.8997
+All tech roles,REST APIs,SQL,171,540,2705,8205,0.960536
+All tech roles,REST APIs,SQL Server,61,540,580,8205,1.59804
+All tech roles,REST APIs,Shell/Bash,25,540,432,8205,0.879308
+All tech roles,REST APIs,Snowflake,17,540,319,8205,0.809735
+All tech roles,REST APIs,Spark,21,540,531,8205,0.60091
+All tech roles,REST APIs,Tableau,16,540,486,8205,0.500229
+All tech roles,REST APIs,Terraform,20,540,365,8205,0.832572
+All tech roles,REST APIs,TypeScript,70,540,448,8205,2.37413
+All tech roles,Redis,SQL,48,115,2705,8205,1.26606
+All tech roles,Redis,SQL Server,19,115,580,8205,2.33726
+All tech roles,Redis,Terraform,21,115,365,8205,4.10494
+All tech roles,Redis,TypeScript,16,115,448,8205,2.54814
+All tech roles,Redshift,SQL,112,167,2705,8205,2.03429
+All tech roles,Redshift,SQL Server,29,167,580,8205,2.45659
+All tech roles,Redshift,Scala,33,167,342,8205,4.74078
+All tech roles,Redshift,Shell/Bash,23,167,432,8205,2.61581
+All tech roles,Redshift,Snowflake,61,167,319,8205,9.3951
+All tech roles,Redshift,Spark,79,167,531,8205,7.30962
+All tech roles,Redshift,Statistics,30,167,691,8205,2.13307
+All tech roles,Redshift,Tableau,32,167,486,8205,3.23501
+All tech roles,Redshift,Terraform,17,167,365,8205,2.28833
+All tech roles,Redshift,dbt,17,167,73,8205,11.4416
+All tech roles,Ruby,SQL,28,131,2705,8205,0.648333
+All tech roles,Ruby,Shell/Bash,19,131,432,8205,2.75472
+All tech roles,Ruby,TypeScript,18,131,448,8205,2.51653
+All tech roles,SAS,SQL,139,194,2705,8205,2.17332
+All tech roles,SAS,Statistics,115,194,691,8205,7.03877
+All tech roles,SAS,Tableau,73,194,486,8205,6.35277
+All tech roles,SQL,SQL Server,357,2705,580,8205,1.86703
+All tech roles,SQL,Scala,221,2705,342,8205,1.9601
+All tech roles,SQL,Shell/Bash,175,2705,432,8205,1.22876
+All tech roles,SQL,Snowflake,211,2705,319,8205,2.00633
+All tech roles,SQL,Spark,316,2705,531,8205,1.80511
+All tech roles,SQL,Statistics,423,2705,691,8205,1.85684
+All tech roles,SQL,Tableau,357,2705,486,8205,2.22814
+All tech roles,SQL,TensorFlow,54,2705,196,8205,0.835697
+All tech roles,SQL,Terraform,85,2705,365,8205,0.706378
+All tech roles,SQL,TypeScript,151,2705,448,8205,1.02238
+All tech roles,SQL,VBA,74,2705,90,8205,2.49402
+All tech roles,SQL,dbt,53,2705,73,8205,2.20224
+All tech roles,SQL,pandas,50,2705,75,8205,2.02218
+All tech roles,SQL,scikit-learn,40,2705,91,8205,1.33331
+All tech roles,SQL Server,Shell/Bash,56,580,432,8205,1.83381
+All tech roles,SQL Server,Snowflake,56,580,319,8205,2.48341
+All tech roles,SQL Server,Spark,53,580,531,8205,1.41199
+All tech roles,SQL Server,Statistics,28,580,691,8205,0.573232
+All tech roles,SQL Server,Tableau,65,580,486,8205,1.89203
+All tech roles,SQL Server,Terraform,24,580,365,8205,0.930184
+All tech roles,SQL Server,TypeScript,37,580,448,8205,1.16835
+All tech roles,Scala,Shell/Bash,30,342,432,8205,1.66606
+All tech roles,Scala,Snowflake,48,342,319,8205,3.60997
+All tech roles,Scala,Spark,193,342,531,8205,8.71998
+All tech roles,Scala,Statistics,57,342,691,8205,1.97902
+All tech roles,Scala,Tableau,28,342,486,8205,1.38221
+All tech roles,Scala,TensorFlow,42,342,196,8205,5.14098
+All tech roles,Scala,scikit-learn,27,342,91,8205,7.11828
+All tech roles,Shell/Bash,Snowflake,29,432,319,8205,1.72664
+All tech roles,Shell/Bash,Spark,45,432,531,8205,1.60958
+All tech roles,Shell/Bash,Statistics,20,432,691,8205,0.549727
+All tech roles,Shell/Bash,Terraform,91,432,365,8205,4.73525
+All tech roles,Shell/Bash,TypeScript,18,432,448,8205,0.763114
+All tech roles,Snowflake,Spark,87,319,531,8205,4.21418
+All tech roles,Snowflake,Statistics,33,319,691,8205,1.22835
+All tech roles,Snowflake,Tableau,63,319,486,8205,3.3342
+All tech roles,Snowflake,Terraform,26,319,365,8205,1.83218
+All tech roles,Snowflake,dbt,50,319,73,8205,17.6171
+All tech roles,Snowflake,pandas,17,319,75,8205,5.83009
+All tech roles,Spark,Statistics,103,531,691,8205,2.30326
+All tech roles,Spark,Tableau,55,531,486,8205,1.74868
+All tech roles,Spark,TensorFlow,53,531,196,8205,4.17834
+All tech roles,Spark,Terraform,36,531,365,8205,1.52403
+All tech roles,Spark,dbt,20,531,73,8205,4.23342
+All tech roles,Spark,pandas,22,531,75,8205,4.53258
+All tech roles,Spark,scikit-learn,29,531,91,8205,4.92426
+All tech roles,Statistics,Tableau,171,691,486,8205,4.17792
+All tech roles,Statistics,TensorFlow,51,691,196,8205,3.08969
+All tech roles,Statistics,VBA,18,691,90,8205,2.37482
+All tech roles,Statistics,pandas,30,691,75,8205,4.74964
+All tech roles,Statistics,scikit-learn,30,691,91,8205,3.91454
+All tech roles,Tableau,VBA,21,486,90,8205,3.9393
+All tech roles,Tableau,dbt,15,486,73,8205,3.46905
+All tech roles,Tableau,pandas,17,486,75,8205,3.82675
+All tech roles,TensorFlow,pandas,28,196,75,8205,15.6286
+All tech roles,TensorFlow,scikit-learn,64,196,91,8205,29.4416
+All tech roles,Terraform,TypeScript,35,365,448,8205,1.75621
+All tech roles,pandas,scikit-learn,32,75,91,8205,38.4703

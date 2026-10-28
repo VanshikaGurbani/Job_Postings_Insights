@@ -1,0 +1,144 @@
+family,level,state,city,postings,pay_n,median_pay,entry_share,remote_hybrid_share,sponsor_screen_share
+Data & AI,state,AK,,3,0,,0.333333,0,0
+Data & AI,state,AL,,10,7,,0.4,0.4,0.5
+Data & AI,state,AR,,15,2,,0.133333,0.133333,0.2
+Data & AI,state,AZ,,39,18,117500,0.153846,0.435897,0.358974
+Data & AI,state,CA,,333,223,148300,0.174174,0.372372,0.510511
+Data & AI,state,CO,,30,23,122240,0.2,0.4,0.2
+Data & AI,state,CT,,23,10,,0.304348,0.130435,0.391304
+Data & AI,state,DC,,31,17,134900,0.451613,0.419355,0.322581
+Data & AI,state,DE,,15,3,,0.0666667,0.6,0.533333
+Data & AI,state,FL,,98,37,129900,0.204082,0.336735,0.510204
+Data & AI,state,GA,,79,27,122850,0.240506,0.455696,0.379747
+Data & AI,state,HI,,2,2,,0,1,1
+Data & AI,state,IA,,21,4,,0.0952381,0.619048,0.571429
+Data & AI,state,ID,,3,2,,0,0.333333,1
+Data & AI,state,IL,,97,24,124900,0.247423,0.43299,0.340206
+Data & AI,state,IN,,19,3,,0.210526,0.315789,0.578947
+Data & AI,state,KS,,11,4,,0.181818,0.545455,0.0909091
+Data & AI,state,KY,,8,4,,0.125,0.5,0.625
+Data & AI,state,LA,,4,0,,0.25,0.5,0
+Data & AI,state,MA,,93,40,153250,0.193548,0.44086,0.462366
+Data & AI,state,MD,,31,13,,0.193548,0.548387,0.387097
+Data & AI,state,ME,,3,3,,0.333333,0.333333,0.333333
+Data & AI,state,MI,,38,11,,0.105263,0.368421,0.552632
+Data & AI,state,MN,,37,15,102000,0.243243,0.648649,0.459459
+Data & AI,state,MO,,19,11,,0.263158,0.315789,0.263158
+Data & AI,state,MS,,2,0,,0,0,1
+Data & AI,state,NC,,84,26,131375,0.166667,0.428571,0.559524
+Data & AI,state,NE,,7,0,,0,0.571429,0.142857
+Data & AI,state,NH,,12,0,,0.0833333,0.75,0.833333
+Data & AI,state,NJ,,118,43,117500,0.152542,0.338983,0.525424
+Data & AI,state,NM,,4,0,,0,0.5,0
+Data & AI,state,NV,,8,2,,0.5,0.25,0.625
+Data & AI,state,NY,,145,117,151500,0.151724,0.434483,0.482759
+Data & AI,state,OH,,53,20,97000,0.320755,0.396226,0.433962
+Data & AI,state,OK,,4,2,,0.25,0,0
+Data & AI,state,OR,,6,3,,0.166667,0.333333,0
+Data & AI,state,PA,,61,23,120000,0.229508,0.508197,0.442623
+Data & AI,state,RI,,8,0,,0,0.625,0.75
+Data & AI,state,SC,,12,3,,0.333333,0.25,0.416667
+Data & AI,state,TN,,23,6,,0.217391,0.304348,0.478261
+Data & AI,state,TX,,234,60,145800,0.17094,0.384615,0.423077
+Data & AI,state,UT,,9,2,,0.333333,0.222222,0.222222
+Data & AI,state,VA,,138,75,140000,0.289855,0.463768,0.449275
+Data & AI,state,VT,,5,0,,0.8,0.8,0.8
+Data & AI,state,WA,,90,64,136162,0.2,0.288889,0.588889
+Data & AI,state,WI,,29,13,,0.241379,0.344828,0.37931
+Data & AI,state,WV,,1,1,,1,0,0
+Data & AI,state,WY,,1,0,,0,0,1
+Data & AI,city,GA,Atlanta,60,23,141000,0.2,0.466667,0.366667
+Data & AI,city,TX,Austin,40,13,,0.025,0.475,0.475
+Data & AI,city,MA,Boston,48,20,153500,0.1875,0.395833,0.375
+Data & AI,city,NC,Charlotte,42,13,,0.166667,0.380952,0.571429
+Data & AI,city,IL,Chicago,62,12,,0.258065,0.354839,0.354839
+Data & AI,city,TX,Dallas,50,11,,0.06,0.24,0.54
+Data & AI,city,TX,Houston,36,9,,0.166667,0.194444,0.25
+Data & AI,city,CA,Los Angeles,35,20,136140,0.0857143,0.428571,0.285714
+Data & AI,city,VA,McLean,40,24,153300,0.25,0.5,0.5
+Data & AI,city,NY,New York,115,96,165125,0.147826,0.478261,0.495652
+Data & AI,city,AZ,Phoenix,31,16,115000,0.16129,0.451613,0.322581
+Data & AI,city,TX,Plano,30,11,,0.166667,0.366667,0.3
+Data & AI,city,VA,Richmond,30,11,,0.266667,0.566667,0.6
+Data & AI,city,CA,San Francisco,50,33,186550,0.24,0.4,0.48
+Data & AI,city,CA,San Jose,32,23,197500,0.0625,0.25,0.65625
+Data & AI,city,WA,Seattle,45,35,155000,0.222222,0.288889,0.666667
+Data & AI,city,FL,Tampa,30,12,,0.133333,0.333333,0.533333
+Data & AI,city,DC,Washington,31,17,134900,0.451613,0.419355,0.322581
+Software Engineer,state,AK,,3,1,,0,0.333333,0.666667
+Software Engineer,state,AL,,14,5,,0.571429,0.5,0.571429
+Software Engineer,state,AR,,11,1,,0.272727,0.363636,0.181818
+Software Engineer,state,AZ,,67,15,122720,0.268657,0.41791,0.432836
+Software Engineer,state,CA,,547,334,150800,0.190128,0.400366,0.447898
+Software Engineer,state,CO,,76,44,125000,0.197368,0.421053,0.526316
+Software Engineer,state,CT,,22,14,,0.590909,0.409091,0.363636
+Software Engineer,state,DC,,37,17,163600,0.459459,0.297297,0.189189
+Software Engineer,state,DE,,11,2,,0.181818,0.636364,0.545455
+Software Engineer,state,FL,,140,58,120600,0.25,0.307143,0.392857
+Software Engineer,state,GA,,145,35,125000,0.193103,0.510345,0.37931
+Software Engineer,state,IA,,14,3,,0.142857,0.357143,0.5
+Software Engineer,state,ID,,17,4,,0,0.411765,0.352941
+Software Engineer,state,IL,,185,61,140400,0.194595,0.394595,0.405405
+Software Engineer,state,IN,,24,11,,0.291667,0.458333,0.25
+Software Engineer,state,KS,,21,6,,0.190476,0.238095,0.333333
+Software Engineer,state,KY,,15,2,,0.533333,0.4,0.4
+Software Engineer,state,LA,,7,4,,0.285714,0.142857,0.142857
+Software Engineer,state,MA,,117,50,130000,0.213675,0.307692,0.435897
+Software Engineer,state,MD,,89,35,135000,0.325843,0.370787,0.426966
+Software Engineer,state,ME,,14,8,,0.285714,0.142857,0.642857
+Software Engineer,state,MI,,84,16,132080,0.202381,0.5,0.619048
+Software Engineer,state,MN,,41,16,114825,0.146341,0.463415,0.487805
+Software Engineer,state,MO,,35,16,145000,0.342857,0.371429,0.314286
+Software Engineer,state,MS,,8,3,,0.375,0.125,0.375
+Software Engineer,state,MT,,1,0,,0,0,1
+Software Engineer,state,NC,,147,46,119600,0.217687,0.367347,0.62585
+Software Engineer,state,ND,,4,1,,0.5,0.75,0
+Software Engineer,state,NE,,12,0,,0.333333,0.416667,0.583333
+Software Engineer,state,NH,,17,5,,0.176471,0.470588,0.411765
+Software Engineer,state,NJ,,184,46,140400,0.190217,0.347826,0.505435
+Software Engineer,state,NM,,7,0,,0.571429,0.285714,0.285714
+Software Engineer,state,NV,,12,5,,0.0833333,0.25,0.583333
+Software Engineer,state,NY,,208,139,150000,0.3125,0.389423,0.394231
+Software Engineer,state,OH,,107,31,114400,0.345794,0.327103,0.46729
+Software Engineer,state,OK,,9,2,,0.444444,0.333333,0.333333
+Software Engineer,state,OR,,25,8,,0.04,0.28,0.64
+Software Engineer,state,PA,,137,29,137280,0.306569,0.321168,0.408759
+Software Engineer,state,RI,,9,2,,0.222222,0.444444,0.777778
+Software Engineer,state,SC,,18,0,,0.222222,0.333333,0.444444
+Software Engineer,state,SD,,1,0,,0,0,1
+Software Engineer,state,TN,,15,4,,0.2,0.533333,0.266667
+Software Engineer,state,TX,,532,143,139800,0.176692,0.342105,0.477444
+Software Engineer,state,UT,,12,1,,0.416667,0.5,0.333333
+Software Engineer,state,VA,,273,102,136302,0.252747,0.417582,0.340659
+Software Engineer,state,VT,,3,0,,0,0,0
+Software Engineer,state,WA,,189,132,145600,0.174603,0.216931,0.57672
+Software Engineer,state,WI,,36,10,,0.472222,0.472222,0.388889
+Software Engineer,state,WV,,2,2,,1,0,0
+Software Engineer,state,WY,,2,0,,0.5,0,0
+Software Engineer,city,GA,Alpharetta,41,9,,0.146341,0.487805,0.463415
+Software Engineer,city,GA,Atlanta,86,22,134225,0.186047,0.546512,0.325581
+Software Engineer,city,TX,Austin,108,38,161288,0.12037,0.351852,0.527778
+Software Engineer,city,MA,Boston,50,22,141830,0.26,0.3,0.4
+Software Engineer,city,NC,Charlotte,76,29,120900,0.197368,0.394737,0.526316
+Software Engineer,city,IL,Chicago,113,33,176800,0.168142,0.442478,0.40708
+Software Engineer,city,OH,Columbus,36,4,,0.25,0.277778,0.444444
+Software Engineer,city,TX,Dallas,104,26,140920,0.144231,0.403846,0.548077
+Software Engineer,city,CO,Denver,30,15,120820,0.2,0.5,0.533333
+Software Engineer,city,TX,Houston,72,19,145600,0.222222,0.361111,0.347222
+Software Engineer,city,TX,Irving,54,14,,0.0925926,0.277778,0.555556
+Software Engineer,city,NJ,Jersey City,61,18,162500,0.213115,0.377049,0.590164
+Software Engineer,city,VA,McLean,68,25,176800,0.147059,0.382353,0.367647
+Software Engineer,city,NY,New York,155,107,163600,0.277419,0.419355,0.451613
+Software Engineer,city,PA,Philadelphia,43,13,,0.162791,0.465116,0.395349
+Software Engineer,city,AZ,Phoenix,46,10,,0.282609,0.456522,0.434783
+Software Engineer,city,PA,Pittsburgh,34,10,,0.205882,0.323529,0.647059
+Software Engineer,city,TX,Plano,98,22,139360,0.204082,0.367347,0.408163
+Software Engineer,city,WA,Redmond,44,28,145600,0.159091,0.25,0.613636
+Software Engineer,city,VA,Richmond,62,22,169000,0.0967742,0.451613,0.33871
+Software Engineer,city,CA,San Diego,42,23,124800,0.261905,0.333333,0.357143
+Software Engineer,city,CA,San Francisco,62,45,185000,0.290323,0.483871,0.403226
+Software Engineer,city,CA,San Jose,66,44,167850,0.106061,0.424242,0.575758
+Software Engineer,city,WA,Seattle,83,62,168650,0.240964,0.144578,0.566265
+Software Engineer,city,CA,Sunnyvale,51,35,154500,0.137255,0.529412,0.490196
+Software Engineer,city,FL,Tampa,32,10,,0.0625,0.375,0.40625
+Software Engineer,city,DC,Washington,37,17,163600,0.459459,0.297297,0.189189

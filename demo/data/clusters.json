@@ -1,0 +1,301 @@
+{
+ "n_clustered": 75576,
+ "n_total": 123782,
+ "min_hard_skills": 2,
+ "representation": "hard-skill binary x IDF -> SVD(15) -> L2",
+ "baseline_original_method": {
+  "k": 15,
+  "silhouette": 0.099
+ },
+ "chosen_k": 20,
+ "sweep": [
+  {
+   "k": 4,
+   "silhouette": 0.1927,
+   "stability_ari": 0.6642
+  },
+  {
+   "k": 6,
+   "silhouette": 0.2114,
+   "stability_ari": 0.5232
+  },
+  {
+   "k": 8,
+   "silhouette": 0.2414,
+   "stability_ari": 0.6854
+  },
+  {
+   "k": 10,
+   "silhouette": 0.2531,
+   "stability_ari": 0.6979
+  },
+  {
+   "k": 12,
+   "silhouette": 0.2676,
+   "stability_ari": 0.7686
+  },
+  {
+   "k": 14,
+   "silhouette": 0.2645,
+   "stability_ari": 0.7806
+  },
+  {
+   "k": 16,
+   "silhouette": 0.2627,
+   "stability_ari": 0.7975
+  },
+  {
+   "k": 18,
+   "silhouette": 0.2684,
+   "stability_ari": 0.8124
+  },
+  {
+   "k": 20,
+   "silhouette": 0.2685,
+   "stability_ari": 0.8033
+  }
+ ],
+ "clusters": {
+  "0": {
+   "name": "Microsoft Office / Compliance",
+   "size": 1463,
+   "top_skills": [
+    "Microsoft Office",
+    "Compliance"
+   ],
+   "top_role_family": "Other",
+   "top_role_family_share": 0.973,
+   "tech_title_share": 0.027
+  },
+  "1": {
+   "name": "Budgeting / Marketing / Compliance",
+   "size": 3825,
+   "top_skills": [
+    "Budgeting",
+    "Marketing",
+    "Compliance"
+   ],
+   "top_role_family": "Other",
+   "top_role_family_share": 0.981,
+   "tech_title_share": 0.019
+  },
+  "2": {
+   "name": "Project Management / Microsoft Office / Marketing",
+   "size": 4414,
+   "top_skills": [
+    "Project Management",
+    "Microsoft Office",
+    "Marketing",
+    "Compliance"
+   ],
+   "top_role_family": "Other",
+   "top_role_family_share": 0.934,
+   "tech_title_share": 0.066
+  },
+  "3": {
+   "name": "Python / SQL / Java",
+   "size": 9102,
+   "top_skills": [
+    "Python",
+    "SQL",
+    "Java",
+    "AWS"
+   ],
+   "top_role_family": "Other",
+   "top_role_family_share": 0.411,
+   "tech_title_share": 0.589
+  },
+  "4": {
+   "name": "Microsoft Office / Customer Service",
+   "size": 1492,
+   "top_skills": [
+    "Microsoft Office",
+    "Customer Service"
+   ],
+   "top_role_family": "Other",
+   "top_role_family_share": 0.995,
+   "tech_title_share": 0.005
+  },
+  "5": {
+   "name": "Accounting / Financial Analysis / Auditing",
+   "size": 6025,
+   "top_skills": [
+    "Accounting",
+    "Financial Analysis",
+    "Auditing",
+    "Excel"
+   ],
+   "top_role_family": "Other",
+   "top_role_family_share": 0.977,
+   "tech_title_share": 0.023
+  },
+  "6": {
+   "name": "Supply Chain / Excel / Microsoft Office",
+   "size": 1814,
+   "top_skills": [
+    "Supply Chain",
+    "Excel",
+    "Microsoft Office",
+    "Compliance"
+   ],
+   "top_role_family": "Other",
+   "top_role_family_share": 0.972,
+   "tech_title_share": 0.028
+  },
+  "7": {
+   "name": "Patient Care / CPR/BLS / Compliance",
+   "size": 6659,
+   "top_skills": [
+    "Patient Care",
+    "CPR/BLS",
+    "Compliance"
+   ],
+   "top_role_family": "Other",
+   "top_role_family_share": 0.999,
+   "tech_title_share": 0.001
+  },
+  "8": {
+   "name": "Sales / Marketing / Customer Service",
+   "size": 3233,
+   "top_skills": [
+    "Sales",
+    "Marketing",
+    "Customer Service"
+   ],
+   "top_role_family": "Other",
+   "top_role_family_share": 0.993,
+   "tech_title_share": 0.007
+  },
+  "9": {
+   "name": "Compliance / Auditing",
+   "size": 2024,
+   "top_skills": [
+    "Compliance",
+    "Auditing"
+   ],
+   "top_role_family": "Other",
+   "top_role_family_share": 0.927,
+   "tech_title_share": 0.073
+  },
+  "10": {
+   "name": "Driver's License / Customer Service / Compliance",
+   "size": 3860,
+   "top_skills": [
+    "Driver's License",
+    "Customer Service",
+    "Compliance"
+   ],
+   "top_role_family": "Other",
+   "top_role_family_share": 0.998,
+   "tech_title_share": 0.002
+  },
+  "11": {
+   "name": "Negotiation / Compliance / Marketing",
+   "size": 3818,
+   "top_skills": [
+    "Negotiation",
+    "Compliance",
+    "Marketing",
+    "Microsoft Office"
+   ],
+   "top_role_family": "Other",
+   "top_role_family_share": 0.981,
+   "tech_title_share": 0.019
+  },
+  "12": {
+   "name": "Marketing / Customer Service",
+   "size": 4018,
+   "top_skills": [
+    "Marketing",
+    "Customer Service"
+   ],
+   "top_role_family": "Other",
+   "top_role_family_share": 0.945,
+   "tech_title_share": 0.055
+  },
+  "13": {
+   "name": "Excel / Microsoft Office / Compliance",
+   "size": 5574,
+   "top_skills": [
+    "Excel",
+    "Microsoft Office",
+    "Compliance",
+    "Customer Service"
+   ],
+   "top_role_family": "Other",
+   "top_role_family_share": 0.964,
+   "tech_title_share": 0.036
+  },
+  "14": {
+   "name": "Recruiting / Customer Service / Compliance",
+   "size": 1910,
+   "top_skills": [
+    "Recruiting",
+    "Customer Service",
+    "Compliance"
+   ],
+   "top_role_family": "Other",
+   "top_role_family_share": 0.993,
+   "tech_title_share": 0.007
+  },
+  "15": {
+   "name": "Customer Service / Compliance",
+   "size": 2983,
+   "top_skills": [
+    "Customer Service",
+    "Compliance"
+   ],
+   "top_role_family": "Other",
+   "top_role_family_share": 0.988,
+   "tech_title_share": 0.012
+  },
+  "16": {
+   "name": "Project Management / Budgeting / Compliance",
+   "size": 3014,
+   "top_skills": [
+    "Project Management",
+    "Budgeting",
+    "Compliance",
+    "Microsoft Office"
+   ],
+   "top_role_family": "Other",
+   "top_role_family_share": 0.977,
+   "tech_title_share": 0.023
+  },
+  "17": {
+   "name": "Recruiting / Compliance",
+   "size": 3070,
+   "top_skills": [
+    "Recruiting",
+    "Compliance"
+   ],
+   "top_role_family": "Other",
+   "top_role_family_share": 0.923,
+   "tech_title_share": 0.077
+  },
+  "18": {
+   "name": "Supply Chain / Customer Service / Compliance",
+   "size": 3852,
+   "top_skills": [
+    "Supply Chain",
+    "Customer Service",
+    "Compliance"
+   ],
+   "top_role_family": "Other",
+   "top_role_family_share": 0.973,
+   "tech_title_share": 0.027
+  },
+  "19": {
+   "name": "Sales / CRM / Customer Service",
+   "size": 3426,
+   "top_skills": [
+    "Sales",
+    "CRM",
+    "Customer Service"
+   ],
+   "top_role_family": "Other",
+   "top_role_family_share": 0.985,
+   "tech_title_share": 0.015
+  }
+ }
+}

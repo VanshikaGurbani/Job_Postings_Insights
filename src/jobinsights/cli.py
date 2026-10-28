@@ -44,6 +44,7 @@ def build_parser() -> argparse.ArgumentParser:
     sub.add_parser("h1b", help="match posting companies to H-1B employer history")
     sub.add_parser("report", help="rebuild outputs/RESULTS.md, the README block and dashboard data")
     sub.add_parser("insights", help="pay-by-skill, sponsor landscape, learning path, figures")
+    sub.add_parser("export-demo", help="aggregate-only data bundle for the hosted demo")
     sub.add_parser("dashboard", help="launch the Streamlit dashboard")
     r = sub.add_parser("run-all", help="clean -> extract -> cluster -> salary model -> report")
     r.add_argument("--source", choices=["kaggle", "local"], default=None)
@@ -54,7 +55,7 @@ def build_parser() -> argparse.ArgumentParser:
 
 def run_all(source: str | None, file: Path | None) -> None:
     """The one command behind the README results: every number is regenerated."""
-    from . import cluster, evaluate, h1b, insights, report, salary_model
+    from . import cluster, demo_export, evaluate, h1b, insights, report, salary_model
 
     if source:
         data.download(source, from_file=file)
@@ -68,6 +69,7 @@ def run_all(source: str | None, file: Path | None) -> None:
         evaluate.evaluate()
     report.run()
     insights.run(figures=importlib.util.find_spec("matplotlib") is not None)
+    demo_export.run()
 
 
 def main(argv: list[str] | None = None) -> None:
@@ -135,6 +137,10 @@ def main(argv: list[str] | None = None) -> None:
         from . import report
 
         report.run()
+    elif args.command == "export-demo":
+        from . import demo_export
+
+        demo_export.run()
     elif args.command == "insights":
         from . import insights
 

@@ -1,0 +1,1105 @@
+role,group,skill,n_with_skill,n_postings
+Data Analyst,all,SQL,646,1495
+Data Analyst,all,Data Analysis,573,1495
+Data Analyst,all,Excel,462,1495
+Data Analyst,all,Data Visualization,450,1495
+Data Analyst,all,Python,319,1495
+Data Analyst,all,Power BI,311,1495
+Data Analyst,all,Tableau,287,1495
+Data Analyst,all,Statistics,251,1495
+Data Analyst,all,ETL,139,1495
+Data Analyst,all,R,132,1495
+Data Analyst,all,Machine Learning,114,1495
+Data Analyst,all,Data Modeling,102,1495
+Data Analyst,all,Azure,98,1495
+Data Analyst,all,SAS,93,1495
+Data Analyst,all,Forecasting,83,1495
+Data Analyst,all,AWS,79,1495
+Data Analyst,all,SQL Server,71,1495
+Data Analyst,all,JavaScript,65,1495
+Data Analyst,all,HTML/CSS,65,1495
+Data Analyst,all,Snowflake,61,1495
+Data Analyst,all,VBA,56,1495
+Data Analyst,all,C++,48,1495
+Data Analyst,all,C#,48,1495
+Data Analyst,all,A/B Testing,40,1495
+Data Analyst,all,Looker,36,1495
+Data Analyst,all,GCP,36,1495
+Data Analyst,all,Qlik,36,1495
+Data Analyst,all,Spark,36,1495
+Data Analyst,all,Databricks,32,1495
+Data Analyst,all,Redshift,30,1495
+Data Analyst,all,Google Analytics,29,1495
+Data Analyst,all,Git,29,1495
+Data Analyst,all,Alteryx,27,1495
+Data Analyst,all,Java,26,1495
+Data Analyst,all,Hadoop,26,1495
+Data Analyst,all,BigQuery,23,1495
+Data Analyst,all,NoSQL,19,1495
+Data Analyst,all,CI/CD,16,1495
+Data Analyst,all,Shell/Bash,14,1495
+Data Analyst,all,Linux,14,1495
+Data Analyst,all,MATLAB,13,1495
+Data Analyst,all,MySQL,13,1495
+Data Analyst,all,NLP,11,1495
+Data Analyst,all,PostgreSQL,11,1495
+Data Analyst,all,Generative AI/LLM,9,1495
+Data Analyst,all,Docker,8,1495
+Data Analyst,all,Kubernetes,8,1495
+Data Analyst,all,dbt,7,1495
+Data Analyst,all,Deep Learning,7,1495
+Data Analyst,all,REST APIs,6,1495
+Data Analyst,all,Airflow,5,1495
+Data Analyst,all,TypeScript,5,1495
+Data Analyst,all,MongoDB,5,1495
+Data Analyst,all,Computer Vision,4,1495
+Data Analyst,all,Scala,4,1495
+Data Analyst,all,pandas,4,1495
+Data Analyst,all,Kafka,3,1495
+Data Analyst,all,scikit-learn,3,1495
+Data Analyst,all,Ruby,3,1495
+Data Analyst,all,Oracle DB,2,1495
+Data Analyst,all,Go,2,1495
+Data Analyst,all,TensorFlow,1,1495
+Data Analyst,all,PyTorch,1,1495
+Data Analyst,all,Terraform,1,1495
+Data Analyst,all,Redis,1,1495
+Data Analyst,entry,Data Analysis,135,338
+Data Analyst,entry,SQL,127,338
+Data Analyst,entry,Excel,123,338
+Data Analyst,entry,Data Visualization,94,338
+Data Analyst,entry,Python,73,338
+Data Analyst,entry,Statistics,69,338
+Data Analyst,entry,Power BI,62,338
+Data Analyst,entry,Tableau,55,338
+Data Analyst,entry,Machine Learning,49,338
+Data Analyst,entry,ETL,28,338
+Data Analyst,entry,R,27,338
+Data Analyst,entry,Azure,24,338
+Data Analyst,entry,SAS,15,338
+Data Analyst,entry,Data Modeling,14,338
+Data Analyst,entry,Forecasting,14,338
+Data Analyst,entry,SQL Server,14,338
+Data Analyst,entry,AWS,14,338
+Data Analyst,entry,Looker,12,338
+Data Analyst,entry,VBA,12,338
+Data Analyst,entry,Spark,11,338
+Data Analyst,entry,Qlik,11,338
+Data Analyst,entry,Java,9,338
+Data Analyst,entry,GCP,8,338
+Data Analyst,entry,Snowflake,8,338
+Data Analyst,entry,Databricks,8,338
+Data Analyst,entry,Hadoop,7,338
+Data Analyst,entry,Git,7,338
+Data Analyst,entry,HTML/CSS,6,338
+Data Analyst,entry,BigQuery,6,338
+Data Analyst,entry,JavaScript,6,338
+Data Analyst,entry,Linux,6,338
+Data Analyst,entry,Alteryx,5,338
+Data Analyst,entry,Google Analytics,5,338
+Data Analyst,entry,Shell/Bash,5,338
+Data Analyst,entry,CI/CD,5,338
+Data Analyst,entry,Redshift,4,338
+Data Analyst,entry,NLP,4,338
+Data Analyst,entry,C++,4,338
+Data Analyst,entry,Docker,4,338
+Data Analyst,entry,Computer Vision,3,338
+Data Analyst,entry,C#,3,338
+Data Analyst,entry,REST APIs,3,338
+Data Analyst,entry,scikit-learn,3,338
+Data Analyst,entry,pandas,3,338
+Data Analyst,entry,Kubernetes,3,338
+Data Analyst,entry,PostgreSQL,3,338
+Data Analyst,entry,MySQL,3,338
+Data Analyst,entry,NoSQL,3,338
+Data Analyst,entry,MATLAB,2,338
+Data Analyst,entry,Generative AI/LLM,2,338
+Data Analyst,entry,A/B Testing,2,338
+Data Analyst,entry,Ruby,2,338
+Data Analyst,entry,Kafka,2,338
+Data Analyst,entry,Scala,1,338
+Data Analyst,entry,MongoDB,1,338
+Data Analyst,entry,Oracle DB,1,338
+Data Analyst,senior,SQL,325,761
+Data Analyst,senior,Data Analysis,295,761
+Data Analyst,senior,Data Visualization,251,761
+Data Analyst,senior,Excel,217,761
+Data Analyst,senior,Power BI,168,761
+Data Analyst,senior,Tableau,162,761
+Data Analyst,senior,Python,142,761
+Data Analyst,senior,Statistics,127,761
+Data Analyst,senior,R,76,761
+Data Analyst,senior,ETL,76,761
+Data Analyst,senior,SAS,57,761
+Data Analyst,senior,Forecasting,55,761
+Data Analyst,senior,Data Modeling,53,761
+Data Analyst,senior,Machine Learning,48,761
+Data Analyst,senior,Azure,48,761
+Data Analyst,senior,AWS,44,761
+Data Analyst,senior,Snowflake,42,761
+Data Analyst,senior,SQL Server,31,761
+Data Analyst,senior,VBA,27,761
+Data Analyst,senior,A/B Testing,23,761
+Data Analyst,senior,GCP,21,761
+Data Analyst,senior,Spark,20,761
+Data Analyst,senior,Databricks,19,761
+Data Analyst,senior,Qlik,17,761
+Data Analyst,senior,Looker,17,761
+Data Analyst,senior,Google Analytics,17,761
+Data Analyst,senior,Redshift,15,761
+Data Analyst,senior,Alteryx,13,761
+Data Analyst,senior,JavaScript,13,761
+Data Analyst,senior,Hadoop,11,761
+Data Analyst,senior,Java,10,761
+Data Analyst,senior,BigQuery,10,761
+Data Analyst,senior,Git,10,761
+Data Analyst,senior,Shell/Bash,8,761
+Data Analyst,senior,HTML/CSS,8,761
+Data Analyst,senior,Generative AI/LLM,6,761
+Data Analyst,senior,C++,6,761
+Data Analyst,senior,Deep Learning,6,761
+Data Analyst,senior,NoSQL,6,761
+Data Analyst,senior,MySQL,5,761
+Data Analyst,senior,Linux,5,761
+Data Analyst,senior,dbt,5,761
+Data Analyst,senior,NLP,5,761
+Data Analyst,senior,C#,5,761
+Data Analyst,senior,Kubernetes,4,761
+Data Analyst,senior,MATLAB,4,761
+Data Analyst,senior,PostgreSQL,4,761
+Data Analyst,senior,Airflow,3,761
+Data Analyst,senior,REST APIs,3,761
+Data Analyst,senior,TypeScript,3,761
+Data Analyst,senior,MongoDB,3,761
+Data Analyst,senior,CI/CD,3,761
+Data Analyst,senior,Docker,2,761
+Data Analyst,senior,Scala,2,761
+Data Analyst,senior,Go,2,761
+Data Analyst,senior,TensorFlow,1,761
+Data Analyst,senior,PyTorch,1,761
+Data Analyst,senior,Terraform,1,761
+Data Analyst,senior,Kafka,1,761
+Data Analyst,senior,Computer Vision,1,761
+Data Analyst,senior,Ruby,1,761
+Data Analyst,senior,Oracle DB,1,761
+Data Scientist,all,Python,290,380
+Data Scientist,all,Machine Learning,252,380
+Data Scientist,all,Statistics,247,380
+Data Scientist,all,SQL,188,380
+Data Scientist,all,Data Analysis,186,380
+Data Scientist,all,R,138,380
+Data Scientist,all,Data Visualization,102,380
+Data Scientist,all,AWS,78,380
+Data Scientist,all,Spark,76,380
+Data Scientist,all,NLP,75,380
+Data Scientist,all,Deep Learning,71,380
+Data Scientist,all,Generative AI/LLM,58,380
+Data Scientist,all,Tableau,57,380
+Data Scientist,all,SAS,56,380
+Data Scientist,all,PyTorch,48,380
+Data Scientist,all,GCP,44,380
+Data Scientist,all,Scala,44,380
+Data Scientist,all,A/B Testing,44,380
+Data Scientist,all,Power BI,37,380
+Data Scientist,all,Java,36,380
+Data Scientist,all,TensorFlow,35,380
+Data Scientist,all,C++,34,380
+Data Scientist,all,ETL,33,380
+Data Scientist,all,Azure,32,380
+Data Scientist,all,Hadoop,31,380
+Data Scientist,all,Excel,30,380
+Data Scientist,all,Computer Vision,28,380
+Data Scientist,all,Docker,27,380
+Data Scientist,all,Linux,24,380
+Data Scientist,all,NoSQL,24,380
+Data Scientist,all,pandas,21,380
+Data Scientist,all,Git,21,380
+Data Scientist,all,scikit-learn,21,380
+Data Scientist,all,Data Modeling,20,380
+Data Scientist,all,CI/CD,18,380
+Data Scientist,all,Forecasting,17,380
+Data Scientist,all,Kubernetes,16,380
+Data Scientist,all,JavaScript,16,380
+Data Scientist,all,Databricks,15,380
+Data Scientist,all,Snowflake,13,380
+Data Scientist,all,MATLAB,13,380
+Data Scientist,all,HTML/CSS,10,380
+Data Scientist,all,REST APIs,8,380
+Data Scientist,all,PostgreSQL,7,380
+Data Scientist,all,BigQuery,7,380
+Data Scientist,all,Shell/Bash,7,380
+Data Scientist,all,MySQL,7,380
+Data Scientist,all,Airflow,7,380
+Data Scientist,all,SQL Server,7,380
+Data Scientist,all,Kafka,5,380
+Data Scientist,all,MongoDB,5,380
+Data Scientist,all,Qlik,5,380
+Data Scientist,all,Alteryx,5,380
+Data Scientist,all,Google Analytics,4,380
+Data Scientist,all,C#,4,380
+Data Scientist,all,VBA,3,380
+Data Scientist,all,dbt,2,380
+Data Scientist,all,Looker,2,380
+Data Scientist,all,Redshift,2,380
+Data Scientist,all,TypeScript,1,380
+Data Scientist,all,PHP,1,380
+Data Scientist,all,Redis,1,380
+Data Scientist,all,Ruby,1,380
+Data Scientist,entry,Python,78,98
+Data Scientist,entry,Machine Learning,64,98
+Data Scientist,entry,Statistics,63,98
+Data Scientist,entry,Data Analysis,56,98
+Data Scientist,entry,SQL,52,98
+Data Scientist,entry,R,40,98
+Data Scientist,entry,Data Visualization,26,98
+Data Scientist,entry,SAS,25,98
+Data Scientist,entry,NLP,22,98
+Data Scientist,entry,Tableau,17,98
+Data Scientist,entry,Power BI,12,98
+Data Scientist,entry,Spark,12,98
+Data Scientist,entry,Scala,12,98
+Data Scientist,entry,Java,11,98
+Data Scientist,entry,C++,11,98
+Data Scientist,entry,ETL,11,98
+Data Scientist,entry,AWS,11,98
+Data Scientist,entry,Excel,11,98
+Data Scientist,entry,Deep Learning,11,98
+Data Scientist,entry,Data Modeling,11,98
+Data Scientist,entry,JavaScript,10,98
+Data Scientist,entry,Hadoop,10,98
+Data Scientist,entry,Generative AI/LLM,9,98
+Data Scientist,entry,Computer Vision,9,98
+Data Scientist,entry,Docker,9,98
+Data Scientist,entry,PyTorch,8,98
+Data Scientist,entry,A/B Testing,8,98
+Data Scientist,entry,CI/CD,7,98
+Data Scientist,entry,REST APIs,7,98
+Data Scientist,entry,Azure,7,98
+Data Scientist,entry,GCP,7,98
+Data Scientist,entry,NoSQL,6,98
+Data Scientist,entry,TensorFlow,6,98
+Data Scientist,entry,Shell/Bash,5,98
+Data Scientist,entry,Forecasting,5,98
+Data Scientist,entry,Git,4,98
+Data Scientist,entry,scikit-learn,3,98
+Data Scientist,entry,pandas,3,98
+Data Scientist,entry,PostgreSQL,3,98
+Data Scientist,entry,Linux,3,98
+Data Scientist,entry,Kafka,2,98
+Data Scientist,entry,BigQuery,2,98
+Data Scientist,entry,Snowflake,2,98
+Data Scientist,entry,MySQL,2,98
+Data Scientist,entry,SQL Server,2,98
+Data Scientist,entry,dbt,1,98
+Data Scientist,entry,VBA,1,98
+Data Scientist,entry,Qlik,1,98
+Data Scientist,entry,Google Analytics,1,98
+Data Scientist,entry,Databricks,1,98
+Data Scientist,entry,Kubernetes,1,98
+Data Scientist,entry,MongoDB,1,98
+Data Scientist,entry,MATLAB,1,98
+Data Scientist,entry,HTML/CSS,1,98
+Data Scientist,entry,Looker,1,98
+Data Scientist,entry,Alteryx,1,98
+Data Scientist,senior,Python,118,164
+Data Scientist,senior,Machine Learning,113,164
+Data Scientist,senior,Statistics,111,164
+Data Scientist,senior,SQL,78,164
+Data Scientist,senior,Data Analysis,68,164
+Data Scientist,senior,R,52,164
+Data Scientist,senior,Spark,45,164
+Data Scientist,senior,AWS,42,164
+Data Scientist,senior,Data Visualization,40,164
+Data Scientist,senior,Deep Learning,30,164
+Data Scientist,senior,NLP,30,164
+Data Scientist,senior,Scala,28,164
+Data Scientist,senior,Generative AI/LLM,28,164
+Data Scientist,senior,Tableau,27,164
+Data Scientist,senior,A/B Testing,20,164
+Data Scientist,senior,SAS,18,164
+Data Scientist,senior,GCP,18,164
+Data Scientist,senior,PyTorch,18,164
+Data Scientist,senior,Hadoop,16,164
+Data Scientist,senior,ETL,15,164
+Data Scientist,senior,Power BI,15,164
+Data Scientist,senior,Java,14,164
+Data Scientist,senior,Linux,14,164
+Data Scientist,senior,TensorFlow,14,164
+Data Scientist,senior,NoSQL,13,164
+Data Scientist,senior,Excel,13,164
+Data Scientist,senior,Docker,11,164
+Data Scientist,senior,C++,11,164
+Data Scientist,senior,Azure,10,164
+Data Scientist,senior,pandas,10,164
+Data Scientist,senior,scikit-learn,10,164
+Data Scientist,senior,Kubernetes,9,164
+Data Scientist,senior,Computer Vision,7,164
+Data Scientist,senior,Git,7,164
+Data Scientist,senior,Databricks,7,164
+Data Scientist,senior,Forecasting,7,164
+Data Scientist,senior,Snowflake,7,164
+Data Scientist,senior,HTML/CSS,7,164
+Data Scientist,senior,CI/CD,6,164
+Data Scientist,senior,Data Modeling,5,164
+Data Scientist,senior,JavaScript,5,164
+Data Scientist,senior,Airflow,4,164
+Data Scientist,senior,MATLAB,4,164
+Data Scientist,senior,PostgreSQL,3,164
+Data Scientist,senior,SQL Server,3,164
+Data Scientist,senior,Alteryx,3,164
+Data Scientist,senior,MySQL,2,164
+Data Scientist,senior,MongoDB,2,164
+Data Scientist,senior,Google Analytics,2,164
+Data Scientist,senior,Redshift,2,164
+Data Scientist,senior,Kafka,1,164
+Data Scientist,senior,Looker,1,164
+Data Scientist,senior,BigQuery,1,164
+Data Scientist,senior,TypeScript,1,164
+Data Scientist,senior,C#,1,164
+Data Scientist,senior,PHP,1,164
+Data Scientist,senior,Qlik,1,164
+Data Scientist,senior,VBA,1,164
+Data Scientist,senior,dbt,1,164
+Data Scientist,senior,Ruby,1,164
+Data Scientist,senior,Shell/Bash,1,164
+Data Engineer,all,SQL,392,595
+Data Engineer,all,ETL,388,595
+Data Engineer,all,Python,364,595
+Data Engineer,all,AWS,277,595
+Data Engineer,all,Azure,243,595
+Data Engineer,all,Spark,220,595
+Data Engineer,all,Data Modeling,193,595
+Data Engineer,all,Snowflake,154,595
+Data Engineer,all,Java,136,595
+Data Engineer,all,Data Analysis,125,595
+Data Engineer,all,GCP,124,595
+Data Engineer,all,Machine Learning,123,595
+Data Engineer,all,Scala,115,595
+Data Engineer,all,Databricks,106,595
+Data Engineer,all,NoSQL,103,595
+Data Engineer,all,Redshift,97,595
+Data Engineer,all,Hadoop,97,595
+Data Engineer,all,Data Visualization,91,595
+Data Engineer,all,Kafka,89,595
+Data Engineer,all,SQL Server,88,595
+Data Engineer,all,Power BI,82,595
+Data Engineer,all,Airflow,77,595
+Data Engineer,all,CI/CD,76,595
+Data Engineer,all,Git,73,595
+Data Engineer,all,Tableau,69,595
+Data Engineer,all,Linux,58,595
+Data Engineer,all,BigQuery,56,595
+Data Engineer,all,dbt,55,595
+Data Engineer,all,Shell/Bash,54,595
+Data Engineer,all,PostgreSQL,52,595
+Data Engineer,all,MySQL,49,595
+Data Engineer,all,Kubernetes,40,595
+Data Engineer,all,Statistics,40,595
+Data Engineer,all,Terraform,38,595
+Data Engineer,all,MongoDB,38,595
+Data Engineer,all,Docker,32,595
+Data Engineer,all,C#,32,595
+Data Engineer,all,JavaScript,28,595
+Data Engineer,all,R,19,595
+Data Engineer,all,Qlik,18,595
+Data Engineer,all,Generative AI/LLM,16,595
+Data Engineer,all,REST APIs,14,595
+Data Engineer,all,pandas,14,595
+Data Engineer,all,Excel,13,595
+Data Engineer,all,Looker,12,595
+Data Engineer,all,C++,10,595
+Data Engineer,all,HTML/CSS,9,595
+Data Engineer,all,Alteryx,7,595
+Data Engineer,all,SAS,7,595
+Data Engineer,all,Redis,6,595
+Data Engineer,all,Forecasting,5,595
+Data Engineer,all,TypeScript,4,595
+Data Engineer,all,Oracle DB,4,595
+Data Engineer,all,Deep Learning,4,595
+Data Engineer,all,A/B Testing,4,595
+Data Engineer,all,PHP,3,595
+Data Engineer,all,TensorFlow,3,595
+Data Engineer,all,Ruby,3,595
+Data Engineer,all,scikit-learn,2,595
+Data Engineer,all,PyTorch,2,595
+Data Engineer,all,Go,2,595
+Data Engineer,all,MATLAB,1,595
+Data Engineer,all,NLP,1,595
+Data Engineer,all,Computer Vision,1,595
+Data Engineer,entry,ETL,61,89
+Data Engineer,entry,Python,59,89
+Data Engineer,entry,SQL,58,89
+Data Engineer,entry,AWS,40,89
+Data Engineer,entry,Azure,32,89
+Data Engineer,entry,Spark,29,89
+Data Engineer,entry,Snowflake,27,89
+Data Engineer,entry,Data Visualization,24,89
+Data Engineer,entry,Java,22,89
+Data Engineer,entry,Data Analysis,22,89
+Data Engineer,entry,Machine Learning,22,89
+Data Engineer,entry,Data Modeling,19,89
+Data Engineer,entry,Redshift,19,89
+Data Engineer,entry,GCP,17,89
+Data Engineer,entry,Scala,17,89
+Data Engineer,entry,Databricks,16,89
+Data Engineer,entry,Power BI,15,89
+Data Engineer,entry,NoSQL,12,89
+Data Engineer,entry,Hadoop,11,89
+Data Engineer,entry,Statistics,11,89
+Data Engineer,entry,Git,10,89
+Data Engineer,entry,SQL Server,10,89
+Data Engineer,entry,Kafka,10,89
+Data Engineer,entry,Shell/Bash,9,89
+Data Engineer,entry,Airflow,9,89
+Data Engineer,entry,Linux,8,89
+Data Engineer,entry,Tableau,8,89
+Data Engineer,entry,CI/CD,7,89
+Data Engineer,entry,MongoDB,6,89
+Data Engineer,entry,C#,6,89
+Data Engineer,entry,PostgreSQL,6,89
+Data Engineer,entry,Terraform,6,89
+Data Engineer,entry,MySQL,5,89
+Data Engineer,entry,pandas,4,89
+Data Engineer,entry,BigQuery,4,89
+Data Engineer,entry,JavaScript,3,89
+Data Engineer,entry,dbt,3,89
+Data Engineer,entry,C++,2,89
+Data Engineer,entry,Kubernetes,2,89
+Data Engineer,entry,R,2,89
+Data Engineer,entry,Excel,2,89
+Data Engineer,entry,TensorFlow,1,89
+Data Engineer,entry,PyTorch,1,89
+Data Engineer,entry,NLP,1,89
+Data Engineer,entry,Docker,1,89
+Data Engineer,entry,Looker,1,89
+Data Engineer,entry,Generative AI/LLM,1,89
+Data Engineer,entry,TypeScript,1,89
+Data Engineer,entry,A/B Testing,1,89
+Data Engineer,entry,Ruby,1,89
+Data Engineer,entry,HTML/CSS,1,89
+Data Engineer,entry,Deep Learning,1,89
+Data Engineer,entry,REST APIs,1,89
+Data Engineer,senior,SQL,228,335
+Data Engineer,senior,ETL,224,335
+Data Engineer,senior,Python,195,335
+Data Engineer,senior,Azure,164,335
+Data Engineer,senior,AWS,159,335
+Data Engineer,senior,Data Modeling,132,335
+Data Engineer,senior,Spark,125,335
+Data Engineer,senior,Snowflake,93,335
+Data Engineer,senior,GCP,80,335
+Data Engineer,senior,Java,79,335
+Data Engineer,senior,Machine Learning,73,335
+Data Engineer,senior,NoSQL,68,335
+Data Engineer,senior,Data Analysis,66,335
+Data Engineer,senior,Redshift,65,335
+Data Engineer,senior,Scala,63,335
+Data Engineer,senior,Databricks,62,335
+Data Engineer,senior,SQL Server,61,335
+Data Engineer,senior,Hadoop,60,335
+Data Engineer,senior,Kafka,51,335
+Data Engineer,senior,Power BI,47,335
+Data Engineer,senior,Data Visualization,45,335
+Data Engineer,senior,Airflow,44,335
+Data Engineer,senior,Tableau,44,335
+Data Engineer,senior,CI/CD,44,335
+Data Engineer,senior,dbt,42,335
+Data Engineer,senior,BigQuery,40,335
+Data Engineer,senior,Git,38,335
+Data Engineer,senior,MySQL,35,335
+Data Engineer,senior,Linux,33,335
+Data Engineer,senior,Shell/Bash,30,335
+Data Engineer,senior,PostgreSQL,28,335
+Data Engineer,senior,Kubernetes,24,335
+Data Engineer,senior,MongoDB,24,335
+Data Engineer,senior,Terraform,23,335
+Data Engineer,senior,C#,21,335
+Data Engineer,senior,Docker,20,335
+Data Engineer,senior,Statistics,20,335
+Data Engineer,senior,JavaScript,18,335
+Data Engineer,senior,Qlik,15,335
+Data Engineer,senior,R,10,335
+Data Engineer,senior,REST APIs,9,335
+Data Engineer,senior,Excel,8,335
+Data Engineer,senior,Generative AI/LLM,8,335
+Data Engineer,senior,C++,7,335
+Data Engineer,senior,Looker,7,335
+Data Engineer,senior,pandas,5,335
+Data Engineer,senior,Redis,5,335
+Data Engineer,senior,SAS,5,335
+Data Engineer,senior,Alteryx,4,335
+Data Engineer,senior,A/B Testing,3,335
+Data Engineer,senior,Forecasting,3,335
+Data Engineer,senior,HTML/CSS,2,335
+Data Engineer,senior,TypeScript,2,335
+Data Engineer,senior,Ruby,2,335
+Data Engineer,senior,PHP,2,335
+Data Engineer,senior,Go,2,335
+Data Engineer,senior,Oracle DB,1,335
+Data Engineer,senior,MATLAB,1,335
+Data Engineer,senior,scikit-learn,1,335
+Data Engineer,senior,Computer Vision,1,335
+AI/ML Engineer,all,Machine Learning,381,488
+AI/ML Engineer,all,Python,287,488
+AI/ML Engineer,all,Generative AI/LLM,214,488
+AI/ML Engineer,all,Deep Learning,170,488
+AI/ML Engineer,all,NLP,152,488
+AI/ML Engineer,all,PyTorch,142,488
+AI/ML Engineer,all,TensorFlow,136,488
+AI/ML Engineer,all,AWS,99,488
+AI/ML Engineer,all,Azure,90,488
+AI/ML Engineer,all,Statistics,81,488
+AI/ML Engineer,all,Java,81,488
+AI/ML Engineer,all,Data Analysis,79,488
+AI/ML Engineer,all,Computer Vision,77,488
+AI/ML Engineer,all,C++,72,488
+AI/ML Engineer,all,SQL,70,488
+AI/ML Engineer,all,GCP,68,488
+AI/ML Engineer,all,scikit-learn,57,488
+AI/ML Engineer,all,Scala,57,488
+AI/ML Engineer,all,ETL,56,488
+AI/ML Engineer,all,Spark,56,488
+AI/ML Engineer,all,CI/CD,52,488
+AI/ML Engineer,all,Kubernetes,42,488
+AI/ML Engineer,all,Docker,38,488
+AI/ML Engineer,all,Git,37,488
+AI/ML Engineer,all,R,32,488
+AI/ML Engineer,all,pandas,26,488
+AI/ML Engineer,all,Data Visualization,24,488
+AI/ML Engineer,all,NoSQL,24,488
+AI/ML Engineer,all,JavaScript,24,488
+AI/ML Engineer,all,Data Modeling,24,488
+AI/ML Engineer,all,Databricks,23,488
+AI/ML Engineer,all,Hadoop,22,488
+AI/ML Engineer,all,A/B Testing,18,488
+AI/ML Engineer,all,Linux,17,488
+AI/ML Engineer,all,Shell/Bash,16,488
+AI/ML Engineer,all,C#,14,488
+AI/ML Engineer,all,Forecasting,14,488
+AI/ML Engineer,all,MongoDB,13,488
+AI/ML Engineer,all,Terraform,12,488
+AI/ML Engineer,all,HTML/CSS,11,488
+AI/ML Engineer,all,PostgreSQL,11,488
+AI/ML Engineer,all,BigQuery,9,488
+AI/ML Engineer,all,Go,9,488
+AI/ML Engineer,all,Airflow,8,488
+AI/ML Engineer,all,Power BI,8,488
+AI/ML Engineer,all,REST APIs,8,488
+AI/ML Engineer,all,Snowflake,8,488
+AI/ML Engineer,all,MATLAB,7,488
+AI/ML Engineer,all,Redis,7,488
+AI/ML Engineer,all,SQL Server,7,488
+AI/ML Engineer,all,Kafka,6,488
+AI/ML Engineer,all,Tableau,6,488
+AI/ML Engineer,all,Excel,4,488
+AI/ML Engineer,all,MySQL,4,488
+AI/ML Engineer,all,Redshift,4,488
+AI/ML Engineer,all,TypeScript,4,488
+AI/ML Engineer,all,VBA,2,488
+AI/ML Engineer,all,dbt,1,488
+AI/ML Engineer,all,Qlik,1,488
+AI/ML Engineer,all,Ruby,1,488
+AI/ML Engineer,all,SAS,1,488
+AI/ML Engineer,all,PHP,1,488
+AI/ML Engineer,entry,Machine Learning,51,59
+AI/ML Engineer,entry,Python,34,59
+AI/ML Engineer,entry,Generative AI/LLM,25,59
+AI/ML Engineer,entry,Deep Learning,18,59
+AI/ML Engineer,entry,PyTorch,15,59
+AI/ML Engineer,entry,TensorFlow,14,59
+AI/ML Engineer,entry,Data Analysis,13,59
+AI/ML Engineer,entry,Statistics,13,59
+AI/ML Engineer,entry,NLP,13,59
+AI/ML Engineer,entry,Computer Vision,12,59
+AI/ML Engineer,entry,SQL,11,59
+AI/ML Engineer,entry,CI/CD,9,59
+AI/ML Engineer,entry,Java,9,59
+AI/ML Engineer,entry,C++,8,59
+AI/ML Engineer,entry,AWS,8,59
+AI/ML Engineer,entry,Azure,8,59
+AI/ML Engineer,entry,Git,7,59
+AI/ML Engineer,entry,Data Visualization,7,59
+AI/ML Engineer,entry,pandas,6,59
+AI/ML Engineer,entry,ETL,5,59
+AI/ML Engineer,entry,Docker,5,59
+AI/ML Engineer,entry,Kubernetes,5,59
+AI/ML Engineer,entry,JavaScript,4,59
+AI/ML Engineer,entry,GCP,4,59
+AI/ML Engineer,entry,Terraform,3,59
+AI/ML Engineer,entry,Forecasting,3,59
+AI/ML Engineer,entry,Spark,3,59
+AI/ML Engineer,entry,Databricks,3,59
+AI/ML Engineer,entry,scikit-learn,3,59
+AI/ML Engineer,entry,Linux,2,59
+AI/ML Engineer,entry,MATLAB,2,59
+AI/ML Engineer,entry,C#,2,59
+AI/ML Engineer,entry,SQL Server,2,59
+AI/ML Engineer,entry,Shell/Bash,2,59
+AI/ML Engineer,entry,NoSQL,2,59
+AI/ML Engineer,entry,Scala,1,59
+AI/ML Engineer,entry,Tableau,1,59
+AI/ML Engineer,entry,A/B Testing,1,59
+AI/ML Engineer,entry,HTML/CSS,1,59
+AI/ML Engineer,entry,REST APIs,1,59
+AI/ML Engineer,entry,R,1,59
+AI/ML Engineer,entry,Kafka,1,59
+AI/ML Engineer,entry,MongoDB,1,59
+AI/ML Engineer,entry,TypeScript,1,59
+AI/ML Engineer,entry,BigQuery,1,59
+AI/ML Engineer,entry,Hadoop,1,59
+AI/ML Engineer,entry,Power BI,1,59
+AI/ML Engineer,entry,MySQL,1,59
+AI/ML Engineer,senior,Machine Learning,202,239
+AI/ML Engineer,senior,Python,158,239
+AI/ML Engineer,senior,Generative AI/LLM,123,239
+AI/ML Engineer,senior,Deep Learning,96,239
+AI/ML Engineer,senior,PyTorch,73,239
+AI/ML Engineer,senior,TensorFlow,73,239
+AI/ML Engineer,senior,NLP,70,239
+AI/ML Engineer,senior,AWS,63,239
+AI/ML Engineer,senior,Azure,52,239
+AI/ML Engineer,senior,Scala,52,239
+AI/ML Engineer,senior,Java,50,239
+AI/ML Engineer,senior,Spark,44,239
+AI/ML Engineer,senior,Computer Vision,43,239
+AI/ML Engineer,senior,Statistics,42,239
+AI/ML Engineer,senior,SQL,41,239
+AI/ML Engineer,senior,GCP,39,239
+AI/ML Engineer,senior,C++,36,239
+AI/ML Engineer,senior,ETL,36,239
+AI/ML Engineer,senior,Data Analysis,34,239
+AI/ML Engineer,senior,scikit-learn,33,239
+AI/ML Engineer,senior,CI/CD,23,239
+AI/ML Engineer,senior,Kubernetes,21,239
+AI/ML Engineer,senior,Docker,20,239
+AI/ML Engineer,senior,Git,19,239
+AI/ML Engineer,senior,Data Modeling,19,239
+AI/ML Engineer,senior,Databricks,17,239
+AI/ML Engineer,senior,Hadoop,16,239
+AI/ML Engineer,senior,NoSQL,15,239
+AI/ML Engineer,senior,R,14,239
+AI/ML Engineer,senior,pandas,12,239
+AI/ML Engineer,senior,A/B Testing,11,239
+AI/ML Engineer,senior,JavaScript,11,239
+AI/ML Engineer,senior,MongoDB,9,239
+AI/ML Engineer,senior,C#,8,239
+AI/ML Engineer,senior,Shell/Bash,8,239
+AI/ML Engineer,senior,PostgreSQL,8,239
+AI/ML Engineer,senior,Go,8,239
+AI/ML Engineer,senior,Data Visualization,7,239
+AI/ML Engineer,senior,Forecasting,7,239
+AI/ML Engineer,senior,Snowflake,6,239
+AI/ML Engineer,senior,Terraform,6,239
+AI/ML Engineer,senior,Linux,6,239
+AI/ML Engineer,senior,BigQuery,6,239
+AI/ML Engineer,senior,Kafka,4,239
+AI/ML Engineer,senior,Power BI,4,239
+AI/ML Engineer,senior,Airflow,4,239
+AI/ML Engineer,senior,REST APIs,4,239
+AI/ML Engineer,senior,MATLAB,4,239
+AI/ML Engineer,senior,HTML/CSS,4,239
+AI/ML Engineer,senior,MySQL,3,239
+AI/ML Engineer,senior,Redshift,3,239
+AI/ML Engineer,senior,TypeScript,3,239
+AI/ML Engineer,senior,Excel,2,239
+AI/ML Engineer,senior,Redis,2,239
+AI/ML Engineer,senior,SQL Server,2,239
+AI/ML Engineer,senior,dbt,1,239
+AI/ML Engineer,senior,Ruby,1,239
+AI/ML Engineer,senior,PHP,1,239
+AI/ML Engineer,senior,VBA,1,239
+AI/ML Engineer,senior,Tableau,1,239
+Software Engineer,all,JavaScript,1795,5247
+Software Engineer,all,Java,1519,5247
+Software Engineer,all,Python,1415,5247
+Software Engineer,all,SQL,1409,5247
+Software Engineer,all,AWS,1237,5247
+Software Engineer,all,Git,1057,5247
+Software Engineer,all,CI/CD,1035,5247
+Software Engineer,all,C#,1002,5247
+Software Engineer,all,HTML/CSS,961,5247
+Software Engineer,all,Azure,945,5247
+Software Engineer,all,C++,695,5247
+Software Engineer,all,Kubernetes,686,5247
+Software Engineer,all,Docker,664,5247
+Software Engineer,all,Linux,626,5247
+Software Engineer,all,REST APIs,504,5247
+Software Engineer,all,NoSQL,451,5247
+Software Engineer,all,GCP,440,5247
+Software Engineer,all,TypeScript,434,5247
+Software Engineer,all,SQL Server,407,5247
+Software Engineer,all,Shell/Bash,341,5247
+Software Engineer,all,Terraform,314,5247
+Software Engineer,all,Machine Learning,304,5247
+Software Engineer,all,Kafka,284,5247
+Software Engineer,all,PostgreSQL,267,5247
+Software Engineer,all,ETL,241,5247
+Software Engineer,all,MySQL,219,5247
+Software Engineer,all,Data Visualization,215,5247
+Software Engineer,all,Data Analysis,207,5247
+Software Engineer,all,MongoDB,200,5247
+Software Engineer,all,Excel,146,5247
+Software Engineer,all,PHP,144,5247
+Software Engineer,all,Spark,143,5247
+Software Engineer,all,Go,130,5247
+Software Engineer,all,Data Modeling,130,5247
+Software Engineer,all,Ruby,123,5247
+Software Engineer,all,Scala,122,5247
+Software Engineer,all,Power BI,115,5247
+Software Engineer,all,Redis,100,5247
+Software Engineer,all,Snowflake,83,5247
+Software Engineer,all,Statistics,72,5247
+Software Engineer,all,Tableau,67,5247
+Software Engineer,all,Hadoop,59,5247
+Software Engineer,all,Oracle DB,55,5247
+Software Engineer,all,A/B Testing,54,5247
+Software Engineer,all,Generative AI/LLM,50,5247
+Software Engineer,all,R,38,5247
+Software Engineer,all,Airflow,38,5247
+Software Engineer,all,SAS,37,5247
+Software Engineer,all,MATLAB,36,5247
+Software Engineer,all,NLP,36,5247
+Software Engineer,all,Forecasting,35,5247
+Software Engineer,all,Redshift,34,5247
+Software Engineer,all,Computer Vision,34,5247
+Software Engineer,all,Databricks,30,5247
+Software Engineer,all,VBA,29,5247
+Software Engineer,all,BigQuery,29,5247
+Software Engineer,all,Deep Learning,27,5247
+Software Engineer,all,PyTorch,27,5247
+Software Engineer,all,TensorFlow,21,5247
+Software Engineer,all,Qlik,18,5247
+Software Engineer,all,Google Analytics,12,5247
+Software Engineer,all,Looker,10,5247
+Software Engineer,all,pandas,10,5247
+Software Engineer,all,scikit-learn,8,5247
+Software Engineer,all,dbt,8,5247
+Software Engineer,all,Alteryx,3,5247
+Software Engineer,entry,Java,300,1034
+Software Engineer,entry,JavaScript,297,1034
+Software Engineer,entry,Python,263,1034
+Software Engineer,entry,SQL,248,1034
+Software Engineer,entry,AWS,209,1034
+Software Engineer,entry,Git,202,1034
+Software Engineer,entry,HTML/CSS,179,1034
+Software Engineer,entry,C#,171,1034
+Software Engineer,entry,CI/CD,160,1034
+Software Engineer,entry,C++,145,1034
+Software Engineer,entry,Azure,145,1034
+Software Engineer,entry,Linux,124,1034
+Software Engineer,entry,Kubernetes,99,1034
+Software Engineer,entry,Docker,96,1034
+Software Engineer,entry,TypeScript,83,1034
+Software Engineer,entry,SQL Server,82,1034
+Software Engineer,entry,REST APIs,82,1034
+Software Engineer,entry,Shell/Bash,75,1034
+Software Engineer,entry,NoSQL,74,1034
+Software Engineer,entry,Excel,63,1034
+Software Engineer,entry,GCP,60,1034
+Software Engineer,entry,Data Visualization,60,1034
+Software Engineer,entry,MySQL,54,1034
+Software Engineer,entry,Terraform,53,1034
+Software Engineer,entry,PostgreSQL,52,1034
+Software Engineer,entry,Kafka,51,1034
+Software Engineer,entry,Machine Learning,44,1034
+Software Engineer,entry,ETL,43,1034
+Software Engineer,entry,Data Analysis,40,1034
+Software Engineer,entry,MongoDB,35,1034
+Software Engineer,entry,PHP,33,1034
+Software Engineer,entry,Ruby,30,1034
+Software Engineer,entry,Power BI,28,1034
+Software Engineer,entry,Spark,24,1034
+Software Engineer,entry,Statistics,23,1034
+Software Engineer,entry,Go,21,1034
+Software Engineer,entry,Scala,18,1034
+Software Engineer,entry,Data Modeling,16,1034
+Software Engineer,entry,Redis,15,1034
+Software Engineer,entry,Tableau,13,1034
+Software Engineer,entry,R,13,1034
+Software Engineer,entry,VBA,12,1034
+Software Engineer,entry,Hadoop,12,1034
+Software Engineer,entry,Databricks,11,1034
+Software Engineer,entry,Oracle DB,10,1034
+Software Engineer,entry,MATLAB,9,1034
+Software Engineer,entry,A/B Testing,9,1034
+Software Engineer,entry,Snowflake,8,1034
+Software Engineer,entry,SAS,7,1034
+Software Engineer,entry,Redshift,7,1034
+Software Engineer,entry,Forecasting,6,1034
+Software Engineer,entry,Airflow,6,1034
+Software Engineer,entry,Generative AI/LLM,4,1034
+Software Engineer,entry,NLP,4,1034
+Software Engineer,entry,Qlik,4,1034
+Software Engineer,entry,Computer Vision,4,1034
+Software Engineer,entry,BigQuery,4,1034
+Software Engineer,entry,Deep Learning,3,1034
+Software Engineer,entry,PyTorch,2,1034
+Software Engineer,entry,scikit-learn,2,1034
+Software Engineer,entry,Looker,2,1034
+Software Engineer,entry,Alteryx,1,1034
+Software Engineer,entry,pandas,1,1034
+Software Engineer,entry,dbt,1,1034
+Software Engineer,senior,JavaScript,816,2398
+Software Engineer,senior,Java,737,2398
+Software Engineer,senior,AWS,661,2398
+Software Engineer,senior,Python,621,2398
+Software Engineer,senior,SQL,605,2398
+Software Engineer,senior,CI/CD,536,2398
+Software Engineer,senior,Azure,527,2398
+Software Engineer,senior,Git,499,2398
+Software Engineer,senior,C#,426,2398
+Software Engineer,senior,Kubernetes,415,2398
+Software Engineer,senior,Docker,402,2398
+Software Engineer,senior,HTML/CSS,372,2398
+Software Engineer,senior,Linux,314,2398
+Software Engineer,senior,GCP,264,2398
+Software Engineer,senior,NoSQL,258,2398
+Software Engineer,senior,TypeScript,247,2398
+Software Engineer,senior,C++,242,2398
+Software Engineer,senior,REST APIs,226,2398
+Software Engineer,senior,SQL Server,206,2398
+Software Engineer,senior,Terraform,179,2398
+Software Engineer,senior,Shell/Bash,169,2398
+Software Engineer,senior,Machine Learning,149,2398
+Software Engineer,senior,Kafka,132,2398
+Software Engineer,senior,PostgreSQL,127,2398
+Software Engineer,senior,ETL,109,2398
+Software Engineer,senior,MongoDB,103,2398
+Software Engineer,senior,MySQL,100,2398
+Software Engineer,senior,Data Visualization,100,2398
+Software Engineer,senior,Data Analysis,95,2398
+Software Engineer,senior,Scala,87,2398
+Software Engineer,senior,Go,75,2398
+Software Engineer,senior,Spark,71,2398
+Software Engineer,senior,Data Modeling,65,2398
+Software Engineer,senior,PHP,63,2398
+Software Engineer,senior,Power BI,58,2398
+Software Engineer,senior,Ruby,57,2398
+Software Engineer,senior,Excel,53,2398
+Software Engineer,senior,Redis,49,2398
+Software Engineer,senior,Snowflake,40,2398
+Software Engineer,senior,A/B Testing,35,2398
+Software Engineer,senior,Statistics,30,2398
+Software Engineer,senior,Tableau,30,2398
+Software Engineer,senior,Hadoop,29,2398
+Software Engineer,senior,Oracle DB,29,2398
+Software Engineer,senior,Generative AI/LLM,25,2398
+Software Engineer,senior,SAS,22,2398
+Software Engineer,senior,Forecasting,21,2398
+Software Engineer,senior,Airflow,19,2398
+Software Engineer,senior,R,17,2398
+Software Engineer,senior,Redshift,17,2398
+Software Engineer,senior,Computer Vision,17,2398
+Software Engineer,senior,TensorFlow,16,2398
+Software Engineer,senior,PyTorch,16,2398
+Software Engineer,senior,NLP,14,2398
+Software Engineer,senior,Databricks,13,2398
+Software Engineer,senior,MATLAB,12,2398
+Software Engineer,senior,Deep Learning,11,2398
+Software Engineer,senior,BigQuery,11,2398
+Software Engineer,senior,Qlik,10,2398
+Software Engineer,senior,pandas,8,2398
+Software Engineer,senior,VBA,6,2398
+Software Engineer,senior,scikit-learn,5,2398
+Software Engineer,senior,Google Analytics,5,2398
+Software Engineer,senior,dbt,5,2398
+Software Engineer,senior,Looker,3,2398
+Software Engineer,senior,Alteryx,1,2398
+All tech roles,all,SQL,2705,8205
+All tech roles,all,Python,2675,8205
+All tech roles,all,JavaScript,1928,8205
+All tech roles,all,Java,1798,8205
+All tech roles,all,AWS,1770,8205
+All tech roles,all,Azure,1408,8205
+All tech roles,all,Git,1217,8205
+All tech roles,all,CI/CD,1197,8205
+All tech roles,all,Machine Learning,1174,8205
+All tech roles,all,Data Analysis,1170,8205
+All tech roles,all,C#,1100,8205
+All tech roles,all,HTML/CSS,1056,8205
+All tech roles,all,Data Visualization,882,8205
+All tech roles,all,C++,859,8205
+All tech roles,all,ETL,857,8205
+All tech roles,all,Kubernetes,792,8205
+All tech roles,all,Docker,769,8205
+All tech roles,all,Linux,739,8205
+All tech roles,all,GCP,712,8205
+All tech roles,all,Statistics,691,8205
+All tech roles,all,Excel,655,8205
+All tech roles,all,NoSQL,621,8205
+All tech roles,all,SQL Server,580,8205
+All tech roles,all,Power BI,553,8205
+All tech roles,all,REST APIs,540,8205
+All tech roles,all,Spark,531,8205
+All tech roles,all,Tableau,486,8205
+All tech roles,all,Data Modeling,469,8205
+All tech roles,all,TypeScript,448,8205
+All tech roles,all,Shell/Bash,432,8205
+All tech roles,all,Kafka,387,8205
+All tech roles,all,Terraform,365,8205
+All tech roles,all,R,359,8205
+All tech roles,all,PostgreSQL,348,8205
+All tech roles,all,Generative AI/LLM,347,8205
+All tech roles,all,Scala,342,8205
+All tech roles,all,Snowflake,319,8205
+All tech roles,all,MySQL,292,8205
+All tech roles,all,Deep Learning,279,8205
+All tech roles,all,NLP,275,8205
+All tech roles,all,MongoDB,261,8205
+All tech roles,all,Hadoop,235,8205
+All tech roles,all,PyTorch,220,8205
+All tech roles,all,Databricks,206,8205
+All tech roles,all,TensorFlow,196,8205
+All tech roles,all,SAS,194,8205
+All tech roles,all,Redshift,167,8205
+All tech roles,all,A/B Testing,160,8205
+All tech roles,all,Forecasting,154,8205
+All tech roles,all,PHP,149,8205
+All tech roles,all,Computer Vision,144,8205
+All tech roles,all,Go,143,8205
+All tech roles,all,Airflow,135,8205
+All tech roles,all,Ruby,131,8205
+All tech roles,all,BigQuery,124,8205
+All tech roles,all,Redis,115,8205
+All tech roles,all,scikit-learn,91,8205
+All tech roles,all,VBA,90,8205
+All tech roles,all,Qlik,78,8205
+All tech roles,all,pandas,75,8205
+All tech roles,all,dbt,73,8205
+All tech roles,all,MATLAB,70,8205
+All tech roles,all,Oracle DB,61,8205
+All tech roles,all,Looker,60,8205
+All tech roles,all,Google Analytics,45,8205
+All tech roles,all,Alteryx,42,8205
+All tech roles,entry,Python,507,1618
+All tech roles,entry,SQL,496,1618
+All tech roles,entry,Java,351,1618
+All tech roles,entry,JavaScript,320,1618
+All tech roles,entry,AWS,282,1618
+All tech roles,entry,Data Analysis,266,1618
+All tech roles,entry,Git,230,1618
+All tech roles,entry,Machine Learning,230,1618
+All tech roles,entry,Azure,216,1618
+All tech roles,entry,Data Visualization,211,1618
+All tech roles,entry,Excel,199,1618
+All tech roles,entry,HTML/CSS,188,1618
+All tech roles,entry,CI/CD,188,1618
+All tech roles,entry,C#,182,1618
+All tech roles,entry,Statistics,179,1618
+All tech roles,entry,C++,170,1618
+All tech roles,entry,ETL,148,1618
+All tech roles,entry,Linux,143,1618
+All tech roles,entry,Power BI,118,1618
+All tech roles,entry,Docker,115,1618
+All tech roles,entry,SQL Server,110,1618
+All tech roles,entry,Kubernetes,110,1618
+All tech roles,entry,NoSQL,97,1618
+All tech roles,entry,GCP,96,1618
+All tech roles,entry,Shell/Bash,96,1618
+All tech roles,entry,Tableau,94,1618
+All tech roles,entry,REST APIs,94,1618
+All tech roles,entry,TypeScript,85,1618
+All tech roles,entry,R,83,1618
+All tech roles,entry,Spark,79,1618
+All tech roles,entry,Kafka,66,1618
+All tech roles,entry,MySQL,65,1618
+All tech roles,entry,PostgreSQL,64,1618
+All tech roles,entry,Terraform,62,1618
+All tech roles,entry,Data Modeling,60,1618
+All tech roles,entry,Scala,49,1618
+All tech roles,entry,SAS,47,1618
+All tech roles,entry,Snowflake,45,1618
+All tech roles,entry,NLP,44,1618
+All tech roles,entry,MongoDB,44,1618
+All tech roles,entry,Generative AI/LLM,41,1618
+All tech roles,entry,Hadoop,41,1618
+All tech roles,entry,Databricks,39,1618
+All tech roles,entry,Ruby,33,1618
+All tech roles,entry,Deep Learning,33,1618
+All tech roles,entry,PHP,33,1618
+All tech roles,entry,Redshift,30,1618
+All tech roles,entry,Computer Vision,28,1618
+All tech roles,entry,Forecasting,28,1618
+All tech roles,entry,PyTorch,26,1618
+All tech roles,entry,VBA,25,1618
+All tech roles,entry,TensorFlow,21,1618
+All tech roles,entry,Go,21,1618
+All tech roles,entry,A/B Testing,21,1618
+All tech roles,entry,pandas,17,1618
+All tech roles,entry,BigQuery,17,1618
+All tech roles,entry,Looker,16,1618
+All tech roles,entry,Qlik,16,1618
+All tech roles,entry,Redis,15,1618
+All tech roles,entry,Airflow,15,1618
+All tech roles,entry,MATLAB,14,1618
+All tech roles,entry,scikit-learn,11,1618
+All tech roles,entry,Oracle DB,11,1618
+All tech roles,entry,Alteryx,7,1618
+All tech roles,entry,Google Analytics,6,1618
+All tech roles,entry,dbt,5,1618
+All tech roles,senior,SQL,1277,3897
+All tech roles,senior,Python,1234,3897
+All tech roles,senior,AWS,969,3897
+All tech roles,senior,Java,890,3897
+All tech roles,senior,JavaScript,863,3897
+All tech roles,senior,Azure,801,3897
+All tech roles,senior,CI/CD,612,3897
+All tech roles,senior,Machine Learning,585,3897
+All tech roles,senior,Git,573,3897
+All tech roles,senior,Data Analysis,558,3897
+All tech roles,senior,Kubernetes,473,3897
+All tech roles,senior,C#,461,3897
+All tech roles,senior,ETL,460,3897
+All tech roles,senior,Docker,455,3897
+All tech roles,senior,Data Visualization,443,3897
+All tech roles,senior,GCP,422,3897
+All tech roles,senior,HTML/CSS,393,3897
+All tech roles,senior,Linux,372,3897
+All tech roles,senior,NoSQL,360,3897
+All tech roles,senior,Statistics,330,3897
+All tech roles,senior,Spark,305,3897
+All tech roles,senior,SQL Server,303,3897
+All tech roles,senior,C++,302,3897
+All tech roles,senior,Excel,293,3897
+All tech roles,senior,Power BI,292,3897
+All tech roles,senior,Data Modeling,274,3897
+All tech roles,senior,Tableau,264,3897
+All tech roles,senior,TypeScript,256,3897
+All tech roles,senior,REST APIs,242,3897
+All tech roles,senior,Scala,232,3897
+All tech roles,senior,Shell/Bash,216,3897
+All tech roles,senior,Terraform,209,3897
+All tech roles,senior,Generative AI/LLM,190,3897
+All tech roles,senior,Kafka,189,3897
+All tech roles,senior,Snowflake,188,3897
+All tech roles,senior,PostgreSQL,170,3897
+All tech roles,senior,R,169,3897
+All tech roles,senior,MySQL,145,3897
+All tech roles,senior,Deep Learning,143,3897
+All tech roles,senior,MongoDB,141,3897
+All tech roles,senior,Hadoop,132,3897
+All tech roles,senior,NLP,119,3897
+All tech roles,senior,Databricks,118,3897
+All tech roles,senior,PyTorch,108,3897
+All tech roles,senior,TensorFlow,104,3897
+All tech roles,senior,Redshift,102,3897
+All tech roles,senior,SAS,102,3897
+All tech roles,senior,Forecasting,93,3897
+All tech roles,senior,A/B Testing,92,3897
+All tech roles,senior,Go,87,3897
+All tech roles,senior,Airflow,74,3897
+All tech roles,senior,Computer Vision,69,3897
+All tech roles,senior,BigQuery,68,3897
+All tech roles,senior,PHP,67,3897
+All tech roles,senior,Ruby,62,3897
+All tech roles,senior,Redis,56,3897
+All tech roles,senior,dbt,54,3897
+All tech roles,senior,scikit-learn,49,3897
+All tech roles,senior,Qlik,43,3897
+All tech roles,senior,VBA,35,3897
+All tech roles,senior,pandas,35,3897
+All tech roles,senior,Oracle DB,31,3897
+All tech roles,senior,Looker,28,3897
+All tech roles,senior,MATLAB,25,3897
+All tech roles,senior,Google Analytics,24,3897
+All tech roles,senior,Alteryx,21,3897
